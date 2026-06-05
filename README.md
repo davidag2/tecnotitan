@@ -11,13 +11,22 @@ Pagina corporativa estatica para Tecnotitan, con una direccion visual premium in
 ```text
 .
 ├── index.html
+├── nosotros.html
+├── productos.html
+├── servicios.html
+├── divisiones.html
+├── inversionistas.html
+├── contacto.html
 ├── styles.css
 ├── script.js
 ├── assets/
-│   ├── concept-hero.png
-│   ├── concept-capabilities.png
-│   ├── concept-process.png
-│   └── concept-close.png
+│   ├── bg-hero-tech.png
+│   ├── bg-capabilities-tech.png
+│   ├── bg-process-ai.png
+│   ├── bg-games-experiences.png
+│   ├── bg-closing-tech.png
+│   ├── logo-tecnotitan.svg
+│   └── favicon.svg
 └── docs/
     ├── screenshot-desktop.png
     └── screenshot-mobile.png
@@ -36,8 +45,10 @@ Abre `index.html` directamente en el navegador. No requiere build ni instalacion
 
 ## Contenido
 
-- Hero corporativo con CTA principal.
-- Seccion de capacidades industriales.
-- Timeline de diagnostico, diseno, implementacion y soporte.
-- Enfoques de proyecto.
-- Cierre con contacto comercial.
+- Inicio como portada corporativa.
+- Nosotros con vision, tesis y principios.
+- Productos para software, IA, videojuegos y robotica.
+- Servicios de consultoria en IA y transformacion tecnologica.
+- Divisiones como estructura de portafolio.
+- Inversionistas con tesis, mercado, modelo y ruta de crecimiento.
+- Contacto para empresas, partners e inversionistas.
