@@ -72,10 +72,19 @@ a {
 .footer-brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  width: 172px;
+  min-width: 172px;
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer-brand {
+  width: 190px;
+  min-width: 190px;
 }
 
 .brand-mark {

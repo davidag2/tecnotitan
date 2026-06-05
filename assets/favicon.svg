@@ -1,17 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="edge" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#8df0ff"/>
-      <stop offset="1" stop-color="#245464"/>
+    <linearGradient id="metal" x1="14" y1="10" x2="50" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.18" stop-color="#9eefff"/>
+      <stop offset="0.42" stop-color="#d7e2e6"/>
+      <stop offset="0.62" stop-color="#53636a"/>
+      <stop offset="0.82" stop-color="#8df0ff"/>
+      <stop offset="1" stop-color="#13242b"/>
     </linearGradient>
-    <linearGradient id="titanium" x1="18" y1="18" x2="50" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#effcff"/>
-      <stop offset="0.4" stop-color="#67e5ff"/>
-      <stop offset="1" stop-color="#0b1d24"/>
+    <linearGradient id="edge" x1="7" y1="7" x2="57" y2="57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e5ff"/>
+      <stop offset="1" stop-color="#12323b"/>
     </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feColorMatrix
+        in="blur"
+        type="matrix"
+        values="0 0 0 0 0.40  0 0 0 0 0.90  0 0 0 0 1.00  0 0 0 0.58 0"
+        result="cyanGlow"
+      />
+      <feMerge>
+        <feMergeNode in="cyanGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#050607"/>
-  <path d="M32 6 56 18 52 56 12 56 8 18 32 6Z" fill="#071014" stroke="url(#edge)" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M19 20h27l-6 7h-7v21h-8V27h-6V20Z" fill="url(#titanium)"/>
-  <path d="M19 48 45 20h8L27 48H19Z" fill="#67e5ff" opacity="0.86"/>
+  <rect width="64" height="64" rx="12" fill="#050607"/>
+  <path d="M8 8h48v48H8z" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity="0.56"/>
+  <path
+    filter="url(#glow)"
+    d="M15 13h38l-5 10H37v29H25V23H15V13Z"
+    fill="url(#metal)"
+  />
+  <path d="M26 52 47 13h7L33 52h-7Z" fill="#67e5ff" opacity="0.38"/>
+  <path d="M18 16h24" stroke="#ffffff" stroke-width="2" opacity="0.72"/>
 </svg>
