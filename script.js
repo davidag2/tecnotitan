@@ -126,13 +126,19 @@ const languages = {
           titleLines: ["Un portafolio", "de motores tecnológicos"],
           intro:
             "Cada división crea capacidades reutilizables, propiedad intelectual y oportunidades comerciales independientes.",
+          divisionThesisLabel: "Arquitectura operacional",
+          divisionThesisTitle: "Divisiones conectadas por software, datos e inteligencia aplicada.",
+          divisionThesisParagraphs: [
+            "Cada división de Tecnotitan puede operar como unidad comercial, laboratorio de propiedad intelectual y fuente de capacidades reutilizables para las demás.",
+            "El objetivo es que consultoría, productos y tecnología propia se refuercen entre sí para crear mercados, no solo proyectos aislados."
+          ],
           cards: [
-            ["Software", "Tecnotitan Software", "Productos web, sistemas empresariales y plataformas digitales."],
-            ["IA", "Tecnotitan AI", "Agentes, automatización, analítica e infraestructura de inteligencia artificial."],
-            ["Videojuegos", "Tecnotitan Games", "Videojuegos, simuladores, gamificación y experiencias interactivas."],
-            ["Robótica", "Tecnotitan Robotics", "Sistemas físico-digitales, control, sensores e integración."],
-            ["Consultoría", "Tecnotitan Advisory", "Transformación tecnológica, estrategia IA y adopción empresarial."],
-            ["Ventures", "Tecnotitan Ventures", "Experimentación, spin-offs y nuevos productos escalables."]
+            ["Software empresarial", "Tecnotitan Software", "Plataformas web, CRM internos, portales, dashboards y automatización para empresas que necesitan operar mejor."],
+            ["Inteligencia artificial", "Tecnotitan AI", "Agentes, copilotos, analítica, automatización documental y flujos inteligentes integrados a procesos reales."],
+            ["Videojuegos e interactivo", "Tecnotitan Games", "Videojuegos, simuladores, gamificación y experiencias inmersivas para entrenamiento, marca y nuevos productos."],
+            ["Robótica", "Tecnotitan Robotics", "Software, sensores, control y datos para crear sistemas físico-digitales conectados con inteligencia operativa."],
+            ["Consultoría tecnológica", "Tecnotitan Advisory", "Estrategia de IA, transformación tecnológica, adopción empresarial y acompañamiento ejecutivo."],
+            ["Ventures", "Tecnotitan Ventures", "Experimentación, spin-offs, productos propios y nuevas oportunidades construidas desde capacidades internas."]
           ]
         }
       },
@@ -335,13 +341,19 @@ const languages = {
           titleLines: ["A portfolio of", "technology engines"],
           intro:
             "Each division is designed to create reusable capabilities, proprietary IP and independent commercial opportunities.",
+          divisionThesisLabel: "Operating architecture",
+          divisionThesisTitle: "Divisions connected by software, data and applied intelligence.",
+          divisionThesisParagraphs: [
+            "Each Tecnotitan division can operate as a business unit, an IP lab and a source of reusable capabilities for the others.",
+            "The goal is for advisory, products and proprietary technology to reinforce each other and create markets, not isolated projects."
+          ],
           cards: [
-            ["Software", "Tecnotitan Software", "Web products, enterprise systems and digital platforms."],
-            ["AI", "Tecnotitan AI", "Agents, automation, analytics and artificial intelligence infrastructure."],
-            ["Games", "Tecnotitan Games", "Video games, simulators, gamification and interactive experiences."],
-            ["Robotics", "Tecnotitan Robotics", "Physical-digital systems, control, sensors and integration."],
-            ["Consulting", "Tecnotitan Advisory", "Technological transformation, AI strategy and enterprise adoption."],
-            ["Ventures", "Tecnotitan Ventures", "Experimentation, spin-offs and new scalable products."]
+            ["Enterprise software", "Tecnotitan Software", "Web platforms, internal CRM, portals, dashboards and automation for companies that need better operations."],
+            ["Artificial intelligence", "Tecnotitan AI", "Agents, copilots, analytics, document automation and intelligent workflows integrated into real processes."],
+            ["Games and interactive", "Tecnotitan Games", "Video games, simulators, gamification and immersive experiences for training, brand and new products."],
+            ["Robotics", "Tecnotitan Robotics", "Software, sensors, control and data to create physical-digital systems connected with operational intelligence."],
+            ["Technology advisory", "Tecnotitan Advisory", "AI strategy, technology transformation, enterprise adoption and executive guidance."],
+            ["Ventures", "Tecnotitan Ventures", "Experimentation, spin-offs, proprietary products and new opportunities built from internal capabilities."]
           ]
         }
       },
@@ -544,13 +556,19 @@ const languages = {
           titleLines: ["Um portfólio de", "motores tecnológicos"],
           intro:
             "Cada divisão é desenhada para criar capacidades reutilizáveis, propriedade intelectual e oportunidades comerciais independentes.",
+          divisionThesisLabel: "Arquitetura operacional",
+          divisionThesisTitle: "Divisões conectadas por software, dados e inteligência aplicada.",
+          divisionThesisParagraphs: [
+            "Cada divisão da Tecnotitan pode operar como unidade comercial, laboratório de propriedade intelectual e fonte de capacidades reutilizáveis para as demais.",
+            "O objetivo é que consultoria, produtos e tecnologia própria se reforcem entre si para criar mercados, não apenas projetos isolados."
+          ],
           cards: [
-            ["Software", "Tecnotitan Software", "Produtos web, sistemas empresariais e plataformas digitais."],
-            ["AI", "Tecnotitan AI", "Agentes, automação, analítica e infraestrutura de inteligência artificial."],
-            ["Games", "Tecnotitan Games", "Videogames, simuladores, gamificação e experiências interativas."],
-            ["Robotics", "Tecnotitan Robotics", "Sistemas físico-digitais, controle, sensores e integração."],
-            ["Consulting", "Tecnotitan Advisory", "Transformação tecnológica, estratégia IA e adoção empresarial."],
-            ["Ventures", "Tecnotitan Ventures", "Experimentação, spin-offs e novos produtos escaláveis."]
+            ["Software empresarial", "Tecnotitan Software", "Plataformas web, CRM interno, portais, painéis e automação para empresas que precisam operar melhor."],
+            ["Inteligência artificial", "Tecnotitan AI", "Agentes, copilotos, análise, automação documental e fluxos inteligentes integrados a processos reais."],
+            ["Videogames e interativo", "Tecnotitan Games", "Videogames, simuladores, gamificação e experiências imersivas para treinamento, marca e novos produtos."],
+            ["Robótica", "Tecnotitan Robotics", "Software, sensores, controle e dados para criar sistemas físico-digitais conectados com inteligência operacional."],
+            ["Consultoria tecnológica", "Tecnotitan Advisory", "Estratégia de IA, transformação tecnológica, adoção empresarial e acompanhamento executivo."],
+            ["Ventures", "Tecnotitan Ventures", "Experimentação, spin-offs, produtos próprios e novas oportunidades construídas a partir de capacidades internas."]
           ]
         }
       },
@@ -800,7 +818,24 @@ function applyLanguage(language) {
   setText(".page-label", content.label);
   setTitleLines(".page-hero h1", content.titleLines);
   setText(".page-hero p:not(.page-label)", content.intro);
-  setCards(pageName === "inversionistas.html" ? ".investor-path-grid article" : ".page-grid article", content.cards);
+  setCards(
+    pageName === "inversionistas.html"
+      ? ".investor-path-grid article"
+      : pageName === "divisiones.html"
+        ? ".divisions-grid article"
+        : ".page-grid article",
+    content.cards
+  );
+
+  if (content.divisionThesisLabel) {
+    setText(".division-thesis article:first-child span", content.divisionThesisLabel);
+    setText(".division-thesis h2", content.divisionThesisTitle);
+    document.querySelectorAll(".division-thesis article:last-child p").forEach((paragraph, index) => {
+      if (content.divisionThesisParagraphs[index]) {
+        paragraph.textContent = content.divisionThesisParagraphs[index];
+      }
+    });
+  }
 
   if (content.timelineLabel) {
     const timeline = document.querySelector(".timeline");
