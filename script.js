@@ -36,6 +36,17 @@ const languages = {
             ["Interactivo", "Videojuegos y simulación", "Experiencias inmersivas para entrenamiento, marca, educación y nuevos productos."],
             ["Robótica", "Sistemas físico-digitales", "Software, sensores, control y datos para conectar operaciones con inteligencia."]
           ],
+          marketTitle: "Mercados donde la tecnología aplicada puede crear ventaja.",
+          marketText:
+            "Tecnotitan apunta a clientes con necesidades reales de digitalización, automatización, experiencias interactivas y sistemas inteligentes.",
+          marketCards: [
+            ["Empresas", "Software operativo", "Compañías que necesitan CRM interno, portales, tableros, flujos y automatización."],
+            ["Operaciones", "IA para productividad", "Equipos de ventas, soporte, finanzas y operaciones con tareas repetibles."],
+            ["Educación", "Simulación y aprendizaje", "Instituciones y empresas que requieren entrenamiento, evaluación y experiencias inmersivas."],
+            ["Entretenimiento", "Videojuegos y marca", "Productos interactivos, gamificación, experiencias de marca y nuevos contenidos digitales."],
+            ["Industria", "Robótica y datos", "Procesos que pueden conectar sensores, software, control e inteligencia operativa."],
+            ["Institucional", "Transformación tecnológica", "Organizaciones públicas o privadas que necesitan estrategia, implementación y adopción."]
+          ],
           gatewayTitle: "Una compañía tecnológica construida por divisiones",
           gatewayText:
             "Separamos la historia corporativa en páginas claras para clientes, aliados e inversionistas globales.",
@@ -204,6 +215,17 @@ const languages = {
             ["Interactive", "Games and simulation", "Immersive experiences for training, brand engagement, education and new products."],
             ["Robotics", "Physical-digital systems", "Software, sensors, control and data to connect operations with intelligence."]
           ],
+          marketTitle: "Markets where applied technology can create durable advantage.",
+          marketText:
+            "Tecnotitan targets customers with real needs in digitization, automation, interactive experiences and intelligent systems.",
+          marketCards: [
+            ["Enterprises", "Operating software", "Companies that need internal CRM, portals, dashboards, workflows and automation."],
+            ["Operations", "AI for productivity", "Sales, support, finance and operations teams with repeatable work."],
+            ["Education", "Simulation and learning", "Institutions and companies that need training, evaluation and immersive experiences."],
+            ["Entertainment", "Games and brand", "Interactive products, gamification, brand experiences and new digital content."],
+            ["Industry", "Robotics and data", "Processes that can connect sensors, software, control and operational intelligence."],
+            ["Institutional", "Technology transformation", "Public or private organizations that need strategy, implementation and adoption."]
+          ],
           gatewayTitle: "A multi-division technology company built for compounding IP",
           gatewayText:
             "Tecnotitan is structured so services, products and technical divisions reinforce each other across markets.",
@@ -371,6 +393,17 @@ const languages = {
             ["IA", "Inteligência aplicada ao trabalho", "Agentes, análise, copilotos e fluxos inteligentes integrados ao negócio."],
             ["Interativo", "Videogames e simulação", "Experiências imersivas para treinamento, marca, educação e novos produtos."],
             ["Robótica", "Sistemas físico-digitais", "Software, sensores, controle e dados para conectar operações com inteligência."]
+          ],
+          marketTitle: "Mercados onde tecnologia aplicada pode criar vantagem.",
+          marketText:
+            "A Tecnotitan mira clientes com necessidades reais de digitalização, automação, experiências interativas e sistemas inteligentes.",
+          marketCards: [
+            ["Empresas", "Software operacional", "Companhias que precisam de CRM interno, portais, painéis, fluxos e automação."],
+            ["Operações", "IA para produtividade", "Equipes de vendas, suporte, finanças e operações com tarefas repetíveis."],
+            ["Educação", "Simulação e aprendizagem", "Instituições e empresas que precisam de treinamento, avaliação e experiências imersivas."],
+            ["Entretenimento", "Videogames e marca", "Produtos interativos, gamificação, experiências de marca e novos conteúdos digitais."],
+            ["Indústria", "Robótica e dados", "Processos que podem conectar sensores, software, controle e inteligência operacional."],
+            ["Institucional", "Transformação tecnológica", "Organizações públicas ou privadas que precisam de estratégia, implementação e adoção."]
           ],
           gatewayTitle: "Uma empresa multivisão com potencial de IP acumulável",
           gatewayText:
@@ -665,6 +698,9 @@ function applyLanguage(language) {
       }
     });
     setCards(".vision-grid article", content.visionCards);
+    setText("#market-title", content.marketTitle);
+    setText(".market-copy p", content.marketText);
+    setCards(".market-grid article", content.marketCards);
     setText("#gateway-title", content.gatewayTitle);
     setText(".gateway-copy p", content.gatewayText);
     setCards(".gateway-grid a", content.cards);

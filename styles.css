@@ -402,6 +402,10 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.market-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .gateway-grid a,
 .page-grid article,
 .metric-strip article {
@@ -886,6 +890,7 @@ h3 {
   .page-grid,
   .product-grid,
   .vision-grid,
+  .market-grid,
   .metric-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -995,6 +1000,7 @@ h3 {
   .page-grid,
   .product-grid,
   .vision-grid,
+  .market-grid,
   .metric-strip {
     grid-template-columns: 1fr;
   }
