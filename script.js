@@ -92,10 +92,12 @@ const languages = {
           intro:
             "Construimos productos propios y sistemas a medida que pueden evolucionar hacia plataformas repetibles.",
           cards: [
-            ["Software", "Titan Business Systems", "Aplicaciones web, paneles operativos, CRM interno, automatización de procesos y portales empresariales."],
-            ["IA", "Titan AI Agents", "Agentes inteligentes para soporte, ventas, operaciones, análisis documental y automatización de tareas."],
-            ["Videojuegos", "Titan Interactive", "Videojuegos, simuladores, experiencias inmersivas y gamificación para entrenamiento y marca."],
-            ["Robótica", "Titan Robotics Stack", "Interfaces, sensores, control, datos y software para sistemas físico-digitales inteligentes."]
+            ["IA para pymes", "Copiloto Pyme", "Asistente de IA para ventas, soporte, documentos y automatización operativa de pequeñas y medianas empresas."],
+            ["Sistema operativo", "Tecnotitan OS", "Plataforma empresarial para centralizar procesos, datos, automatizaciones, agentes IA y flujos internos."],
+            ["Móvil + IA", "Life Copilot", "App móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones."],
+            ["Videojuegos", "Tecnotitan Engine", "Motor y toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados."],
+            ["Educación", "Academia Tecnotitan", "Plataforma de aprendizaje para IA, software, videojuegos, robótica y transformación tecnológica."],
+            ["Atención IA", "Call Center AI Tecnotitan", "Agentes conversacionales para soporte, ventas, seguimiento de clientes y automatización de contact centers."]
           ]
         }
       },
@@ -177,7 +179,7 @@ const languages = {
           indicatorMetrics: [
             ["Mercado objetivo", "Empresas + IA", "Software, automatización, experiencias interactivas y robótica aplicada."],
             ["Áreas de negocio", "5 divisiones", "Software, IA, videojuegos, robótica y consultoría tecnológica."],
-            ["Productos", "4 líneas", "Sistemas empresariales, agentes IA, tecnología interactiva y stack de robótica."]
+            ["Productos", "6 líneas", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia y Call Center AI."]
           ],
           indicatorCards: [
             ["Clientes objetivo", "Empresas medianas y grandes", "Organizaciones con procesos repetibles, datos subutilizados y presión por automatizar."],
@@ -307,10 +309,12 @@ const languages = {
           intro:
             "We build proprietary products and custom systems with a path toward repeatable software, data and AI platforms.",
           cards: [
-            ["Software", "Titan Business Systems", "Web applications, operating dashboards, internal CRM, process automation and enterprise portals."],
-            ["AI", "Titan AI Agents", "Intelligent agents for support, sales, operations, document analysis and task automation."],
-            ["Interactive", "Titan Interactive", "Video games, simulators, immersive experiences and gamification for training and brand engagement."],
-            ["Robotics", "Titan Robotics Stack", "Interfaces, sensors, control, data and software for intelligent physical-digital systems."]
+            ["SMB AI", "Copiloto Pyme", "AI assistant for sales, support, documents and operational automation for small and medium businesses."],
+            ["Operating system", "Tecnotitan OS", "Enterprise platform to centralize processes, data, automations, AI agents and internal workflows."],
+            ["Mobile + AI", "Life Copilot", "Personal productivity mobile app with an AI copilot for goals, tasks, habits and decisions."],
+            ["Video games", "Tecnotitan Engine", "Engine and toolkit for prototyping games, simulators, interactive experiences and gamified worlds."],
+            ["Education", "Academia Tecnotitan", "Learning platform for AI, software, video games, robotics and technology transformation."],
+            ["AI support", "Call Center AI Tecnotitan", "Conversational agents for support, sales, customer follow-up and contact center automation."]
           ]
         }
       },
@@ -392,7 +396,7 @@ const languages = {
           indicatorMetrics: [
             ["Target market", "Enterprise + AI", "Software, automation, interactive experiences and applied robotics."],
             ["Business areas", "5 divisions", "Software, AI, video games, robotics and technology advisory."],
-            ["Products", "4 lines", "Enterprise systems, AI agents, interactive tech and robotics stack."]
+            ["Products", "6 lines", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia and Call Center AI."]
           ],
           indicatorCards: [
             ["Target customers", "Mid-market and enterprise", "Organizations with repeatable processes, underused data and pressure to automate."],
@@ -522,10 +526,12 @@ const languages = {
           intro:
             "Construímos produtos próprios e sistemas sob medida que podem evoluir para plataformas repetíveis de software, dados e IA.",
           cards: [
-            ["Software", "Titan Business Systems", "Aplicações web, painéis operacionais, CRM interno, automação de processos e portais empresariais."],
-            ["IA", "Titan AI Agents", "Agentes inteligentes para suporte, vendas, operações, análise documental e automação de tarefas."],
-            ["Interativo", "Titan Interactive", "Videogames, simuladores, experiências imersivas e gamificação para treinamento e marca."],
-            ["Robótica", "Titan Robotics Stack", "Interfaces, sensores, controle, dados e software para sistemas físico-digitais inteligentes."]
+            ["IA para PMEs", "Copiloto Pyme", "Assistente de IA para vendas, suporte, documentos e automação operacional de pequenas e médias empresas."],
+            ["Sistema operacional", "Tecnotitan OS", "Plataforma empresarial para centralizar processos, dados, automações, agentes IA e fluxos internos."],
+            ["Mobile + IA", "Life Copilot", "Aplicativo móvel de produtividade pessoal com copiloto IA para metas, tarefas, hábitos e decisões."],
+            ["Videogames", "Tecnotitan Engine", "Engine e toolkit para prototipar jogos, simuladores, experiências interativas e mundos gamificados."],
+            ["Educação", "Academia Tecnotitan", "Plataforma de aprendizagem para IA, software, videogames, robótica e transformação tecnológica."],
+            ["Atendimento IA", "Call Center AI Tecnotitan", "Agentes conversacionais para suporte, vendas, acompanhamento de clientes e automação de contact centers."]
           ]
         }
       },
@@ -607,7 +613,7 @@ const languages = {
           indicatorMetrics: [
             ["Mercado-alvo", "Empresas + IA", "Software, automação, experiências interativas e robótica aplicada."],
             ["Áreas de negócio", "5 divisões", "Software, IA, videogames, robótica e consultoria tecnológica."],
-            ["Produtos", "4 linhas", "Sistemas empresariais, agentes IA, tecnologia interativa e stack de robótica."]
+            ["Produtos", "6 linhas", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia e Call Center AI."]
           ],
           indicatorCards: [
             ["Clientes-alvo", "Médias e grandes empresas", "Organizações com processos repetíveis, dados subutilizados e pressão para automatizar."],
