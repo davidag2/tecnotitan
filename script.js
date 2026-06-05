@@ -12,6 +12,14 @@ const languages = {
     brandHome: "Tecnotitan inicio",
     mainNav: "Navegación principal",
     footerNav: "Navegación secundaria",
+    footerMeta: [
+      "Tecnotitan Corporate",
+      "Software, inteligencia artificial, videojuegos, robótica y transformación tecnológica.",
+      "Colombia | Atención global para inversionistas y empresas.",
+      "Aviso legal · LinkedIn · GitHub",
+      "© 2026 Tecnotitan. Todos los derechos reservados."
+    ],
+    deckUi: ["Solicitar deck", "Solicitar investor deck", "Descarga PDF próximamente"],
     pages: {
       "index.html": {
         title: "Tecnotitan | Tecnología aplicada para mercados globales",
@@ -219,6 +227,7 @@ const languages = {
             ["05", "Uso de capital", "Prioridades para acelerar producto, ventas, talento técnico, automatización interna y validación comercial."],
             ["06", "Conversación", "Acceso directo para solicitar información adicional, compartir tesis o coordinar una reunión con Tecnotitan."]
           ],
+          deckPageButton: "Ver página del deck",
           deckButton: "Solicitar investor deck",
           investorCtaTitle: "Acciones para inversionistas",
           investorCtaText: "Elige el siguiente paso para recibir información, contactar al equipo o abrir una conversación estratégica.",
@@ -263,6 +272,22 @@ const languages = {
           formSuccessTitle: "Mensaje enviado",
           formSuccessText: "Gracias. Recibimos tu solicitud general y responderemos a info@tecnotitan.com."
         }
+      },
+      "investor-deck.html": {
+        title: "Investor Deck | Tecnotitan",
+        description:
+          "Solicita el futuro Investor Deck PDF de Tecnotitan: tesis, mercado, productos, equipo, roadmap y prioridades de capital.",
+        content: {
+          label: "Investor Deck",
+          titleLines: ["PDF para", "inversionistas"],
+          intro:
+            "El deck formal de Tecnotitan está preparado como activo futuro. Mientras se publica, puedes solicitar acceso directo desde el formulario de inversionistas.",
+          cards: [
+            ["01", "Tesis", "Problema, oportunidad de mercado y tesis de tecnología aplicada para empresas globales."],
+            ["02", "Portafolio", "Productos, divisiones, propiedad intelectual potencial y rutas hacia plataformas repetibles."],
+            ["03", "Ejecución", "Equipo inicial, roadmap, prioridades de capital y próximos hitos de validación."]
+          ]
+        }
       }
     }
   },
@@ -276,6 +301,14 @@ const languages = {
     brandHome: "Tecnotitan home",
     mainNav: "Main navigation",
     footerNav: "Secondary navigation",
+    footerMeta: [
+      "Tecnotitan Corporate",
+      "Software, artificial intelligence, video games, robotics and technology transformation.",
+      "Colombia | Global attention for investors and companies.",
+      "Legal notice · LinkedIn · GitHub",
+      "© 2026 Tecnotitan. All rights reserved."
+    ],
+    deckUi: ["Request deck", "Request investor deck", "PDF download coming soon"],
     pages: {
       "index.html": {
         title: "Tecnotitan | Applied AI, software and robotics for global markets",
@@ -483,6 +516,7 @@ const languages = {
             ["05", "Use of capital", "Priorities to accelerate product, sales, technical talent, internal automation and commercial validation."],
             ["06", "Conversation", "Direct access to request additional information, share a thesis or coordinate a meeting with Tecnotitan."]
           ],
+          deckPageButton: "View deck page",
           deckButton: "Request investor deck",
           investorCtaTitle: "Investor actions",
           investorCtaText: "Choose the next step to receive information, contact the team or open a strategic conversation.",
@@ -527,6 +561,22 @@ const languages = {
           formSuccessTitle: "Message sent",
           formSuccessText: "Thank you. We received your general request and will reply through info@tecnotitan.com."
         }
+      },
+      "investor-deck.html": {
+        title: "Investor Deck | Tecnotitan",
+        description:
+          "Request Tecnotitan's future Investor Deck PDF: thesis, market, products, team, roadmap and capital priorities.",
+        content: {
+          label: "Investor Deck",
+          titleLines: ["PDF for", "investors"],
+          intro:
+            "Tecnotitan's formal deck is prepared as a future asset. Until it is published, you can request direct access through the investor form.",
+          cards: [
+            ["01", "Thesis", "Problem, market opportunity and applied technology thesis for global companies."],
+            ["02", "Portfolio", "Products, divisions, potential intellectual property and paths toward repeatable platforms."],
+            ["03", "Execution", "Initial team, roadmap, capital priorities and upcoming validation milestones."]
+          ]
+        }
       }
     }
   },
@@ -540,6 +590,14 @@ const languages = {
     brandHome: "Início da Tecnotitan",
     mainNav: "Navegação principal",
     footerNav: "Navegação secundária",
+    footerMeta: [
+      "Tecnotitan Corporate",
+      "Software, inteligência artificial, videogames, robótica e transformação tecnológica.",
+      "Colômbia | Atendimento global para investidores e empresas.",
+      "Aviso legal · LinkedIn · GitHub",
+      "© 2026 Tecnotitan. Todos os direitos reservados."
+    ],
+    deckUi: ["Solicitar deck", "Solicitar investor deck", "Download PDF em breve"],
     pages: {
       "index.html": {
         title: "Tecnotitan | IA aplicada, software e robótica para Brasil e mercados globais",
@@ -747,6 +805,7 @@ const languages = {
             ["05", "Uso de capital", "Prioridades para acelerar produto, vendas, talento técnico, automação interna e validação comercial."],
             ["06", "Conversa", "Acesso direto para solicitar informações adicionais, compartilhar tese ou coordenar uma reunião com a Tecnotitan."]
           ],
+          deckPageButton: "Ver página do deck",
           deckButton: "Solicitar investor deck",
           investorCtaTitle: "Ações para investidores",
           investorCtaText: "Escolha o próximo passo para receber informações, contatar a equipe ou abrir uma conversa estratégica.",
@@ -790,6 +849,22 @@ const languages = {
           formButton: "Enviar para info@tecnotitan.com",
           formSuccessTitle: "Mensagem enviada",
           formSuccessText: "Obrigado. Recebemos sua solicitação geral e responderemos por info@tecnotitan.com."
+        }
+      },
+      "investor-deck.html": {
+        title: "Investor Deck | Tecnotitan",
+        description:
+          "Solicite o futuro Investor Deck PDF da Tecnotitan: tese, mercado, produtos, equipe, roadmap e prioridades de capital.",
+        content: {
+          label: "Investor Deck",
+          titleLines: ["PDF para", "investidores"],
+          intro:
+            "O deck formal da Tecnotitan está preparado como ativo futuro. Enquanto ele é publicado, você pode solicitar acesso direto pelo formulário de investidores.",
+          cards: [
+            ["01", "Tese", "Problema, oportunidade de mercado e tese de tecnologia aplicada para empresas globais."],
+            ["02", "Portfólio", "Produtos, divisões, propriedade intelectual potencial e caminhos para plataformas repetíveis."],
+            ["03", "Execução", "Equipe inicial, roadmap, prioridades de capital e próximos marcos de validação."]
+          ]
         }
       }
     }
@@ -900,6 +975,28 @@ function applyLanguage(language) {
     footerNav.setAttribute("aria-label", dictionary.footerNav);
   }
 
+  const footerMeta = document.querySelector(".footer-meta");
+  const footerLegal = document.querySelector(".footer-legal");
+  if (footerMeta && dictionary.footerMeta) {
+    setText("p:first-child", dictionary.footerMeta[0], footerMeta);
+    setText("p:nth-child(2)", dictionary.footerMeta[1], footerMeta);
+  }
+  if (footerLegal && dictionary.footerMeta) {
+    setText("p:first-child", dictionary.footerMeta[2], footerLegal);
+    const legalLinks = footerLegal.querySelector("p:nth-child(2)");
+    if (legalLinks) {
+      const links = legalLinks.querySelectorAll("a");
+      if (links.length >= 3) {
+        legalLinks.innerHTML = "";
+        legalLinks.append(links[0], " · ", links[1], " · ", links[2]);
+        links[0].textContent = dictionary.footerMeta[3].split(" · ")[0];
+        links[1].textContent = "LinkedIn";
+        links[2].textContent = "GitHub";
+      }
+    }
+    setText("p:last-child", dictionary.footerMeta[4], footerLegal);
+  }
+
   document.querySelectorAll(".nav a").forEach((link, index) => {
     if (dictionary.nav[index]) {
       link.textContent = dictionary.nav[index];
@@ -926,6 +1023,9 @@ function applyLanguage(language) {
   const headerAction = document.querySelector(".header-action");
   if (headerAction) {
     headerAction.textContent = pageName === "contacto.html" ? dictionary.writeAction : dictionary.headerAction;
+    if (pageName === "investor-deck.html") {
+      headerAction.textContent = dictionary.deckUi[0];
+    }
   }
 
   if (menuButton) {
@@ -968,6 +1068,10 @@ function applyLanguage(language) {
   setText(".page-label", content.label);
   setTitleLines(".page-hero h1", content.titleLines);
   setText(".page-hero p:not(.page-label)", content.intro);
+  if (pageName === "investor-deck.html" && dictionary.deckUi) {
+    setText(".page-hero .button-primary", dictionary.deckUi[1]);
+    setText(".page-hero .button-secondary", dictionary.deckUi[2]);
+  }
   setCards(
     pageName === "inversionistas.html"
       ? ".investor-path-grid article"
@@ -1101,7 +1205,8 @@ function applyLanguage(language) {
     setText(".investor-deck-copy h2", content.deckTitle);
     setText(".investor-deck-copy p", content.deckText);
     setCards(".investor-deck-grid article", content.deckCards);
-    setText(".deck-action .button", content.deckButton);
+    setText(".deck-action .button-primary", content.deckPageButton);
+    setText(".deck-action .button-secondary", content.deckButton);
   }
 
   if (content.investorCtaTitle) {

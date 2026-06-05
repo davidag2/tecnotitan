@@ -1,0 +1,17 @@
+{
+  "name": "Tecnotitan",
+  "short_name": "Tecnotitan",
+  "description": "Tecnología aplicada para empresas e inversionistas globales.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050607",
+  "theme_color": "#050607",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
