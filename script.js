@@ -209,6 +209,17 @@ const languages = {
             ["2027", "Productos y propiedad intelectual", "Empaquetar herramientas internas, lanzar primeras líneas comerciales y fortalecer divisiones técnicas."],
             ["2028", "Escala regional y plataformas", "Expandir ventas regionales, convertir soluciones en plataformas y evaluar spin-offs por división."]
           ],
+          deckTitle: "Investor Deck / Data Room",
+          deckText: "Material preparado para inversionistas que necesitan evaluar la tesis, el mercado, el portafolio y la ruta de ejecución de Tecnotitan.",
+          deckCards: [
+            ["01", "Tesis y mercado", "Problema, oportunidad, clientes objetivo y razones por las que IA, software y automatización convergen ahora."],
+            ["02", "Productos e IP", "Portafolio actual, líneas propias y capacidades que pueden convertirse en plataformas repetibles."],
+            ["03", "Equipo y ejecución", "Estructura inicial, liderazgo fundador, capacidades técnicas y forma de operar con foco en producto."],
+            ["04", "Roadmap", "Fases de validación, empaquetamiento, expansión regional y construcción de propiedad intelectual."],
+            ["05", "Uso de capital", "Prioridades para acelerar producto, ventas, talento técnico, automatización interna y validación comercial."],
+            ["06", "Conversación", "Acceso directo para solicitar información adicional, compartir tesis o coordinar una reunión con Tecnotitan."]
+          ],
+          deckButton: "Solicitar investor deck",
           investorCtaTitle: "Acciones para inversionistas",
           investorCtaText: "Elige el siguiente paso para recibir información, contactar al equipo o abrir una conversación estratégica.",
           investorCtaCards: [
@@ -462,6 +473,17 @@ const languages = {
             ["2027", "Products and intellectual property", "Package internal tools, launch first commercial lines and strengthen technical divisions."],
             ["2028", "Regional scale and platforms", "Expand regional sales, convert solutions into platforms and evaluate division-level spin-offs."]
           ],
+          deckTitle: "Investor Deck / Data Room",
+          deckText: "Material prepared for investors who need to evaluate Tecnotitan's thesis, market, portfolio and execution path.",
+          deckCards: [
+            ["01", "Thesis and market", "Problem, opportunity, target customers and why AI, software and automation are converging now."],
+            ["02", "Products and IP", "Current portfolio, proprietary lines and capabilities that can become repeatable platforms."],
+            ["03", "Team and execution", "Initial structure, founder leadership, technical capabilities and product-focused operating model."],
+            ["04", "Roadmap", "Validation, packaging, regional expansion and intellectual property buildout phases."],
+            ["05", "Use of capital", "Priorities to accelerate product, sales, technical talent, internal automation and commercial validation."],
+            ["06", "Conversation", "Direct access to request additional information, share a thesis or coordinate a meeting with Tecnotitan."]
+          ],
+          deckButton: "Request investor deck",
           investorCtaTitle: "Investor actions",
           investorCtaText: "Choose the next step to receive information, contact the team or open a strategic conversation.",
           investorCtaCards: [
@@ -715,6 +737,17 @@ const languages = {
             ["2027", "Produtos e propriedade intelectual", "Empacotar ferramentas internas, lançar primeiras linhas comerciais e fortalecer divisões técnicas."],
             ["2028", "Escala regional e plataformas", "Expandir vendas regionais, converter soluções em plataformas e avaliar spin-offs por divisão."]
           ],
+          deckTitle: "Investor Deck / Data Room",
+          deckText: "Material preparado para investidores que precisam avaliar a tese, o mercado, o portfólio e a rota de execução da Tecnotitan.",
+          deckCards: [
+            ["01", "Tese e mercado", "Problema, oportunidade, clientes-alvo e por que IA, software e automação convergem agora."],
+            ["02", "Produtos e IP", "Portfólio atual, linhas próprias e capacidades que podem virar plataformas repetíveis."],
+            ["03", "Equipe e execução", "Estrutura inicial, liderança fundadora, capacidades técnicas e operação com foco em produto."],
+            ["04", "Roadmap", "Fases de validação, empacotamento, expansão regional e construção de propriedade intelectual."],
+            ["05", "Uso de capital", "Prioridades para acelerar produto, vendas, talento técnico, automação interna e validação comercial."],
+            ["06", "Conversa", "Acesso direto para solicitar informações adicionais, compartilhar tese ou coordenar uma reunião com a Tecnotitan."]
+          ],
+          deckButton: "Solicitar investor deck",
           investorCtaTitle: "Ações para investidores",
           investorCtaText: "Escolha o próximo passo para receber informações, contatar a equipe ou abrir uma conversa estratégica.",
           investorCtaCards: [
@@ -1062,6 +1095,13 @@ function applyLanguage(language) {
     setText(".roadmap-copy h2", content.roadmapTitle);
     setText(".roadmap-copy p", content.roadmapText);
     setCards(".roadmap-grid article", content.roadmapCards);
+  }
+
+  if (content.deckTitle) {
+    setText(".investor-deck-copy h2", content.deckTitle);
+    setText(".investor-deck-copy p", content.deckText);
+    setCards(".investor-deck-grid article", content.deckCards);
+    setText(".deck-action .button", content.deckButton);
   }
 
   if (content.investorCtaTitle) {

@@ -422,6 +422,10 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.investor-deck-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .investor-cta-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -484,6 +488,12 @@ h3 {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.65;
+}
+
+.deck-action {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: clamp(28px, 4vw, 44px);
 }
 
 .page-main {
@@ -1010,6 +1020,7 @@ h3 {
   .indicator-grid,
   .roadmap-grid,
   .leadership-grid,
+  .investor-deck-grid,
   .investor-cta-grid,
   .metric-strip {
     grid-template-columns: 1fr 1fr;
@@ -1125,6 +1136,7 @@ h3 {
   .indicator-grid,
   .roadmap-grid,
   .leadership-grid,
+  .investor-deck-grid,
   .investor-cta-grid,
   .metric-strip {
     grid-template-columns: 1fr;
