@@ -209,10 +209,14 @@ p {
 
 h1 {
   max-width: 820px;
-  font-size: clamp(48px, 8.4vw, 112px);
-  line-height: 0.91;
+  font-size: clamp(46px, 6.8vw, 92px);
+  line-height: 0.94;
   font-weight: 800;
   letter-spacing: 0;
+}
+
+h1 span {
+  display: block;
 }
 
 h2 {
@@ -662,7 +666,16 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(42px, 14vw, 62px);
+    max-width: calc(100vw - 36px);
+    font-size: clamp(34px, 10.6vw, 42px);
+    line-height: 0.98;
+  }
+
+  .hero-copy p,
+  .section-copy > p,
+  .closing-copy p {
+    max-width: min(100%, 330px);
+    font-size: 16px;
   }
 
   h2 {
