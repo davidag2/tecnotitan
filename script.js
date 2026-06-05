@@ -16,7 +16,7 @@ const languages = {
       "Tecnotitan Corporate",
       "Software, inteligencia artificial, videojuegos, robótica y transformación tecnológica.",
       "Colombia | Atención global para inversionistas y empresas.",
-      "Aviso legal · LinkedIn · GitHub",
+      "Aviso legal · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. Todos los derechos reservados."
     ],
     deckUi: ["Solicitar deck", "Solicitar investor deck", "Descarga PDF próximamente"],
@@ -305,7 +305,7 @@ const languages = {
       "Tecnotitan Corporate",
       "Software, artificial intelligence, video games, robotics and technology transformation.",
       "Colombia | Global attention for investors and companies.",
-      "Legal notice · LinkedIn · GitHub",
+      "Legal notice · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. All rights reserved."
     ],
     deckUi: ["Request deck", "Request investor deck", "PDF download coming soon"],
@@ -594,7 +594,7 @@ const languages = {
       "Tecnotitan Corporate",
       "Software, inteligência artificial, videogames, robótica e transformação tecnológica.",
       "Colômbia | Atendimento global para investidores e empresas.",
-      "Aviso legal · LinkedIn · GitHub",
+      "Aviso legal · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. Todos os direitos reservados."
     ],
     deckUi: ["Solicitar deck", "Solicitar investor deck", "Download PDF em breve"],
@@ -986,12 +986,13 @@ function applyLanguage(language) {
     const legalLinks = footerLegal.querySelector("p:nth-child(2)");
     if (legalLinks) {
       const links = legalLinks.querySelectorAll("a");
-      if (links.length >= 3) {
+      if (links.length >= 4) {
         legalLinks.innerHTML = "";
-        legalLinks.append(links[0], " · ", links[1], " · ", links[2]);
+        legalLinks.append(links[0], " · ", links[1], " · ", links[2], " · ", links[3]);
         links[0].textContent = dictionary.footerMeta[3].split(" · ")[0];
         links[1].textContent = "LinkedIn";
-        links[2].textContent = "GitHub";
+        links[2].textContent = "Facebook";
+        links[3].textContent = "Instagram";
       }
     }
     setText("p:last-child", dictionary.footerMeta[4], footerLegal);
