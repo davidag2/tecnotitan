@@ -474,6 +474,11 @@ const languages = {
 
 const pageName = window.location.pathname.split("/").pop() || "index.html";
 const supportedLanguages = Object.keys(languages);
+const languageNames = {
+  es: "Español",
+  en: "English",
+  pt: "Português"
+};
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 let activeLanguage = supportedLanguages.includes(queryLanguage)
   ? queryLanguage
@@ -530,13 +535,15 @@ function buildLanguageSwitcher() {
 
   const switcher = document.createElement("div");
   switcher.className = "language-switcher";
-  switcher.setAttribute("aria-label", "Language selector");
+  switcher.setAttribute("aria-label", "Selector de idioma");
 
   supportedLanguages.forEach((language) => {
     const button = document.createElement("button");
     button.type = "button";
     button.dataset.language = language;
     button.textContent = languages[language].label;
+    button.setAttribute("aria-label", languageNames[language]);
+    button.setAttribute("title", languageNames[language]);
     button.addEventListener("click", () => applyLanguage(language));
     switcher.appendChild(button);
   });
@@ -605,6 +612,7 @@ function applyLanguage(language) {
     const isCurrent = button.dataset.language === language;
     button.classList.toggle("is-active", isCurrent);
     button.setAttribute("aria-pressed", String(isCurrent));
+    button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
   });
 
   if (pageName === "index.html") {
