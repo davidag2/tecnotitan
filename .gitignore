@@ -11,3 +11,5 @@ outputs/
 
 # Logs
 *.log
+
+.vercel

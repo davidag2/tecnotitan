@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">Tecnotitan logo</title>
+  <desc id="desc">Tecnotitan industrial technology wordmark with angular titanium shield mark.</desc>
+  <defs>
+    <linearGradient id="titanium" x1="12" y1="16" x2="82" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#effcff"/>
+      <stop offset="0.34" stop-color="#67e5ff"/>
+      <stop offset="0.68" stop-color="#1e6f81"/>
+      <stop offset="1" stop-color="#071014"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="16" y1="12" x2="76" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8df0ff"/>
+      <stop offset="1" stop-color="#245464"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path
+      d="M48 5 85 24 78 82 18 82 11 24 48 5Z"
+      fill="#071014"
+      stroke="url(#edge)"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+    <path d="M28 28h41l-8 10H50v31H38V38H28V28Z" fill="url(#titanium)"/>
+    <path d="M28 69 66 28h12L40 69H28Z" fill="#67e5ff" opacity="0.82"/>
+    <path d="M22 75h31l-7 7H18l4-7Z" fill="#effcff" opacity="0.75"/>
+  </g>
+  <text
+    x="112"
+    y="58"
+    fill="#f4f7f8"
+    font-family="Inter, Arial, sans-serif"
+    font-size="30"
+    font-weight="800"
+    letter-spacing="5"
+  >TECNOTITAN</text>
+  <path d="M113 68h198" stroke="#67e5ff" stroke-width="2" opacity="0.72"/>
+</svg>

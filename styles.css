@@ -79,14 +79,10 @@ a {
 }
 
 .brand-mark {
-  width: 28px;
-  height: 28px;
-  border: 1px solid rgba(103, 229, 255, 0.72);
-  background:
-    linear-gradient(135deg, transparent 48%, rgba(103, 229, 255, 0.9) 49% 54%, transparent 55%),
-    linear-gradient(45deg, rgba(255, 255, 255, 0.14), rgba(103, 229, 255, 0.1));
-  clip-path: polygon(50% 0, 100% 28%, 88% 100%, 12% 100%, 0 28%);
-  box-shadow: 0 0 22px rgba(103, 229, 255, 0.3);
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 14px rgba(103, 229, 255, 0.34));
 }
 
 .nav {
