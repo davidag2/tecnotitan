@@ -18,12 +18,12 @@ const languages = {
         description:
           "Tecnotitan crea software, inteligencia artificial, videojuegos y robótica para empresas e inversionistas globales.",
         content: {
-          heroTitle: ["Tecnología que", "convierte ideas", "en sistemas", "globales"],
+          heroTitle: ["IA, software y", "robótica para", "empresas que", "escalan"],
           heroText:
-            "Tecnotitan desarrolla software, inteligencia artificial, videojuegos y robótica para empresas que buscan transformación tecnológica.",
-          primaryCta: "Visión para inversionistas",
+            "Tecnotitan crea tecnología aplicada para empresas: sistemas de IA, software operativo, productos interactivos y robótica con potencial de convertirse en plataformas globales.",
+          primaryCta: "Tesis para inversionistas",
           secondaryCta: "Explorar productos",
-          nextPreview: "Software, IA, videojuegos, robótica y consultoría",
+          nextPreview: "Servicios de alto valor, productos propios e IP escalable",
           gatewayTitle: "Una compañía tecnológica construida por divisiones",
           gatewayText:
             "Separamos la historia corporativa en páginas claras para clientes, aliados e inversionistas globales.",
@@ -174,12 +174,12 @@ const languages = {
         description:
           "Tecnotitan builds enterprise software, AI systems, interactive products and robotics capabilities for global markets.",
         content: {
-          heroTitle: ["Building applied", "technology for", "global-scale", "companies"],
+          heroTitle: ["AI, software", "and robotics", "for companies", "that scale"],
           heroText:
-            "Tecnotitan develops enterprise software, artificial intelligence, interactive experiences and robotics infrastructure for companies modernizing how they operate.",
+            "Tecnotitan builds applied technology for enterprises: AI systems, operating software, interactive products and robotics capabilities with a path toward global platforms.",
           primaryCta: "Investor thesis",
           secondaryCta: "Explore products",
-          nextPreview: "Enterprise software, AI systems, interactive products, robotics and advisory",
+          nextPreview: "High-value services, proprietary products and scalable IP",
           gatewayTitle: "A multi-division technology company built for compounding IP",
           gatewayText:
             "Tecnotitan is structured so services, products and technical divisions reinforce each other across markets.",
@@ -330,12 +330,12 @@ const languages = {
         description:
           "A Tecnotitan cria software empresarial, sistemas de IA, produtos interativos e capacidades de robótica para Brasil, América Latina e mercados globais.",
         content: {
-          heroTitle: ["Tecnologia aplicada", "para empresas", "que querem", "escala global"],
+          heroTitle: ["IA, software", "e robótica para", "empresas que", "escalam"],
           heroText:
-            "A Tecnotitan desenvolve software empresarial, inteligência artificial, experiências interativas e infraestrutura de robótica para companhias em transformação.",
+            "A Tecnotitan cria tecnologia aplicada para empresas: sistemas de IA, software operacional, produtos interativos e robótica com caminho para plataformas globais.",
           primaryCta: "Tese para investidores",
           secondaryCta: "Explorar produtos",
-          nextPreview: "Software empresarial, IA, produtos interativos, robótica e consultoria",
+          nextPreview: "Serviços de alto valor, produtos próprios e IP escalável",
           gatewayTitle: "Uma empresa multivisão com potencial de IP acumulável",
           gatewayText:
             "A Tecnotitan conecta serviços, produtos e divisões técnicas para criar capacidades reutilizáveis em diferentes mercados.",
