@@ -24,7 +24,7 @@
         <a href="./inversionistas.html">Inversionistas</a>
         <a href="./contacto.html" aria-current="page">Contacto</a>
       </nav>
-      <a class="header-action" href="mailto:proyectos@tecnotitan.com">Escribir</a>
+      <a class="header-action" href="mailto:info@tecnotitan.com">Escribir</a>
       <button class="menu-button" type="button" aria-label="Abrir navegación" data-menu-button><span></span><span></span></button>
     </header>
 
@@ -37,7 +37,7 @@
           <h1><span>Hablemos de</span><span>la siguiente tecnología</span></h1>
           <p>Proyectos empresariales, alianzas, inversión y nuevas oportunidades tecnológicas.</p>
           <div class="actions">
-            <a class="button button-primary" href="mailto:proyectos@tecnotitan.com">proyectos@tecnotitan.com</a>
+            <a class="button button-primary" href="mailto:info@tecnotitan.com">info@tecnotitan.com</a>
             <a class="button button-secondary" href="tel:+573000000000">+57 300 000 0000</a>
           </div>
         </div>
@@ -48,6 +48,55 @@
           <article><span>Empresas</span><h3>Proyectos y consultoría</h3><p>Transformación tecnológica, IA, software y automatización.</p></article>
           <article><span>Aliados</span><h3>Alianzas estratégicas</h3><p>Construcción conjunta de productos, integraciones o nuevas divisiones.</p></article>
           <article><span>Capital</span><h3>Inversionistas</h3><p>Conversaciones sobre visión, crecimiento y rondas futuras.</p></article>
+        </div>
+      </section>
+
+      <section class="content-band panel-section contact-form-section">
+        <div class="section-inner">
+          <div class="section-copy contact-form-copy reveal">
+            <h2>Contacto para inversionistas</h2>
+            <p>Completa la información y envíanos el mensaje a info@tecnotitan.com.</p>
+          </div>
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/info@tecnotitan.com"
+            method="post"
+          >
+            <input type="hidden" name="_subject" value="Nuevo contacto desde Tecnotitan" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <label>
+              <span>Nombre</span>
+              <input name="Nombre" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Empresa</span>
+              <input name="Empresa" type="text" autocomplete="organization" />
+            </label>
+            <label>
+              <span>País</span>
+              <input name="Pais" type="text" autocomplete="country-name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="Email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Tipo de interés</span>
+              <select name="Tipo de interes" required>
+                <option value="">Seleccionar</option>
+                <option>Inversión</option>
+                <option>Alianza estratégica</option>
+                <option>Proyecto empresarial</option>
+                <option>Prensa / ecosistema</option>
+              </select>
+            </label>
+            <label class="form-wide">
+              <span>Mensaje</span>
+              <textarea name="Mensaje" rows="6" required></textarea>
+            </label>
+            <button class="button button-primary form-wide" type="submit">Enviar a info@tecnotitan.com</button>
+          </form>
         </div>
       </section>
     </main>

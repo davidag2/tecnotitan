@@ -222,7 +222,12 @@ const languages = {
             ["Empresas", "Proyectos y consultoría", "Transformación tecnológica, IA, software y automatización."],
             ["Aliados", "Alianzas estratégicas", "Construcción conjunta de productos, integraciones o nuevas divisiones."],
             ["Capital", "Inversionistas", "Conversaciones sobre visión, crecimiento y rondas futuras."]
-          ]
+          ],
+          formTitle: "Contacto para inversionistas",
+          formText: "Completa la información y envíanos el mensaje a info@tecnotitan.com.",
+          formLabels: ["Nombre", "Empresa", "País", "Email", "Tipo de interés", "Mensaje"],
+          formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Proyecto empresarial", "Prensa / ecosistema"],
+          formButton: "Enviar a info@tecnotitan.com"
         }
       }
     }
@@ -447,7 +452,12 @@ const languages = {
             ["Companies", "Projects and consulting", "Technological transformation, AI, software and automation."],
             ["Partners", "Strategic partnerships", "Joint product development, integrations or new divisions."],
             ["Capital", "Investors", "Conversations about thesis, growth strategy and future financing rounds."]
-          ]
+          ],
+          formTitle: "Investor contact",
+          formText: "Complete the information and send your message to info@tecnotitan.com.",
+          formLabels: ["Name", "Company", "Country", "Email", "Type of interest", "Message"],
+          formOptions: ["Select", "Investment", "Strategic partnership", "Enterprise project", "Press / ecosystem"],
+          formButton: "Send to info@tecnotitan.com"
         }
       }
     }
@@ -672,7 +682,12 @@ const languages = {
             ["Empresas", "Projetos e consultoria", "Transformação tecnológica, IA, software e automação."],
             ["Aliados", "Parcerias estratégicas", "Construção conjunta de produtos, integrações ou novas divisões."],
             ["Capital", "Investidores", "Conversas sobre tese, estratégia de crescimento e futuras rodadas."]
-          ]
+          ],
+          formTitle: "Contato para investidores",
+          formText: "Preencha as informações e envie sua mensagem para info@tecnotitan.com.",
+          formLabels: ["Nome", "Empresa", "País", "Email", "Tipo de interesse", "Mensagem"],
+          formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Projeto empresarial", "Imprensa / ecossistema"],
+          formButton: "Enviar para info@tecnotitan.com"
         }
       }
     }
@@ -900,6 +915,25 @@ function applyLanguage(language) {
     setText(".leadership-copy h2", content.leadershipTitle);
     setText(".leadership-copy p", content.leadershipText);
     setCards(".leadership-grid article", content.leadershipCards);
+  }
+
+  if (content.formTitle) {
+    setText(".contact-form-copy h2", content.formTitle);
+    setText(".contact-form-copy p", content.formText);
+    document.querySelectorAll(".contact-form label > span").forEach((label, index) => {
+      if (content.formLabels[index]) {
+        label.textContent = content.formLabels[index];
+      }
+    });
+    const interestSelect = document.querySelector('.contact-form select[name="Tipo de interes"]');
+    if (interestSelect) {
+      Array.from(interestSelect.options).forEach((option, index) => {
+        if (content.formOptions[index]) {
+          option.textContent = content.formOptions[index];
+        }
+      });
+    }
+    setText(".contact-form button", content.formButton);
   }
 
   if (content.opportunityTitle) {
