@@ -170,26 +170,26 @@ const languages = {
     footerNav: "Secondary navigation",
     pages: {
       "index.html": {
-        title: "Tecnotitan | Applied technology for global markets",
+        title: "Tecnotitan | Applied AI, software and robotics for global markets",
         description:
-          "Tecnotitan builds software, artificial intelligence, video games and robotics for companies and global investors.",
+          "Tecnotitan builds enterprise software, AI systems, interactive products and robotics capabilities for global markets.",
         content: {
-          heroTitle: ["Technology that", "turns ideas", "into global", "systems"],
+          heroTitle: ["Building applied", "technology for", "global-scale", "companies"],
           heroText:
-            "Tecnotitan develops software, artificial intelligence, video games and robotics for companies pursuing technological transformation.",
-          primaryCta: "Investor vision",
+            "Tecnotitan develops enterprise software, artificial intelligence, interactive experiences and robotics infrastructure for companies modernizing how they operate.",
+          primaryCta: "Investor thesis",
           secondaryCta: "Explore products",
-          nextPreview: "Software, AI, video games, robotics and consulting",
-          gatewayTitle: "A technology company built through focused divisions",
+          nextPreview: "Enterprise software, AI systems, interactive products, robotics and advisory",
+          gatewayTitle: "A multi-division technology company built for compounding IP",
           gatewayText:
-            "We organize the corporate story into clear pages for customers, partners and global investors.",
+            "Tecnotitan is structured so services, products and technical divisions reinforce each other across markets.",
           cards: [
-            ["01", "About", "Mission, technology thesis and execution principles."],
-            ["02", "Products", "Software, AI, video games and robotics shaped into platforms."],
-            ["03", "Services", "Artificial intelligence consulting and technological transformation."],
-            ["04", "Divisions", "An operational portfolio designed to build multiple markets."],
-            ["05", "Investors", "Vision, opportunity, model and growth path."],
-            ["06", "Contact", "Commercial conversations, partnerships and investment."]
+            ["01", "About", "Operating thesis, ambition and execution principles."],
+            ["02", "Products", "Software, AI, interactive products and robotics evolving into platforms."],
+            ["03", "Services", "AI advisory and technology transformation for enterprise operators."],
+            ["04", "Divisions", "A portfolio architecture designed to enter multiple technology markets."],
+            ["05", "Investors", "Market thesis, business model, roadmap and growth narrative."],
+            ["06", "Contact", "Commercial partnerships, strategic alliances and capital conversations."]
           ]
         }
       },
@@ -199,19 +199,19 @@ const languages = {
           "Learn about Tecnotitan's vision, mission and principles as an applied technology company.",
         content: {
           label: "About",
-          titleLines: ["We build technology", "with global ambition"],
+          titleLines: ["An applied technology", "company with global ambition"],
           intro:
-            "Tecnotitan exists to turn software, AI, video games and robotics capabilities into products and services that raise enterprise competitiveness.",
+            "Tecnotitan turns software, AI, interactive technology and robotics capabilities into products and services that improve enterprise performance.",
           thesisLabel: "Vision",
-          thesisTitle: "To become an applied technology factory for global markets.",
+          thesisTitle: "To become a Latin American applied technology company with global reach.",
           paragraphs: [
-            "Our thesis is simple: companies that master software, data, artificial intelligence, interactive experiences and intelligent physical systems will create durable advantages.",
-            "Tecnotitan integrates those disciplines to build proprietary solutions, support enterprise transformation and open new growth divisions."
+            "Our thesis is simple: the next generation of companies will be built on software, data, artificial intelligence, interactive interfaces and intelligent physical systems.",
+            "Tecnotitan integrates those disciplines to create proprietary solutions, support enterprise transformation and open new growth divisions over time."
           ],
           cards: [
-            ["01", "Product before presentation", "We prioritize functional, measurable and scalable systems over abstract promises."],
-            ["02", "AI as infrastructure", "We treat artificial intelligence as a core layer for automation, decision-making and learning."],
-            ["03", "Executable multidiscipline", "Software, games, robotics and consulting operate as one technology portfolio."]
+            ["01", "Execution over narrative", "We prioritize functional, measurable and scalable systems over abstract promises."],
+            ["02", "AI as an operating layer", "We treat artificial intelligence as core infrastructure for automation, decision-making and learning."],
+            ["03", "Multidisciplinary leverage", "Software, interactive products, robotics and advisory operate as one technology portfolio."]
           ]
         }
       },
@@ -221,13 +221,13 @@ const languages = {
           "Tecnotitan products across enterprise software, artificial intelligence, video games and robotics.",
         content: {
           label: "Products",
-          titleLines: ["Platforms for", "companies that scale"],
+          titleLines: ["Products that can", "compound into platforms"],
           intro:
-            "We build proprietary products and custom systems that can evolve into repeatable platforms.",
+            "We build proprietary products and custom systems with a path toward repeatable software, data and AI platforms.",
           cards: [
             ["Software", "Titan Business Systems", "Web applications, operating dashboards, internal CRM, process automation and enterprise portals."],
             ["AI", "Titan AI Agents", "Intelligent agents for support, sales, operations, document analysis and task automation."],
-            ["Games", "Titan Interactive", "Video games, simulators, immersive experiences and gamification for training and brand engagement."],
+            ["Interactive", "Titan Interactive", "Video games, simulators, immersive experiences and gamification for training and brand engagement."],
             ["Robotics", "Titan Robotics Stack", "Interfaces, sensors, control, data and software for intelligent physical-digital systems."]
           ]
         }
@@ -238,9 +238,9 @@ const languages = {
           "Artificial intelligence consulting and technological transformation services for companies.",
         content: {
           label: "Services",
-          titleLines: ["Consulting for", "technological transformation"],
+          titleLines: ["Advisory that leads", "to implementation"],
           intro:
-            "We help companies identify, design and implement artificial intelligence and software with operational impact.",
+            "We help companies identify, design and implement AI and software systems that produce measurable operational impact.",
           timelineLabel: "Services",
           cards: [
             ["01", "AI diagnosis", "Assessment of processes, data, automation opportunities and expected return."],
@@ -256,9 +256,9 @@ const languages = {
           "Tecnotitan divisions across software, AI, video games, robotics and technology ventures.",
         content: {
           label: "Divisions",
-          titleLines: ["A portfolio", "of technology engines"],
+          titleLines: ["A portfolio of", "technology engines"],
           intro:
-            "Each division creates reusable capabilities, intellectual property and independent commercial opportunities.",
+            "Each division is designed to create reusable capabilities, proprietary IP and independent commercial opportunities.",
           cards: [
             ["Software", "Tecnotitan Software", "Web products, enterprise systems and digital platforms."],
             ["AI", "Tecnotitan AI", "Agents, automation, analytics and artificial intelligence infrastructure."],
@@ -272,27 +272,27 @@ const languages = {
       "inversionistas.html": {
         title: "Investors | Tecnotitan",
         description:
-          "Tecnotitan's global investor page: thesis, market, model and vision.",
+          "Tecnotitan's investor page: applied AI, enterprise software, interactive technology, robotics and a services-to-products growth model.",
         content: {
           label: "Investors",
-          titleLines: ["A technology thesis", "for global markets"],
+          titleLines: ["Applied technology", "built from Latin America", "for global markets"],
           intro:
-            "Tecnotitan combines high-value services, proprietary products and technical divisions to build a scalable applied technology company.",
+            "Tecnotitan combines high-value services, proprietary products and technical divisions to build a scalable applied technology company with multiple paths to IP creation.",
           metrics: [
-            ["Market", "Software + AI", "Enterprise digitization accelerated by intelligent automation."],
-            ["Expansion", "Multi-division", "Software, AI, video games, robotics and consulting as connected engines."],
-            ["Model", "Services to product", "Customer learning, proprietary IP and repeatable platforms."]
+            ["Market", "AI + software", "Enterprise budgets are moving toward automation, data infrastructure and intelligent workflows."],
+            ["Expansion", "Multi-division", "Software, AI, interactive technology, robotics and advisory as connected growth engines."],
+            ["Model", "Services to products", "Use client work to learn, generate revenue, build IP and package repeatable platforms."]
           ],
           thesisLabel: "Thesis",
-          thesisTitle: "Companies need partners who build, not only advise.",
+          thesisTitle: "The best technology partners will combine advisory depth with product execution.",
           paragraphs: [
-            "The market is moving from traditional software to systems powered by agents, automation, data and interactive experiences. Tecnotitan is positioned at that convergence.",
-            "Our path combines service revenue, product development, intellectual property and division-level spin-off opportunities."
+            "Enterprise technology is shifting from traditional software delivery toward agentic systems, automation, data infrastructure, interactive interfaces and robotics-enabled operations. Tecnotitan is positioned at that convergence.",
+            "Our growth path combines service revenue, proprietary product development, technical IP and future division-level spin-off opportunities."
           ],
           cards: [
-            ["01", "Initial traction", "Build real enterprise cases and convert them into repeatable capabilities."],
-            ["02", "Proprietary products", "Package internal solutions as commercial platforms and tools."],
-            ["03", "Global scale", "Sell technology from Latin America to companies with global needs."]
+            ["01", "Build traction through services", "Work with companies on real operational problems and convert delivery patterns into reusable capabilities."],
+            ["02", "Package proprietary products", "Turn internal tools and proven workflows into commercial platforms with repeatable value."],
+            ["03", "Scale globally from LatAm", "Sell applied technology from Latin America into companies facing global transformation pressure."]
           ]
         }
       },
@@ -304,11 +304,11 @@ const languages = {
           label: "Contact",
           titleLines: ["Let's talk about", "the next technology"],
           intro:
-            "Enterprise projects, partnerships, investment and new technology opportunities.",
+            "Enterprise projects, strategic partnerships, investment conversations and new technology opportunities.",
           cards: [
             ["Companies", "Projects and consulting", "Technological transformation, AI, software and automation."],
             ["Partners", "Strategic partnerships", "Joint product development, integrations or new divisions."],
-            ["Capital", "Investors", "Conversations about vision, growth and future rounds."]
+            ["Capital", "Investors", "Conversations about thesis, growth strategy and future financing rounds."]
           ]
         }
       }
