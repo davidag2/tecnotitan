@@ -47,6 +47,13 @@ const languages = {
             ["Industria", "Robótica y datos", "Procesos que pueden conectar sensores, software, control e inteligencia operativa."],
             ["Institucional", "Transformación tecnológica", "Organizaciones públicas o privadas que necesitan estrategia, implementación y adopción."]
           ],
+          investorCtaTitle: "Acciones para inversionistas",
+          investorCtaText: "Accesos directos para revisar la oportunidad, contactar al equipo fundador o iniciar una conversación.",
+          investorCtaCards: [
+            ["01", "Solicitar investor deck", "Recibe el resumen de tesis, mercado, roadmap y oportunidad de Tecnotitan."],
+            ["02", "Contactar al equipo", "Conecta directamente con Tecnotitan para preguntas estratégicas o seguimiento."],
+            ["03", "Agendar conversación", "Inicia una conversación sobre inversión, alianzas o crecimiento global."]
+          ],
           gatewayTitle: "Una compañía tecnológica construida por divisiones",
           gatewayText:
             "Separamos la historia corporativa en páginas claras para clientes, aliados e inversionistas globales.",
@@ -202,10 +209,17 @@ const languages = {
             ["2027", "Productos y propiedad intelectual", "Empaquetar herramientas internas, lanzar primeras líneas comerciales y fortalecer divisiones técnicas."],
             ["2028", "Escala regional y plataformas", "Expandir ventas regionales, convertir soluciones en plataformas y evaluar spin-offs por división."]
           ],
+          investorCtaTitle: "Acciones para inversionistas",
+          investorCtaText: "Elige el siguiente paso para recibir información, contactar al equipo o abrir una conversación estratégica.",
+          investorCtaCards: [
+            ["01", "Solicitar investor deck", "Solicita el resumen ejecutivo de tesis, mercado, roadmap y oportunidad."],
+            ["02", "Contactar al equipo", "Envía preguntas sobre estrategia, portafolio, equipo o etapa de crecimiento."],
+            ["03", "Agendar conversación", "Abre una conversación sobre inversión, alianzas estratégicas o expansión."]
+          ],
           formTitle: "Contacto especial para inversionistas",
           formText: "Comparte tu perfil, tesis o interés estratégico y el equipo de Tecnotitan responderá desde info@tecnotitan.com.",
           formLabels: ["Nombre", "Firma / fondo", "País", "Email", "Tipo de interés", "Mensaje"],
-          formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Investor deck", "Agendar conversación"],
+          formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Investor deck", "Contactar al equipo", "Agendar conversación"],
           formButton: "Enviar a info@tecnotitan.com",
           formSuccessTitle: "Solicitud enviada",
           formSuccessText: "Gracias. El equipo de Tecnotitan revisará tu mensaje de inversión y responderá a info@tecnotitan.com.",
@@ -285,6 +299,13 @@ const languages = {
             ["Entertainment", "Games and brand", "Interactive products, gamification, brand experiences and new digital content."],
             ["Industry", "Robotics and data", "Processes that can connect sensors, software, control and operational intelligence."],
             ["Institutional", "Technology transformation", "Public or private organizations that need strategy, implementation and adoption."]
+          ],
+          investorCtaTitle: "Investor actions",
+          investorCtaText: "Direct paths to review the opportunity, contact the founding team or start a conversation.",
+          investorCtaCards: [
+            ["01", "Request investor deck", "Receive Tecnotitan's thesis, market, roadmap and opportunity summary."],
+            ["02", "Contact the team", "Connect directly with Tecnotitan for strategic questions or follow-up."],
+            ["03", "Schedule a call", "Start a conversation about investment, partnerships or global growth."]
           ],
           gatewayTitle: "A multi-division technology company built for compounding IP",
           gatewayText:
@@ -441,10 +462,17 @@ const languages = {
             ["2027", "Products and intellectual property", "Package internal tools, launch first commercial lines and strengthen technical divisions."],
             ["2028", "Regional scale and platforms", "Expand regional sales, convert solutions into platforms and evaluate division-level spin-offs."]
           ],
+          investorCtaTitle: "Investor actions",
+          investorCtaText: "Choose the next step to receive information, contact the team or open a strategic conversation.",
+          investorCtaCards: [
+            ["01", "Request investor deck", "Request the executive summary of thesis, market, roadmap and opportunity."],
+            ["02", "Contact the team", "Send questions about strategy, portfolio, team or growth stage."],
+            ["03", "Schedule a call", "Open a conversation about investment, strategic partnerships or expansion."]
+          ],
           formTitle: "Dedicated investor contact",
           formText: "Share your profile, thesis or strategic interest and the Tecnotitan team will reply through info@tecnotitan.com.",
           formLabels: ["Name", "Firm / fund", "Country", "Email", "Type of interest", "Message"],
-          formOptions: ["Select", "Investment", "Strategic partnership", "Investor deck", "Schedule a call"],
+          formOptions: ["Select", "Investment", "Strategic partnership", "Investor deck", "Contact the team", "Schedule a call"],
           formButton: "Send to info@tecnotitan.com",
           formSuccessTitle: "Request sent",
           formSuccessText: "Thank you. The Tecnotitan team will review your investment message and reply through info@tecnotitan.com.",
@@ -524,6 +552,13 @@ const languages = {
             ["Entretenimento", "Videogames e marca", "Produtos interativos, gamificação, experiências de marca e novos conteúdos digitais."],
             ["Indústria", "Robótica e dados", "Processos que podem conectar sensores, software, controle e inteligência operacional."],
             ["Institucional", "Transformação tecnológica", "Organizações públicas ou privadas que precisam de estratégia, implementação e adoção."]
+          ],
+          investorCtaTitle: "Ações para investidores",
+          investorCtaText: "Acessos diretos para revisar a oportunidade, contatar a equipe fundadora ou iniciar uma conversa.",
+          investorCtaCards: [
+            ["01", "Solicitar investor deck", "Receba o resumo da tese, mercado, roadmap e oportunidade da Tecnotitan."],
+            ["02", "Contatar a equipe", "Conecte-se diretamente com a Tecnotitan para perguntas estratégicas ou acompanhamento."],
+            ["03", "Agendar conversa", "Inicie uma conversa sobre investimento, parcerias ou crescimento global."]
           ],
           gatewayTitle: "Uma empresa multivisão com potencial de IP acumulável",
           gatewayText:
@@ -680,10 +715,17 @@ const languages = {
             ["2027", "Produtos e propriedade intelectual", "Empacotar ferramentas internas, lançar primeiras linhas comerciais e fortalecer divisões técnicas."],
             ["2028", "Escala regional e plataformas", "Expandir vendas regionais, converter soluções em plataformas e avaliar spin-offs por divisão."]
           ],
+          investorCtaTitle: "Ações para investidores",
+          investorCtaText: "Escolha o próximo passo para receber informações, contatar a equipe ou abrir uma conversa estratégica.",
+          investorCtaCards: [
+            ["01", "Solicitar investor deck", "Solicite o resumo executivo de tese, mercado, roadmap e oportunidade."],
+            ["02", "Contatar a equipe", "Envie perguntas sobre estratégia, portfólio, equipe ou estágio de crescimento."],
+            ["03", "Agendar conversa", "Abra uma conversa sobre investimento, parcerias estratégicas ou expansão."]
+          ],
           formTitle: "Contato especial para investidores",
           formText: "Compartilhe seu perfil, tese ou interesse estratégico e a equipe da Tecnotitan responderá por info@tecnotitan.com.",
           formLabels: ["Nome", "Firma / fundo", "País", "Email", "Tipo de interesse", "Mensagem"],
-          formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Investor deck", "Agendar conversa"],
+          formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Investor deck", "Contatar a equipe", "Agendar conversa"],
           formButton: "Enviar para info@tecnotitan.com",
           formSuccessTitle: "Solicitação enviada",
           formSuccessText: "Obrigado. A equipe da Tecnotitan analisará sua mensagem de investimento e responderá por info@tecnotitan.com.",
@@ -881,6 +923,9 @@ function applyLanguage(language) {
     setText("#market-title", content.marketTitle);
     setText(".market-copy p", content.marketText);
     setCards(".market-grid article", content.marketCards);
+    setText(".investor-cta-copy h2", content.investorCtaTitle);
+    setText(".investor-cta-copy p", content.investorCtaText);
+    setCards(".investor-cta-grid a", content.investorCtaCards);
     setText("#gateway-title", content.gatewayTitle);
     setText(".gateway-copy p", content.gatewayText);
     setCards(".gateway-grid a", content.cards);
@@ -959,6 +1004,18 @@ function applyLanguage(language) {
           option.textContent = content.formOptions[index];
         }
       });
+      const interestMap = {
+        deck: "Investor deck",
+        team: content.formOptions[4],
+        call: content.formOptions[5]
+      };
+      const requestedInterest = new URLSearchParams(window.location.search).get("interest");
+      const selectedLabel = interestMap[requestedInterest];
+      if (selectedLabel) {
+        Array.from(interestSelect.options).forEach((option) => {
+          option.selected = option.textContent === selectedLabel;
+        });
+      }
     }
     const nextInput = document.querySelector('.contact-form input[name="_next"]');
     if (nextInput) {
@@ -1005,6 +1062,12 @@ function applyLanguage(language) {
     setText(".roadmap-copy h2", content.roadmapTitle);
     setText(".roadmap-copy p", content.roadmapText);
     setCards(".roadmap-grid article", content.roadmapCards);
+  }
+
+  if (content.investorCtaTitle) {
+    setText(".investor-cta-copy h2", content.investorCtaTitle);
+    setText(".investor-cta-copy p", content.investorCtaText);
+    setCards(".investor-cta-grid a", content.investorCtaCards);
   }
 }
 
