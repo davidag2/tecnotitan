@@ -326,26 +326,26 @@ const languages = {
     footerNav: "Navegação secundária",
     pages: {
       "index.html": {
-        title: "Tecnotitan | Tecnologia aplicada para mercados globais",
+        title: "Tecnotitan | IA aplicada, software e robótica para Brasil e mercados globais",
         description:
-          "A Tecnotitan cria software, inteligência artificial, videogames e robótica para empresas e investidores globais.",
+          "A Tecnotitan cria software empresarial, sistemas de IA, produtos interativos e capacidades de robótica para Brasil, América Latina e mercados globais.",
         content: {
-          heroTitle: ["Tecnologia que", "transforma ideias", "em sistemas", "globais"],
+          heroTitle: ["Tecnologia aplicada", "para empresas", "que querem", "escala global"],
           heroText:
-            "A Tecnotitan desenvolve software, inteligência artificial, videogames e robótica para empresas que buscam transformação tecnológica.",
-          primaryCta: "Visão para investidores",
+            "A Tecnotitan desenvolve software empresarial, inteligência artificial, experiências interativas e infraestrutura de robótica para companhias em transformação.",
+          primaryCta: "Tese para investidores",
           secondaryCta: "Explorar produtos",
-          nextPreview: "Software, IA, videogames, robótica e consultoria",
-          gatewayTitle: "Uma empresa de tecnologia construída por divisões",
+          nextPreview: "Software empresarial, IA, produtos interativos, robótica e consultoria",
+          gatewayTitle: "Uma empresa multivisão com potencial de IP acumulável",
           gatewayText:
-            "Organizamos a história corporativa em páginas claras para clientes, parceiros e investidores globais.",
+            "A Tecnotitan conecta serviços, produtos e divisões técnicas para criar capacidades reutilizáveis em diferentes mercados.",
           cards: [
-            ["01", "Sobre", "Missão, tese tecnológica e princípios de execução."],
-            ["02", "Produtos", "Software, IA, videogames e robótica transformados em plataformas."],
-            ["03", "Serviços", "Consultoria em inteligência artificial e transformação tecnológica."],
-            ["04", "Divisões", "Um portfólio operacional para construir múltiplos mercados."],
-            ["05", "Investidores", "Visão, oportunidade, modelo e rota de crescimento."],
-            ["06", "Contato", "Conversas comerciais, parcerias e investimento."]
+            ["01", "Sobre", "Tese operacional, ambição regional e princípios de execução."],
+            ["02", "Produtos", "Software, IA, produtos interativos e robótica com caminho para plataformas."],
+            ["03", "Serviços", "Consultoria em IA e transformação tecnológica para empresas."],
+            ["04", "Divisões", "Arquitetura de portfólio para entrar em vários mercados de tecnologia."],
+            ["05", "Investidores", "Tese, oportunidade, modelo e narrativa de crescimento."],
+            ["06", "Contato", "Conversas comerciais, alianças estratégicas e investimento."]
           ]
         }
       },
@@ -355,19 +355,19 @@ const languages = {
           "Conheça a visão, missão e princípios da Tecnotitan como empresa de tecnologia aplicada.",
         content: {
           label: "Sobre",
-          titleLines: ["Construímos tecnologia", "com ambição global"],
+          titleLines: ["Construímos tecnologia", "com ambição regional e global"],
           intro:
-            "A Tecnotitan existe para transformar capacidades de software, IA, videogames e robótica em produtos e serviços que elevam a competitividade das empresas.",
+            "A Tecnotitan transforma capacidades de software, IA, tecnologia interativa e robótica em produtos e serviços para elevar a competitividade das empresas.",
           thesisLabel: "Visão",
-          thesisTitle: "Ser uma fábrica de tecnologia aplicada para mercados globais.",
+          thesisTitle: "Ser uma empresa latino-americana de tecnologia aplicada com alcance global.",
           paragraphs: [
-            "Nossa tese é simples: empresas que dominam software, dados, inteligência artificial, experiências interativas e sistemas físicos inteligentes poderão criar vantagens duradouras.",
-            "A Tecnotitan integra essas disciplinas para construir soluções próprias, apoiar transformações empresariais e abrir novas divisões de crescimento."
+            "Nossa tese é simples: a próxima geração de empresas será construída sobre software, dados, inteligência artificial, interfaces interativas e sistemas físicos inteligentes.",
+            "A Tecnotitan integra essas disciplinas para criar soluções próprias, apoiar transformações empresariais e abrir novas divisões de crescimento ao longo do tempo."
           ],
           cards: [
-            ["01", "Produto antes da apresentação", "Priorizamos sistemas funcionais, mensuráveis e escaláveis acima de promessas abstratas."],
-            ["02", "IA como infraestrutura", "Tratamos a inteligência artificial como uma camada central para automatizar, decidir e aprender."],
-            ["03", "Multidisciplina executável", "Software, jogos, robótica e consultoria atuam como um único portfólio tecnológico."]
+            ["01", "Execução antes da narrativa", "Priorizamos sistemas funcionais, mensuráveis e escaláveis acima de promessas abstratas."],
+            ["02", "IA como camada operacional", "Tratamos a inteligência artificial como infraestrutura para automatizar, decidir e aprender."],
+            ["03", "Alavancagem multidisciplinar", "Software, produtos interativos, robótica e consultoria atuam como um único portfólio tecnológico."]
           ]
         }
       },
@@ -377,13 +377,13 @@ const languages = {
           "Produtos da Tecnotitan em software empresarial, inteligência artificial, videogames e robótica.",
         content: {
           label: "Produtos",
-          titleLines: ["Plataformas para", "empresas que escalam"],
+          titleLines: ["Produtos com caminho", "para plataformas"],
           intro:
-            "Construímos produtos próprios e sistemas sob medida que podem evoluir para plataformas repetíveis.",
+            "Construímos produtos próprios e sistemas sob medida que podem evoluir para plataformas repetíveis de software, dados e IA.",
           cards: [
             ["Software", "Titan Business Systems", "Aplicações web, painéis operacionais, CRM interno, automação de processos e portais empresariais."],
             ["IA", "Titan AI Agents", "Agentes inteligentes para suporte, vendas, operações, análise documental e automação de tarefas."],
-            ["Games", "Titan Interactive", "Videogames, simuladores, experiências imersivas e gamificação para treinamento e marca."],
+            ["Interativo", "Titan Interactive", "Videogames, simuladores, experiências imersivas e gamificação para treinamento e marca."],
             ["Robótica", "Titan Robotics Stack", "Interfaces, sensores, controle, dados e software para sistemas físico-digitais inteligentes."]
           ]
         }
@@ -394,13 +394,13 @@ const languages = {
           "Serviços de consultoria em inteligência artificial e transformação tecnológica para empresas.",
         content: {
           label: "Serviços",
-          titleLines: ["Consultoria para", "transformação tecnológica"],
+          titleLines: ["Consultoria que leva", "à implementação"],
           intro:
-            "Ajudamos empresas a identificar, desenhar e implementar inteligência artificial e software com impacto operacional.",
+            "Ajudamos empresas a identificar, desenhar e implementar IA e software com impacto operacional mensurável.",
           timelineLabel: "Serviços",
           cards: [
             ["01", "Diagnóstico IA", "Avaliação de processos, dados, automações possíveis e retorno esperado."],
-            ["02", "Roadmap tecnológico", "Arquitetura, prioridades, stack, riscos e plano de execução."],
+            ["02", "Roteiro tecnológico", "Arquitetura, prioridades, stack, riscos e plano de execução."],
             ["03", "Implementação", "Desenvolvimento de software, agentes IA, integrações e protótipos funcionais."],
             ["04", "Adoção", "Capacitação, medição, melhorias contínuas e transferência de capacidades."]
           ]
@@ -412,9 +412,9 @@ const languages = {
           "Divisões da Tecnotitan em software, IA, videogames, robótica e ventures tecnológicos.",
         content: {
           label: "Divisões",
-          titleLines: ["Um portfólio", "de motores tecnológicos"],
+          titleLines: ["Um portfólio de", "motores tecnológicos"],
           intro:
-            "Cada divisão cria capacidades reutilizáveis, propriedade intelectual e oportunidades comerciais independentes.",
+            "Cada divisão é desenhada para criar capacidades reutilizáveis, propriedade intelectual e oportunidades comerciais independentes.",
           cards: [
             ["Software", "Tecnotitan Software", "Produtos web, sistemas empresariais e plataformas digitais."],
             ["AI", "Tecnotitan AI", "Agentes, automação, analítica e infraestrutura de inteligência artificial."],
@@ -428,27 +428,27 @@ const languages = {
       "inversionistas.html": {
         title: "Investidores | Tecnotitan",
         description:
-          "Página para investidores globais da Tecnotitan: tese, mercado, modelo e visão.",
+          "Página para investidores da Tecnotitan: IA aplicada, software empresarial, tecnologia interativa, robótica e modelo de serviços para produtos.",
         content: {
           label: "Investidores",
-          titleLines: ["Uma tese tecnológica", "para mercados globais"],
+          titleLines: ["Tecnologia aplicada", "da América Latina", "para mercados globais"],
           intro:
-            "A Tecnotitan combina serviços de alto valor, produtos próprios e divisões técnicas para construir uma empresa escalável de tecnologia aplicada.",
+            "A Tecnotitan combina serviços de alto valor, produtos próprios e divisões técnicas para construir uma empresa escalável de tecnologia aplicada, com potencial de criação de IP.",
           metrics: [
-            ["Mercado", "Software + IA", "Digitalização empresarial acelerada por automação inteligente."],
-            ["Expansão", "Multidivisão", "Software, IA, videogames, robótica e consultoria como motores conectados."],
-            ["Modelo", "Serviços para produto", "Aprendizado com clientes, IP própria e plataformas repetíveis."]
+            ["Mercado", "IA + software", "Empresas estão direcionando orçamento para automação, dados e fluxos inteligentes."],
+            ["Expansão", "Multidivisão", "Software, IA, tecnologia interativa, robótica e consultoria como motores conectados."],
+            ["Modelo", "Serviços para produtos", "Usar projetos reais para gerar receita, aprender, criar IP e empacotar plataformas."]
           ],
           thesisLabel: "Tese",
-          thesisTitle: "As empresas precisam de parceiros que constroem, não apenas aconselham.",
+          thesisTitle: "As melhores empresas de tecnologia combinam profundidade consultiva com execução de produto.",
           paragraphs: [
-            "O mercado está migrando de software tradicional para sistemas com agentes, automação, dados e experiências interativas. A Tecnotitan se posiciona nessa convergência.",
-            "Nossa rota combina receitas por serviços, desenvolvimento de produtos, propriedade intelectual e oportunidades de spin-off por divisão."
+            "A tecnologia empresarial está migrando do software tradicional para sistemas com agentes, automação, dados, interfaces interativas e operações habilitadas por robótica. A Tecnotitan se posiciona nessa convergência.",
+            "Nossa rota combina receita por serviços, desenvolvimento de produtos próprios, propriedade intelectual e futuras oportunidades de spin-off por divisão."
           ],
           cards: [
-            ["01", "Tração inicial", "Construir casos reais com empresas e convertê-los em capacidades repetíveis."],
-            ["02", "Produtos próprios", "Empacotar soluções internas como plataformas e ferramentas comerciais."],
-            ["03", "Escala global", "Vender tecnologia da América Latina para empresas com necessidades globais."]
+            ["01", "Tração via serviços", "Resolver problemas reais de empresas e transformar padrões de entrega em capacidades reutilizáveis."],
+            ["02", "Produtos próprios", "Converter ferramentas internas e fluxos validados em plataformas comerciais."],
+            ["03", "Escala Brasil e LatAm", "Expandir tecnologia aplicada para empresas no Brasil, América Latina e mercados globais."]
           ]
         }
       },
@@ -460,11 +460,11 @@ const languages = {
           label: "Contato",
           titleLines: ["Vamos falar sobre", "a próxima tecnologia"],
           intro:
-            "Projetos empresariais, parcerias, investimento e novas oportunidades tecnológicas.",
+            "Projetos empresariais, alianças estratégicas, conversas de investimento e novas oportunidades tecnológicas.",
           cards: [
             ["Empresas", "Projetos e consultoria", "Transformação tecnológica, IA, software e automação."],
-            ["Partners", "Parcerias estratégicas", "Construção conjunta de produtos, integrações ou novas divisões."],
-            ["Capital", "Investidores", "Conversas sobre visão, crescimento e rodadas futuras."]
+            ["Aliados", "Parcerias estratégicas", "Construção conjunta de produtos, integrações ou novas divisões."],
+            ["Capital", "Investidores", "Conversas sobre tese, estratégia de crescimento e futuras rodadas."]
           ]
         }
       }
