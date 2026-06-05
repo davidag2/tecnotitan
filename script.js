@@ -156,6 +156,15 @@ const languages = {
             "El mercado está migrando de software tradicional a sistemas con agentes, automatización, datos y experiencias interactivas. Tecnotitan se posiciona en esa convergencia.",
             "Nuestra ruta combina ingresos por servicios, desarrollo de productos, propiedad intelectual y oportunidades de spin-off por división."
           ],
+          opportunityTitle: "Oportunidad de inversión",
+          opportunityText:
+            "Tecnotitan busca capturar demanda empresarial en IA, software y robótica mientras convierte aprendizaje de servicios en productos propios e IP escalable.",
+          opportunityCards: [
+            ["01", "Demanda estructural", "Las empresas necesitan automatizar procesos, datos y decisiones para competir."],
+            ["02", "Modelo híbrido", "Servicios de alto valor generan ingresos, aprendizaje de mercado y oportunidades de producto."],
+            ["03", "IP acumulable", "Cada proyecto puede convertirse en herramientas, agentes, frameworks y plataformas repetibles."],
+            ["04", "Expansión regional", "Construir desde Latinoamérica permite vender tecnología aplicada a mercados globales."]
+          ],
           cards: [
             ["01", "Tracción inicial", "Construir casos reales con empresas y convertirlos en capacidades repetibles."],
             ["02", "Productos propios", "Empaquetar soluciones internas como plataformas y herramientas comerciales."],
@@ -335,6 +344,15 @@ const languages = {
             "Enterprise technology is shifting from traditional software delivery toward agentic systems, automation, data infrastructure, interactive interfaces and robotics-enabled operations. Tecnotitan is positioned at that convergence.",
             "Our growth path combines service revenue, proprietary product development, technical IP and future division-level spin-off opportunities."
           ],
+          opportunityTitle: "Investment opportunity",
+          opportunityText:
+            "Tecnotitan aims to capture enterprise demand in AI, software and robotics while converting service learning into proprietary products and scalable IP.",
+          opportunityCards: [
+            ["01", "Structural demand", "Companies need to automate processes, data and decisions to stay competitive."],
+            ["02", "Hybrid model", "High-value services generate revenue, market learning and product opportunities."],
+            ["03", "Compounding IP", "Each project can become tools, agents, frameworks and repeatable platforms."],
+            ["04", "Regional expansion", "Building from Latin America creates a path to sell applied technology into global markets."]
+          ],
           cards: [
             ["01", "Build traction through services", "Work with companies on real operational problems and convert delivery patterns into reusable capabilities."],
             ["02", "Package proprietary products", "Turn internal tools and proven workflows into commercial platforms with repeatable value."],
@@ -513,6 +531,15 @@ const languages = {
           paragraphs: [
             "A tecnologia empresarial está migrando do software tradicional para sistemas com agentes, automação, dados, interfaces interativas e operações habilitadas por robótica. A Tecnotitan se posiciona nessa convergência.",
             "Nossa rota combina receita por serviços, desenvolvimento de produtos próprios, propriedade intelectual e futuras oportunidades de spin-off por divisão."
+          ],
+          opportunityTitle: "Oportunidade de investimento",
+          opportunityText:
+            "A Tecnotitan busca capturar demanda empresarial em IA, software e robótica enquanto converte aprendizado de serviços em produtos próprios e IP escalável.",
+          opportunityCards: [
+            ["01", "Demanda estrutural", "Empresas precisam automatizar processos, dados e decisões para competir."],
+            ["02", "Modelo híbrido", "Serviços de alto valor geram receita, aprendizado de mercado e oportunidades de produto."],
+            ["03", "IP acumulável", "Cada projeto pode se tornar ferramentas, agentes, frameworks e plataformas repetíveis."],
+            ["04", "Expansão regional", "Construir a partir da América Latina permite vender tecnologia aplicada para mercados globais."]
           ],
           cards: [
             ["01", "Tração via serviços", "Resolver problemas reais de empresas e transformar padrões de entrega em capacidades reutilizáveis."],
@@ -710,7 +737,7 @@ function applyLanguage(language) {
   setText(".page-label", content.label);
   setTitleLines(".page-hero h1", content.titleLines);
   setText(".page-hero p:not(.page-label)", content.intro);
-  setCards(".page-grid article", content.cards);
+  setCards(pageName === "inversionistas.html" ? ".investor-path-grid article" : ".page-grid article", content.cards);
 
   if (content.timelineLabel) {
     const timeline = document.querySelector(".timeline");
@@ -739,6 +766,12 @@ function applyLanguage(language) {
         paragraph.textContent = content.paragraphs[index];
       }
     });
+  }
+
+  if (content.opportunityTitle) {
+    setText(".opportunity-copy h2", content.opportunityTitle);
+    setText(".opportunity-copy p", content.opportunityText);
+    setCards(".opportunity-grid article", content.opportunityCards);
   }
 }
 

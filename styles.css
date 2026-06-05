@@ -406,6 +406,10 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.opportunity-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .gateway-grid a,
 .page-grid article,
 .metric-strip article {
@@ -891,6 +895,7 @@ h3 {
   .product-grid,
   .vision-grid,
   .market-grid,
+  .opportunity-grid,
   .metric-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -1001,6 +1006,7 @@ h3 {
   .product-grid,
   .vision-grid,
   .market-grid,
+  .opportunity-grid,
   .metric-strip {
     grid-template-columns: 1fr;
   }
