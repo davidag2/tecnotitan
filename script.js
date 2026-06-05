@@ -879,12 +879,89 @@ const languageNames = {
   pt: "Português"
 };
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
+const storedLanguage = localStorage.getItem("tecnotitan-language");
 let activeLanguage = supportedLanguages.includes(queryLanguage)
   ? queryLanguage
-  : localStorage.getItem("tecnotitan-language") || "es";
+  : supportedLanguages.includes(storedLanguage)
+    ? storedLanguage
+    : "es";
+const shouldAutoDetectLanguage = !supportedLanguages.includes(queryLanguage) && !supportedLanguages.includes(storedLanguage);
 
 if (!supportedLanguages.includes(activeLanguage)) {
   activeLanguage = "es";
+}
+
+const spanishCountries = new Set([
+  "AR",
+  "BO",
+  "CL",
+  "CO",
+  "CR",
+  "CU",
+  "DO",
+  "EC",
+  "SV",
+  "GQ",
+  "GT",
+  "HN",
+  "MX",
+  "NI",
+  "PA",
+  "PY",
+  "PE",
+  "PR",
+  "ES",
+  "UY",
+  "VE"
+]);
+const portugueseCountries = new Set(["AO", "BR", "CV", "GW", "MZ", "PT", "ST", "TL"]);
+const englishCountries = new Set(["AU", "CA", "GB", "IE", "IN", "NZ", "PH", "SG", "US", "ZA"]);
+
+function languageFromCountry(country) {
+  const countryCode = String(country || "").toUpperCase();
+
+  if (portugueseCountries.has(countryCode)) {
+    return "pt";
+  }
+
+  if (spanishCountries.has(countryCode)) {
+    return "es";
+  }
+
+  if (englishCountries.has(countryCode)) {
+    return "en";
+  }
+
+  return "en";
+}
+
+function languageFromBrowser() {
+  const locale = (navigator.languages?.[0] || navigator.language || "").toLowerCase();
+
+  if (locale.startsWith("pt")) {
+    return "pt";
+  }
+
+  if (locale.startsWith("es")) {
+    return "es";
+  }
+
+  return "en";
+}
+
+async function detectVisitorLanguage() {
+  try {
+    const response = await fetch("/api/geo", { cache: "no-store" });
+
+    if (response.ok) {
+      const data = await response.json();
+      return data.country ? languageFromCountry(data.country) : languageFromBrowser();
+    }
+  } catch (error) {
+    return languageFromBrowser();
+  }
+
+  return languageFromBrowser();
 }
 
 function setText(selector, value, root = document) {
@@ -1219,6 +1296,14 @@ function applyLanguage(language) {
 
 buildLanguageSwitcher();
 applyLanguage(activeLanguage);
+
+if (shouldAutoDetectLanguage) {
+  detectVisitorLanguage().then((language) => {
+    if (supportedLanguages.includes(language) && language !== activeLanguage) {
+      applyLanguage(language);
+    }
+  });
+}
 
 const navLinks = document.querySelectorAll(".nav a");
 const revealItems = document.querySelectorAll(".reveal");
