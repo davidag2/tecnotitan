@@ -172,7 +172,8 @@ a {
 
 .hero-image,
 .closing-image,
-.process-bg {
+.process-bg,
+.section-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -314,6 +315,22 @@ h3 {
     radial-gradient(circle at 86% 18%, rgba(103, 229, 255, 0.11), transparent 26%),
     linear-gradient(180deg, #050607, #0a0e11 45%, #050607);
   padding: clamp(88px, 12vw, 152px) 0;
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(5, 6, 7, 0.92), rgba(5, 6, 7, 0.7) 46%, rgba(5, 6, 7, 0.38)),
+    linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0.66) 34%, #050607 100%);
+  pointer-events: none;
+}
+
+.section-bg {
+  z-index: 0;
+  opacity: 0.66;
 }
 
 .split-layout {
