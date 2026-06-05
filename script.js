@@ -178,6 +178,14 @@ const languages = {
             ["Roadmap", "Servicios a plataformas", "Convertir entregas recurrentes en herramientas internas, módulos comerciales y productos."],
             ["Expansión", "LatAm hacia global", "Validar casos regionales y escalar tecnología aplicada hacia mercados con necesidades similares."]
           ],
+          roadmapTitle: "Roadmap estratégico",
+          roadmapText:
+            "Una ruta de crecimiento por fases para convertir capacidades técnicas en servicios, productos propios y oportunidades de expansión.",
+          roadmapCards: [
+            ["2026", "Validación y casos reales", "Consolidar servicios de IA/software, construir casos empresariales y documentar patrones repetibles."],
+            ["2027", "Productos y propiedad intelectual", "Empaquetar herramientas internas, lanzar primeras líneas comerciales y fortalecer divisiones técnicas."],
+            ["2028", "Escala regional y plataformas", "Expandir ventas regionales, convertir soluciones en plataformas y evaluar spin-offs por división."]
+          ],
           cards: [
             ["01", "Tracción inicial", "Construir casos reales con empresas y convertirlos en capacidades repetibles."],
             ["02", "Productos propios", "Empaquetar soluciones internas como plataformas y herramientas comerciales."],
@@ -379,6 +387,14 @@ const languages = {
             ["Roadmap", "Services to platforms", "Convert recurring delivery patterns into internal tools, commercial modules and products."],
             ["Expansion", "LatAm to global", "Validate regional use cases and scale applied technology into markets with similar needs."]
           ],
+          roadmapTitle: "Strategic roadmap",
+          roadmapText:
+            "A phased growth path for turning technical capabilities into services, proprietary products and expansion opportunities.",
+          roadmapCards: [
+            ["2026", "Validation and real cases", "Consolidate AI/software services, build enterprise cases and document repeatable patterns."],
+            ["2027", "Products and intellectual property", "Package internal tools, launch first commercial lines and strengthen technical divisions."],
+            ["2028", "Regional scale and platforms", "Expand regional sales, convert solutions into platforms and evaluate division-level spin-offs."]
+          ],
           cards: [
             ["01", "Build traction through services", "Work with companies on real operational problems and convert delivery patterns into reusable capabilities."],
             ["02", "Package proprietary products", "Turn internal tools and proven workflows into commercial platforms with repeatable value."],
@@ -579,6 +595,14 @@ const languages = {
             ["Clientes-alvo", "Médias e grandes empresas", "Organizações com processos repetíveis, dados subutilizados e pressão para automatizar."],
             ["Roadmap", "Serviços para plataformas", "Converter entregas recorrentes em ferramentas internas, módulos comerciais e produtos."],
             ["Expansão", "LatAm para global", "Validar casos regionais e escalar tecnologia aplicada para mercados com necessidades semelhantes."]
+          ],
+          roadmapTitle: "Roadmap estratégico",
+          roadmapText:
+            "Uma rota de crescimento por fases para converter capacidades técnicas em serviços, produtos próprios e oportunidades de expansão.",
+          roadmapCards: [
+            ["2026", "Validação e casos reais", "Consolidar serviços de IA/software, construir casos empresariais e documentar padrões repetíveis."],
+            ["2027", "Produtos e propriedade intelectual", "Empacotar ferramentas internas, lançar primeiras linhas comerciais e fortalecer divisões técnicas."],
+            ["2028", "Escala regional e plataformas", "Expandir vendas regionais, converter soluções em plataformas e avaliar spin-offs por divisão."]
           ],
           cards: [
             ["01", "Tração via serviços", "Resolver problemas reais de empresas e transformar padrões de entrega em capacidades reutilizáveis."],
@@ -826,6 +850,12 @@ function applyLanguage(language) {
       setText("p", item[2], metric);
     });
     setCards(".indicator-grid article", content.indicatorCards);
+  }
+
+  if (content.roadmapTitle) {
+    setText(".roadmap-copy h2", content.roadmapTitle);
+    setText(".roadmap-copy p", content.roadmapText);
+    setCards(".roadmap-grid article", content.roadmapCards);
   }
 }
 

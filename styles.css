@@ -414,6 +414,10 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.roadmap-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .gateway-grid a,
 .page-grid article,
 .metric-strip article {
@@ -901,6 +905,7 @@ h3 {
   .market-grid,
   .opportunity-grid,
   .indicator-grid,
+  .roadmap-grid,
   .metric-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -1013,6 +1018,7 @@ h3 {
   .market-grid,
   .opportunity-grid,
   .indicator-grid,
+  .roadmap-grid,
   .metric-strip {
     grid-template-columns: 1fr;
   }
