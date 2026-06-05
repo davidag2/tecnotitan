@@ -165,6 +165,19 @@ const languages = {
             ["03", "IP acumulable", "Cada proyecto puede convertirse en herramientas, agentes, frameworks y plataformas repetibles."],
             ["04", "Expansión regional", "Construir desde Latinoamérica permite vender tecnología aplicada a mercados globales."]
           ],
+          indicatorTitle: "Indicadores para seguimiento",
+          indicatorText:
+            "Un marco profesional para monitorear el avance de Tecnotitan hacia ingresos, productos propios, clientes objetivo y escala regional.",
+          indicatorMetrics: [
+            ["Mercado objetivo", "Empresas + IA", "Software, automatización, experiencias interactivas y robótica aplicada."],
+            ["Áreas de negocio", "5 divisiones", "Software, IA, videojuegos, robótica y consultoría tecnológica."],
+            ["Productos", "4 líneas", "Sistemas empresariales, agentes IA, tecnología interactiva y stack de robótica."]
+          ],
+          indicatorCards: [
+            ["Clientes objetivo", "Empresas medianas y grandes", "Organizaciones con procesos repetibles, datos subutilizados y presión por automatizar."],
+            ["Roadmap", "Servicios a plataformas", "Convertir entregas recurrentes en herramientas internas, módulos comerciales y productos."],
+            ["Expansión", "LatAm hacia global", "Validar casos regionales y escalar tecnología aplicada hacia mercados con necesidades similares."]
+          ],
           cards: [
             ["01", "Tracción inicial", "Construir casos reales con empresas y convertirlos en capacidades repetibles."],
             ["02", "Productos propios", "Empaquetar soluciones internas como plataformas y herramientas comerciales."],
@@ -353,6 +366,19 @@ const languages = {
             ["03", "Compounding IP", "Each project can become tools, agents, frameworks and repeatable platforms."],
             ["04", "Regional expansion", "Building from Latin America creates a path to sell applied technology into global markets."]
           ],
+          indicatorTitle: "Tracking indicators",
+          indicatorText:
+            "A professional framework for tracking Tecnotitan's progress toward revenue, proprietary products, target customers and regional scale.",
+          indicatorMetrics: [
+            ["Target market", "Enterprise + AI", "Software, automation, interactive experiences and applied robotics."],
+            ["Business areas", "5 divisions", "Software, AI, video games, robotics and technology advisory."],
+            ["Products", "4 lines", "Enterprise systems, AI agents, interactive tech and robotics stack."]
+          ],
+          indicatorCards: [
+            ["Target customers", "Mid-market and enterprise", "Organizations with repeatable processes, underused data and pressure to automate."],
+            ["Roadmap", "Services to platforms", "Convert recurring delivery patterns into internal tools, commercial modules and products."],
+            ["Expansion", "LatAm to global", "Validate regional use cases and scale applied technology into markets with similar needs."]
+          ],
           cards: [
             ["01", "Build traction through services", "Work with companies on real operational problems and convert delivery patterns into reusable capabilities."],
             ["02", "Package proprietary products", "Turn internal tools and proven workflows into commercial platforms with repeatable value."],
@@ -540,6 +566,19 @@ const languages = {
             ["02", "Modelo híbrido", "Serviços de alto valor geram receita, aprendizado de mercado e oportunidades de produto."],
             ["03", "IP acumulável", "Cada projeto pode se tornar ferramentas, agentes, frameworks e plataformas repetíveis."],
             ["04", "Expansão regional", "Construir a partir da América Latina permite vender tecnologia aplicada para mercados globais."]
+          ],
+          indicatorTitle: "Indicadores de acompanhamento",
+          indicatorText:
+            "Um marco profissional para acompanhar o avanço da Tecnotitan em receita, produtos próprios, clientes-alvo e escala regional.",
+          indicatorMetrics: [
+            ["Mercado-alvo", "Empresas + IA", "Software, automação, experiências interativas e robótica aplicada."],
+            ["Áreas de negócio", "5 divisões", "Software, IA, videogames, robótica e consultoria tecnológica."],
+            ["Produtos", "4 linhas", "Sistemas empresariais, agentes IA, tecnologia interativa e stack de robótica."]
+          ],
+          indicatorCards: [
+            ["Clientes-alvo", "Médias e grandes empresas", "Organizações com processos repetíveis, dados subutilizados e pressão para automatizar."],
+            ["Roadmap", "Serviços para plataformas", "Converter entregas recorrentes em ferramentas internas, módulos comerciais e produtos."],
+            ["Expansão", "LatAm para global", "Validar casos regionais e escalar tecnologia aplicada para mercados com necessidades semelhantes."]
           ],
           cards: [
             ["01", "Tração via serviços", "Resolver problemas reais de empresas e transformar padrões de entrega em capacidades reutilizáveis."],
@@ -772,6 +811,21 @@ function applyLanguage(language) {
     setText(".opportunity-copy h2", content.opportunityTitle);
     setText(".opportunity-copy p", content.opportunityText);
     setCards(".opportunity-grid article", content.opportunityCards);
+  }
+
+  if (content.indicatorTitle) {
+    setText(".indicator-copy h2", content.indicatorTitle);
+    setText(".indicator-copy p", content.indicatorText);
+    document.querySelectorAll(".indicator-strip article").forEach((metric, index) => {
+      const item = content.indicatorMetrics[index];
+      if (!item) {
+        return;
+      }
+      setText("span", item[0], metric);
+      setText("strong", item[1], metric);
+      setText("p", item[2], metric);
+    });
+    setCards(".indicator-grid article", content.indicatorCards);
   }
 }
 
