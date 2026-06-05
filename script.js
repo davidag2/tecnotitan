@@ -202,6 +202,13 @@ const languages = {
             ["2027", "Productos y propiedad intelectual", "Empaquetar herramientas internas, lanzar primeras líneas comerciales y fortalecer divisiones técnicas."],
             ["2028", "Escala regional y plataformas", "Expandir ventas regionales, convertir soluciones en plataformas y evaluar spin-offs por división."]
           ],
+          formTitle: "Contacto especial para inversionistas",
+          formText: "Comparte tu perfil, tesis o interés estratégico y el equipo de Tecnotitan responderá desde info@tecnotitan.com.",
+          formLabels: ["Nombre", "Firma / fondo", "País", "Email", "Tipo de interés", "Mensaje"],
+          formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Investor deck", "Agendar conversación"],
+          formButton: "Enviar a info@tecnotitan.com",
+          formSuccessTitle: "Solicitud enviada",
+          formSuccessText: "Gracias. El equipo de Tecnotitan revisará tu mensaje de inversión y responderá a info@tecnotitan.com.",
           cards: [
             ["01", "Tracción inicial", "Construir casos reales con empresas y convertirlos en capacidades repetibles."],
             ["02", "Productos propios", "Empaquetar soluciones internas como plataformas y herramientas comerciales."],
@@ -217,19 +224,19 @@ const languages = {
           label: "Contacto",
           titleLines: ["Hablemos de", "la siguiente tecnología"],
           intro:
-            "Proyectos empresariales, alianzas, inversión y nuevas oportunidades tecnológicas.",
+            "Canal general para quejas, reclamos, sugerencias y solicitudes sobre Tecnotitan.",
           cards: [
-            ["Empresas", "Proyectos y consultoría", "Transformación tecnológica, IA, software y automatización."],
-            ["Aliados", "Alianzas estratégicas", "Construcción conjunta de productos, integraciones o nuevas divisiones."],
-            ["Capital", "Inversionistas", "Conversaciones sobre visión, crecimiento y rondas futuras."]
+            ["Atención", "Solicitudes generales", "Preguntas, comentarios y mensajes sobre Tecnotitan y sus servicios."],
+            ["Calidad", "Quejas y reclamos", "Reportes sobre experiencias, procesos o respuestas que necesitan revisión."],
+            ["Mejora", "Sugerencias", "Ideas para mejorar productos, servicios, comunicación o experiencia de usuario."]
           ],
-          formTitle: "Contacto para inversionistas",
-          formText: "Completa la información y envíanos el mensaje a info@tecnotitan.com.",
-          formLabels: ["Nombre", "Empresa", "País", "Email", "Tipo de interés", "Mensaje"],
-          formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Proyecto empresarial", "Prensa / ecosistema"],
+          formTitle: "Contacto general",
+          formText: "Envía quejas, reclamos, sugerencias o solicitudes generales a info@tecnotitan.com.",
+          formLabels: ["Nombre", "Email", "Empresa", "País", "Tipo de solicitud", "Mensaje"],
+          formOptions: ["Seleccionar", "Queja", "Reclamo", "Sugerencia", "Solicitud general"],
           formButton: "Enviar a info@tecnotitan.com",
           formSuccessTitle: "Mensaje enviado",
-          formSuccessText: "Gracias. El equipo de Tecnotitan revisará tu mensaje y responderá a info@tecnotitan.com."
+          formSuccessText: "Gracias. Recibimos tu solicitud general y responderemos a info@tecnotitan.com."
         }
       }
     }
@@ -434,6 +441,13 @@ const languages = {
             ["2027", "Products and intellectual property", "Package internal tools, launch first commercial lines and strengthen technical divisions."],
             ["2028", "Regional scale and platforms", "Expand regional sales, convert solutions into platforms and evaluate division-level spin-offs."]
           ],
+          formTitle: "Dedicated investor contact",
+          formText: "Share your profile, thesis or strategic interest and the Tecnotitan team will reply through info@tecnotitan.com.",
+          formLabels: ["Name", "Firm / fund", "Country", "Email", "Type of interest", "Message"],
+          formOptions: ["Select", "Investment", "Strategic partnership", "Investor deck", "Schedule a call"],
+          formButton: "Send to info@tecnotitan.com",
+          formSuccessTitle: "Request sent",
+          formSuccessText: "Thank you. The Tecnotitan team will review your investment message and reply through info@tecnotitan.com.",
           cards: [
             ["01", "Build traction through services", "Work with companies on real operational problems and convert delivery patterns into reusable capabilities."],
             ["02", "Package proprietary products", "Turn internal tools and proven workflows into commercial platforms with repeatable value."],
@@ -449,19 +463,19 @@ const languages = {
           label: "Contact",
           titleLines: ["Let's talk about", "the next technology"],
           intro:
-            "Enterprise projects, strategic partnerships, investment conversations and new technology opportunities.",
+            "General channel for complaints, claims, suggestions and requests about Tecnotitan.",
           cards: [
-            ["Companies", "Projects and consulting", "Technological transformation, AI, software and automation."],
-            ["Partners", "Strategic partnerships", "Joint product development, integrations or new divisions."],
-            ["Capital", "Investors", "Conversations about thesis, growth strategy and future financing rounds."]
+            ["Support", "General requests", "Questions, comments and messages about Tecnotitan and its services."],
+            ["Quality", "Complaints and claims", "Reports about experiences, processes or responses that need review."],
+            ["Improvement", "Suggestions", "Ideas to improve products, services, communication or user experience."]
           ],
-          formTitle: "Investor contact",
-          formText: "Complete the information and send your message to info@tecnotitan.com.",
-          formLabels: ["Name", "Company", "Country", "Email", "Type of interest", "Message"],
-          formOptions: ["Select", "Investment", "Strategic partnership", "Enterprise project", "Press / ecosystem"],
+          formTitle: "General contact",
+          formText: "Send complaints, claims, suggestions or general requests to info@tecnotitan.com.",
+          formLabels: ["Name", "Email", "Company", "Country", "Request type", "Message"],
+          formOptions: ["Select", "Complaint", "Claim", "Suggestion", "General request"],
           formButton: "Send to info@tecnotitan.com",
           formSuccessTitle: "Message sent",
-          formSuccessText: "Thank you. The Tecnotitan team will review your message and reply through info@tecnotitan.com."
+          formSuccessText: "Thank you. We received your general request and will reply through info@tecnotitan.com."
         }
       }
     }
@@ -666,6 +680,13 @@ const languages = {
             ["2027", "Produtos e propriedade intelectual", "Empacotar ferramentas internas, lançar primeiras linhas comerciais e fortalecer divisões técnicas."],
             ["2028", "Escala regional e plataformas", "Expandir vendas regionais, converter soluções em plataformas e avaliar spin-offs por divisão."]
           ],
+          formTitle: "Contato especial para investidores",
+          formText: "Compartilhe seu perfil, tese ou interesse estratégico e a equipe da Tecnotitan responderá por info@tecnotitan.com.",
+          formLabels: ["Nome", "Firma / fundo", "País", "Email", "Tipo de interesse", "Mensagem"],
+          formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Investor deck", "Agendar conversa"],
+          formButton: "Enviar para info@tecnotitan.com",
+          formSuccessTitle: "Solicitação enviada",
+          formSuccessText: "Obrigado. A equipe da Tecnotitan analisará sua mensagem de investimento e responderá por info@tecnotitan.com.",
           cards: [
             ["01", "Tração via serviços", "Resolver problemas reais de empresas e transformar padrões de entrega em capacidades reutilizáveis."],
             ["02", "Produtos próprios", "Converter ferramentas internas e fluxos validados em plataformas comerciais."],
@@ -681,19 +702,19 @@ const languages = {
           label: "Contato",
           titleLines: ["Vamos falar sobre", "a próxima tecnologia"],
           intro:
-            "Projetos empresariais, alianças estratégicas, conversas de investimento e novas oportunidades tecnológicas.",
+            "Canal geral para queixas, reclamações, sugestões e solicitações sobre a Tecnotitan.",
           cards: [
-            ["Empresas", "Projetos e consultoria", "Transformação tecnológica, IA, software e automação."],
-            ["Aliados", "Parcerias estratégicas", "Construção conjunta de produtos, integrações ou novas divisões."],
-            ["Capital", "Investidores", "Conversas sobre tese, estratégia de crescimento e futuras rodadas."]
+            ["Atendimento", "Solicitações gerais", "Perguntas, comentários e mensagens sobre a Tecnotitan e seus serviços."],
+            ["Qualidade", "Queixas e reclamações", "Relatos sobre experiências, processos ou respostas que precisam de revisão."],
+            ["Melhoria", "Sugestões", "Ideias para melhorar produtos, serviços, comunicação ou experiência do usuário."]
           ],
-          formTitle: "Contato para investidores",
-          formText: "Preencha as informações e envie sua mensagem para info@tecnotitan.com.",
-          formLabels: ["Nome", "Empresa", "País", "Email", "Tipo de interesse", "Mensagem"],
-          formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Projeto empresarial", "Imprensa / ecossistema"],
+          formTitle: "Contato geral",
+          formText: "Envie queixas, reclamações, sugestões ou solicitações gerais para info@tecnotitan.com.",
+          formLabels: ["Nome", "Email", "Empresa", "País", "Tipo de solicitação", "Mensagem"],
+          formOptions: ["Selecionar", "Queixa", "Reclamação", "Sugestão", "Solicitação geral"],
           formButton: "Enviar para info@tecnotitan.com",
           formSuccessTitle: "Mensagem enviada",
-          formSuccessText: "Obrigado. A equipe da Tecnotitan analisará sua mensagem e responderá por info@tecnotitan.com."
+          formSuccessText: "Obrigado. Recebemos sua solicitação geral e responderemos por info@tecnotitan.com."
         }
       }
     }
@@ -942,9 +963,10 @@ function applyLanguage(language) {
     const nextInput = document.querySelector('.contact-form input[name="_next"]');
     if (nextInput) {
       const nextUrl = new URL(window.location.href);
+      const formSection = nextInput.closest("section[id]");
       nextUrl.searchParams.set("sent", "1");
       nextUrl.searchParams.set("lang", language);
-      nextUrl.hash = "contacto-inversionistas";
+      nextUrl.hash = formSection ? formSection.id : "";
       nextInput.value = nextUrl.toString();
     }
     setText(".contact-form button", content.formButton);

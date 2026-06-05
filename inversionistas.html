@@ -24,7 +24,7 @@
         <a href="./inversionistas.html" aria-current="page">Inversionistas</a>
         <a href="./contacto.html">Contacto</a>
       </nav>
-      <a class="header-action" href="./contacto.html">Agendar conversación</a>
+      <a class="header-action" href="#contacto-inversionistas">Agendar conversación</a>
       <button class="menu-button" type="button" aria-label="Abrir navegación" data-menu-button><span></span><span></span></button>
     </header>
 
@@ -124,6 +124,60 @@
             <article><span>2027</span><h3>Productos y propiedad intelectual</h3><p>Empaquetar herramientas internas, lanzar primeras líneas comerciales y fortalecer divisiones técnicas.</p></article>
             <article><span>2028</span><h3>Escala regional y plataformas</h3><p>Expandir ventas regionales, convertir soluciones en plataformas y evaluar spin-offs por división.</p></article>
           </div>
+        </div>
+      </section>
+
+      <section class="content-band panel-section contact-form-section" id="contacto-inversionistas">
+        <div class="section-inner">
+          <div class="section-copy contact-form-copy reveal">
+            <h2>Contacto especial para inversionistas</h2>
+            <p>Comparte tu perfil, tesis o interés estratégico y el equipo de Tecnotitan responderá desde info@tecnotitan.com.</p>
+          </div>
+          <div class="form-success reveal" hidden data-form-success>
+            <strong>Solicitud enviada</strong>
+            <p>Gracias. El equipo de Tecnotitan revisará tu mensaje de inversión y responderá a info@tecnotitan.com.</p>
+          </div>
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/info@tecnotitan.com"
+            method="post"
+          >
+            <input type="hidden" name="_subject" value="Nuevo contacto de inversionista - Tecnotitan" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://www.tecnotitan.com/inversionistas.html?sent=1#contacto-inversionistas" />
+            <label>
+              <span>Nombre</span>
+              <input name="Nombre" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Firma / fondo</span>
+              <input name="Firma o fondo" type="text" autocomplete="organization" />
+            </label>
+            <label>
+              <span>País</span>
+              <input name="Pais" type="text" autocomplete="country-name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="Email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Tipo de interés</span>
+              <select name="Tipo de interes" required>
+                <option value="">Seleccionar</option>
+                <option>Inversión</option>
+                <option>Alianza estratégica</option>
+                <option>Investor deck</option>
+                <option>Agendar conversación</option>
+              </select>
+            </label>
+            <label class="form-wide">
+              <span>Mensaje</span>
+              <textarea name="Mensaje" rows="6" required></textarea>
+            </label>
+            <button class="button button-primary form-wide" type="submit">Enviar a info@tecnotitan.com</button>
+          </form>
         </div>
       </section>
 
