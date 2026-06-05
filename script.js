@@ -24,6 +24,18 @@ const languages = {
           primaryCta: "Tesis para inversionistas",
           secondaryCta: "Explorar productos",
           nextPreview: "Servicios de alto valor, productos propios e IP escalable",
+          visionLabel: "Visión corporativa",
+          visionTitle: "Construir una compañía de tecnología aplicada con alcance global.",
+          visionParagraphs: [
+            "Tecnotitan avanza hacia un modelo donde servicios, productos y divisiones técnicas alimentan una misma base de conocimiento, propiedad intelectual y capacidades reutilizables.",
+            "La visión es crear software empresarial, sistemas de IA, experiencias interactivas y robótica que puedan escalar desde Latinoamérica hacia mercados globales."
+          ],
+          visionCards: [
+            ["Software", "Sistemas operativos para empresas", "Plataformas internas, automatización, datos y productos web que mejoran ejecución."],
+            ["IA", "Inteligencia aplicada al trabajo", "Agentes, análisis, copilotos y flujos inteligentes integrados al negocio."],
+            ["Interactivo", "Videojuegos y simulación", "Experiencias inmersivas para entrenamiento, marca, educación y nuevos productos."],
+            ["Robótica", "Sistemas físico-digitales", "Software, sensores, control y datos para conectar operaciones con inteligencia."]
+          ],
           gatewayTitle: "Una compañía tecnológica construida por divisiones",
           gatewayText:
             "Separamos la historia corporativa en páginas claras para clientes, aliados e inversionistas globales.",
@@ -180,6 +192,18 @@ const languages = {
           primaryCta: "Investor thesis",
           secondaryCta: "Explore products",
           nextPreview: "High-value services, proprietary products and scalable IP",
+          visionLabel: "Corporate vision",
+          visionTitle: "Build an applied technology company with global reach.",
+          visionParagraphs: [
+            "Tecnotitan is moving toward a model where services, products and technical divisions compound into shared knowledge, proprietary IP and reusable capabilities.",
+            "The vision is to create enterprise software, AI systems, interactive products and robotics capabilities that can scale from Latin America into global markets."
+          ],
+          visionCards: [
+            ["Software", "Operating systems for companies", "Internal platforms, automation, data and web products that improve execution."],
+            ["AI", "Applied intelligence at work", "Agents, analytics, copilots and intelligent workflows embedded into business operations."],
+            ["Interactive", "Games and simulation", "Immersive experiences for training, brand engagement, education and new products."],
+            ["Robotics", "Physical-digital systems", "Software, sensors, control and data to connect operations with intelligence."]
+          ],
           gatewayTitle: "A multi-division technology company built for compounding IP",
           gatewayText:
             "Tecnotitan is structured so services, products and technical divisions reinforce each other across markets.",
@@ -336,6 +360,18 @@ const languages = {
           primaryCta: "Tese para investidores",
           secondaryCta: "Explorar produtos",
           nextPreview: "Serviços de alto valor, produtos próprios e IP escalável",
+          visionLabel: "Visão corporativa",
+          visionTitle: "Construir uma empresa de tecnologia aplicada com alcance global.",
+          visionParagraphs: [
+            "A Tecnotitan avança para um modelo em que serviços, produtos e divisões técnicas alimentam uma mesma base de conhecimento, propriedade intelectual e capacidades reutilizáveis.",
+            "A visão é criar software empresarial, sistemas de IA, produtos interativos e robótica que possam escalar da América Latina para mercados globais."
+          ],
+          visionCards: [
+            ["Software", "Sistemas operacionais para empresas", "Plataformas internas, automação, dados e produtos web que melhoram a execução."],
+            ["IA", "Inteligência aplicada ao trabalho", "Agentes, análise, copilotos e fluxos inteligentes integrados ao negócio."],
+            ["Interativo", "Videogames e simulação", "Experiências imersivas para treinamento, marca, educação e novos produtos."],
+            ["Robótica", "Sistemas físico-digitais", "Software, sensores, controle e dados para conectar operações com inteligência."]
+          ],
           gatewayTitle: "Uma empresa multivisão com potencial de IP acumulável",
           gatewayText:
             "A Tecnotitan conecta serviços, produtos e divisões técnicas para criar capacidades reutilizáveis em diferentes mercados.",
@@ -621,8 +657,16 @@ function applyLanguage(language) {
     setText(".button-primary", content.primaryCta);
     setText(".button-secondary", content.secondaryCta);
     setText(".next-preview strong", content.nextPreview);
+    setText(".corporate-vision .text-columns span", content.visionLabel);
+    setText("#vision-title", content.visionTitle);
+    document.querySelectorAll(".corporate-vision .text-columns article:last-child p").forEach((paragraph, index) => {
+      if (content.visionParagraphs[index]) {
+        paragraph.textContent = content.visionParagraphs[index];
+      }
+    });
+    setCards(".vision-grid article", content.visionCards);
     setText("#gateway-title", content.gatewayTitle);
-    setText(".section-copy p", content.gatewayText);
+    setText(".gateway-copy p", content.gatewayText);
     setCards(".gateway-grid a", content.cards);
     return;
   }
