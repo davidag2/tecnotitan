@@ -71,7 +71,7 @@ const languages = {
           cards: [
             ["Software", "Titan Business Systems", "Aplicaciones web, paneles operativos, CRM interno, automatización de procesos y portales empresariales."],
             ["IA", "Titan AI Agents", "Agentes inteligentes para soporte, ventas, operaciones, análisis documental y automatización de tareas."],
-            ["Games", "Titan Interactive", "Videojuegos, simuladores, experiencias inmersivas y gamificación para entrenamiento y marca."],
+            ["Videojuegos", "Titan Interactive", "Videojuegos, simuladores, experiencias inmersivas y gamificación para entrenamiento y marca."],
             ["Robótica", "Titan Robotics Stack", "Interfaces, sensores, control, datos y software para sistemas físico-digitales inteligentes."]
           ]
         }
@@ -88,7 +88,7 @@ const languages = {
           timelineLabel: "Servicios",
           cards: [
             ["01", "Diagnóstico IA", "Evaluación de procesos, datos, automatizaciones posibles y retorno esperado."],
-            ["02", "Roadmap tecnológico", "Arquitectura, prioridades, stack, riesgos y plan de ejecución."],
+            ["02", "Hoja de ruta tecnológica", "Arquitectura, prioridades, stack, riesgos y plan de ejecución."],
             ["03", "Implementación", "Desarrollo de software, agentes IA, integraciones y prototipos funcionales."],
             ["04", "Adopción", "Capacitación, medición, mejoras continuas y transferencia de capacidades."]
           ]
@@ -105,10 +105,10 @@ const languages = {
             "Cada división crea capacidades reutilizables, propiedad intelectual y oportunidades comerciales independientes.",
           cards: [
             ["Software", "Tecnotitan Software", "Productos web, sistemas empresariales y plataformas digitales."],
-            ["AI", "Tecnotitan AI", "Agentes, automatización, analítica e infraestructura de inteligencia artificial."],
-            ["Games", "Tecnotitan Games", "Videojuegos, simuladores, gamificación y experiencias interactivas."],
-            ["Robotics", "Tecnotitan Robotics", "Sistemas físico-digitales, control, sensores e integración."],
-            ["Consulting", "Tecnotitan Advisory", "Transformación tecnológica, estrategia IA y adopción empresarial."],
+            ["IA", "Tecnotitan AI", "Agentes, automatización, analítica e infraestructura de inteligencia artificial."],
+            ["Videojuegos", "Tecnotitan Games", "Videojuegos, simuladores, gamificación y experiencias interactivas."],
+            ["Robótica", "Tecnotitan Robotics", "Sistemas físico-digitales, control, sensores e integración."],
+            ["Consultoría", "Tecnotitan Advisory", "Transformación tecnológica, estrategia IA y adopción empresarial."],
             ["Ventures", "Tecnotitan Ventures", "Experimentación, spin-offs y nuevos productos escalables."]
           ]
         }
@@ -151,7 +151,7 @@ const languages = {
             "Proyectos empresariales, alianzas, inversión y nuevas oportunidades tecnológicas.",
           cards: [
             ["Empresas", "Proyectos y consultoría", "Transformación tecnológica, IA, software y automatización."],
-            ["Partners", "Alianzas estratégicas", "Construcción conjunta de productos, integraciones o nuevas divisiones."],
+            ["Aliados", "Alianzas estratégicas", "Construcción conjunta de productos, integraciones o nuevas divisiones."],
             ["Capital", "Inversionistas", "Conversaciones sobre visión, crecimiento y rondas futuras."]
           ]
         }
