@@ -75,6 +75,14 @@ const languages = {
             "Nuestra tesis es simple: las compañías que dominen software, datos, inteligencia artificial, experiencias interactivas y sistemas físicos inteligentes podrán crear ventajas duraderas.",
             "Tecnotitan integra esas disciplinas para construir soluciones propias, acompañar transformaciones empresariales y abrir nuevas divisiones de crecimiento."
           ],
+          leadershipTitle: "Liderazgo y equipo inicial",
+          leadershipText:
+            "Tecnotitan se construye con una estructura compacta, técnica y orientada a ejecución: liderazgo fundador, consultoría dedicada y capacidad de desarrollo.",
+          leadershipCards: [
+            ["CEO / Founder", "David Arias Giraldo", "Dirección estratégica, visión de producto, desarrollo corporativo y construcción del portafolio tecnológico."],
+            ["Consultoría full-time", "Consultora dedicada", "Acompañamiento en estrategia, operaciones, investigación, documentación y transformación tecnológica."],
+            ["Ingeniería", "2 programadores", "Equipo inicial de desarrollo para construir software, prototipos, automatizaciones y productos propios."]
+          ],
           cards: [
             ["01", "Producto antes que presentación", "Priorizamos sistemas funcionales, medibles y escalables sobre promesas abstractas."],
             ["02", "IA como infraestructura", "Tratamos la inteligencia artificial como una capa central para automatizar, decidir y aprender."],
@@ -292,6 +300,14 @@ const languages = {
             "Our thesis is simple: the next generation of companies will be built on software, data, artificial intelligence, interactive interfaces and intelligent physical systems.",
             "Tecnotitan integrates those disciplines to create proprietary solutions, support enterprise transformation and open new growth divisions over time."
           ],
+          leadershipTitle: "Leadership and initial team",
+          leadershipText:
+            "Tecnotitan is being built with a compact, technical and execution-oriented structure: founder leadership, dedicated consulting and development capacity.",
+          leadershipCards: [
+            ["CEO / Founder", "David Arias Giraldo", "Strategic direction, product vision, corporate development and construction of the technology portfolio."],
+            ["Full-time consulting", "Dedicated consultant", "Support across strategy, operations, research, documentation and technology transformation."],
+            ["Engineering", "2 programmers", "Initial development team for software, prototypes, automations and proprietary products."]
+          ],
           cards: [
             ["01", "Execution over narrative", "We prioritize functional, measurable and scalable systems over abstract promises."],
             ["02", "AI as an operating layer", "We treat artificial intelligence as core infrastructure for automation, decision-making and learning."],
@@ -508,6 +524,14 @@ const languages = {
           paragraphs: [
             "Nossa tese é simples: a próxima geração de empresas será construída sobre software, dados, inteligência artificial, interfaces interativas e sistemas físicos inteligentes.",
             "A Tecnotitan integra essas disciplinas para criar soluções próprias, apoiar transformações empresariais e abrir novas divisões de crescimento ao longo do tempo."
+          ],
+          leadershipTitle: "Liderança e equipe inicial",
+          leadershipText:
+            "A Tecnotitan está sendo construída com uma estrutura compacta, técnica e orientada à execução: liderança fundadora, consultoria dedicada e capacidade de desenvolvimento.",
+          leadershipCards: [
+            ["CEO / Founder", "David Arias Giraldo", "Direção estratégica, visão de produto, desenvolvimento corporativo e construção do portfólio tecnológico."],
+            ["Consultoria full-time", "Consultora dedicada", "Apoio em estratégia, operações, pesquisa, documentação e transformação tecnológica."],
+            ["Engenharia", "2 programadores", "Equipe inicial de desenvolvimento para construir software, protótipos, automações e produtos próprios."]
           ],
           cards: [
             ["01", "Execução antes da narrativa", "Priorizamos sistemas funcionais, mensuráveis e escaláveis acima de promessas abstratas."],
@@ -870,6 +894,12 @@ function applyLanguage(language) {
         paragraph.textContent = content.paragraphs[index];
       }
     });
+  }
+
+  if (content.leadershipTitle) {
+    setText(".leadership-copy h2", content.leadershipTitle);
+    setText(".leadership-copy p", content.leadershipText);
+    setCards(".leadership-grid article", content.leadershipCards);
   }
 
   if (content.opportunityTitle) {
