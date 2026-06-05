@@ -769,6 +769,32 @@ h3 {
   margin-top: clamp(34px, 5vw, 58px);
 }
 
+.form-success {
+  margin-top: 28px;
+  border: 1px solid rgba(103, 229, 255, 0.34);
+  background: rgba(103, 229, 255, 0.08);
+  padding: 18px 20px;
+}
+
+.form-success[hidden] {
+  display: none;
+}
+
+.form-success strong {
+  color: var(--accent);
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.form-success p {
+  color: var(--muted);
+  margin: 0;
+}
+
 .contact-form label {
   display: grid;
   gap: 10px;

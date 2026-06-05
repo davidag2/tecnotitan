@@ -227,7 +227,9 @@ const languages = {
           formText: "Completa la información y envíanos el mensaje a info@tecnotitan.com.",
           formLabels: ["Nombre", "Empresa", "País", "Email", "Tipo de interés", "Mensaje"],
           formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Proyecto empresarial", "Prensa / ecosistema"],
-          formButton: "Enviar a info@tecnotitan.com"
+          formButton: "Enviar a info@tecnotitan.com",
+          formSuccessTitle: "Mensaje enviado",
+          formSuccessText: "Gracias. El equipo de Tecnotitan revisará tu mensaje y responderá a info@tecnotitan.com."
         }
       }
     }
@@ -457,7 +459,9 @@ const languages = {
           formText: "Complete the information and send your message to info@tecnotitan.com.",
           formLabels: ["Name", "Company", "Country", "Email", "Type of interest", "Message"],
           formOptions: ["Select", "Investment", "Strategic partnership", "Enterprise project", "Press / ecosystem"],
-          formButton: "Send to info@tecnotitan.com"
+          formButton: "Send to info@tecnotitan.com",
+          formSuccessTitle: "Message sent",
+          formSuccessText: "Thank you. The Tecnotitan team will review your message and reply through info@tecnotitan.com."
         }
       }
     }
@@ -687,7 +691,9 @@ const languages = {
           formText: "Preencha as informações e envie sua mensagem para info@tecnotitan.com.",
           formLabels: ["Nome", "Empresa", "País", "Email", "Tipo de interesse", "Mensagem"],
           formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Projeto empresarial", "Imprensa / ecossistema"],
-          formButton: "Enviar para info@tecnotitan.com"
+          formButton: "Enviar para info@tecnotitan.com",
+          formSuccessTitle: "Mensagem enviada",
+          formSuccessText: "Obrigado. A equipe da Tecnotitan analisará sua mensagem e responderá por info@tecnotitan.com."
         }
       }
     }
@@ -933,7 +939,23 @@ function applyLanguage(language) {
         }
       });
     }
+    const nextInput = document.querySelector('.contact-form input[name="_next"]');
+    if (nextInput) {
+      const nextUrl = new URL(window.location.href);
+      nextUrl.searchParams.set("sent", "1");
+      nextUrl.searchParams.set("lang", language);
+      nextUrl.hash = "contacto-inversionistas";
+      nextInput.value = nextUrl.toString();
+    }
     setText(".contact-form button", content.formButton);
+    const successMessage = document.querySelector("[data-form-success]");
+    if (successMessage) {
+      setText("strong", content.formSuccessTitle, successMessage);
+      setText("p", content.formSuccessText, successMessage);
+      if (new URLSearchParams(window.location.search).get("sent") === "1") {
+        successMessage.hidden = false;
+      }
+    }
   }
 
   if (content.opportunityTitle) {

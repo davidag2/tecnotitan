@@ -51,11 +51,15 @@
         </div>
       </section>
 
-      <section class="content-band panel-section contact-form-section">
+      <section class="content-band panel-section contact-form-section" id="contacto-inversionistas">
         <div class="section-inner">
           <div class="section-copy contact-form-copy reveal">
             <h2>Contacto para inversionistas</h2>
             <p>Completa la información y envíanos el mensaje a info@tecnotitan.com.</p>
+          </div>
+          <div class="form-success reveal" hidden data-form-success>
+            <strong>Mensaje enviado</strong>
+            <p>Gracias. El equipo de Tecnotitan revisará tu mensaje y responderá a info@tecnotitan.com.</p>
           </div>
           <form
             class="contact-form reveal"
@@ -65,6 +69,7 @@
             <input type="hidden" name="_subject" value="Nuevo contacto desde Tecnotitan" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://www.tecnotitan.com/contacto.html?sent=1#contacto-inversionistas" />
             <label>
               <span>Nombre</span>
               <input name="Nombre" type="text" autocomplete="name" required />
