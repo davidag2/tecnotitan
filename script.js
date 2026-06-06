@@ -2664,6 +2664,269 @@ supportedLanguages.forEach((language) => {
   });
 });
 
+const seoMetadataOverrides = {
+  es: {
+    "index.html": [
+      "Tecnotitan | IA, software empresarial y automatización para empresas",
+      "Creamos software empresarial, agentes IA, automatización, videojuegos, robótica y consultoría tecnológica para empresas que quieren escalar."
+    ],
+    "nosotros.html": [
+      "Nosotros | Tecnotitan, compañía de IA y software empresarial",
+      "Conoce la visión, misión, liderazgo y equipo inicial de Tecnotitan, compañía colombiana de IA, software empresarial y tecnología aplicada."
+    ],
+    "productos.html": [
+      "Productos de IA, software y automatización empresarial | Tecnotitan",
+      "Explora Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan y Call Center AI para empresas."
+    ],
+    "servicios.html": [
+      "Servicios de IA, software empresarial y automatización | Tecnotitan",
+      "Consultoría e implementación de IA, desarrollo de software empresarial, automatización, robótica y transformación tecnológica para empresas."
+    ],
+    "divisiones.html": [
+      "Divisiones de tecnología aplicada, IA y robótica | Tecnotitan",
+      "Conoce las divisiones de Tecnotitan: software empresarial, inteligencia artificial, videojuegos, robótica, consultoría tecnológica y ventures."
+    ],
+    "inversionistas.html": [
+      "Tecnotitan para inversionistas | IA, software e IP escalable",
+      "Revisa la tesis de inversión de Tecnotitan: IA aplicada, software empresarial, productos propios, IP escalable, equipo, roadmap e investor deck."
+    ],
+    "contacto.html": [
+      "Contacto Tecnotitan | IA, software y transformación tecnológica",
+      "Contacta a Tecnotitan para proyectos de IA, software empresarial, automatización, servicios, alianzas, inversión, quejas, reclamos y sugerencias."
+    ],
+    "servicio-inteligencia-artificial.html": [
+      "Consultoría e implementación de inteligencia artificial para empresas | Tecnotitan",
+      "Diseñamos agentes IA, copilotos, automatización documental, analítica e integraciones para procesos empresariales."
+    ],
+    "servicio-software-empresarial.html": [
+      "Desarrollo de software empresarial a medida | Tecnotitan",
+      "Construimos plataformas web, CRM internos, dashboards, portales, integraciones y automatización para empresas."
+    ],
+    "servicio-consultoria-tecnologica.html": [
+      "Consultoría tecnológica para empresas | Tecnotitan",
+      "Diagnóstico, arquitectura, roadmap, adopción y acompañamiento ejecutivo para tomar mejores decisiones tecnológicas."
+    ],
+    "servicio-robotica.html": [
+      "Robótica aplicada para empresas | Tecnotitan",
+      "Prototipos, sensores, software de control, telemetría y sistemas físico-digitales conectados a datos."
+    ],
+    "servicio-videojuegos.html": [
+      "Videojuegos, simuladores y gamificación para empresas | Tecnotitan",
+      "Creamos videojuegos web, simuladores, experiencias interactivas y gamificación para capacitación, marca y educación."
+    ],
+    "servicio-transformacion-tecnologica.html": [
+      "Transformación tecnológica para empresas | Tecnotitan",
+      "Modernización operativa, automatización, adopción digital, datos y mejora continua para empresas."
+    ],
+    "producto-copiloto-pyme.html": [
+      "Copiloto Pyme | Asistente IA para pequeñas y medianas empresas",
+      "Asistente de IA para ventas, soporte, documentos y automatización operativa de pymes."
+    ],
+    "producto-tecnotitan-os.html": [
+      "Tecnotitan OS | Plataforma empresarial con IA y automatización",
+      "Centraliza procesos, datos, automatizaciones, agentes IA y flujos internos en una plataforma empresarial."
+    ],
+    "producto-life-copilot.html": [
+      "Life Copilot | App móvil de productividad con inteligencia artificial",
+      "Aplicación móvil de productividad personal con copiloto IA para metas, tareas, hábitos y decisiones."
+    ],
+    "producto-tecnotitan-engine.html": [
+      "Tecnotitan Engine | Motor para videojuegos, simuladores y experiencias interactivas",
+      "Toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados."
+    ],
+    "producto-academia-tecnotitan.html": [
+      "Academia Tecnotitan | Formación en IA, software, videojuegos y robótica",
+      "Plataforma de aprendizaje para inteligencia artificial, software, videojuegos, robótica y transformación tecnológica."
+    ],
+    "producto-call-center-ai.html": [
+      "Call Center AI Tecnotitan | Agentes IA para soporte y ventas",
+      "Agentes conversacionales para soporte, ventas, seguimiento de clientes y automatización de contact centers."
+    ]
+  },
+  en: {
+    "index.html": [
+      "Tecnotitan | AI, business software and automation for companies",
+      "We build business software, AI agents, automation, games, robotics and technology consulting for companies ready to scale."
+    ],
+    "nosotros.html": [
+      "About Tecnotitan | AI and business software company",
+      "Meet Tecnotitan's vision, mission, leadership and early team as a Colombian AI, business software and applied technology company."
+    ],
+    "productos.html": [
+      "AI, software and business automation products | Tecnotitan",
+      "Explore Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan and Call Center AI for companies."
+    ],
+    "servicios.html": [
+      "AI, business software and automation services | Tecnotitan",
+      "AI consulting and implementation, business software development, automation, robotics and technology transformation for companies."
+    ],
+    "divisiones.html": [
+      "Applied technology, AI and robotics divisions | Tecnotitan",
+      "Explore Tecnotitan divisions: business software, artificial intelligence, video games, robotics, technology consulting and ventures."
+    ],
+    "inversionistas.html": [
+      "Tecnotitan for investors | AI, software and scalable IP",
+      "Review Tecnotitan's investment thesis: applied AI, business software, proprietary products, scalable IP, team, roadmap and investor deck."
+    ],
+    "contacto.html": [
+      "Contact Tecnotitan | AI, software and technology transformation",
+      "Contact Tecnotitan for AI projects, business software, automation, services, partnerships, investment, complaints, claims and suggestions."
+    ],
+    "servicio-inteligencia-artificial.html": [
+      "AI consulting and implementation for companies | Tecnotitan",
+      "We design AI agents, copilots, document automation, analytics and integrations for business processes."
+    ],
+    "servicio-software-empresarial.html": [
+      "Custom business software development | Tecnotitan",
+      "We build web platforms, internal CRMs, dashboards, portals, integrations and automation for companies."
+    ],
+    "servicio-consultoria-tecnologica.html": [
+      "Technology consulting for companies | Tecnotitan",
+      "Diagnosis, architecture, roadmap, adoption and executive guidance for better technology decisions."
+    ],
+    "servicio-robotica.html": [
+      "Applied robotics for companies | Tecnotitan",
+      "Prototypes, sensors, control software, telemetry and physical-digital systems connected to data."
+    ],
+    "servicio-videojuegos.html": [
+      "Games, simulators and gamification for companies | Tecnotitan",
+      "We create web games, simulators, interactive experiences and gamification for training, brand and education."
+    ],
+    "servicio-transformacion-tecnologica.html": [
+      "Technology transformation for companies | Tecnotitan",
+      "Operational modernization, automation, digital adoption, data and continuous improvement for companies."
+    ]
+  },
+  pt: {
+    "index.html": [
+      "Tecnotitan | IA, software empresarial e automação para empresas",
+      "Criamos software empresarial, agentes de IA, automação, jogos, robótica e consultoria tecnológica para empresas que querem escalar."
+    ],
+    "nosotros.html": [
+      "Sobre a Tecnotitan | Empresa de IA e software empresarial",
+      "Conheça a visão, missão, liderança e equipe inicial da Tecnotitan, empresa colombiana de IA, software empresarial e tecnologia aplicada."
+    ],
+    "productos.html": [
+      "Produtos de IA, software e automação empresarial | Tecnotitan",
+      "Explore Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan e Call Center AI para empresas."
+    ],
+    "servicios.html": [
+      "Serviços de IA, software empresarial e automação | Tecnotitan",
+      "Consultoria e implementação de IA, desenvolvimento de software empresarial, automação, robótica e transformação tecnológica para empresas."
+    ],
+    "divisiones.html": [
+      "Divisões de tecnologia aplicada, IA e robótica | Tecnotitan",
+      "Conheça as divisões da Tecnotitan: software empresarial, inteligência artificial, games, robótica, consultoria tecnológica e ventures."
+    ],
+    "inversionistas.html": [
+      "Tecnotitan para investidores | IA, software e IP escalável",
+      "Revise a tese de investimento da Tecnotitan: IA aplicada, software empresarial, produtos próprios, IP escalável, equipe, roadmap e investor deck."
+    ],
+    "contacto.html": [
+      "Contato Tecnotitan | IA, software e transformação tecnológica",
+      "Entre em contato com a Tecnotitan para projetos de IA, software empresarial, automação, serviços, parcerias, investimento, reclamações e sugestões."
+    ]
+  },
+  zh: {
+    "index.html": [
+      "Tecnotitan | 面向企业的 AI、商业软件与自动化",
+      "Tecnotitan 为希望扩展的企业构建商业软件、AI 代理、自动化、游戏、机器人与技术咨询服务。"
+    ],
+    "nosotros.html": [
+      "关于 Tecnotitan | AI 与商业软件公司",
+      "了解 Tecnotitan 的愿景、使命、领导团队和早期团队：一家来自哥伦比亚的 AI、商业软件与应用技术公司。"
+    ],
+    "productos.html": [
+      "AI、软件与企业自动化产品 | Tecnotitan",
+      "探索 Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia Tecnotitan 与 Call Center AI。"
+    ],
+    "servicios.html": [
+      "AI、商业软件与自动化服务 | Tecnotitan",
+      "为企业提供 AI 咨询与实施、商业软件开发、自动化、机器人和技术转型服务。"
+    ],
+    "divisiones.html": [
+      "应用技术、AI 与机器人事业部 | Tecnotitan",
+      "了解 Tecnotitan 的商业软件、人工智能、游戏、机器人、技术咨询与 ventures 事业部。"
+    ],
+    "inversionistas.html": [
+      "Tecnotitan 投资者页面 | AI、软件与可扩展 IP",
+      "查看 Tecnotitan 的投资论点：应用 AI、商业软件、自有产品、可扩展 IP、团队、路线图与 investor deck。"
+    ],
+    "contacto.html": [
+      "联系 Tecnotitan | AI、软件与技术转型",
+      "联系 Tecnotitan，讨论 AI 项目、商业软件、自动化、服务、合作、投资、投诉、申诉与建议。"
+    ]
+  },
+  ja: {
+    "index.html": [
+      "Tecnotitan | 企業向けAI、業務ソフトウェア、自動化",
+      "Tecnotitan は、成長を目指す企業向けに業務ソフトウェア、AIエージェント、自動化、ゲーム、ロボティクス、技術コンサルティングを構築します。"
+    ],
+    "nosotros.html": [
+      "Tecnotitanについて | AIと業務ソフトウェア企業",
+      "Tecnotitan のビジョン、ミッション、リーダーシップ、初期チームをご覧ください。コロンビア発のAI、業務ソフトウェア、応用技術企業です。"
+    ],
+    "productos.html": [
+      "AI、ソフトウェア、企業自動化プロダクト | Tecnotitan",
+      "Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia Tecnotitan、Call Center AI をご覧ください。"
+    ],
+    "servicios.html": [
+      "AI、業務ソフトウェア、自動化サービス | Tecnotitan",
+      "企業向けにAIコンサルティングと実装、業務ソフトウェア開発、自動化、ロボティクス、技術変革を提供します。"
+    ],
+    "divisiones.html": [
+      "応用技術、AI、ロボティクス部門 | Tecnotitan",
+      "Tecnotitan の業務ソフトウェア、AI、ゲーム、ロボティクス、技術コンサルティング、ventures 部門をご覧ください。"
+    ],
+    "inversionistas.html": [
+      "Tecnotitan 投資家向け | AI、ソフトウェア、拡張可能なIP",
+      "Tecnotitan の投資テーゼ：応用AI、業務ソフトウェア、自社プロダクト、拡張可能なIP、チーム、ロードマップ、investor deck。"
+    ],
+    "contacto.html": [
+      "Tecnotitanへお問い合わせ | AI、ソフトウェア、技術変革",
+      "AIプロジェクト、業務ソフトウェア、自動化、サービス、提携、投資、苦情、申立て、提案についてお問い合わせください。"
+    ]
+  },
+  ko: {
+    "index.html": [
+      "Tecnotitan | 기업을 위한 AI, 비즈니스 소프트웨어와 자동화",
+      "Tecnotitan은 성장하는 기업을 위해 비즈니스 소프트웨어, AI 에이전트, 자동화, 게임, 로보틱스, 기술 컨설팅을 만듭니다."
+    ],
+    "nosotros.html": [
+      "Tecnotitan 소개 | AI 및 비즈니스 소프트웨어 기업",
+      "콜롬비아 기반 AI, 비즈니스 소프트웨어, 응용 기술 기업 Tecnotitan의 비전, 미션, 리더십과 초기 팀을 소개합니다."
+    ],
+    "productos.html": [
+      "AI, 소프트웨어, 기업 자동화 제품 | Tecnotitan",
+      "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan, Call Center AI를 살펴보세요."
+    ],
+    "servicios.html": [
+      "AI, 비즈니스 소프트웨어, 자동화 서비스 | Tecnotitan",
+      "기업을 위한 AI 컨설팅 및 구현, 비즈니스 소프트웨어 개발, 자동화, 로보틱스, 기술 전환 서비스를 제공합니다."
+    ],
+    "divisiones.html": [
+      "응용 기술, AI, 로보틱스 부문 | Tecnotitan",
+      "Tecnotitan의 비즈니스 소프트웨어, 인공지능, 게임, 로보틱스, 기술 컨설팅, ventures 부문을 살펴보세요."
+    ],
+    "inversionistas.html": [
+      "Tecnotitan 투자자 페이지 | AI, 소프트웨어, 확장 가능한 IP",
+      "Tecnotitan의 투자 논리: 응용 AI, 비즈니스 소프트웨어, 자체 제품, 확장 가능한 IP, 팀, 로드맵, investor deck."
+    ],
+    "contacto.html": [
+      "Tecnotitan 문의 | AI, 소프트웨어, 기술 전환",
+      "AI 프로젝트, 비즈니스 소프트웨어, 자동화, 서비스, 파트너십, 투자, 불만, 청구 및 제안에 대해 문의하세요."
+    ]
+  }
+};
+
+Object.entries(seoMetadataOverrides).forEach(([language, pages]) => {
+  Object.entries(pages).forEach(([file, [title, description]]) => {
+    languages[language].pages[file] ||= {};
+    languages[language].pages[file].title = title;
+    languages[language].pages[file].description = description;
+  });
+});
+
 const serviceStructuredSeo = {
   "servicio-inteligencia-artificial.html": {
     name: "Implementación de inteligencia artificial para empresas",
