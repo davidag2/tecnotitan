@@ -2354,6 +2354,51 @@ function setSeoMetadata(page, language) {
   setMetaContent('meta[name="twitter:image"]', image);
 }
 
+function injectServiceStructuredData(currentPageName) {
+  const service = serviceStructuredSeo[currentPageName];
+
+  if (!service || document.querySelector('script[data-service-seo="true"]')) {
+    return;
+  }
+
+  const serviceUrl = `https://www.tecnotitan.com/${currentPageName}`;
+  const structuredData = document.createElement("script");
+  structuredData.type = "application/ld+json";
+  structuredData.dataset.serviceSeo = "true";
+  structuredData.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${serviceUrl}#service`,
+        "name": service.name,
+        "description": service.description,
+        "provider": {
+          "@type": "Organization",
+          "name": "Tecnotitan",
+          "url": "https://www.tecnotitan.com/",
+          "email": "info@tecnotitan.com"
+        },
+        "areaServed": "Global",
+        "serviceType": service.name
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${serviceUrl}#faq`,
+        "mainEntity": service.faq.map(([question, answer]) => ({
+          "@type": "Question",
+          "name": question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": answer
+          }
+        }))
+      }
+    ]
+  });
+  document.head.appendChild(structuredData);
+}
+
 const languageCarryPages = new Set([
   "index.html",
   "nosotros.html",
@@ -2453,6 +2498,63 @@ supportedLanguages.forEach((language) => {
     languages[language].pages[file] ||= { title, description };
   });
 });
+
+const serviceStructuredSeo = {
+  "servicio-inteligencia-artificial.html": {
+    name: "Implementación de inteligencia artificial para empresas",
+    description: "Diagnóstico, agentes IA, copilotos, automatización, integración y medición para procesos empresariales.",
+    faq: [
+      ["¿Qué incluye un diagnóstico de IA?", "Incluye mapa de procesos, revisión de datos, riesgos, oportunidades y priorización de casos de uso viables."],
+      ["¿Cuándo conviene crear un agente IA?", "Conviene cuando existe un flujo repetible con información disponible, reglas claras y necesidad de respuesta o seguimiento frecuente."],
+      ["¿Cómo se mide el impacto de la IA?", "Se mide por ahorro de tiempo, reducción de trabajo repetitivo, calidad de respuesta, adopción del equipo y mejora en indicadores operativos."]
+    ]
+  },
+  "servicio-software-empresarial.html": {
+    name: "Desarrollo de software empresarial a medida",
+    description: "Plataformas internas, CRM, dashboards, portales, integraciones y automatización para empresas.",
+    faq: [
+      ["¿Cuándo una empresa necesita software a medida?", "Cuando las herramientas genéricas no cubren procesos críticos, datos, roles, integraciones o reportes del negocio."],
+      ["¿Qué puede construir Tecnotitan?", "Plataformas internas, CRM ligeros, portales operativos, dashboards, formularios, automatizaciones e integraciones con APIs."],
+      ["¿Cómo empieza un proyecto de software empresarial?", "Empieza con alcance, flujos, usuarios, datos, prioridades y un MVP que valide la operación antes de escalar."]
+    ]
+  },
+  "servicio-consultoria-tecnologica.html": {
+    name: "Consultoría tecnológica para empresas",
+    description: "Diagnóstico, arquitectura, roadmap, adopción y acompañamiento ejecutivo para decisiones tecnológicas.",
+    faq: [
+      ["¿Para qué sirve una consultoría tecnológica?", "Sirve para ordenar prioridades, reducir riesgo, definir arquitectura y convertir necesidades de negocio en una ruta ejecutable."],
+      ["¿Qué entrega un roadmap tecnológico?", "Entrega prioridades, quick wins, dependencias, presupuesto estimado, responsables e hitos de implementación."],
+      ["¿Quién debería solicitar consultoría?", "Empresas que necesitan modernizar procesos, evaluar IA, mejorar software interno o decidir inversiones tecnológicas."]
+    ]
+  },
+  "servicio-robotica.html": {
+    name: "Robótica aplicada para empresas",
+    description: "Prototipos, sensores, software de control, telemetría y sistemas físico-digitales conectados a datos.",
+    faq: [
+      ["¿Qué es robótica aplicada para empresas?", "Es la integración de sensores, actuadores, software, datos e interfaces para resolver procesos físicos u operativos."],
+      ["¿Cómo se valida un proyecto de robótica?", "Con una prueba técnica que evalúa sensores, control, datos, restricciones, entorno y factibilidad antes de escalar."],
+      ["¿Qué papel tiene el software en robótica?", "El software coordina control, interfaces, telemetría, reglas, alertas y conexión con sistemas internos."]
+    ]
+  },
+  "servicio-videojuegos.html": {
+    name: "Videojuegos, simuladores y experiencias interactivas para empresas",
+    description: "Simuladores, gamificación, videojuegos web y experiencias interactivas para capacitación, marca y educación.",
+    faq: [
+      ["¿Para qué sirven los simuladores empresariales?", "Sirven para entrenar equipos, evaluar decisiones, practicar escenarios y medir aprendizaje en entornos interactivos."],
+      ["¿Qué es gamificación corporativa?", "Es el uso de progreso, retos, recompensas y retroalimentación para aumentar participación y aprendizaje."],
+      ["¿Qué puede crear Tecnotitan en videojuegos?", "Prototipos, juegos web, simuladores, experiencias educativas, activaciones de marca y mundos interactivos."]
+    ]
+  },
+  "servicio-transformacion-tecnologica.html": {
+    name: "Transformación tecnológica para empresas",
+    description: "Modernización operativa, automatización, adopción digital, datos y mejora continua para empresas.",
+    faq: [
+      ["¿Qué es transformación tecnológica?", "Es la modernización de procesos, herramientas, datos y capacidades para operar con más claridad, automatización y medición."],
+      ["¿Cómo se inicia una transformación tecnológica?", "Con diagnóstico de madurez, mapa de procesos, quick wins, roadmap, adopción y seguimiento de indicadores."],
+      ["¿Por qué falla una transformación digital?", "Suele fallar por falta de prioridades, baja adopción, herramientas desconectadas, datos desordenados o ausencia de seguimiento."]
+    ]
+  }
+};
 
 const servicePageTranslations = {
   es: {
@@ -3085,6 +3187,7 @@ function applyLanguage(language) {
 
   document.documentElement.lang = language;
   setSeoMetadata(page, language);
+  injectServiceStructuredData(pageName);
 
   if (!content) {
     carryLanguageAcrossLinks(language);
