@@ -1868,6 +1868,10 @@ const languageLocales = {
   ja: "ja_JP",
   ko: "ko_KR"
 };
+const contactWhatsApp = {
+  href: "https://wa.me/573108229935",
+  label: "WhatsApp +57 310 822 9935"
+};
 const deckDownloadContent = {
   es: {
     title: "Ver Investor Deck en el navegador",
@@ -2298,6 +2302,13 @@ function applyLanguage(language) {
   setText(".page-label", content.label);
   setTitleLines(".page-hero h1", content.titleLines);
   setText(".page-hero p:not(.page-label)", content.intro);
+  if (pageName === "contacto.html") {
+    const whatsAppLink = document.querySelector(".contact-whatsapp-link");
+    if (whatsAppLink) {
+      whatsAppLink.href = contactWhatsApp.href;
+      whatsAppLink.textContent = contactWhatsApp.label;
+    }
+  }
   if (pageName === "investor-deck.html" && dictionary.deckUi) {
     setText(".page-hero .button-primary", dictionary.deckUi[1]);
     setText(".page-hero .button-secondary", dictionary.deckUi[2]);
