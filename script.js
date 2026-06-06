@@ -1688,6 +1688,120 @@ languages.ko = buildLocalizedLanguage(languages.en, {
   }
 });
 
+languages.es.pages["aviso-legal.html"] = {
+  title: "Aviso legal y privacidad | Tecnotitan",
+  description:
+    "Aviso legal y privacidad de Tecnotitan: información corporativa, formularios, geolocalización por país, propiedad intelectual y contacto oficial.",
+  content: {
+    label: "Aviso legal",
+    titleLines: ["Aviso legal", "y privacidad"],
+    intro:
+      "Información institucional sobre el uso del sitio web, formularios, datos técnicos, propiedad intelectual y canales oficiales de contacto.",
+    cards: [
+      ["01", "Información del sitio", "Este sitio presenta información corporativa de Tecnotitan, sus productos, servicios, divisiones y comunicaciones para inversionistas."],
+      ["02", "Geolocalización por país", "Usamos datos técnicos aproximados del país entregados por Vercel para seleccionar automáticamente el idioma inicial. No mostramos ni vendemos la IP del visitante."],
+      ["03", "Formularios", "Los datos enviados por formularios se usan para responder solicitudes, mensajes generales, quejas, reclamos, sugerencias o conversaciones con inversionistas."],
+      ["04", "Propiedad intelectual", "Marcas, textos, imágenes, diseños, productos, conceptos y materiales del sitio pertenecen a Tecnotitan o se usan con autorización."],
+      ["05", "Información para inversionistas", "El contenido para inversionistas es informativo y no constituye oferta pública de valores, recomendación financiera ni promesa de rendimiento."],
+      ["06", "Contacto oficial", "Para solicitudes legales, privacidad, correcciones o contacto institucional, escribe a info@tecnotitan.com."]
+    ]
+  }
+};
+
+languages.en.pages["aviso-legal.html"] = {
+  title: "Legal Notice and Privacy | Tecnotitan",
+  description:
+    "Tecnotitan legal notice and privacy information: corporate information, forms, country-level geolocation, intellectual property and official contact.",
+  content: {
+    label: "Legal notice",
+    titleLines: ["Legal notice", "and privacy"],
+    intro:
+      "Institutional information about website use, forms, technical data, intellectual property and official contact channels.",
+    cards: [
+      ["01", "Website information", "This website presents corporate information about Tecnotitan, its products, services, divisions and investor communications."],
+      ["02", "Country-level geolocation", "We use approximate country data provided by Vercel to automatically select the initial language. We do not display or sell the visitor IP."],
+      ["03", "Forms", "Data submitted through forms is used to respond to requests, general messages, complaints, claims, suggestions or investor conversations."],
+      ["04", "Intellectual property", "Trademarks, copy, images, designs, products, concepts and materials on this site belong to Tecnotitan or are used with authorization."],
+      ["05", "Investor information", "Investor content is informational and does not constitute a public securities offering, financial recommendation or promise of return."],
+      ["06", "Official contact", "For legal requests, privacy matters, corrections or institutional contact, write to info@tecnotitan.com."]
+    ]
+  }
+};
+
+languages.pt.pages["aviso-legal.html"] = {
+  title: "Aviso legal e privacidade | Tecnotitan",
+  description:
+    "Aviso legal e privacidade da Tecnotitan: informações corporativas, formulários, geolocalização por país, propriedade intelectual e contato oficial.",
+  content: {
+    label: "Aviso legal",
+    titleLines: ["Aviso legal", "e privacidade"],
+    intro:
+      "Informações institucionais sobre uso do site, formulários, dados técnicos, propriedade intelectual e canais oficiais de contato.",
+    cards: [
+      ["01", "Informações do site", "Este site apresenta informações corporativas da Tecnotitan, seus produtos, serviços, divisões e comunicações para investidores."],
+      ["02", "Geolocalização por país", "Usamos dados técnicos aproximados do país fornecidos pela Vercel para selecionar automaticamente o idioma inicial. Não exibimos nem vendemos o IP do visitante."],
+      ["03", "Formulários", "Os dados enviados por formulários são usados para responder solicitações, mensagens gerais, queixas, reclamações, sugestões ou conversas com investidores."],
+      ["04", "Propriedade intelectual", "Marcas, textos, imagens, designs, produtos, conceitos e materiais do site pertencem à Tecnotitan ou são usados com autorização."],
+      ["05", "Informações para investidores", "O conteúdo para investidores é informativo e não constitui oferta pública de valores, recomendação financeira nem promessa de retorno."],
+      ["06", "Contato oficial", "Para solicitações legais, privacidade, correções ou contato institucional, escreva para info@tecnotitan.com."]
+    ]
+  }
+};
+
+languages.zh.pages["aviso-legal.html"] = {
+  title: "法律声明与隐私 | Tecnotitan",
+  description: "Tecnotitan 法律声明与隐私信息：公司信息、表单、按国家识别语言、知识产权和官方联系渠道。",
+  content: {
+    label: "法律声明",
+    titleLines: ["法律声明", "与隐私"],
+    intro: "关于网站使用、表单、技术数据、知识产权和官方联系渠道的机构信息。",
+    cards: [
+      ["01", "网站信息", "本网站展示 Tecnotitan 的公司信息、产品、服务、事业部和投资者沟通内容。"],
+      ["02", "按国家识别语言", "我们使用 Vercel 提供的近似国家数据来自动选择初始语言。我们不展示或出售访问者 IP。"],
+      ["03", "表单", "通过表单提交的数据用于回复请求、一般消息、投诉、申诉、建议或投资者对话。"],
+      ["04", "知识产权", "本网站的商标、文本、图片、设计、产品、概念和材料属于 Tecnotitan 或经授权使用。"],
+      ["05", "投资者信息", "投资者内容仅供参考，不构成公开证券发行、财务建议或收益承诺。"],
+      ["06", "官方联系", "如有法律、隐私、更正或机构联系请求，请写信至 info@tecnotitan.com。"]
+    ]
+  }
+};
+
+languages.ja.pages["aviso-legal.html"] = {
+  title: "法的通知とプライバシー | Tecnotitan",
+  description: "Tecnotitan の法的通知とプライバシー情報：会社情報、フォーム、国別の言語選択、知的財産、公式連絡先。",
+  content: {
+    label: "法的通知",
+    titleLines: ["法的通知", "とプライバシー"],
+    intro: "ウェブサイトの利用、フォーム、技術データ、知的財産、公式連絡先に関する機関情報です。",
+    cards: [
+      ["01", "サイト情報", "このサイトは Tecnotitan の会社情報、製品、サービス、部門、投資家向けコミュニケーションを掲載しています。"],
+      ["02", "国別の言語選択", "Vercel が提供するおおよその国データを使用して初期言語を自動選択します。訪問者の IP を表示または販売しません。"],
+      ["03", "フォーム", "フォームで送信されたデータは、依頼、一般メッセージ、苦情、申し立て、提案、投資家との会話への返信に使用されます。"],
+      ["04", "知的財産", "サイト上の商標、文章、画像、デザイン、製品、概念、資料は Tecnotitan に属するか、許可を得て使用されています。"],
+      ["05", "投資家向け情報", "投資家向けコンテンツは情報提供を目的としており、有価証券の公募、金融助言、収益の約束ではありません。"],
+      ["06", "公式連絡先", "法務、プライバシー、訂正、機関連絡については info@tecnotitan.com へご連絡ください。"]
+    ]
+  }
+};
+
+languages.ko.pages["aviso-legal.html"] = {
+  title: "법적 고지 및 개인정보 | Tecnotitan",
+  description: "Tecnotitan 법적 고지 및 개인정보: 회사 정보, 양식, 국가 기반 언어 선택, 지식재산, 공식 연락처.",
+  content: {
+    label: "법적 고지",
+    titleLines: ["법적 고지", "및 개인정보"],
+    intro: "웹사이트 이용, 양식, 기술 데이터, 지식재산, 공식 연락 채널에 대한 기관 정보입니다.",
+    cards: [
+      ["01", "사이트 정보", "이 사이트는 Tecnotitan의 회사 정보, 제품, 서비스, 부문, 투자자 커뮤니케이션을 제공합니다."],
+      ["02", "국가 기반 언어 선택", "Vercel이 제공하는 대략적인 국가 데이터를 사용해 초기 언어를 자동 선택합니다. 방문자 IP를 표시하거나 판매하지 않습니다."],
+      ["03", "양식", "양식으로 제출된 데이터는 요청, 일반 메시지, 불만, 클레임, 제안 또는 투자자 대화에 응답하기 위해 사용됩니다."],
+      ["04", "지식재산", "사이트의 상표, 텍스트, 이미지, 디자인, 제품, 개념, 자료는 Tecnotitan에 속하거나 허가를 받아 사용됩니다."],
+      ["05", "투자자 정보", "투자자 콘텐츠는 정보 제공 목적이며, 공모, 금융 조언 또는 수익 약속을 구성하지 않습니다."],
+      ["06", "공식 연락처", "법무, 개인정보, 수정 요청 또는 기관 연락은 info@tecnotitan.com으로 보내주세요."]
+    ]
+  }
+};
+
 const pageName = window.location.pathname.split("/").pop() || "index.html";
 const supportedLanguages = Object.keys(languages);
 const languageNames = {
@@ -1953,6 +2067,7 @@ function applyLanguage(language) {
         legalLinks.innerHTML = "";
         legalLinks.append(links[0], " · ", links[1], " · ", links[2], " · ", links[3]);
         links[0].textContent = dictionary.footerMeta[3].split(" · ")[0];
+        links[0].setAttribute("href", "./aviso-legal.html");
         links[1].textContent = "LinkedIn";
         links[2].textContent = "Facebook";
         links[3].textContent = "Instagram";
