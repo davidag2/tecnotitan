@@ -2365,6 +2365,13 @@ const languageCarryPages = new Set([
   "servicio-robotica.html",
   "servicio-videojuegos.html",
   "servicio-transformacion-tecnologica.html",
+  "producto-copiloto-pyme.html",
+  "producto-tecnotitan-os.html",
+  "producto-life-copilot.html",
+  "producto-tecnotitan-engine.html",
+  "producto-academia-tecnotitan.html",
+  "producto-call-center-ai.html",
+  "trabaja-con-nosotros.html",
   "divisiones.html",
   "inversionistas.html",
   "contacto.html",
@@ -2401,6 +2408,43 @@ const serviceSeoPages = {
 
 supportedLanguages.forEach((language) => {
   Object.entries(serviceSeoPages).forEach(([file, [title, description]]) => {
+    languages[language].pages[file] ||= { title, description };
+  });
+});
+
+const staticSeoPages = {
+  "producto-copiloto-pyme.html": [
+    "Copiloto Pyme | Tecnotitan",
+    "Asistente de IA para ventas, soporte, documentos y automatización operativa de pymes."
+  ],
+  "producto-tecnotitan-os.html": [
+    "Tecnotitan OS | Tecnotitan",
+    "Plataforma empresarial para procesos, datos, automatizaciones, agentes IA y flujos internos."
+  ],
+  "producto-life-copilot.html": [
+    "Life Copilot | Tecnotitan",
+    "App móvil de productividad personal con copiloto IA para metas, tareas, hábitos y decisiones."
+  ],
+  "producto-tecnotitan-engine.html": [
+    "Tecnotitan Engine | Tecnotitan",
+    "Motor y toolkit para videojuegos, simuladores, experiencias interactivas y mundos gamificados."
+  ],
+  "producto-academia-tecnotitan.html": [
+    "Academia Tecnotitan | Tecnotitan",
+    "Plataforma de aprendizaje para IA, software, videojuegos, robótica y transformación tecnológica."
+  ],
+  "producto-call-center-ai.html": [
+    "Call Center AI Tecnotitan | Tecnotitan",
+    "Agentes conversacionales para soporte, ventas, seguimiento de clientes y contact centers."
+  ],
+  "trabaja-con-nosotros.html": [
+    "Trabaja con nosotros | Tecnotitan",
+    "Oportunidades para talento técnico, consultores, aliados y constructores de tecnología aplicada."
+  ]
+};
+
+supportedLanguages.forEach((language) => {
+  Object.entries(staticSeoPages).forEach(([file, [title, description]]) => {
     languages[language].pages[file] ||= { title, description };
   });
 });
@@ -3037,6 +3081,11 @@ function applyLanguage(language) {
   document.documentElement.lang = language;
   setSeoMetadata(page, language);
 
+  if (!content) {
+    carryLanguageAcrossLinks(language);
+    return;
+  }
+
   document.querySelectorAll(".brand, .footer-brand").forEach((brand) => {
     brand.setAttribute("aria-label", dictionary.brandHome);
   });
@@ -3080,6 +3129,24 @@ function applyLanguage(language) {
     }
   });
 
+  const talentLabels = {
+    es: "Talento",
+    en: "Talent",
+    pt: "Talento",
+    zh: "人才",
+    ja: "採用",
+    ko: "인재"
+  };
+
+  const footerNavigation = document.querySelector(".footer nav");
+  if (footerNavigation && !footerNavigation.querySelector('a[href="./trabaja-con-nosotros.html"]')) {
+    const talentLink = document.createElement("a");
+    talentLink.href = "./trabaja-con-nosotros.html";
+    talentLink.textContent = talentLabels[language] || "Talento";
+    const contactLink = footerNavigation.querySelector('a[href="./contacto.html"]');
+    footerNavigation.insertBefore(talentLink, contactLink || null);
+  }
+
   document.querySelectorAll(".footer nav a").forEach((link) => {
     const file = link.getAttribute("href")?.replace("./", "");
     const navFiles = [
@@ -3089,11 +3156,15 @@ function applyLanguage(language) {
       "servicios.html",
       "divisiones.html",
       "inversionistas.html",
+      "trabaja-con-nosotros.html",
       "contacto.html"
     ];
     const index = navFiles.indexOf(file);
-    if (index >= 0) {
-      link.textContent = dictionary.nav[index];
+    if (file === "trabaja-con-nosotros.html") {
+      link.textContent = talentLabels[language] || "Talento";
+    } else if (index >= 0) {
+      const dictionaryIndex = index > 6 ? index - 1 : index;
+      link.textContent = dictionary.nav[dictionaryIndex];
     }
   });
 
@@ -3430,7 +3501,34 @@ function prefillServiceRequestForm() {
   });
 }
 
+function buildPrivacyConsent() {
+  const storageKey = "tecnotitan-privacy-consent";
+
+  if (localStorage.getItem(storageKey) === "accepted") {
+    return;
+  }
+
+  const banner = document.createElement("aside");
+  banner.className = "privacy-consent";
+  banner.setAttribute("aria-label", "Consentimiento de privacidad");
+  banner.innerHTML = `
+    <p><strong>Privacidad</strong>Usamos métricas agregadas, geolocalización aproximada por país y formularios para mejorar Tecnotitan. No vendemos datos personales ni almacenamos IPs crudas.</p>
+    <div class="privacy-consent-actions">
+      <a href="./aviso-legal.html">Aviso legal</a>
+      <button type="button">Aceptar</button>
+    </div>
+  `;
+
+  banner.querySelector("button")?.addEventListener("click", () => {
+    localStorage.setItem(storageKey, "accepted");
+    banner.hidden = true;
+  });
+
+  document.body.appendChild(banner);
+}
+
 buildLanguageSwitcher();
+buildPrivacyConsent();
 applyLanguage(activeLanguage);
 prefillServiceRequestForm();
 enhanceContactForms();

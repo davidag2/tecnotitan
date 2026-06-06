@@ -33,6 +33,7 @@ function normalizePayload(payload) {
     budget: payload.Presupuesto || payload.budget || "",
     urgency: payload.Urgencia || payload.urgency || "",
     companySize: payload["Tamaño de empresa"] || payload["Tamano de empresa"] || payload.companySize || "",
+    area: payload.Area || payload.area || "",
     message: payload.Mensaje || payload.Message || payload.message || "",
     subject: payload._subject || payload.subject || "Nuevo contacto - Tecnotitan",
     formType: payload.formType || "general",
@@ -57,6 +58,7 @@ function buildEmailHtml(data) {
       <p><strong>Tipo de interés:</strong> ${escapeHtml(data.interest || "No indicado")}</p>
       ${data.service ? `<p><strong>Servicio:</strong> ${escapeHtml(data.service)}</p>` : ""}
       ${data.companySize ? `<p><strong>Tamaño de empresa:</strong> ${escapeHtml(data.companySize)}</p>` : ""}
+      ${data.area ? `<p><strong>Área / perfil:</strong> ${escapeHtml(data.area)}</p>` : ""}
       ${data.budget ? `<p><strong>Presupuesto aproximado:</strong> ${escapeHtml(data.budget)}</p>` : ""}
       ${data.urgency ? `<p><strong>Urgencia:</strong> ${escapeHtml(data.urgency)}</p>` : ""}
       <p><strong>Newsletter:</strong> ${escapeHtml(newsletterText)}</p>

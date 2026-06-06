@@ -705,6 +705,7 @@ h3 {
 
 .gateway-grid a,
 .service-link-grid a,
+.product-grid a,
 .industry-use-grid article,
 .work-method-grid article,
 .technology-capability-grid article,
@@ -718,8 +719,14 @@ h3 {
     #06090b;
 }
 
+.product-grid a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .gateway-grid a,
 .service-link-grid a,
+.product-grid a,
 .industry-use-grid article,
 .work-method-grid article,
 .technology-capability-grid article,
@@ -729,6 +736,7 @@ h3 {
 
 .gateway-grid a:hover,
 .service-link-grid a:hover,
+.product-grid a:hover,
 .industry-use-grid article:hover,
 .work-method-grid article:hover,
 .technology-capability-grid article:hover,
@@ -741,6 +749,7 @@ h3 {
 
 .gateway-grid span,
 .service-link-grid span,
+.product-grid span,
 .industry-use-grid span,
 .work-method-grid span,
 .technology-capability-grid span,
@@ -760,6 +769,7 @@ h3 {
 
 .gateway-grid h3,
 .service-link-grid h3,
+.product-grid h3,
 .industry-use-grid h3,
 .work-method-grid h3,
 .technology-capability-grid h3,
@@ -769,6 +779,7 @@ h3 {
 }
 
 .gateway-grid p,
+.product-grid p,
 .page-grid p,
 .metric-strip p,
 .investor-cta-grid p,
@@ -776,6 +787,73 @@ h3 {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.65;
+}
+
+.privacy-consent {
+  position: fixed;
+  left: clamp(16px, 3vw, 32px);
+  right: clamp(16px, 3vw, 32px);
+  bottom: 18px;
+  z-index: 80;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  border: 1px solid rgba(103, 229, 255, 0.24);
+  background:
+    linear-gradient(180deg, rgba(103, 229, 255, 0.09), rgba(255, 255, 255, 0.02)),
+    rgba(5, 7, 9, 0.96);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(18px);
+}
+
+.privacy-consent[hidden] {
+  display: none;
+}
+
+.privacy-consent p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.privacy-consent strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.privacy-consent-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.privacy-consent button,
+.privacy-consent a {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border: 1px solid rgba(103, 229, 255, 0.32);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.privacy-consent button {
+  background: var(--accent);
+  color: #041014;
+  cursor: pointer;
 }
 
 .deck-action {
@@ -1513,6 +1591,20 @@ h3 {
   .actions,
   .button {
     width: 100%;
+  }
+
+  .privacy-consent {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .privacy-consent-actions {
+    width: 100%;
+  }
+
+  .privacy-consent button,
+  .privacy-consent a {
+    flex: 1;
   }
 
   .next-preview {
