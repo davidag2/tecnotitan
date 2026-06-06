@@ -495,6 +495,24 @@ h3 {
   line-height: 1.5;
 }
 
+.industry-use-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.industry-use-grid a {
+  margin-top: auto;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.industry-use-grid a:hover {
+  color: var(--accent-2);
+}
+
 .product-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -520,7 +538,8 @@ h3 {
 }
 
 .service-package-grid,
-.service-outcome-grid {
+.service-outcome-grid,
+.industry-use-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -551,6 +570,7 @@ h3 {
 
 .gateway-grid a,
 .service-link-grid a,
+.industry-use-grid article,
 .page-grid article,
 .metric-strip article,
 .investor-cta-grid a {
@@ -563,12 +583,14 @@ h3 {
 
 .gateway-grid a,
 .service-link-grid a,
+.industry-use-grid article,
 .investor-cta-grid a {
   transition: background 180ms ease, transform 180ms ease;
 }
 
 .gateway-grid a:hover,
 .service-link-grid a:hover,
+.industry-use-grid article:hover,
 .investor-cta-grid a:hover {
   background:
     linear-gradient(180deg, rgba(103, 229, 255, 0.12), rgba(255, 255, 255, 0.02)),
@@ -578,6 +600,7 @@ h3 {
 
 .gateway-grid span,
 .service-link-grid span,
+.industry-use-grid span,
 .page-grid span,
 .metric-strip span,
 .investor-cta-grid span,
@@ -594,6 +617,7 @@ h3 {
 
 .gateway-grid h3,
 .service-link-grid h3,
+.industry-use-grid h3,
 .page-grid h3,
 .investor-cta-grid h3 {
   margin-bottom: 18px;
