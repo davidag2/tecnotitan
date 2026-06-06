@@ -41,6 +41,7 @@ function normalizePayload(payload) {
 function buildEmailHtml(data) {
   const newsletterText = data.newsletter ? "Sí, desea suscribirse al newsletter oficial." : "No solicitó suscripción.";
   return `
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <div style="font-family:Inter,Arial,sans-serif;color:#111827;line-height:1.55">
       <h1 style="font-size:22px;margin:0 0 16px">Nuevo mensaje desde Tecnotitan</h1>
       <p><strong>Tipo de formulario:</strong> ${escapeHtml(data.formType)}</p>
@@ -159,6 +160,7 @@ const welcomeEmails = {
 function buildWelcomeEmailHtml(data) {
   const template = welcomeEmails[data.language] || welcomeEmails.en;
   return `
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <div style="display:none;max-height:0;overflow:hidden;color:transparent">${escapeHtml(template.preview)}</div>
     <div style="font-family:Inter,Arial,sans-serif;color:#111827;line-height:1.6;max-width:640px;margin:0 auto;padding:28px">
       <p style="font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#0891b2;font-weight:800;margin:0 0 20px">Tecnotitan</p>
