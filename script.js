@@ -871,12 +871,832 @@ const languages = {
   }
 };
 
+function buildLocalizedLanguage(baseLanguage, overrides) {
+  return {
+    ...baseLanguage,
+    ...overrides,
+    footerMeta: overrides.footerMeta || baseLanguage.footerMeta,
+    deckUi: overrides.deckUi || baseLanguage.deckUi,
+    pages: {
+      ...baseLanguage.pages,
+      ...overrides.pages
+    }
+  };
+}
+
+languages.zh = buildLocalizedLanguage(languages.en, {
+  label: "中文",
+  nav: ["首页", "关于我们", "产品", "服务", "事业部", "投资者", "联系"],
+  headerAction: "预约沟通",
+  writeAction: "留言",
+  openNav: "打开导航",
+  closeNav: "关闭导航",
+  brandHome: "Tecnotitan 首页",
+  mainNav: "主导航",
+  footerNav: "页脚导航",
+  footerMeta: [
+    "Tecnotitan Corporate",
+    "软件、人工智能、电子游戏、机器人与技术转型。",
+    "哥伦比亚 | 面向全球投资者与企业服务。",
+    "法律声明 · LinkedIn · Facebook · Instagram",
+    "© 2026 Tecnotitan。保留所有权利。"
+  ],
+  deckUi: ["索取 Deck", "索取投资者 Deck", "PDF 下载即将开放"],
+  pages: {
+    "index.html": {
+      title: "Tecnotitan | 面向全球市场的应用技术",
+      description: "Tecnotitan 为全球企业与投资者打造软件、人工智能、电子游戏和机器人技术。",
+      content: {
+        heroTitle: ["人工智能、软件", "与机器人技术", "助力企业", "规模化增长"],
+        heroText: "Tecnotitan 为企业创造应用技术：AI 系统、运营软件、交互式产品和具备全球平台潜力的机器人技术。",
+        primaryCta: "投资者论点",
+        secondaryCta: "探索产品",
+        nextPreview: "高价值服务、自有产品与可扩展知识产权",
+        visionLabel: "企业愿景",
+        visionTitle: "打造一家具有全球影响力的应用技术公司。",
+        visionParagraphs: [
+          "Tecnotitan 正在构建一个模式，让服务、产品和技术事业部共享知识、知识产权和可复用能力。",
+          "我们的愿景是从拉丁美洲出发，打造可走向全球市场的企业软件、AI 系统、交互体验和机器人技术。"
+        ],
+        visionCards: [
+          ["软件", "企业运营系统", "内部平台、自动化、数据和 Web 产品，提升执行力。"],
+          ["AI", "应用于工作的智能", "代理、分析、copilot 和嵌入业务流程的智能工作流。"],
+          ["互动", "电子游戏与仿真", "面向培训、品牌、教育和新产品的沉浸式体验。"],
+          ["机器人", "物理数字系统", "软件、传感器、控制和数据，把运营与智能连接起来。"]
+        ],
+        marketTitle: "应用技术能够创造优势的市场。",
+        marketText: "Tecnotitan 面向真正需要数字化、自动化、交互体验和智能系统的客户。",
+        marketCards: [
+          ["企业", "运营软件", "需要内部 CRM、门户、仪表盘、流程和自动化的公司。"],
+          ["运营", "生产力 AI", "销售、支持、财务和运营团队中可重复的工作。"],
+          ["教育", "仿真与学习", "需要培训、评估和沉浸体验的机构与企业。"],
+          ["娱乐", "电子游戏与品牌", "互动产品、游戏化、品牌体验和新的数字内容。"],
+          ["工业", "机器人与数据", "可连接传感器、软件、控制和运营智能的流程。"],
+          ["机构", "技术转型", "需要战略、实施和采用路径的公共或私营组织。"]
+        ],
+        investorCtaTitle: "投资者行动",
+        investorCtaText: "快速查看机会、联系创始团队或开启对话。",
+        investorCtaCards: [
+          ["01", "索取投资者 Deck", "获取 Tecnotitan 的论点、市场、路线图和机会摘要。"],
+          ["02", "联系团队", "就战略问题或后续沟通直接联系 Tecnotitan。"],
+          ["03", "预约沟通", "围绕投资、合作或全球增长开启对话。"]
+        ],
+        gatewayTitle: "由多个事业部构建的科技公司",
+        gatewayText: "我们用清晰页面向客户、伙伴和全球投资者讲述公司故事。",
+        cards: [
+          ["01", "关于我们", "使命、技术论点与执行原则。"],
+          ["02", "产品", "把软件、AI、电子游戏和机器人技术转化为平台。"],
+          ["03", "服务", "人工智能与技术转型咨询。"],
+          ["04", "事业部", "用于构建多个市场的运营组合。"],
+          ["05", "投资者", "愿景、机会、模式和增长路径。"],
+          ["06", "联系", "商业、合作与投资对话。"]
+        ]
+      }
+    },
+    "nosotros.html": {
+      title: "关于我们 | Tecnotitan",
+      description: "了解 Tecnotitan 作为应用技术公司的愿景、使命和原则。",
+      content: {
+        label: "关于我们",
+        titleLines: ["一家有全球雄心的", "应用技术公司"],
+        intro: "Tecnotitan 致力于把软件、AI、电子游戏和机器人能力转化为提升企业竞争力的产品与服务。",
+        thesisLabel: "愿景",
+        thesisTitle: "成为一家具有全球影响力的拉丁美洲应用技术公司。",
+        paragraphs: [
+          "我们的论点很简单：掌握软件、数据、AI、交互体验和智能物理系统的公司，将创造持久优势。",
+          "Tecnotitan 整合这些学科，构建自有解决方案，陪伴企业转型，并打开新的增长事业部。"
+        ],
+        leadershipTitle: "领导力与初始团队",
+        leadershipText: "Tecnotitan 以精简、技术导向和执行导向的结构建设：创始人领导、专职咨询和开发能力。",
+        leadershipCards: [
+          ["CEO / Founder", "David Arias Giraldo", "负责战略方向、产品愿景、企业发展和技术组合建设。"],
+          ["全职咨询", "专职顾问", "支持战略、运营、研究、文档和技术转型。"],
+          ["工程", "2 名程序员", "初始开发团队，构建软件、原型、自动化和自有产品。"]
+        ],
+        cards: [
+          ["01", "产品优先于展示", "我们优先构建可运行、可衡量、可扩展的系统。"],
+          ["02", "AI 作为基础设施", "把 AI 作为自动化、决策和学习的核心层。"],
+          ["03", "可执行的多学科能力", "软件、游戏、机器人和咨询作为一个技术组合协同工作。"]
+        ]
+      }
+    },
+    "productos.html": {
+      title: "产品 | Tecnotitan",
+      description: "Tecnotitan 在企业软件、人工智能、电子游戏和机器人领域的产品。",
+      content: {
+        label: "产品",
+        titleLines: ["能够沉淀为", "平台的产品"],
+        intro: "我们构建自有产品和定制系统，并让它们逐步演进为可复制的平台。",
+        cards: [
+          ["中小企业 AI", "Copiloto Pyme", "面向销售、支持、文档和运营自动化的中小企业 AI 助手。"],
+          ["企业操作系统", "Tecnotitan OS", "集中流程、数据、自动化、AI 代理和内部工作流的企业平台。"],
+          ["移动 + AI", "Life Copilot", "用于目标、任务、习惯和决策管理的个人生产力 AI 移动应用。"],
+          ["电子游戏", "Tecnotitan Engine", "用于原型化游戏、仿真器、互动体验和游戏化世界的引擎与工具包。"],
+          ["教育", "Academia Tecnotitan", "面向 AI、软件、电子游戏、机器人和技术转型的学习平台。"],
+          ["AI 客服", "Call Center AI Tecnotitan", "用于支持、销售、客户跟进和联络中心自动化的对话式代理。"]
+        ]
+      }
+    },
+    "servicios.html": {
+      title: "服务 | Tecnotitan",
+      description: "面向企业的人工智能咨询与技术转型服务。",
+      content: {
+        label: "服务",
+        titleLines: ["从咨询走向", "真正实施"],
+        intro: "我们帮助企业识别、设计并实施具有运营影响力的 AI 和软件。",
+        timelineLabel: "服务",
+        cards: [
+          ["01", "AI 诊断", "评估流程、数据、自动化机会和预期回报。"],
+          ["02", "技术路线图", "架构、优先级、技术栈、风险和执行计划。"],
+          ["03", "实施", "开发软件、AI 代理、集成和可运行原型。"],
+          ["04", "采用", "培训、衡量、持续改进和能力转移。"]
+        ]
+      }
+    },
+    "divisiones.html": {
+      title: "事业部 | Tecnotitan",
+      description: "Tecnotitan 在软件、AI、电子游戏、机器人和技术 ventures 方面的事业部。",
+      content: {
+        label: "事业部",
+        titleLines: ["技术引擎", "组成的组合"],
+        intro: "每个事业部都创造可复用能力、知识产权和独立商业机会。",
+        divisionThesisLabel: "运营架构",
+        divisionThesisTitle: "由软件、数据和应用智能连接的事业部。",
+        divisionThesisParagraphs: [
+          "Tecnotitan 的每个事业部都可以作为商业单元、知识产权实验室和其他事业部的能力来源。",
+          "目标是让咨询、产品和自有技术相互增强，创造市场，而不仅是孤立项目。"
+        ],
+        cards: [
+          ["企业软件", "Tecnotitan Software", "面向企业运营优化的 Web 平台、内部 CRM、门户、仪表盘和自动化。"],
+          ["人工智能", "Tecnotitan AI", "代理、copilot、分析、文档自动化和嵌入真实流程的智能工作流。"],
+          ["电子游戏与互动", "Tecnotitan Games", "游戏、仿真器、游戏化和沉浸式体验，用于培训、品牌和新产品。"],
+          ["机器人", "Tecnotitan Robotics", "软件、传感器、控制和数据，构建与运营智能连接的物理数字系统。"],
+          ["技术咨询", "Tecnotitan Advisory", "AI 战略、技术转型、企业采用和高管陪伴。"],
+          ["Ventures", "Tecnotitan Ventures", "实验、spin-off、自有产品和由内部能力构建的新机会。"]
+        ]
+      }
+    },
+    "inversionistas.html": {
+      title: "投资者 | Tecnotitan",
+      description: "Tecnotitan 面向全球投资者的页面：论点、市场、模式和愿景。",
+      content: {
+        label: "投资者",
+        titleLines: ["从拉丁美洲出发", "面向全球市场的", "应用技术"],
+        intro: "Tecnotitan 结合高价值服务、自有产品和技术事业部，构建一家可扩展的应用技术公司。",
+        metrics: [
+          ["市场", "软件 + AI", "由智能自动化推动的企业数字化。"],
+          ["扩张", "多事业部", "软件、AI、电子游戏、机器人和咨询作为互联引擎。"],
+          ["模式", "服务到产品", "客户学习、自有 IP 和可复制平台。"]
+        ],
+        thesisLabel: "论点",
+        thesisTitle: "最好的技术伙伴会把咨询深度与产品执行结合起来。",
+        paragraphs: [
+          "市场正在从传统软件转向包含代理、自动化、数据和交互体验的系统。Tecnotitan 位于这一交汇点。",
+          "我们的路径结合服务收入、产品开发、知识产权和按事业部形成 spin-off 的机会。"
+        ],
+        opportunityTitle: "投资机会",
+        opportunityText: "Tecnotitan 旨在捕捉 AI、软件和机器人领域的企业需求，并把服务学习转化为自有产品和可扩展 IP。",
+        opportunityCards: [
+          ["01", "结构性需求", "企业需要自动化流程、数据和决策以保持竞争力。"],
+          ["02", "混合模式", "高价值服务带来收入、市场学习和产品机会。"],
+          ["03", "可积累 IP", "每个项目都能沉淀为工具、代理、框架和可复制平台。"],
+          ["04", "区域扩张", "从拉丁美洲构建应用技术，并销售给全球类似需求的市场。"]
+        ],
+        indicatorTitle: "跟踪指标",
+        indicatorText: "用于专业跟踪 Tecnotitan 在收入、自有产品、目标客户和区域规模化方面的进展。",
+        indicatorMetrics: [
+          ["目标市场", "企业 + AI", "软件、自动化、互动体验和应用机器人。"],
+          ["业务领域", "5 个事业部", "软件、AI、电子游戏、机器人和技术咨询。"],
+          ["产品", "6 条产品线", "Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia 和 Call Center AI。"]
+        ],
+        indicatorCards: [
+          ["目标客户", "中大型企业", "拥有重复流程、未充分利用数据和自动化压力的组织。"],
+          ["路线图", "服务到平台", "把重复交付转化为内部工具、商业模块和产品。"],
+          ["扩张", "LatAm 到全球", "验证区域案例，并向类似需求的市场扩展应用技术。"]
+        ],
+        roadmapTitle: "战略路线图",
+        roadmapText: "分阶段把技术能力转化为服务、自有产品和扩张机会。",
+        roadmapCards: [
+          ["2026", "验证与真实案例", "巩固 AI/软件服务，构建企业案例并记录可复制模式。"],
+          ["2027", "产品与知识产权", "打包内部工具，推出第一批商业产品线并强化技术事业部。"],
+          ["2028", "区域规模与平台", "扩大区域销售，把解决方案变为平台，并评估按事业部 spin-off。"]
+        ],
+        deckTitle: "Investor Deck / Data Room",
+        deckText: "为需要评估 Tecnotitan 论点、市场、组合和执行路径的投资者准备的材料。",
+        deckCards: [
+          ["01", "论点与市场", "问题、机会、目标客户，以及 AI、软件和自动化为何在此刻融合。"],
+          ["02", "产品与 IP", "当前组合、自有产品线和可变成可复制平台的能力。"],
+          ["03", "团队与执行", "初始结构、创始人领导、技术能力和以产品为中心的运营方式。"],
+          ["04", "路线图", "验证、打包、区域扩张和知识产权建设阶段。"],
+          ["05", "资本用途", "加速产品、销售、技术人才、内部自动化和商业验证。"],
+          ["06", "对话", "直接索取更多信息、分享论点或安排会议。"]
+        ],
+        deckPageButton: "查看 Deck 页面",
+        deckButton: "索取投资者 Deck",
+        investorCtaTitle: "投资者行动",
+        investorCtaText: "选择下一步以获取信息、联系团队或开启战略对话。",
+        investorCtaCards: [
+          ["01", "索取投资者 Deck", "索取论点、市场、路线图和机会的执行摘要。"],
+          ["02", "联系团队", "发送关于战略、组合、团队或增长阶段的问题。"],
+          ["03", "预约沟通", "开启关于投资、战略合作或扩张的对话。"]
+        ],
+        formTitle: "投资者专用联系表",
+        formText: "分享你的背景、投资论点或战略兴趣，Tecnotitan 团队将通过 info@tecnotitan.com 回复。",
+        formLabels: ["姓名", "机构 / 基金", "国家", "电子邮件", "兴趣类型", "留言"],
+        formOptions: ["选择", "投资", "战略合作", "Investor deck", "联系团队", "预约沟通"],
+        formButton: "发送至 info@tecnotitan.com",
+        formSuccessTitle: "请求已发送",
+        formSuccessText: "谢谢。Tecnotitan 团队将审阅你的投资信息，并通过 info@tecnotitan.com 回复。",
+        cards: [
+          ["01", "服务牵引", "解决真实企业问题，并把交付模式转化为可复用能力。"],
+          ["02", "自有产品", "把内部工具和已验证流程转化为商业平台。"],
+          ["03", "全球规模", "从拉丁美洲向全球企业销售应用技术。"]
+        ]
+      }
+    },
+    "contacto.html": {
+      title: "联系 | Tecnotitan",
+      description: "联系 Tecnotitan，咨询项目、服务、合作与投资。",
+      content: {
+        label: "联系",
+        titleLines: ["让我们聊聊", "下一项技术"],
+        intro: "用于投诉、申诉、建议和 Tecnotitan 一般请求的渠道。",
+        cards: [
+          ["服务", "一般请求", "关于 Tecnotitan 及其服务的问题、评论和消息。"],
+          ["质量", "投诉与申诉", "关于需要复核的体验、流程或回复的反馈。"],
+          ["改进", "建议", "改进产品、服务、沟通或用户体验的想法。"]
+        ],
+        formTitle: "一般联系",
+        formText: "请将投诉、申诉、建议或一般请求发送至 info@tecnotitan.com。",
+        formLabels: ["姓名", "电子邮件", "公司", "国家", "请求类型", "留言"],
+        formOptions: ["选择", "投诉", "申诉", "建议", "一般请求"],
+        formButton: "发送至 info@tecnotitan.com",
+        formSuccessTitle: "消息已发送",
+        formSuccessText: "谢谢。我们已收到你的一般请求，并将通过 info@tecnotitan.com 回复。"
+      }
+    },
+    "investor-deck.html": {
+      title: "Investor Deck | Tecnotitan",
+      description: "索取 Tecnotitan 未来的 Investor Deck PDF：论点、市场、产品、团队、路线图和资本重点。",
+      content: {
+        label: "Investor Deck",
+        titleLines: ["面向投资者的", "PDF"],
+        intro: "Tecnotitan 的正式 deck 已作为未来资产准备。在发布之前，你可以通过投资者表单直接索取访问。",
+        cards: [
+          ["01", "论点", "问题、市场机会和面向全球企业的应用技术论点。"],
+          ["02", "组合", "产品、事业部、潜在知识产权和可复制平台路径。"],
+          ["03", "执行", "初始团队、路线图、资本重点和下一阶段验证里程碑。"]
+        ]
+      }
+    }
+  }
+});
+
+languages.ja = buildLocalizedLanguage(languages.en, {
+  label: "日",
+  nav: ["ホーム", "会社情報", "製品", "サービス", "部門", "投資家", "お問い合わせ"],
+  headerAction: "面談を予約",
+  writeAction: "送信",
+  openNav: "ナビゲーションを開く",
+  closeNav: "ナビゲーションを閉じる",
+  brandHome: "Tecnotitan ホーム",
+  mainNav: "メインナビゲーション",
+  footerNav: "フッターナビゲーション",
+  footerMeta: [
+    "Tecnotitan Corporate",
+    "ソフトウェア、人工知能、ビデオゲーム、ロボティクス、テクノロジー変革。",
+    "コロンビア | 投資家と企業に向けたグローバル対応。",
+    "法的通知 · LinkedIn · Facebook · Instagram",
+    "© 2026 Tecnotitan. All rights reserved."
+  ],
+  deckUi: ["Deck を請求", "Investor Deck を請求", "PDF ダウンロードは近日公開"],
+  pages: {
+    "index.html": {
+      title: "Tecnotitan | グローバル市場のための応用テクノロジー",
+      description: "Tecnotitan は、世界の企業と投資家向けにソフトウェア、AI、ゲーム、ロボティクスを構築します。",
+      content: {
+        heroTitle: ["AI、ソフトウェア", "ロボティクスで", "企業の成長を", "加速する"],
+        heroText: "Tecnotitan は企業向けの応用テクノロジーを構築します。AI システム、業務ソフトウェア、インタラクティブ製品、そしてグローバルなプラットフォームへ発展し得るロボティクスです。",
+        primaryCta: "投資家向けテーゼ",
+        secondaryCta: "製品を見る",
+        nextPreview: "高付加価値サービス、自社製品、拡張可能な IP",
+        visionLabel: "企業ビジョン",
+        visionTitle: "グローバルに展開する応用テクノロジー企業を構築する。",
+        visionParagraphs: [
+          "Tecnotitan は、サービス、製品、技術部門が知識、IP、再利用可能な能力を共有するモデルへ進んでいます。",
+          "ラテンアメリカから世界市場へ展開できる企業ソフトウェア、AI システム、インタラクティブ体験、ロボティクスをつくります。"
+        ],
+        visionCards: [
+          ["ソフトウェア", "企業向け業務システム", "社内プラットフォーム、自動化、データ、Web 製品で実行力を高めます。"],
+          ["AI", "仕事に適用する知能", "エージェント、分析、copilot、業務に統合されたスマートフロー。"],
+          ["インタラクティブ", "ゲームとシミュレーション", "研修、ブランド、教育、新製品向けの没入型体験。"],
+          ["ロボティクス", "フィジカル・デジタルシステム", "ソフトウェア、センサー、制御、データで業務と知能を接続します。"]
+        ],
+        marketTitle: "応用テクノロジーが優位性を生む市場。",
+        marketText: "Tecnotitan は、デジタル化、自動化、インタラクティブ体験、インテリジェントシステムを本当に必要とする顧客を対象にします。",
+        marketCards: [
+          ["企業", "業務ソフトウェア", "社内 CRM、ポータル、ダッシュボード、フロー、自動化を必要とする会社。"],
+          ["オペレーション", "生産性のための AI", "反復可能な業務を持つ営業、サポート、財務、運用チーム。"],
+          ["教育", "シミュレーションと学習", "研修、評価、没入型体験を必要とする機関と企業。"],
+          ["エンタメ", "ゲームとブランド", "インタラクティブ製品、ゲーミフィケーション、ブランド体験、新しいデジタルコンテンツ。"],
+          ["産業", "ロボティクスとデータ", "センサー、ソフトウェア、制御、業務知能を接続できるプロセス。"],
+          ["組織", "テクノロジー変革", "戦略、実装、導入を必要とする公共・民間組織。"]
+        ],
+        investorCtaTitle: "投資家向けアクション",
+        investorCtaText: "機会を確認し、創業チームに連絡し、会話を始めるための入口です。",
+        investorCtaCards: [
+          ["01", "Investor Deck を請求", "Tecnotitan のテーゼ、市場、ロードマップ、機会の要約を受け取る。"],
+          ["02", "チームに連絡", "戦略的な質問やフォローアップについて Tecnotitan と直接つながる。"],
+          ["03", "面談を予約", "投資、提携、グローバル成長について会話を始める。"]
+        ],
+        gatewayTitle: "複数部門で構築されるテクノロジー企業",
+        gatewayText: "顧客、パートナー、世界の投資家に向けて、会社のストーリーを明確なページに分けています。",
+        cards: [
+          ["01", "会社情報", "ミッション、技術テーゼ、実行原則。"],
+          ["02", "製品", "ソフトウェア、AI、ゲーム、ロボティクスをプラットフォームへ。"],
+          ["03", "サービス", "人工知能とテクノロジー変革のコンサルティング。"],
+          ["04", "部門", "複数市場を構築するための運用ポートフォリオ。"],
+          ["05", "投資家", "ビジョン、機会、モデル、成長ルート。"],
+          ["06", "お問い合わせ", "商談、提携、投資の会話。"]
+        ]
+      }
+    },
+    "nosotros.html": {
+      title: "会社情報 | Tecnotitan",
+      description: "応用テクノロジー企業としての Tecnotitan のビジョン、ミッション、原則。",
+      content: {
+        label: "会社情報",
+        titleLines: ["グローバルな野心を持つ", "応用テクノロジー企業"],
+        intro: "Tecnotitan は、ソフトウェア、AI、ゲーム、ロボティクスの能力を、企業競争力を高める製品とサービスへ変換するために生まれました。",
+        thesisLabel: "ビジョン",
+        thesisTitle: "グローバルに展開するラテンアメリカ発の応用テクノロジー企業になる。",
+        paragraphs: [
+          "私たちのテーゼは明確です。ソフトウェア、データ、AI、インタラクティブ体験、知的な物理システムを使いこなす企業が、持続的な優位性を生みます。",
+          "Tecnotitan はこれらの領域を統合し、自社ソリューションを構築し、企業変革を支援し、新しい成長部門を開きます。"
+        ],
+        leadershipTitle: "リーダーシップと初期チーム",
+        leadershipText: "Tecnotitan は、創業者のリーダーシップ、専任コンサルティング、開発能力を備えた小さく技術志向の実行型チームで構築されています。",
+        leadershipCards: [
+          ["CEO / Founder", "David Arias Giraldo", "戦略、製品ビジョン、企業開発、技術ポートフォリオ構築を主導。"],
+          ["専任コンサルティング", "専任コンサルタント", "戦略、運用、調査、ドキュメント、テクノロジー変革を支援。"],
+          ["エンジニアリング", "2 名のプログラマー", "ソフトウェア、プロトタイプ、自動化、自社製品を構築する初期開発チーム。"]
+        ],
+        cards: [
+          ["01", "プレゼンより製品", "抽象的な約束より、機能し、測定でき、拡張できるシステムを優先します。"],
+          ["02", "AI をインフラとして扱う", "自動化、意思決定、学習の中核レイヤーとして AI を扱います。"],
+          ["03", "実行可能な複合領域", "ソフトウェア、ゲーム、ロボティクス、コンサルティングを一つの技術ポートフォリオとして動かします。"]
+        ]
+      }
+    },
+    "productos.html": {
+      title: "製品 | Tecnotitan",
+      description: "企業ソフトウェア、AI、ゲーム、ロボティクスにおける Tecnotitan の製品。",
+      content: {
+        label: "製品",
+        titleLines: ["プラットフォームへ", "発展し得る製品"],
+        intro: "自社製品とカスタムシステムを構築し、再現可能なプラットフォームへ進化させます。",
+        cards: [
+          ["中小企業 AI", "Copiloto Pyme", "営業、サポート、文書、業務自動化のための中小企業向け AI アシスタント。"],
+          ["企業 OS", "Tecnotitan OS", "プロセス、データ、自動化、AI エージェント、社内フローを一元化する企業プラットフォーム。"],
+          ["モバイル + AI", "Life Copilot", "目標、タスク、習慣、意思決定を整理する個人向け AI 生産性アプリ。"],
+          ["ゲーム", "Tecnotitan Engine", "ゲーム、シミュレーター、インタラクティブ体験、ゲーミフィケーション世界を試作するエンジンとツールキット。"],
+          ["教育", "Academia Tecnotitan", "AI、ソフトウェア、ゲーム、ロボティクス、テクノロジー変革の学習プラットフォーム。"],
+          ["AI コールセンター", "Call Center AI Tecnotitan", "サポート、営業、顧客フォロー、コンタクトセンター自動化のための会話型エージェント。"]
+        ]
+      }
+    },
+    "servicios.html": {
+      title: "サービス | Tecnotitan",
+      description: "企業向けの AI コンサルティングとテクノロジー変革サービス。",
+      content: {
+        label: "サービス",
+        titleLines: ["実装につながる", "コンサルティング"],
+        intro: "企業が業務インパクトのある AI とソフトウェアを特定、設計、実装できるよう支援します。",
+        timelineLabel: "サービス",
+        cards: [
+          ["01", "AI 診断", "プロセス、データ、自動化機会、期待リターンを評価。"],
+          ["02", "技術ロードマップ", "アーキテクチャ、優先順位、スタック、リスク、実行計画。"],
+          ["03", "実装", "ソフトウェア、AI エージェント、連携、機能するプロトタイプを開発。"],
+          ["04", "導入", "トレーニング、測定、継続改善、能力移転。"]
+        ]
+      }
+    },
+    "divisiones.html": {
+      title: "部門 | Tecnotitan",
+      description: "ソフトウェア、AI、ゲーム、ロボティクス、技術 ventures における Tecnotitan の部門。",
+      content: {
+        label: "部門",
+        titleLines: ["テクノロジーエンジンの", "ポートフォリオ"],
+        intro: "各部門は再利用可能な能力、知的財産、独立した商業機会を生みます。",
+        divisionThesisLabel: "運用アーキテクチャ",
+        divisionThesisTitle: "ソフトウェア、データ、応用知能でつながる部門。",
+        divisionThesisParagraphs: [
+          "Tecnotitan の各部門は、商業ユニット、IP ラボ、他部門への能力供給源として機能できます。",
+          "目的は、コンサルティング、製品、自社技術が互いを強化し、孤立した案件ではなく市場をつくることです。"
+        ],
+        cards: [
+          ["企業ソフトウェア", "Tecnotitan Software", "企業がより良く運営するための Web プラットフォーム、社内 CRM、ポータル、ダッシュボード、自動化。"],
+          ["人工知能", "Tecnotitan AI", "実際のプロセスに統合されるエージェント、copilot、分析、文書自動化、スマートフロー。"],
+          ["ゲームとインタラクティブ", "Tecnotitan Games", "研修、ブランド、新製品向けのゲーム、シミュレーター、ゲーミフィケーション、没入型体験。"],
+          ["ロボティクス", "Tecnotitan Robotics", "業務知能と接続されたフィジカル・デジタルシステムをつくるソフトウェア、センサー、制御、データ。"],
+          ["技術コンサルティング", "Tecnotitan Advisory", "AI 戦略、テクノロジー変革、企業導入、経営層支援。"],
+          ["Ventures", "Tecnotitan Ventures", "実験、spin-off、自社製品、内部能力から生まれる新しい機会。"]
+        ]
+      }
+    },
+    "inversionistas.html": {
+      title: "投資家 | Tecnotitan",
+      description: "Tecnotitan のグローバル投資家向けページ：テーゼ、市場、モデル、ビジョン。",
+      content: {
+        label: "投資家",
+        titleLines: ["ラテンアメリカから", "世界市場へ向けた", "応用テクノロジー"],
+        intro: "Tecnotitan は高付加価値サービス、自社製品、技術部門を組み合わせ、拡張可能な応用テクノロジー企業を構築します。",
+        metrics: [
+          ["市場", "ソフトウェア + AI", "知的自動化によって加速する企業デジタル化。"],
+          ["拡張", "複数部門", "ソフトウェア、AI、ゲーム、ロボティクス、コンサルティングが接続されたエンジン。"],
+          ["モデル", "サービスから製品へ", "顧客からの学習、自社 IP、再現可能なプラットフォーム。"]
+        ],
+        thesisLabel: "テーゼ",
+        thesisTitle: "最高の技術パートナーは、コンサルティングの深さと製品実行力を組み合わせます。",
+        paragraphs: [
+          "市場は従来型ソフトウェアから、エージェント、自動化、データ、インタラクティブ体験を持つシステムへ移行しています。Tecnotitan はその交差点に位置します。",
+          "私たちの道筋は、サービス収益、製品開発、知的財産、部門ごとの spin-off 機会を組み合わせます。"
+        ],
+        opportunityTitle: "投資機会",
+        opportunityText: "Tecnotitan は AI、ソフトウェア、ロボティクスにおける企業需要を捉え、サービスで得た学習を自社製品と拡張可能な IP へ変換します。",
+        opportunityCards: [
+          ["01", "構造的需要", "企業は競争するためにプロセス、データ、意思決定の自動化を必要としています。"],
+          ["02", "ハイブリッドモデル", "高付加価値サービスが収益、市場学習、製品機会を生みます。"],
+          ["03", "蓄積可能な IP", "各プロジェクトはツール、エージェント、フレームワーク、再現可能なプラットフォームになり得ます。"],
+          ["04", "地域拡張", "ラテンアメリカから応用技術を構築し、同様の課題を持つ世界市場へ販売します。"]
+        ],
+        indicatorTitle: "進捗指標",
+        indicatorText: "Tecnotitan の収益、自社製品、対象顧客、地域スケールへの進捗を追跡するためのプロフェッショナルな枠組み。",
+        indicatorMetrics: [
+          ["対象市場", "企業 + AI", "ソフトウェア、自動化、インタラクティブ体験、応用ロボティクス。"],
+          ["事業領域", "5 部門", "ソフトウェア、AI、ゲーム、ロボティクス、技術コンサルティング。"],
+          ["製品", "6 ライン", "Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia、Call Center AI。"]
+        ],
+        indicatorCards: [
+          ["対象顧客", "中堅・大企業", "反復プロセス、未活用データ、自動化圧力を持つ組織。"],
+          ["ロードマップ", "サービスからプラットフォームへ", "反復する納品を社内ツール、商用モジュール、製品へ変換します。"],
+          ["拡張", "LatAm から世界へ", "地域の事例を検証し、類似ニーズの市場へ応用技術を拡張します。"]
+        ],
+        roadmapTitle: "戦略ロードマップ",
+        roadmapText: "技術能力をサービス、自社製品、拡張機会へ変える段階的な成長ルート。",
+        roadmapCards: [
+          ["2026", "検証と実案件", "AI/ソフトウェアサービスを強化し、企業事例を構築し、再現可能なパターンを記録。"],
+          ["2027", "製品と IP", "内部ツールをパッケージ化し、初期の商用ラインを立ち上げ、技術部門を強化。"],
+          ["2028", "地域スケールとプラットフォーム", "地域販売を拡大し、ソリューションをプラットフォーム化し、部門ごとの spin-off を検討。"]
+        ],
+        deckTitle: "Investor Deck / Data Room",
+        deckText: "Tecnotitan のテーゼ、市場、ポートフォリオ、実行ルートを評価する投資家向けの資料。",
+        deckCards: [
+          ["01", "テーゼと市場", "課題、機会、対象顧客、AI・ソフトウェア・自動化が今融合する理由。"],
+          ["02", "製品と IP", "現在のポートフォリオ、自社ライン、再現可能なプラットフォームになり得る能力。"],
+          ["03", "チームと実行", "初期体制、創業者リーダーシップ、技術能力、製品中心の運営方法。"],
+          ["04", "ロードマップ", "検証、パッケージ化、地域拡張、知的財産構築のフェーズ。"],
+          ["05", "資本用途", "製品、営業、技術人材、内部自動化、商業検証を加速。"],
+          ["06", "対話", "追加情報の請求、テーゼ共有、Tecnotitan との面談調整。"]
+        ],
+        deckPageButton: "Deck ページを見る",
+        deckButton: "Investor Deck を請求",
+        investorCtaTitle: "投資家向けアクション",
+        investorCtaText: "情報を受け取り、チームに連絡し、戦略的な会話を始める次のステップを選択してください。",
+        investorCtaCards: [
+          ["01", "Investor Deck を請求", "テーゼ、市場、ロードマップ、機会のエグゼクティブサマリーを請求。"],
+          ["02", "チームに連絡", "戦略、ポートフォリオ、チーム、成長段階について質問を送る。"],
+          ["03", "面談を予約", "投資、戦略提携、拡張について会話を始める。"]
+        ],
+        formTitle: "投資家専用フォーム",
+        formText: "プロフィール、投資テーゼ、戦略的関心を共有してください。Tecnotitan チームが info@tecnotitan.com から返信します。",
+        formLabels: ["名前", "会社 / ファンド", "国", "メール", "関心タイプ", "メッセージ"],
+        formOptions: ["選択", "投資", "戦略提携", "Investor deck", "チームに連絡", "面談を予約"],
+        formButton: "info@tecnotitan.com へ送信",
+        formSuccessTitle: "リクエストを送信しました",
+        formSuccessText: "ありがとうございます。Tecnotitan チームが投資メッセージを確認し、info@tecnotitan.com から返信します。",
+        cards: [
+          ["01", "サービスによる牽引", "企業の実課題を解決し、納品パターンを再利用可能な能力へ変換します。"],
+          ["02", "自社製品", "内部ツールと検証済みフローを商用プラットフォームへ変換します。"],
+          ["03", "グローバルスケール", "ラテンアメリカから世界の企業へ応用テクノロジーを販売します。"]
+        ]
+      }
+    },
+    "contacto.html": {
+      title: "お問い合わせ | Tecnotitan",
+      description: "プロジェクト、サービス、提携、投資について Tecnotitan へお問い合わせください。",
+      content: {
+        label: "お問い合わせ",
+        titleLines: ["次のテクノロジーについて", "話しましょう"],
+        intro: "苦情、申し立て、提案、Tecnotitan への一般的な依頼のための窓口です。",
+        cards: [
+          ["サポート", "一般的な依頼", "Tecnotitan とサービスに関する質問、コメント、メッセージ。"],
+          ["品質", "苦情と申し立て", "見直しが必要な体験、プロセス、回答についての報告。"],
+          ["改善", "提案", "製品、サービス、コミュニケーション、ユーザー体験を改善するアイデア。"]
+        ],
+        formTitle: "一般お問い合わせ",
+        formText: "苦情、申し立て、提案、一般的な依頼を info@tecnotitan.com へ送信してください。",
+        formLabels: ["名前", "メール", "会社", "国", "依頼タイプ", "メッセージ"],
+        formOptions: ["選択", "苦情", "申し立て", "提案", "一般的な依頼"],
+        formButton: "info@tecnotitan.com へ送信",
+        formSuccessTitle: "メッセージを送信しました",
+        formSuccessText: "ありがとうございます。一般リクエストを受け取りました。info@tecnotitan.com から返信します。"
+      }
+    },
+    "investor-deck.html": {
+      title: "Investor Deck | Tecnotitan",
+      description: "Tecnotitan の将来の Investor Deck PDF を請求：テーゼ、市場、製品、チーム、ロードマップ、資本優先事項。",
+      content: {
+        label: "Investor Deck",
+        titleLines: ["投資家向け", "PDF"],
+        intro: "Tecnotitan の正式 deck は将来公開予定の資産として準備されています。公開までの間、投資家フォームから直接アクセスを請求できます。",
+        cards: [
+          ["01", "テーゼ", "グローバル企業向けの課題、市場機会、応用テクノロジーのテーゼ。"],
+          ["02", "ポートフォリオ", "製品、部門、潜在 IP、再現可能なプラットフォームへの道筋。"],
+          ["03", "実行", "初期チーム、ロードマップ、資本優先事項、次の検証マイルストーン。"]
+        ]
+      }
+    }
+  }
+});
+
+languages.ko = buildLocalizedLanguage(languages.en, {
+  label: "한",
+  nav: ["홈", "회사 소개", "제품", "서비스", "부문", "투자자", "문의"],
+  headerAction: "미팅 예약",
+  writeAction: "문의하기",
+  openNav: "내비게이션 열기",
+  closeNav: "내비게이션 닫기",
+  brandHome: "Tecnotitan 홈",
+  mainNav: "주 내비게이션",
+  footerNav: "푸터 내비게이션",
+  footerMeta: [
+    "Tecnotitan Corporate",
+    "소프트웨어, 인공지능, 비디오게임, 로보틱스, 기술 전환.",
+    "콜롬비아 | 투자자와 기업을 위한 글로벌 대응.",
+    "법적 고지 · LinkedIn · Facebook · Instagram",
+    "© 2026 Tecnotitan. 모든 권리 보유."
+  ],
+  deckUi: ["Deck 요청", "Investor Deck 요청", "PDF 다운로드 준비 중"],
+  pages: {
+    "index.html": {
+      title: "Tecnotitan | 글로벌 시장을 위한 응용 기술",
+      description: "Tecnotitan은 글로벌 기업과 투자자를 위해 소프트웨어, AI, 비디오게임, 로보틱스를 만듭니다.",
+      content: {
+        heroTitle: ["AI, 소프트웨어와", "로보틱스로", "기업의 성장을", "확장합니다"],
+        heroText: "Tecnotitan은 기업을 위한 응용 기술을 만듭니다. AI 시스템, 운영 소프트웨어, 인터랙티브 제품, 글로벌 플랫폼으로 성장할 수 있는 로보틱스가 핵심입니다.",
+        primaryCta: "투자자 논리",
+        secondaryCta: "제품 보기",
+        nextPreview: "고부가 서비스, 자체 제품, 확장 가능한 IP",
+        visionLabel: "기업 비전",
+        visionTitle: "글로벌 확장성을 가진 응용 기술 회사를 구축합니다.",
+        visionParagraphs: [
+          "Tecnotitan은 서비스, 제품, 기술 부문이 지식, 지식재산, 재사용 가능한 역량을 공유하는 모델로 나아가고 있습니다.",
+          "라틴아메리카에서 출발해 글로벌 시장으로 확장 가능한 기업 소프트웨어, AI 시스템, 인터랙티브 경험, 로보틱스를 만듭니다."
+        ],
+        visionCards: [
+          ["소프트웨어", "기업 운영 시스템", "내부 플랫폼, 자동화, 데이터, 웹 제품으로 실행력을 높입니다."],
+          ["AI", "업무에 적용되는 지능", "에이전트, 분석, 코파일럿, 비즈니스에 통합된 스마트 플로우."],
+          ["인터랙티브", "게임과 시뮬레이션", "교육, 브랜드, 학습, 신제품을 위한 몰입형 경험."],
+          ["로보틱스", "물리-디지털 시스템", "소프트웨어, 센서, 제어, 데이터로 운영과 지능을 연결합니다."]
+        ],
+        marketTitle: "응용 기술이 경쟁 우위를 만드는 시장.",
+        marketText: "Tecnotitan은 디지털화, 자동화, 인터랙티브 경험, 지능형 시스템이 실제로 필요한 고객을 목표로 합니다.",
+        marketCards: [
+          ["기업", "운영 소프트웨어", "내부 CRM, 포털, 대시보드, 플로우, 자동화가 필요한 회사."],
+          ["운영", "생산성을 위한 AI", "반복 업무가 있는 영업, 지원, 재무, 운영 팀."],
+          ["교육", "시뮬레이션과 학습", "교육, 평가, 몰입형 경험이 필요한 기관과 기업."],
+          ["엔터테인먼트", "게임과 브랜드", "인터랙티브 제품, 게이미피케이션, 브랜드 경험, 새로운 디지털 콘텐츠."],
+          ["산업", "로보틱스와 데이터", "센서, 소프트웨어, 제어, 운영 지능을 연결할 수 있는 프로세스."],
+          ["기관", "기술 전환", "전략, 구현, 도입이 필요한 공공 또는 민간 조직."]
+        ],
+        investorCtaTitle: "투자자 액션",
+        investorCtaText: "기회를 검토하고 창업팀에 연락하거나 대화를 시작할 수 있는 바로가기입니다.",
+        investorCtaCards: [
+          ["01", "Investor Deck 요청", "Tecnotitan의 논리, 시장, 로드맵, 기회 요약을 받습니다."],
+          ["02", "팀에 연락", "전략적 질문이나 후속 논의를 위해 Tecnotitan과 직접 연결됩니다."],
+          ["03", "미팅 예약", "투자, 파트너십, 글로벌 성장에 대한 대화를 시작합니다."]
+        ],
+        gatewayTitle: "여러 부문으로 구축되는 기술 회사",
+        gatewayText: "고객, 파트너, 글로벌 투자자를 위해 회사의 이야기를 명확한 페이지로 나눴습니다.",
+        cards: [
+          ["01", "회사 소개", "미션, 기술 논리, 실행 원칙."],
+          ["02", "제품", "소프트웨어, AI, 게임, 로보틱스를 플랫폼으로 전환."],
+          ["03", "서비스", "인공지능과 기술 전환 컨설팅."],
+          ["04", "부문", "여러 시장을 만들기 위한 운영 포트폴리오."],
+          ["05", "투자자", "비전, 기회, 모델, 성장 경로."],
+          ["06", "문의", "비즈니스, 파트너십, 투자 대화."]
+        ]
+      }
+    },
+    "nosotros.html": {
+      title: "회사 소개 | Tecnotitan",
+      description: "응용 기술 회사 Tecnotitan의 비전, 미션, 원칙을 소개합니다.",
+      content: {
+        label: "회사 소개",
+        titleLines: ["글로벌 야망을 가진", "응용 기술 회사"],
+        intro: "Tecnotitan은 소프트웨어, AI, 게임, 로보틱스 역량을 기업 경쟁력을 높이는 제품과 서비스로 전환하기 위해 탄생했습니다.",
+        thesisLabel: "비전",
+        thesisTitle: "글로벌 확장성을 가진 라틴아메리카 응용 기술 회사가 되는 것.",
+        paragraphs: [
+          "우리의 논리는 단순합니다. 소프트웨어, 데이터, AI, 인터랙티브 경험, 지능형 물리 시스템을 지배하는 기업이 지속 가능한 우위를 만듭니다.",
+          "Tecnotitan은 이 영역들을 통합해 자체 솔루션을 만들고, 기업 전환을 지원하며, 새로운 성장 부문을 엽니다."
+        ],
+        leadershipTitle: "리더십과 초기 팀",
+        leadershipText: "Tecnotitan은 창업자 리더십, 전담 컨설팅, 개발 역량을 갖춘 작고 기술 중심적인 실행 조직으로 구축되고 있습니다.",
+        leadershipCards: [
+          ["CEO / Founder", "David Arias Giraldo", "전략 방향, 제품 비전, 기업 개발, 기술 포트폴리오 구축을 이끕니다."],
+          ["전담 컨설팅", "전담 컨설턴트", "전략, 운영, 리서치, 문서화, 기술 전환을 지원합니다."],
+          ["엔지니어링", "프로그래머 2명", "소프트웨어, 프로토타입, 자동화, 자체 제품을 구축하는 초기 개발팀입니다."]
+        ],
+        cards: [
+          ["01", "발표보다 제품", "추상적 약속보다 작동하고 측정 가능하며 확장 가능한 시스템을 우선합니다."],
+          ["02", "AI를 인프라로", "자동화, 의사결정, 학습을 위한 핵심 레이어로 AI를 다룹니다."],
+          ["03", "실행 가능한 다학제", "소프트웨어, 게임, 로보틱스, 컨설팅이 하나의 기술 포트폴리오로 움직입니다."]
+        ]
+      }
+    },
+    "productos.html": {
+      title: "제품 | Tecnotitan",
+      description: "기업 소프트웨어, 인공지능, 비디오게임, 로보틱스 분야의 Tecnotitan 제품.",
+      content: {
+        label: "제품",
+        titleLines: ["플랫폼으로 축적될", "수 있는 제품"],
+        intro: "우리는 자체 제품과 맞춤형 시스템을 만들고, 이를 반복 가능한 플랫폼으로 발전시킵니다.",
+        cards: [
+          ["중소기업 AI", "Copiloto Pyme", "영업, 지원, 문서, 운영 자동화를 위한 중소기업용 AI 어시스턴트."],
+          ["기업 운영체제", "Tecnotitan OS", "프로세스, 데이터, 자동화, AI 에이전트, 내부 플로우를 중앙화하는 기업 플랫폼."],
+          ["모바일 + AI", "Life Copilot", "목표, 업무, 습관, 의사결정을 정리하는 개인 생산성 AI 모바일 앱."],
+          ["비디오게임", "Tecnotitan Engine", "게임, 시뮬레이터, 인터랙티브 경험, 게이미피케이션 세계를 프로토타이핑하는 엔진과 툴킷."],
+          ["교육", "Academia Tecnotitan", "AI, 소프트웨어, 게임, 로보틱스, 기술 전환을 위한 학습 플랫폼."],
+          ["AI 콜센터", "Call Center AI Tecnotitan", "지원, 영업, 고객 후속관리, 컨택센터 자동화를 위한 대화형 에이전트."]
+        ]
+      }
+    },
+    "servicios.html": {
+      title: "서비스 | Tecnotitan",
+      description: "기업을 위한 인공지능 컨설팅과 기술 전환 서비스.",
+      content: {
+        label: "서비스",
+        titleLines: ["구현으로 이어지는", "컨설팅"],
+        intro: "기업이 운영 효과가 있는 AI와 소프트웨어를 식별, 설계, 구현하도록 돕습니다.",
+        timelineLabel: "서비스",
+        cards: [
+          ["01", "AI 진단", "프로세스, 데이터, 자동화 기회, 예상 수익을 평가합니다."],
+          ["02", "기술 로드맵", "아키텍처, 우선순위, 스택, 리스크, 실행 계획."],
+          ["03", "구현", "소프트웨어, AI 에이전트, 통합, 작동하는 프로토타입 개발."],
+          ["04", "도입", "교육, 측정, 지속 개선, 역량 이전."]
+        ]
+      }
+    },
+    "divisiones.html": {
+      title: "부문 | Tecnotitan",
+      description: "소프트웨어, AI, 게임, 로보틱스, 기술 ventures 분야의 Tecnotitan 부문.",
+      content: {
+        label: "부문",
+        titleLines: ["기술 엔진들의", "포트폴리오"],
+        intro: "각 부문은 재사용 가능한 역량, 지식재산, 독립적인 상업 기회를 만듭니다.",
+        divisionThesisLabel: "운영 아키텍처",
+        divisionThesisTitle: "소프트웨어, 데이터, 응용 지능으로 연결된 부문.",
+        divisionThesisParagraphs: [
+          "Tecnotitan의 각 부문은 비즈니스 유닛, IP 연구소, 다른 부문을 위한 역량 공급원으로 운영될 수 있습니다.",
+          "목표는 컨설팅, 제품, 자체 기술이 서로를 강화해 고립된 프로젝트가 아니라 시장을 만드는 것입니다."
+        ],
+        cards: [
+          ["기업 소프트웨어", "Tecnotitan Software", "기업 운영을 개선하는 웹 플랫폼, 내부 CRM, 포털, 대시보드, 자동화."],
+          ["인공지능", "Tecnotitan AI", "실제 프로세스에 통합되는 에이전트, 코파일럿, 분석, 문서 자동화, 스마트 플로우."],
+          ["게임과 인터랙티브", "Tecnotitan Games", "교육, 브랜드, 신제품을 위한 게임, 시뮬레이터, 게이미피케이션, 몰입형 경험."],
+          ["로보틱스", "Tecnotitan Robotics", "운영 지능과 연결된 물리-디지털 시스템을 만드는 소프트웨어, 센서, 제어, 데이터."],
+          ["기술 컨설팅", "Tecnotitan Advisory", "AI 전략, 기술 전환, 기업 도입, 경영진 지원."],
+          ["Ventures", "Tecnotitan Ventures", "실험, spin-off, 자체 제품, 내부 역량에서 만들어지는 새로운 기회."]
+        ]
+      }
+    },
+    "inversionistas.html": {
+      title: "투자자 | Tecnotitan",
+      description: "Tecnotitan의 글로벌 투자자 페이지: 논리, 시장, 모델, 비전.",
+      content: {
+        label: "투자자",
+        titleLines: ["라틴아메리카에서", "글로벌 시장으로 가는", "응용 기술"],
+        intro: "Tecnotitan은 고부가 서비스, 자체 제품, 기술 부문을 결합해 확장 가능한 응용 기술 회사를 구축합니다.",
+        metrics: [
+          ["시장", "소프트웨어 + AI", "지능형 자동화로 가속되는 기업 디지털화."],
+          ["확장", "다중 부문", "소프트웨어, AI, 게임, 로보틱스, 컨설팅이 연결된 엔진."],
+          ["모델", "서비스에서 제품으로", "고객 학습, 자체 IP, 반복 가능한 플랫폼."]
+        ],
+        thesisLabel: "논리",
+        thesisTitle: "최고의 기술 파트너는 깊은 컨설팅과 제품 실행력을 결합합니다.",
+        paragraphs: [
+          "시장은 전통 소프트웨어에서 에이전트, 자동화, 데이터, 인터랙티브 경험을 가진 시스템으로 이동하고 있습니다. Tecnotitan은 이 교차점에 있습니다.",
+          "우리의 경로는 서비스 매출, 제품 개발, 지식재산, 부문별 spin-off 기회를 결합합니다."
+        ],
+        opportunityTitle: "투자 기회",
+        opportunityText: "Tecnotitan은 AI, 소프트웨어, 로보틱스의 기업 수요를 포착하고, 서비스에서 얻은 학습을 자체 제품과 확장 가능한 IP로 전환합니다.",
+        opportunityCards: [
+          ["01", "구조적 수요", "기업은 경쟁을 위해 프로세스, 데이터, 의사결정을 자동화해야 합니다."],
+          ["02", "하이브리드 모델", "고부가 서비스는 매출, 시장 학습, 제품 기회를 만듭니다."],
+          ["03", "축적 가능한 IP", "각 프로젝트는 도구, 에이전트, 프레임워크, 반복 가능한 플랫폼이 될 수 있습니다."],
+          ["04", "지역 확장", "라틴아메리카에서 응용 기술을 구축해 유사한 니즈를 가진 글로벌 시장에 판매합니다."]
+        ],
+        indicatorTitle: "추적 지표",
+        indicatorText: "Tecnotitan의 매출, 자체 제품, 목표 고객, 지역 확장 진행 상황을 전문적으로 추적하기 위한 프레임입니다.",
+        indicatorMetrics: [
+          ["목표 시장", "기업 + AI", "소프트웨어, 자동화, 인터랙티브 경험, 응용 로보틱스."],
+          ["사업 영역", "5개 부문", "소프트웨어, AI, 게임, 로보틱스, 기술 컨설팅."],
+          ["제품", "6개 라인", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia, Call Center AI."]
+        ],
+        indicatorCards: [
+          ["목표 고객", "중견 및 대기업", "반복 프로세스, 미활용 데이터, 자동화 압력을 가진 조직."],
+          ["로드맵", "서비스에서 플랫폼으로", "반복 납품을 내부 도구, 상업 모듈, 제품으로 전환합니다."],
+          ["확장", "LatAm에서 글로벌로", "지역 사례를 검증하고 유사한 니즈의 시장으로 응용 기술을 확장합니다."]
+        ],
+        roadmapTitle: "전략 로드맵",
+        roadmapText: "기술 역량을 서비스, 자체 제품, 확장 기회로 전환하는 단계별 성장 경로.",
+        roadmapCards: [
+          ["2026", "검증과 실제 사례", "AI/소프트웨어 서비스를 강화하고 기업 사례를 만들며 반복 가능한 패턴을 문서화합니다."],
+          ["2027", "제품과 지식재산", "내부 도구를 패키징하고 첫 상업 제품 라인을 출시하며 기술 부문을 강화합니다."],
+          ["2028", "지역 확장과 플랫폼", "지역 판매를 확대하고 솔루션을 플랫폼으로 전환하며 부문별 spin-off를 검토합니다."]
+        ],
+        deckTitle: "Investor Deck / Data Room",
+        deckText: "Tecnotitan의 논리, 시장, 포트폴리오, 실행 경로를 평가해야 하는 투자자를 위한 자료입니다.",
+        deckCards: [
+          ["01", "논리와 시장", "문제, 기회, 목표 고객, AI·소프트웨어·자동화가 지금 결합되는 이유."],
+          ["02", "제품과 IP", "현재 포트폴리오, 자체 라인, 반복 가능한 플랫폼으로 발전할 수 있는 역량."],
+          ["03", "팀과 실행", "초기 구조, 창업자 리더십, 기술 역량, 제품 중심 운영 방식."],
+          ["04", "로드맵", "검증, 패키징, 지역 확장, 지식재산 구축 단계."],
+          ["05", "자본 사용", "제품, 영업, 기술 인재, 내부 자동화, 상업 검증을 가속합니다."],
+          ["06", "대화", "추가 정보 요청, 논리 공유, Tecnotitan과의 미팅 조율."]
+        ],
+        deckPageButton: "Deck 페이지 보기",
+        deckButton: "Investor Deck 요청",
+        investorCtaTitle: "투자자 액션",
+        investorCtaText: "정보를 받고, 팀에 연락하거나 전략적 대화를 시작할 다음 단계를 선택하세요.",
+        investorCtaCards: [
+          ["01", "Investor Deck 요청", "논리, 시장, 로드맵, 기회의 요약본을 요청합니다."],
+          ["02", "팀에 연락", "전략, 포트폴리오, 팀, 성장 단계에 대한 질문을 보냅니다."],
+          ["03", "미팅 예약", "투자, 전략적 파트너십, 확장에 대한 대화를 시작합니다."]
+        ],
+        formTitle: "투자자 전용 문의",
+        formText: "프로필, 투자 논리, 전략적 관심을 공유하면 Tecnotitan 팀이 info@tecnotitan.com에서 답변합니다.",
+        formLabels: ["이름", "회사 / 펀드", "국가", "이메일", "관심 유형", "메시지"],
+        formOptions: ["선택", "투자", "전략적 파트너십", "Investor deck", "팀에 연락", "미팅 예약"],
+        formButton: "info@tecnotitan.com으로 보내기",
+        formSuccessTitle: "요청이 전송되었습니다",
+        formSuccessText: "감사합니다. Tecnotitan 팀이 투자 메시지를 검토하고 info@tecnotitan.com에서 답변합니다.",
+        cards: [
+          ["01", "서비스 기반 초기 견인", "기업의 실제 문제를 해결하고 납품 패턴을 재사용 가능한 역량으로 전환합니다."],
+          ["02", "자체 제품", "내부 도구와 검증된 플로우를 상업 플랫폼으로 전환합니다."],
+          ["03", "글로벌 확장", "라틴아메리카에서 글로벌 기업으로 응용 기술을 판매합니다."]
+        ]
+      }
+    },
+    "contacto.html": {
+      title: "문의 | Tecnotitan",
+      description: "프로젝트, 서비스, 파트너십, 투자에 대해 Tecnotitan에 문의하세요.",
+      content: {
+        label: "문의",
+        titleLines: ["다음 기술에 대해", "이야기합시다"],
+        intro: "불만, 클레임, 제안, Tecnotitan에 대한 일반 요청을 위한 채널입니다.",
+        cards: [
+          ["지원", "일반 요청", "Tecnotitan과 서비스에 대한 질문, 의견, 메시지."],
+          ["품질", "불만과 클레임", "검토가 필요한 경험, 프로세스, 답변에 대한 보고."],
+          ["개선", "제안", "제품, 서비스, 커뮤니케이션, 사용자 경험을 개선하기 위한 아이디어."]
+        ],
+        formTitle: "일반 문의",
+        formText: "불만, 클레임, 제안 또는 일반 요청을 info@tecnotitan.com으로 보내주세요.",
+        formLabels: ["이름", "이메일", "회사", "국가", "요청 유형", "메시지"],
+        formOptions: ["선택", "불만", "클레임", "제안", "일반 요청"],
+        formButton: "info@tecnotitan.com으로 보내기",
+        formSuccessTitle: "메시지가 전송되었습니다",
+        formSuccessText: "감사합니다. 일반 요청을 받았으며 info@tecnotitan.com에서 답변하겠습니다."
+      }
+    },
+    "investor-deck.html": {
+      title: "Investor Deck | Tecnotitan",
+      description: "Tecnotitan의 향후 Investor Deck PDF 요청: 논리, 시장, 제품, 팀, 로드맵, 자본 우선순위.",
+      content: {
+        label: "Investor Deck",
+        titleLines: ["투자자를 위한", "PDF"],
+        intro: "Tecnotitan의 공식 deck은 향후 공개될 자산으로 준비되어 있습니다. 공개 전에는 투자자 양식을 통해 직접 접근을 요청할 수 있습니다.",
+        cards: [
+          ["01", "논리", "글로벌 기업을 위한 문제, 시장 기회, 응용 기술 논리."],
+          ["02", "포트폴리오", "제품, 부문, 잠재 IP, 반복 가능한 플랫폼으로 가는 경로."],
+          ["03", "실행", "초기 팀, 로드맵, 자본 우선순위, 다음 검증 마일스톤."]
+        ]
+      }
+    }
+  }
+});
+
 const pageName = window.location.pathname.split("/").pop() || "index.html";
 const supportedLanguages = Object.keys(languages);
 const languageNames = {
   es: "Español",
   en: "English",
-  pt: "Português"
+  pt: "Português",
+  zh: "中文",
+  ja: "日本語",
+  ko: "한국어"
 };
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
@@ -916,9 +1736,24 @@ const spanishCountries = new Set([
 ]);
 const portugueseCountries = new Set(["AO", "BR", "CV", "GW", "MZ", "PT", "ST", "TL"]);
 const englishCountries = new Set(["AU", "CA", "GB", "IE", "IN", "NZ", "PH", "SG", "US", "ZA"]);
+const chineseCountries = new Set(["CN", "HK", "MO", "TW"]);
+const japaneseCountries = new Set(["JP"]);
+const koreanCountries = new Set(["KR", "KP"]);
 
 function languageFromCountry(country) {
   const countryCode = String(country || "").toUpperCase();
+
+  if (chineseCountries.has(countryCode)) {
+    return "zh";
+  }
+
+  if (japaneseCountries.has(countryCode)) {
+    return "ja";
+  }
+
+  if (koreanCountries.has(countryCode)) {
+    return "ko";
+  }
 
   if (portugueseCountries.has(countryCode)) {
     return "pt";
@@ -937,6 +1772,18 @@ function languageFromCountry(country) {
 
 function languageFromBrowser() {
   const locale = (navigator.languages?.[0] || navigator.language || "").toLowerCase();
+
+  if (locale.startsWith("zh")) {
+    return "zh";
+  }
+
+  if (locale.startsWith("ja")) {
+    return "ja";
+  }
+
+  if (locale.startsWith("ko")) {
+    return "ko";
+  }
 
   if (locale.startsWith("pt")) {
     return "pt";
