@@ -519,6 +519,19 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.service-package-grid,
+.service-outcome-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-commercial-band {
+  padding-top: clamp(72px, 9vw, 118px);
+}
+
+.service-commercial-band .section-copy {
+  max-width: 760px;
+}
+
 .leadership-grid {
   grid-template-columns: repeat(3, 1fr);
 }
