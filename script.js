@@ -2211,8 +2211,54 @@ function setSeoMetadata(page, language) {
   setMetaContent('meta[name="twitter:image"]', image);
 }
 
+const languageCarryPages = new Set([
+  "index.html",
+  "nosotros.html",
+  "productos.html",
+  "servicios.html",
+  "divisiones.html",
+  "inversionistas.html",
+  "contacto.html",
+  "investor-deck.html",
+  "aviso-legal.html"
+]);
+
+function carryLanguageAcrossLinks(language) {
+  document.querySelectorAll("a[href]").forEach((link) => {
+    const rawHref = link.getAttribute("href") || "";
+
+    if (
+      !rawHref ||
+      rawHref.startsWith("#") ||
+      rawHref.startsWith("mailto:") ||
+      rawHref.startsWith("tel:") ||
+      rawHref.includes("/assets/") ||
+      rawHref.endsWith(".pdf") ||
+      rawHref.endsWith(".pptx") ||
+      link.dataset.deckLang
+    ) {
+      return;
+    }
+
+    const url = new URL(rawHref, window.location.href);
+
+    if (url.origin !== window.location.origin) {
+      return;
+    }
+
+    const file = url.pathname.endsWith("/") ? "index.html" : url.pathname.split("/").pop();
+
+    if (!languageCarryPages.has(file)) {
+      return;
+    }
+
+    url.searchParams.set("lang", language);
+    link.setAttribute("href", `./${file}${url.search}${url.hash}`);
+  });
+}
+
 function buildLanguageSwitcher() {
-  if (!header || header.querySelector(".language-switcher")) {
+  if (document.querySelector(".language-switcher")) {
     return;
   }
 
@@ -2231,7 +2277,7 @@ function buildLanguageSwitcher() {
     switcher.appendChild(button);
   });
 
-  header.insertBefore(switcher, menuButton);
+  document.body.appendChild(switcher);
 }
 
 function applyLanguage(language) {
@@ -2323,6 +2369,8 @@ function applyLanguage(language) {
     button.setAttribute("aria-pressed", String(isCurrent));
     button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
   });
+
+  carryLanguageAcrossLinks(language);
 
   if (pageName === "index.html") {
     setTitleLines("#hero-title", content.heroTitle);
