@@ -1953,7 +1953,7 @@ const deckDownloadContent = {
   }
 };
 const deckFileLanguages = ["es", "en", "pt", "zh", "ja", "ko"];
-let activeDeckLanguage = deckFileLanguages.includes(activeLanguage) ? activeLanguage : "es";
+let activeDeckLanguage = "es";
 
 function deckFilePath(language, extension) {
   const safeLanguage = deckFileLanguages.includes(language) ? language : "es";
@@ -2036,6 +2036,8 @@ const shouldAutoDetectLanguage = !supportedLanguages.includes(queryLanguage) && 
 if (!supportedLanguages.includes(activeLanguage)) {
   activeLanguage = "es";
 }
+
+activeDeckLanguage = deckFileLanguages.includes(activeLanguage) ? activeLanguage : "es";
 
 const spanishCountries = new Set([
   "AR",
