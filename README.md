@@ -42,11 +42,14 @@ Los formularios envian a `/api/contact`, una funcion serverless pensada para Ver
 
 ```text
 RESEND_API_KEY=...
+RESEND_CONTACTS_API_KEY=...
 MAIL_FROM=Tecnotitan <contacto@tecnotitan.com>
 CONTACT_TO_EMAIL=info@tecnotitan.com
+RESEND_NEWSLETTER_SEGMENT_ID=...
 ```
 
 `MAIL_FROM` debe usar un dominio verificado en Resend para evitar marcas de terceros y mejorar entregabilidad.
+`RESEND_API_KEY` puede ser de solo envio. `RESEND_CONTACTS_API_KEY` debe permitir administrar contactos/segmentos. Si el usuario marca el newsletter, el backend crea o actualiza el contacto en Resend y lo agrega al segmento configurado en `RESEND_NEWSLETTER_SEGMENT_ID`.
 
 ## Publicacion en GitHub Pages
 
