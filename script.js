@@ -1850,7 +1850,9 @@ languages.ko.pages["aviso-legal.html"] = {
   }
 };
 
-const pageName = window.location.pathname.split("/").pop() || "index.html";
+const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
+const pathLanguage = ["es", "en", "pt", "zh", "ja", "ko"].includes(cleanPathSegments[0]) ? cleanPathSegments[0] : "";
+const pageName = cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
 const supportedLanguages = Object.keys(languages);
 const languageNames = {
   es: "Español",
@@ -2076,12 +2078,17 @@ function updateDeckViewer(language, options = {}) {
 }
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
-let activeLanguage = supportedLanguages.includes(queryLanguage)
-  ? queryLanguage
-  : supportedLanguages.includes(storedLanguage)
-    ? storedLanguage
-    : "es";
-const shouldAutoDetectLanguage = !supportedLanguages.includes(queryLanguage) && !supportedLanguages.includes(storedLanguage);
+let activeLanguage = supportedLanguages.includes(pathLanguage)
+  ? pathLanguage
+  : supportedLanguages.includes(queryLanguage)
+    ? queryLanguage
+    : supportedLanguages.includes(storedLanguage)
+      ? storedLanguage
+      : "es";
+const shouldAutoDetectLanguage =
+  !supportedLanguages.includes(pathLanguage) &&
+  !supportedLanguages.includes(queryLanguage) &&
+  !supportedLanguages.includes(storedLanguage);
 
 if (!supportedLanguages.includes(activeLanguage)) {
   activeLanguage = "es";
@@ -2335,14 +2342,45 @@ function getCanonicalUrl() {
 }
 
 function getLocalizedUrl(language) {
-  const url = new URL(getCanonicalUrl());
-  url.searchParams.set("lang", language);
-  return url.toString();
+  const localizedPath = pageName === "index.html" ? `/${language}/` : `/${language}/${pageName}`;
+  return new URL(localizedPath, window.location.origin).toString();
+}
+
+function syncBrowserLanguagePath(language) {
+  if (!supportedLanguages.includes(language)) {
+    return;
+  }
+
+  const current = new URL(window.location.href);
+  const localizedPath = pageName === "index.html" ? `/${language}/` : `/${language}/${pageName}`;
+  current.pathname = localizedPath;
+  current.searchParams.delete("lang");
+  window.history.replaceState({}, "", `${current.pathname}${current.search}${current.hash}`);
+}
+
+function updateLanguageSeoLinks(language) {
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) {
+    canonical.href = getLocalizedUrl(language);
+  }
+
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
+    const hreflang = link.getAttribute("hreflang");
+    if (hreflang === "x-default") {
+      link.setAttribute("href", getLocalizedUrl("es"));
+      return;
+    }
+
+    if (supportedLanguages.includes(hreflang)) {
+      link.setAttribute("href", getLocalizedUrl(hreflang));
+    }
+  });
 }
 
 function setSeoMetadata(page, language) {
   const image = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
 
+  updateLanguageSeoLinks(language);
   document.title = page.title;
   setMetaDescription(page.description);
   setMetaContent('meta[property="og:title"]', page.title);
@@ -3149,8 +3187,8 @@ function carryLanguageAcrossLinks(language) {
       return;
     }
 
-    url.searchParams.set("lang", language);
-    link.setAttribute("href", `./${file}${url.search}${url.hash}`);
+    const localizedPath = file === "index.html" ? `/${language}/` : `/${language}/${file}`;
+    link.setAttribute("href", `${localizedPath}${url.search}${url.hash}`);
   });
 }
 
@@ -3184,6 +3222,7 @@ function applyLanguage(language) {
 
   activeLanguage = language;
   localStorage.setItem("tecnotitan-language", language);
+  syncBrowserLanguagePath(language);
 
   document.documentElement.lang = language;
   setSeoMetadata(page, language);
