@@ -2392,18 +2392,104 @@ function setSeoMetadata(page, language) {
   setMetaContent('meta[name="twitter:image"]', image);
 }
 
+function upsertJsonLd(id, payload) {
+  const existing = document.querySelector(`script[data-schema-id="${id}"]`);
+  const script = existing || document.createElement("script");
+  script.type = "application/ld+json";
+  script.dataset.schemaId = id;
+  script.textContent = JSON.stringify(payload);
+
+  if (!existing) {
+    document.head.appendChild(script);
+  }
+}
+
+function injectGlobalStructuredData(language) {
+  const siteUrl = "https://www.tecnotitan.com/";
+  upsertJsonLd("global-entity", {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}#organization`,
+        "name": "Tecnotitan",
+        "url": siteUrl,
+        "logo": `${siteUrl}assets/logo-tecnotitan.svg`,
+        "email": "info@tecnotitan.com",
+        "founder": {
+          "@type": "Person",
+          "name": "David Arias Giraldo"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "info@tecnotitan.com",
+            "telephone": "+573108229935",
+            "availableLanguage": ["Spanish", "English", "Portuguese"]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "investor relations",
+            "email": "info@tecnotitan.com",
+            "availableLanguage": ["Spanish", "English", "Portuguese", "Chinese", "Japanese", "Korean"]
+          }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/tecnotitan",
+          "https://www.facebook.com/tecnotitan",
+          "https://www.instagram.com/tecnotitan"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}#website`,
+        "url": siteUrl,
+        "name": "Tecnotitan",
+        "inLanguage": language,
+        "publisher": {
+          "@id": `${siteUrl}#organization`
+        }
+      }
+    ]
+  });
+}
+
+function injectBreadcrumbStructuredData(currentPageName, pageTitle, language) {
+  if (currentPageName === "index.html") {
+    return;
+  }
+
+  const currentUrl = getLocalizedUrl(language);
+  upsertJsonLd("breadcrumb", {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Tecnotitan",
+        "item": getLocalizedUrl(language).replace(currentPageName, "")
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": pageTitle.replace(" | Tecnotitan", ""),
+        "item": currentUrl
+      }
+    ]
+  });
+}
+
 function injectServiceStructuredData(currentPageName) {
   const service = serviceStructuredSeo[currentPageName];
 
-  if (!service || document.querySelector('script[data-service-seo="true"]')) {
+  if (!service) {
     return;
   }
 
   const serviceUrl = `https://www.tecnotitan.com/${currentPageName}`;
-  const structuredData = document.createElement("script");
-  structuredData.type = "application/ld+json";
-  structuredData.dataset.serviceSeo = "true";
-  structuredData.textContent = JSON.stringify({
+  upsertJsonLd("service-detail", {
     "@context": "https://schema.org",
     "@graph": [
       {
@@ -2412,10 +2498,7 @@ function injectServiceStructuredData(currentPageName) {
         "name": service.name,
         "description": service.description,
         "provider": {
-          "@type": "Organization",
-          "name": "Tecnotitan",
-          "url": "https://www.tecnotitan.com/",
-          "email": "info@tecnotitan.com"
+          "@id": "https://www.tecnotitan.com/#organization"
         },
         "areaServed": "Global",
         "serviceType": service.name
@@ -2434,7 +2517,36 @@ function injectServiceStructuredData(currentPageName) {
       }
     ]
   });
-  document.head.appendChild(structuredData);
+}
+
+function injectProductStructuredData(currentPageName) {
+  const product = productStructuredSeo[currentPageName];
+
+  if (!product) {
+    return;
+  }
+
+  const productUrl = `https://www.tecnotitan.com/${currentPageName}`;
+  upsertJsonLd("product-detail", {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${productUrl}#product`,
+    "name": product.name,
+    "description": product.description,
+    "category": product.category,
+    "brand": {
+      "@id": "https://www.tecnotitan.com/#organization"
+    },
+    "manufacturer": {
+      "@id": "https://www.tecnotitan.com/#organization"
+    },
+    "url": productUrl,
+    "image": product.image,
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": product.audience
+    }
+  });
 }
 
 const languageCarryPages = new Set([
@@ -2591,6 +2703,51 @@ const serviceStructuredSeo = {
       ["¿Cómo se inicia una transformación tecnológica?", "Con diagnóstico de madurez, mapa de procesos, quick wins, roadmap, adopción y seguimiento de indicadores."],
       ["¿Por qué falla una transformación digital?", "Suele fallar por falta de prioridades, baja adopción, herramientas desconectadas, datos desordenados o ausencia de seguimiento."]
     ]
+  }
+};
+
+const productStructuredSeo = {
+  "producto-copiloto-pyme.html": {
+    name: "Copiloto Pyme",
+    description: "Asistente de inteligencia artificial para ventas, soporte, documentos y automatización operativa de pequeñas y medianas empresas.",
+    category: "AI business assistant",
+    audience: "Small and medium-sized businesses",
+    image: "https://www.tecnotitan.com/assets/bg-process-ai.jpg"
+  },
+  "producto-tecnotitan-os.html": {
+    name: "Tecnotitan OS",
+    description: "Plataforma empresarial para centralizar procesos, datos, automatizaciones, agentes IA y flujos internos.",
+    category: "Enterprise software platform",
+    audience: "Companies and operations teams",
+    image: "https://www.tecnotitan.com/assets/bg-hero-tech.jpg"
+  },
+  "producto-life-copilot.html": {
+    name: "Life Copilot",
+    description: "Aplicación móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones.",
+    category: "AI productivity app",
+    audience: "Professionals and consumers",
+    image: "https://www.tecnotitan.com/assets/bg-capabilities-tech.jpg"
+  },
+  "producto-tecnotitan-engine.html": {
+    name: "Tecnotitan Engine",
+    description: "Motor y toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados.",
+    category: "Game engine and interactive toolkit",
+    audience: "Game studios, brands and enterprise training teams",
+    image: "https://www.tecnotitan.com/assets/bg-games-experiences.jpg"
+  },
+  "producto-academia-tecnotitan.html": {
+    name: "Academia Tecnotitan",
+    description: "Plataforma de aprendizaje para inteligencia artificial, software, videojuegos, robótica y transformación tecnológica.",
+    category: "Technology education platform",
+    audience: "Students, professionals and companies",
+    image: "https://www.tecnotitan.com/assets/bg-capabilities-tech.jpg"
+  },
+  "producto-call-center-ai.html": {
+    name: "Call Center AI Tecnotitan",
+    description: "Agentes conversacionales para soporte, ventas, seguimiento de clientes y automatización de contact centers.",
+    category: "AI customer support platform",
+    audience: "Sales, support and contact center teams",
+    image: "https://www.tecnotitan.com/assets/bg-process-ai.jpg"
   }
 };
 
@@ -3226,7 +3383,10 @@ function applyLanguage(language) {
 
   document.documentElement.lang = language;
   setSeoMetadata(page, language);
+  injectGlobalStructuredData(language);
+  injectBreadcrumbStructuredData(pageName, page.title, language);
   injectServiceStructuredData(pageName);
+  injectProductStructuredData(pageName);
 
   if (!content) {
     carryLanguageAcrossLinks(language);
