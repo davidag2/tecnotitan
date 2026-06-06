@@ -2216,12 +2216,51 @@ const languageCarryPages = new Set([
   "nosotros.html",
   "productos.html",
   "servicios.html",
+  "servicio-inteligencia-artificial.html",
+  "servicio-software-empresarial.html",
+  "servicio-consultoria-tecnologica.html",
+  "servicio-robotica.html",
+  "servicio-videojuegos.html",
+  "servicio-transformacion-tecnologica.html",
   "divisiones.html",
   "inversionistas.html",
   "contacto.html",
   "investor-deck.html",
   "aviso-legal.html"
 ]);
+
+const serviceSeoPages = {
+  "servicio-inteligencia-artificial.html": [
+    "Servicio de inteligencia artificial | Tecnotitan",
+    "Agentes, copilotos, automatizacion documental, analitica y flujos inteligentes para empresas."
+  ],
+  "servicio-software-empresarial.html": [
+    "Servicio de software empresarial | Tecnotitan",
+    "Plataformas web, CRM internos, dashboards, portales e integraciones para empresas."
+  ],
+  "servicio-consultoria-tecnologica.html": [
+    "Consultoria tecnologica | Tecnotitan",
+    "Diagnostico, arquitectura, roadmap, adopcion y acompanamiento ejecutivo para empresas."
+  ],
+  "servicio-robotica.html": [
+    "Servicio de robotica | Tecnotitan",
+    "Software, sensores, control, datos y sistemas fisico-digitales para empresas."
+  ],
+  "servicio-videojuegos.html": [
+    "Servicio de videojuegos y experiencias interactivas | Tecnotitan",
+    "Videojuegos, simuladores, gamificacion y entrenamiento inmersivo para empresas."
+  ],
+  "servicio-transformacion-tecnologica.html": [
+    "Servicio de transformacion tecnologica | Tecnotitan",
+    "Modernizacion operativa, automatizacion, adopcion digital y cambio organizacional."
+  ]
+};
+
+supportedLanguages.forEach((language) => {
+  Object.entries(serviceSeoPages).forEach(([file, [title, description]]) => {
+    languages[language].pages[file] ||= { title, description };
+  });
+});
 
 function carryLanguageAcrossLinks(language) {
   document.querySelectorAll("a[href]").forEach((link) => {
