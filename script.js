@@ -19,7 +19,7 @@ const languages = {
       "Aviso legal · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. Todos los derechos reservados."
     ],
-    deckUi: ["Solicitar deck", "Solicitar investor deck", "Descarga PDF próximamente"],
+    deckUi: ["Solicitar deck", "Solicitar investor deck", "Descargar decks"],
     pages: {
       "index.html": {
         title: "Tecnotitan | Tecnología aplicada para mercados globales",
@@ -316,7 +316,7 @@ const languages = {
       "Legal notice · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. All rights reserved."
     ],
-    deckUi: ["Request deck", "Request investor deck", "PDF download coming soon"],
+    deckUi: ["Request deck", "Request investor deck", "Download decks"],
     pages: {
       "index.html": {
         title: "Tecnotitan | Applied AI, software and robotics for global markets",
@@ -613,7 +613,7 @@ const languages = {
       "Aviso legal · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. Todos os direitos reservados."
     ],
-    deckUi: ["Solicitar deck", "Solicitar investor deck", "Download PDF em breve"],
+    deckUi: ["Solicitar deck", "Solicitar investor deck", "Baixar decks"],
     pages: {
       "index.html": {
         title: "Tecnotitan | IA aplicada, software e robótica para Brasil e mercados globais",
@@ -925,7 +925,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
     "法律声明 · LinkedIn · Facebook · Instagram",
     "© 2026 Tecnotitan。保留所有权利。"
   ],
-  deckUi: ["索取 Deck", "索取投资者 Deck", "PDF 下载即将开放"],
+  deckUi: ["索取 Deck", "索取投资者 Deck", "下载 Deck"],
   pages: {
     "index.html": {
       title: "Tecnotitan | 面向全球市场的应用技术",
@@ -1201,7 +1201,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
     "法的通知 · LinkedIn · Facebook · Instagram",
     "© 2026 Tecnotitan. All rights reserved."
   ],
-  deckUi: ["Deck を請求", "Investor Deck を請求", "PDF ダウンロードは近日公開"],
+  deckUi: ["Deck を請求", "Investor Deck を請求", "Deck をダウンロード"],
   pages: {
     "index.html": {
       title: "Tecnotitan | グローバル市場のための応用テクノロジー",
@@ -1477,7 +1477,7 @@ languages.ko = buildLocalizedLanguage(languages.en, {
     "법적 고지 · LinkedIn · Facebook · Instagram",
     "© 2026 Tecnotitan. 모든 권리 보유."
   ],
-  deckUi: ["Deck 요청", "Investor Deck 요청", "PDF 다운로드 준비 중"],
+  deckUi: ["Deck 요청", "Investor Deck 요청", "Deck 다운로드"],
   pages: {
     "index.html": {
       title: "Tecnotitan | 글로벌 시장을 위한 응용 기술",
@@ -1868,6 +1868,80 @@ const languageLocales = {
   ja: "ja_JP",
   ko: "ko_KR"
 };
+const deckDownloadContent = {
+  es: {
+    title: "Descargar Investor Deck en 6 idiomas",
+    text: "Accede a la versión editable del deck para inversionistas de Tecnotitan en español, inglés, portugués, chino, japonés y coreano.",
+    cards: [
+      ["ES", "Español", "Deck para inversionistas en español."],
+      ["EN", "English", "Investor deck in English."],
+      ["PT", "Português", "Deck para investidores em português."],
+      ["ZH", "中文", "中文投资者演示文稿。"],
+      ["JA", "日本語", "日本語の投資家向けデッキ。"],
+      ["KO", "한국어", "한국어 투자자용 데크."]
+    ]
+  },
+  en: {
+    title: "Download the Investor Deck in 6 languages",
+    text: "Access Tecnotitan's editable investor deck in Spanish, English, Portuguese, Chinese, Japanese and Korean.",
+    cards: [
+      ["ES", "Spanish", "Investor deck in Spanish."],
+      ["EN", "English", "Investor deck in English."],
+      ["PT", "Portuguese", "Investor deck in Portuguese."],
+      ["ZH", "Chinese", "Investor deck in Chinese."],
+      ["JA", "Japanese", "Investor deck in Japanese."],
+      ["KO", "Korean", "Investor deck in Korean."]
+    ]
+  },
+  pt: {
+    title: "Baixe o Investor Deck em 6 idiomas",
+    text: "Acesse a versão editável do deck para investidores da Tecnotitan em espanhol, inglês, português, chinês, japonês e coreano.",
+    cards: [
+      ["ES", "Espanhol", "Deck para investidores em espanhol."],
+      ["EN", "Inglês", "Deck para investidores em inglês."],
+      ["PT", "Português", "Deck para investidores em português."],
+      ["ZH", "Chinês", "Deck para investidores em chinês."],
+      ["JA", "Japonês", "Deck para investidores em japonês."],
+      ["KO", "Coreano", "Deck para investidores em coreano."]
+    ]
+  },
+  zh: {
+    title: "下载 6 种语言的 Investor Deck",
+    text: "获取 Tecnotitan 面向投资者的可编辑演示文稿，支持西班牙语、英语、葡萄牙语、中文、日语和韩语。",
+    cards: [
+      ["ES", "西班牙语", "西班牙语投资者演示文稿。"],
+      ["EN", "英语", "英语投资者演示文稿。"],
+      ["PT", "葡萄牙语", "葡萄牙语投资者演示文稿。"],
+      ["ZH", "中文", "中文投资者演示文稿。"],
+      ["JA", "日语", "日语投资者演示文稿。"],
+      ["KO", "韩语", "韩语投资者演示文稿。"]
+    ]
+  },
+  ja: {
+    title: "6言語のInvestor Deckをダウンロード",
+    text: "Tecnotitanの編集可能な投資家向けデッキを、スペイン語、英語、ポルトガル語、中国語、日本語、韓国語で利用できます。",
+    cards: [
+      ["ES", "スペイン語", "スペイン語の投資家向けデッキ。"],
+      ["EN", "英語", "英語の投資家向けデッキ。"],
+      ["PT", "ポルトガル語", "ポルトガル語の投資家向けデッキ。"],
+      ["ZH", "中国語", "中国語の投資家向けデッキ。"],
+      ["JA", "日本語", "日本語の投資家向けデッキ。"],
+      ["KO", "韓国語", "韓国語の投資家向けデッキ。"]
+    ]
+  },
+  ko: {
+    title: "6개 언어 Investor Deck 다운로드",
+    text: "Tecnotitan의 편집 가능한 투자자용 데크를 스페인어, 영어, 포르투갈어, 중국어, 일본어, 한국어로 제공합니다.",
+    cards: [
+      ["ES", "스페인어", "스페인어 투자자용 데크."],
+      ["EN", "영어", "영어 투자자용 데크."],
+      ["PT", "포르투갈어", "포르투갈어 투자자용 데크."],
+      ["ZH", "중국어", "중국어 투자자용 데크."],
+      ["JA", "일본어", "일본어 투자자용 데크."],
+      ["KO", "한국어", "한국어 투자자용 데크."]
+    ]
+  }
+};
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
 let activeLanguage = supportedLanguages.includes(queryLanguage)
@@ -2198,6 +2272,10 @@ function applyLanguage(language) {
   if (pageName === "investor-deck.html" && dictionary.deckUi) {
     setText(".page-hero .button-primary", dictionary.deckUi[1]);
     setText(".page-hero .button-secondary", dictionary.deckUi[2]);
+    const downloadContent = deckDownloadContent[language] || deckDownloadContent.es;
+    setText(".deck-download-copy h2", downloadContent.title);
+    setText(".deck-download-copy p:not(.section-kicker)", downloadContent.text);
+    setCards(".deck-language-grid a", downloadContent.cards);
   }
   setCards(
     pageName === "inversionistas.html"
