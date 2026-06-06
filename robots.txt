@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /outputs/
+Disallow: /api/
 
 Sitemap: https://www.tecnotitan.com/sitemap.xml
