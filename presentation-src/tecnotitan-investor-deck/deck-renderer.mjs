@@ -223,18 +223,32 @@ async function divisions(presentation, ctx, index) {
   const slide = presentation.slides.add();
   await background(slide, ctx, "bg-capabilities-tech.jpg");
   titleBlock(slide, ctx, item, 76, 82, 650);
-  const centerX = 612;
-  const centerY = 420;
-  box(slide, ctx, centerX - 118, centerY - 52, 236, 104, { fill: "#051117EE", line: C.cyan });
-  t(slide, ctx, "TECNOTITAN\nCORE", centerX - 88, centerY - 34, 176, 68, { size: 22, color: C.ink, bold: true, align: "center" });
-  item.proof.forEach((name, idx) => {
-    const angle = (-90 + idx * 72) * (Math.PI / 180);
-    const x = centerX + Math.cos(angle) * 342 - 110;
-    const y = centerY + Math.sin(angle) * 162 - 34;
-    box(slide, ctx, x, y, 220, 68, { fill: "#081A23DD", line: "#25505B" });
-    t(slide, ctx, name, x + 18, y + 18, 184, 26, { size: 17, color: C.ink, bold: true, align: "center" });
-    rule(slide, ctx, Math.min(centerX, x + 110), Math.min(centerY, y + 34), Math.abs(centerX - (x + 110)) || 2, 2, "#285563");
+  box(slide, ctx, 474, 354, 330, 92, { fill: "#051117EE", line: C.cyan, lineWidth: 2 });
+  t(slide, ctx, "TECNOTITAN\nCORE", 520, 376, 238, 54, { size: 24, color: C.ink, bold: true, align: "center" });
+  t(slide, ctx, "Shared IP, data and reusable playbooks", 438, 468, 404, 24, {
+    size: 15,
+    color: C.cyan,
+    bold: true,
+    align: "center",
   });
+
+  const gap = 14;
+  const cardW = 214;
+  const cardH = 76;
+  const startX = 76;
+  item.proof.forEach((name, idx) => {
+    const x = startX + idx * (cardW + gap);
+    const y = 540;
+    box(slide, ctx, x, y, cardW, cardH, { fill: "#081A23DD", line: "#25505B" });
+    t(slide, ctx, name, x + 14, y + 22, cardW - 28, 28, {
+      size: name.length > 22 ? 15 : 17,
+      color: C.ink,
+      bold: true,
+      align: "center",
+    });
+    rule(slide, ctx, x + cardW / 2 - 1, 500, 2, 40, "#285563");
+  });
+  rule(slide, ctx, 183, 500, 912, 2, "#285563");
   chrome(slide, ctx, deck, index);
   return slide;
 }
