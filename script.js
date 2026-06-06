@@ -2365,6 +2365,7 @@ const languageCarryPages = new Set([
   "servicio-robotica.html",
   "servicio-videojuegos.html",
   "servicio-transformacion-tecnologica.html",
+  "ia-para-empresas.html",
   "producto-copiloto-pyme.html",
   "producto-tecnotitan-os.html",
   "producto-life-copilot.html",
@@ -2413,6 +2414,10 @@ supportedLanguages.forEach((language) => {
 });
 
 const staticSeoPages = {
+  "ia-para-empresas.html": [
+    "IA para empresas: automatización, agentes y copilotos | Tecnotitan",
+    "Guía de IA para empresas: automatización, agentes, copilotos, casos de uso y ruta de implementación."
+  ],
   "producto-copiloto-pyme.html": [
     "Copiloto Pyme | Tecnotitan",
     "Asistente de IA para ventas, soporte, documentos y automatización operativa de pymes."
