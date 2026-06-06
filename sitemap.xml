@@ -1,11 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.tecnotitan.com/</loc></url>
-  <url><loc>https://www.tecnotitan.com/nosotros.html</loc></url>
-  <url><loc>https://www.tecnotitan.com/productos.html</loc></url>
-  <url><loc>https://www.tecnotitan.com/servicios.html</loc></url>
-  <url><loc>https://www.tecnotitan.com/divisiones.html</loc></url>
-  <url><loc>https://www.tecnotitan.com/inversionistas.html</loc></url>
-  <url><loc>https://www.tecnotitan.com/investor-deck.html</loc></url>
-  <url><loc>https://www.tecnotitan.com/contacto.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.tecnotitan.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/nosotros.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/nosotros.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/nosotros.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/nosotros.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/nosotros.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/nosotros.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/nosotros.html" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/productos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/productos.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/productos.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/productos.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/productos.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/productos.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/productos.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/productos.html" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/servicios.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/servicios.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/servicios.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/servicios.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/servicios.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/servicios.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/servicios.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicios.html" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/divisiones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/divisiones.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/divisiones.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/divisiones.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/divisiones.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/divisiones.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/divisiones.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/divisiones.html" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/inversionistas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/inversionistas.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/inversionistas.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/inversionistas.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/inversionistas.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/inversionistas.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/inversionistas.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/inversionistas.html" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/investor-deck.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/investor-deck.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/investor-deck.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/investor-deck.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/investor-deck.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/investor-deck.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/investor-deck.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/investor-deck.html" />
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/contacto.html?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/contacto.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/contacto.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/contacto.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/contacto.html?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/contacto.html?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/contacto.html" />
+  </url>
 </urlset>

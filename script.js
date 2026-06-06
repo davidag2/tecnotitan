@@ -1698,6 +1698,14 @@ const languageNames = {
   ja: "日本語",
   ko: "한국어"
 };
+const languageLocales = {
+  es: "es_ES",
+  en: "en_US",
+  pt: "pt_BR",
+  zh: "zh_CN",
+  ja: "ja_JP",
+  ko: "ko_KR"
+};
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
 let activeLanguage = supportedLanguages.includes(queryLanguage)
@@ -1851,6 +1859,38 @@ function setMetaDescription(value) {
   }
 }
 
+function setMetaContent(selector, value) {
+  const meta = document.querySelector(selector);
+  if (meta && value) {
+    meta.setAttribute("content", value);
+  }
+}
+
+function getCanonicalUrl() {
+  const canonical = document.querySelector('link[rel="canonical"]');
+  return canonical?.href || new URL(window.location.pathname || "/", window.location.origin).toString();
+}
+
+function getLocalizedUrl(language) {
+  const url = new URL(getCanonicalUrl());
+  url.searchParams.set("lang", language);
+  return url.toString();
+}
+
+function setSeoMetadata(page, language) {
+  const image = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
+
+  document.title = page.title;
+  setMetaDescription(page.description);
+  setMetaContent('meta[property="og:title"]', page.title);
+  setMetaContent('meta[property="og:description"]', page.description);
+  setMetaContent('meta[property="og:url"]', getLocalizedUrl(language));
+  setMetaContent('meta[property="og:locale"]', languageLocales[language]);
+  setMetaContent('meta[name="twitter:title"]', page.title);
+  setMetaContent('meta[name="twitter:description"]', page.description);
+  setMetaContent('meta[name="twitter:image"]', image);
+}
+
 function buildLanguageSwitcher() {
   if (!header || header.querySelector(".language-switcher")) {
     return;
@@ -1883,8 +1923,7 @@ function applyLanguage(language) {
   localStorage.setItem("tecnotitan-language", language);
 
   document.documentElement.lang = language;
-  document.title = page.title;
-  setMetaDescription(page.description);
+  setSeoMetadata(page, language);
 
   document.querySelectorAll(".brand, .footer-brand").forEach((brand) => {
     brand.setAttribute("aria-label", dictionary.brandHome);
