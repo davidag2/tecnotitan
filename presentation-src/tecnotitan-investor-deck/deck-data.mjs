@@ -15,17 +15,17 @@ export const languages = {
         title: "Tecnología aplicada para empresas que necesitan construir el futuro",
         body:
           "Software, inteligencia artificial, videojuegos, robótica y consultoría de transformación tecnológica desde Colombia para mercados globales.",
-        proof: ["6 líneas de producto", "5 divisiones tecnológicas", "Equipo lean en ejecución"],
+        proof: ["US$500K pre-seed", "18 meses de runway", "6 líneas de producto"],
       },
       {
-        eyebrow: "TESIS",
-        title: "Las empresas necesitan builders, no solo consultores",
+        eyebrow: "POR QUÉ AHORA",
+        title: "Las empresas necesitan implementar IA, no comprar más presentaciones",
         body:
-          "La adopción real de IA exige diagnóstico, software, datos, automatización y cultura operativa trabajando como un sistema.",
+          "La presión por adoptar IA está llegando a empresas que todavía operan con procesos manuales, datos dispersos y equipos sin capacidad interna para construir.",
         proof: [
-          "AI + software como núcleo",
-          "Experiencias interactivas para adopción",
-          "Robótica y automatización como frontera",
+          "Dolor operativo claro",
+          "Demanda creciente por IA",
+          "Necesidad de ejecución técnica",
         ],
       },
       {
@@ -100,10 +100,10 @@ export const languages = {
       },
       {
         eyebrow: "INVERSIÓN",
-        title: "Buscamos capital y aliados para acelerar producto, ventas y talento",
+        title: "Levantamos US$500K pre-seed para llegar a pilotos pagados y producto repetible",
         body:
-          "Tecnotitan está construyendo una compañía tecnológica multidivisión con ambición global desde Latinoamérica.",
-        proof: ["Producto", "Ventas", "Talento técnico", "Data room"],
+          "La ronda financia 18 meses para convertir servicios de IA y software en productos propios con clientes iniciales, casos de uso medibles y base comercial global.",
+        proof: ["40% producto e ingeniería", "25% ventas y pilotos", "20% delivery de IA", "15% operaciones y data room"],
       },
     ],
   },
@@ -123,14 +123,14 @@ export const languages = {
         title: "Applied technology for companies that need to build the future",
         body:
           "Software, artificial intelligence, video games, robotics and technology transformation consulting from Colombia for global markets.",
-        proof: ["6 product lines", "5 technology divisions", "Lean execution team"],
+        proof: ["US$500K pre-seed", "18 months runway", "6 product lines"],
       },
       {
-        eyebrow: "THESIS",
-        title: "Companies need builders, not only advisors",
+        eyebrow: "WHY NOW",
+        title: "Companies need AI implementation, not more slideware",
         body:
-          "Real AI adoption requires diagnosis, software, data, automation and operating culture working as one system.",
-        proof: ["AI + software core", "Interactive adoption experiences", "Robotics and automation frontier"],
+          "AI adoption pressure is reaching companies that still run on manual workflows, scattered data and teams without internal capacity to build.",
+        proof: ["Clear operating pain", "Rising AI demand", "Need for technical execution"],
       },
       {
         eyebrow: "PROBLEM",
@@ -204,10 +204,10 @@ export const languages = {
       },
       {
         eyebrow: "INVESTMENT",
-        title: "We seek capital and partners to accelerate product, sales and talent",
+        title: "Raising US$500K pre-seed to reach paid pilots and repeatable product",
         body:
-          "Tecnotitan is building a multi-division technology company with global ambition from Latin America.",
-        proof: ["Product", "Sales", "Technical talent", "Data room"],
+          "The round funds 18 months to turn AI and software services into proprietary products with initial customers, measurable use cases and a global commercial base.",
+        proof: ["40% product and engineering", "25% sales and pilots", "20% AI delivery", "15% ops and data room"],
       },
     ],
   },
@@ -227,14 +227,14 @@ export const languages = {
         title: "Tecnologia aplicada para empresas que precisam construir o futuro",
         body:
           "Software, inteligência artificial, videogames, robótica e consultoria de transformação tecnológica da Colômbia para mercados globais.",
-        proof: ["6 linhas de produto", "5 divisões tecnológicas", "Equipe lean em execução"],
+        proof: ["US$500K pre-seed", "18 meses de runway", "6 linhas de produto"],
       },
       {
-        eyebrow: "TESE",
-        title: "Empresas precisam de builders, não apenas consultores",
+        eyebrow: "POR QUE AGORA",
+        title: "Empresas precisam implementar IA, não comprar mais apresentações",
         body:
-          "A adoção real de IA exige diagnóstico, software, dados, automação e cultura operacional trabalhando como um sistema.",
-        proof: ["IA + software como núcleo", "Experiências interativas de adoção", "Robótica e automação como fronteira"],
+          "A pressão por adotar IA chegou a empresas que ainda operam com processos manuais, dados dispersos e equipes sem capacidade interna para construir.",
+        proof: ["Dor operacional clara", "Demanda crescente por IA", "Necessidade de execução técnica"],
       },
       {
         eyebrow: "PROBLEMA",
@@ -308,10 +308,10 @@ export const languages = {
       },
       {
         eyebrow: "INVESTIMENTO",
-        title: "Buscamos capital e aliados para acelerar produto, vendas e talento",
+        title: "Levantamos US$500K pre-seed para chegar a pilotos pagos e produto repetível",
         body:
-          "A Tecnotitan está construindo uma empresa tecnológica multidivisão com ambição global a partir da América Latina.",
-        proof: ["Produto", "Vendas", "Talento técnico", "Data room"],
+          "A rodada financia 18 meses para transformar serviços de IA e software em produtos próprios com clientes iniciais, casos de uso mensuráveis e base comercial global.",
+        proof: ["40% produto e engenharia", "25% vendas e pilotos", "20% delivery de IA", "15% operações e data room"],
       },
     ],
   },
@@ -330,13 +330,13 @@ export const languages = {
         eyebrow: "TECNOTITAN CORPORATE",
         title: "面向企业未来建设的应用技术公司",
         body: "来自哥伦比亚，面向全球市场，提供软件、人工智能、游戏、机器人和技术转型咨询。",
-        proof: ["6 条产品线", "5 个技术事业部", "精简执行团队"],
+        proof: ["US$500K pre-seed", "18 个月 runway", "6 条产品线"],
       },
       {
-        eyebrow: "投资论点",
-        title: "企业需要建设者，而不仅是顾问",
-        body: "真正的 AI 落地需要诊断、软件、数据、自动化和运营文化作为一个系统协同工作。",
-        proof: ["AI + 软件核心", "交互式采用体验", "机器人与自动化前沿"],
+        eyebrow: "为什么是现在",
+        title: "企业需要 AI 落地，而不是更多演示文稿",
+        body: "AI 采用压力正在进入仍依赖手工流程、分散数据、且缺少内部构建能力的公司。",
+        proof: ["明确的运营痛点", "不断增长的 AI 需求", "需要技术执行力"],
       },
       {
         eyebrow: "问题",
@@ -394,9 +394,9 @@ export const languages = {
       },
       {
         eyebrow: "投资",
-        title: "寻求资本与伙伴，加速产品、销售和人才",
-        body: "Tecnotitan 正在从拉丁美洲打造一家拥有全球雄心的多事业部技术公司。",
-        proof: ["产品", "销售", "技术人才", "Data room"],
+        title: "融资 US$500K pre-seed，用于实现付费试点和可重复产品",
+        body: "本轮资金支持 18 个月，将 AI 与软件服务转化为自有产品，获得初始客户、可衡量用例和全球商业基础。",
+        proof: ["40% 产品与工程", "25% 销售与试点", "20% AI 交付", "15% 运营与 data room"],
       },
     ],
   },
@@ -415,13 +415,13 @@ export const languages = {
         eyebrow: "TECNOTITAN CORPORATE",
         title: "未来を構築する企業のための応用テクノロジー",
         body: "コロンビアから世界市場へ、ソフトウェア、AI、ゲーム、ロボティクス、技術変革コンサルティングを提供します。",
-        proof: ["6つの製品ライン", "5つの技術部門", "実行重視のリーンチーム"],
+        proof: ["US$500K pre-seed", "18か月の runway", "6つの製品ライン"],
       },
       {
-        eyebrow: "投資仮説",
-        title: "企業に必要なのは助言者だけでなく、構築者です",
-        body: "本当のAI導入には、診断、ソフトウェア、データ、自動化、運用文化が一つのシステムとして機能する必要があります。",
-        proof: ["AI + ソフトウェア中核", "導入を促すインタラクティブ体験", "ロボティクスと自動化のフロンティア"],
+        eyebrow: "なぜ今か",
+        title: "企業に必要なのはAIの実装であり、追加の資料ではありません",
+        body: "AI導入の圧力は、手作業、分散したデータ、社内構築力の不足を抱える企業にも広がっています。",
+        proof: ["明確な運用課題", "高まるAI需要", "技術実行力の必要性"],
       },
       {
         eyebrow: "課題",
@@ -479,9 +479,9 @@ export const languages = {
       },
       {
         eyebrow: "投資",
-        title: "製品、営業、人材を加速する資本とパートナーを求めています",
-        body: "Tecnotitanはラテンアメリカ発でグローバルな野心を持つ複数部門型テクノロジー企業を構築しています。",
-        proof: ["製品", "営業", "技術人材", "Data room"],
+        title: "有料パイロットと再現可能な製品に向けてUS$500K pre-seedを調達",
+        body: "このラウンドは18か月分を資金化し、AI・ソフトウェアサービスを自社製品、初期顧客、測定可能なユースケース、グローバル営業基盤へ変えます。",
+        proof: ["40% 製品とエンジニアリング", "25% 営業とパイロット", "20% AIデリバリー", "15% 運用とdata room"],
       },
     ],
   },
@@ -500,13 +500,13 @@ export const languages = {
         eyebrow: "TECNOTITAN CORPORATE",
         title: "미래를 구축해야 하는 기업을 위한 응용 기술",
         body: "콜롬비아에서 글로벌 시장을 향해 소프트웨어, 인공지능, 게임, 로보틱스, 기술 전환 컨설팅을 제공합니다.",
-        proof: ["6개 제품 라인", "5개 기술 부문", "실행 중심의 린 팀"],
+        proof: ["US$500K pre-seed", "18개월 runway", "6개 제품 라인"],
       },
       {
-        eyebrow: "투자 논리",
-        title: "기업에는 조언자뿐 아니라 구축자가 필요합니다",
-        body: "진짜 AI 도입에는 진단, 소프트웨어, 데이터, 자동화, 운영 문화가 하나의 시스템으로 작동해야 합니다.",
-        proof: ["AI + 소프트웨어 코어", "도입을 돕는 인터랙티브 경험", "로보틱스와 자동화 프런티어"],
+        eyebrow: "왜 지금인가",
+        title: "기업에는 더 많은 발표자료가 아니라 AI 구현이 필요합니다",
+        body: "AI 도입 압박은 여전히 수작업, 흩어진 데이터, 내부 구축 역량 부족으로 운영되는 기업까지 확대되고 있습니다.",
+        proof: ["명확한 운영 문제", "증가하는 AI 수요", "기술 실행력 필요"],
       },
       {
         eyebrow: "문제",
@@ -564,9 +564,9 @@ export const languages = {
       },
       {
         eyebrow: "투자",
-        title: "제품, 영업, 인재를 가속할 자본과 파트너를 찾습니다",
-        body: "Tecnotitan은 라틴아메리카에서 글로벌 야망을 가진 다부문 기술 회사를 구축하고 있습니다.",
-        proof: ["제품", "영업", "기술 인재", "Data room"],
+        title: "유료 파일럿과 반복 가능한 제품을 위해 US$500K pre-seed를 유치합니다",
+        body: "이번 라운드는 18개월 동안 AI와 소프트웨어 서비스를 자체 제품, 초기 고객, 측정 가능한 사용 사례, 글로벌 상업 기반으로 전환하는 데 사용됩니다.",
+        proof: ["40% 제품 및 엔지니어링", "25% 영업 및 파일럿", "20% AI 딜리버리", "15% 운영 및 data room"],
       },
     ],
   },
