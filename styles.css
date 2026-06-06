@@ -439,6 +439,14 @@ h3 {
   margin-top: 18px;
 }
 
+.deck-privacy-note {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .deck-language-grid a {
   min-height: 166px;
   display: flex;
