@@ -2172,6 +2172,95 @@ function setCards(selector, cards) {
   });
 }
 
+function setDetailedCards(selector, cards) {
+  if (!cards) {
+    return;
+  }
+
+  document.querySelectorAll(selector).forEach((card, index) => {
+    const content = cards[index];
+    if (!content) {
+      return;
+    }
+
+    setText("span", content[0], card);
+    setText("h3", content[1], card);
+    setText("p", content[2], card);
+    setText("strong", content[3], card);
+    setText("a", content[3], card);
+  });
+}
+
+function setSelectOptions(selector, options) {
+  const select = document.querySelector(selector);
+  if (!select || !options) {
+    return;
+  }
+
+  Array.from(select.options).forEach((option, index) => {
+    if (options[index]) {
+      option.textContent = options[index];
+    }
+  });
+}
+
+function applyServicePageContent(language, content) {
+  const serviceContent = servicePageTranslations[language] || servicePageTranslations.es;
+
+  setCards(".timeline article", content.cards);
+  setText(".service-detail-index .section-copy h2", serviceContent.serviceIndex.title);
+  setText(".service-detail-index .section-copy p", serviceContent.serviceIndex.text);
+  setCards(".service-link-grid a", serviceContent.serviceIndex.cards);
+
+  setText(".work-method-section .section-copy h2", serviceContent.method.title);
+  setText(".work-method-section .section-copy p", serviceContent.method.text);
+  setDetailedCards(".work-method-grid article", serviceContent.method.cards);
+
+  setText(".technology-capabilities-section .section-copy h2", serviceContent.technology.title);
+  setText(".technology-capabilities-section .section-copy p", serviceContent.technology.text);
+  setCards(".technology-capability-grid article", serviceContent.technology.cards);
+
+  setText(".industry-use-cases .section-copy h2", serviceContent.industries.title);
+  setText(".industry-use-cases .section-copy p", serviceContent.industries.text);
+  setDetailedCards(".industry-use-grid article", serviceContent.industries.cards);
+
+  setText(".service-faq-section .section-copy h2", serviceContent.faq.title);
+  setText(".service-faq-section .section-copy p", serviceContent.faq.text);
+  document.querySelectorAll(".service-faq-list details").forEach((item, index) => {
+    const faq = serviceContent.faq.items[index];
+    if (!faq) {
+      return;
+    }
+
+    setText("summary", faq[0], item);
+    setText("p", faq[1], item);
+  });
+
+  setText(".contact-form-copy span", serviceContent.form.kicker);
+  setText("[data-service-form-title]", serviceContent.form.title);
+  setText("[data-service-form-text]", serviceContent.form.text);
+  const successMessage = document.querySelector("[data-form-success]");
+  if (successMessage) {
+    setText("strong", serviceContent.form.successTitle, successMessage);
+    setText("p", serviceContent.form.successText, successMessage);
+  }
+  document.querySelectorAll(".service-request-form label:not(.newsletter-check):not(.form-honeypot) > span").forEach((label, index) => {
+    if (serviceContent.form.labels[index]) {
+      label.textContent = serviceContent.form.labels[index];
+    }
+  });
+  setSelectOptions('.service-request-form select[name="Servicio"]', serviceContent.form.serviceOptions);
+  setSelectOptions('.service-request-form select[name="Tamaño de empresa"]', serviceContent.form.companySizeOptions);
+  setSelectOptions('.service-request-form select[name="Presupuesto"]', serviceContent.form.budgetOptions);
+  setSelectOptions('.service-request-form select[name="Urgencia"]', serviceContent.form.urgencyOptions);
+  const message = document.querySelector('.service-request-form textarea[name="Mensaje"]');
+  if (message) {
+    message.setAttribute("placeholder", serviceContent.form.placeholder);
+  }
+  setText("[data-newsletter-label]", serviceContent.form.newsletter);
+  setText(".service-request-form button", serviceContent.form.button);
+}
+
 function setMetaDescription(value) {
   const meta = document.querySelector('meta[name="description"]');
   if (meta && value) {
@@ -2261,6 +2350,498 @@ supportedLanguages.forEach((language) => {
     languages[language].pages[file] ||= { title, description };
   });
 });
+
+const servicePageTranslations = {
+  es: {
+    serviceIndex: {
+      title: "Servicios especializados",
+      text: "Explora cada línea de servicio con enfoque, entregables y tipo de impacto esperado para empresas.",
+      cards: [
+        ["IA", "Inteligencia artificial", "Agentes, copilotos, automatización documental, analítica y flujos inteligentes."],
+        ["SW", "Software empresarial", "Plataformas web, CRM internos, dashboards, portales e integraciones."],
+        ["AD", "Consultoría tecnológica", "Diagnóstico, arquitectura, roadmap, adopción y acompañamiento ejecutivo."],
+        ["RB", "Robótica", "Software, sensores, datos y sistemas físico-digitales conectados a operaciones."],
+        ["VG", "Videojuegos", "Simuladores, experiencias interactivas, gamificación y entrenamiento inmersivo."],
+        ["TX", "Transformación tecnológica", "Modernización operativa, automatización, adopción digital y cambio organizacional."]
+      ]
+    },
+    method: {
+      title: "Cómo trabajamos",
+      text: "Un proceso claro para pasar de diagnóstico a despliegue, con entregables visibles y decisiones de avance en cada fase.",
+      cards: [
+        ["01", "Diagnóstico", "Entendemos procesos, datos, herramientas, usuarios, restricciones y oportunidad de impacto.", "Entregable: mapa de oportunidad"],
+        ["02", "Diseño", "Definimos arquitectura, alcance, experiencia, integraciones, riesgos y criterios de éxito.", "Entregable: plan técnico y funcional"],
+        ["03", "Desarrollo", "Construimos el sistema, agente, plataforma, prototipo o automatización con ciclos cortos.", "Entregable: versión funcional"],
+        ["04", "Validación", "Probamos con usuarios, datos y escenarios reales para ajustar experiencia, precisión y flujo.", "Entregable: reporte de validación"],
+        ["05", "Despliegue", "Publicamos, integramos, documentamos y dejamos el sistema listo para uso operativo.", "Entregable: sistema en producción"],
+        ["06", "Soporte", "Medimos adopción, corregimos fricción, priorizamos mejoras y transferimos capacidades.", "Entregable: plan de evolución"]
+      ]
+    },
+    technology: {
+      title: "Tecnologías y capacidades",
+      text: "Integramos herramientas modernas con criterio operativo: elegimos tecnología por impacto, mantenibilidad y capacidad de escalar dentro de la empresa.",
+      cards: [
+        ["AI", "IA generativa", "Modelos de lenguaje, asistencia documental, clasificación, extracción, generación y análisis de información."],
+        ["Agents", "Agentes y copilotos", "Asistentes conectados a procesos, datos, herramientas internas, atención, ventas y operaciones."],
+        ["APIs", "Integraciones", "Conexión entre formularios, CRM, bases de datos, correo, dashboards, automatizaciones y sistemas existentes."],
+        ["Data", "Dashboards y analítica", "Indicadores, reportes ejecutivos, seguimiento de procesos, visualización y lectura accionable de datos."],
+        ["Cloud", "Web y cloud", "Aplicaciones web, funciones serverless, despliegue continuo, almacenamiento, seguridad y observabilidad."],
+        ["Automation", "Automatización", "Flujos repetibles, alertas, generación de reportes, sincronización de datos y reducción de trabajo manual."],
+        ["Games", "Videojuegos y simulación", "Mecánicas interactivas, gamificación, simuladores, experiencias web y aprendizaje inmersivo."],
+        ["Robotics", "Robótica aplicada", "Sensores, control, telemetría, prototipos, sistemas físico-digitales y visualización de operación."]
+      ]
+    },
+    industries: {
+      title: "Casos de uso por industria",
+      text: "Aplicamos software, IA, videojuegos, robótica y consultoría tecnológica a problemas concretos de operación, crecimiento y adopción digital.",
+      cards: [
+        ["Servicios profesionales", "Automatizar atención, documentos y seguimiento comercial", "Copilotos para responder clientes, clasificar solicitudes, generar documentos, priorizar oportunidades y medir productividad.", "Solicitar diagnóstico IA"],
+        ["Retail y comercio", "Unificar ventas, inventario, soporte y datos de clientes", "Portales internos, dashboards, agentes de atención, campañas interactivas y automatización de procesos repetibles.", "Explorar software"],
+        ["Educación", "Crear experiencias de aprendizaje con IA y simulación", "Academias digitales, tutores IA, simuladores, evaluaciones interactivas, gamificación y seguimiento de progreso.", "Crear experiencia"],
+        ["Salud y bienestar", "Ordenar información, seguimiento y comunicación operativa", "Automatización documental, agendas, paneles internos, flujos de atención y asistentes para tareas administrativas.", "Modernizar operación"],
+        ["Logística y operaciones", "Conectar procesos, datos, alertas y trazabilidad", "Dashboards operativos, flujos de aprobación, automatización de reportes, seguimiento de tareas y analítica aplicada.", "Diseñar roadmap"],
+        ["Industria y manufactura", "Integrar sensores, software y sistemas físico-digitales", "Prototipos de robótica, telemetría, control, mantenimiento, captura de datos y visualización de procesos críticos.", "Explorar robótica"]
+      ]
+    },
+    faq: {
+      title: "Preguntas frecuentes",
+      text: "Respuestas claras para iniciar una conversación comercial con expectativas realistas sobre alcance, tiempos, seguridad y soporte.",
+      items: [
+        ["¿Cuánto tarda un proyecto típico?", "Depende del alcance. Un diagnóstico puede tomar pocos días; un prototipo funcional suele requerir semanas; una plataforma o implementación completa se define por fases para reducir riesgo."],
+        ["¿Cómo se define el costo?", "Se estima según alcance, complejidad, integraciones, nivel de soporte, urgencia y entregables. Por eso el primer paso recomendado es una conversación de diagnóstico."],
+        ["¿Trabajan con información confidencial?", "Sí. Podemos trabajar bajo acuerdos de confidencialidad y limitar el acceso a datos sensibles según las necesidades del proyecto y las políticas de la empresa."],
+        ["¿Qué pasa con la propiedad intelectual?", "La propiedad intelectual se acuerda por contrato según el tipo de proyecto. Podemos construir software a medida para el cliente o desarrollar componentes reutilizables bajo condiciones claras."],
+        ["¿La empresa necesita tener equipo técnico interno?", "No necesariamente. Tecnotitan puede acompañar desde diagnóstico hasta despliegue. Si ya existe equipo interno, trabajamos como socio técnico para acelerar arquitectura, desarrollo y adopción."],
+        ["¿Ofrecen soporte después del despliegue?", "Sí. Podemos incluir mantenimiento, mejoras evolutivas, monitoreo, documentación, capacitación y soporte operativo según el nivel de servicio requerido."],
+        ["¿Cómo manejan seguridad y datos?", "Diseñamos cada solución considerando permisos, control de acceso, trazabilidad, exposición mínima de datos, proveedores adecuados y prácticas de despliegue responsables."],
+        ["¿Pueden empezar con algo pequeño?", "Sí. Recomendamos comenzar con un diagnóstico, MVP o piloto medible. Eso permite validar valor antes de comprometer inversiones mayores."]
+      ]
+    },
+    form: {
+      kicker: "Solicitud comercial",
+      title: "Cuéntanos qué necesita construir tu empresa",
+      text: "Este formulario es para proyectos de IA, software, consultoría, robótica, videojuegos o transformación tecnológica.",
+      successTitle: "Solicitud enviada",
+      successText: "Gracias. Recibimos tu solicitud de servicios y responderemos a info@tecnotitan.com.",
+      labels: ["Nombre", "Email", "Empresa", "País", "Servicio de interés", "Tamaño de empresa", "Presupuesto aproximado", "Urgencia", "Mensaje"],
+      serviceOptions: ["Seleccionar", "Inteligencia artificial", "Software empresarial", "Consultoría tecnológica", "Robótica", "Videojuegos y experiencias interactivas", "Transformación tecnológica"],
+      companySizeOptions: ["Seleccionar", "1-10 personas", "11-50 personas", "51-200 personas", "201-1000 personas", "Más de 1000 personas"],
+      budgetOptions: ["Seleccionar", "Menos de USD 5K", "USD 5K - 15K", "USD 15K - 50K", "USD 50K+", "Por definir"],
+      urgencyOptions: ["Seleccionar", "Este mes", "1-3 meses", "3-6 meses", "Exploratorio"],
+      placeholder: "Cuéntanos el problema, objetivo o proceso que quieres mejorar.",
+      newsletter: "Quiero suscribirme al newsletter oficial de Tecnotitan.",
+      button: "Solicitar conversación comercial"
+    }
+  },
+  en: {
+    serviceIndex: {
+      title: "Specialized services",
+      text: "Explore each service line by focus, deliverables and expected business impact.",
+      cards: [
+        ["AI", "Artificial intelligence", "Agents, copilots, document automation, analytics and intelligent workflows."],
+        ["SW", "Enterprise software", "Web platforms, internal CRM, dashboards, portals and integrations."],
+        ["AD", "Technology advisory", "Diagnosis, architecture, roadmap, adoption and executive guidance."],
+        ["RB", "Robotics", "Software, sensors, data and physical-digital systems connected to operations."],
+        ["VG", "Video games", "Simulators, interactive experiences, gamification and immersive training."],
+        ["TX", "Technology transformation", "Operational modernization, automation, digital adoption and organizational change."]
+      ]
+    },
+    method: {
+      title: "How we work",
+      text: "A clear process from diagnosis to deployment, with visible deliverables and progress decisions at every stage.",
+      cards: [
+        ["01", "Diagnosis", "We understand processes, data, tools, users, constraints and impact opportunities.", "Deliverable: opportunity map"],
+        ["02", "Design", "We define architecture, scope, experience, integrations, risks and success criteria.", "Deliverable: technical and functional plan"],
+        ["03", "Development", "We build the system, agent, platform, prototype or automation in short cycles.", "Deliverable: functional version"],
+        ["04", "Validation", "We test with users, data and real scenarios to adjust experience, accuracy and flow.", "Deliverable: validation report"],
+        ["05", "Deployment", "We publish, integrate, document and leave the system ready for operational use.", "Deliverable: production system"],
+        ["06", "Support", "We measure adoption, reduce friction, prioritize improvements and transfer capabilities.", "Deliverable: evolution plan"]
+      ]
+    },
+    technology: {
+      title: "Technologies and capabilities",
+      text: "We integrate modern tools with operational judgment: technology is chosen for impact, maintainability and enterprise scalability.",
+      cards: [
+        ["AI", "Generative AI", "Language models, document assistance, classification, extraction, generation and information analysis."],
+        ["Agents", "Agents and copilots", "Assistants connected to processes, data, internal tools, support, sales and operations."],
+        ["APIs", "Integrations", "Connections across forms, CRM, databases, email, dashboards, automations and existing systems."],
+        ["Data", "Dashboards and analytics", "Indicators, executive reports, process tracking, visualization and actionable data reading."],
+        ["Cloud", "Web and cloud", "Web apps, serverless functions, continuous deployment, storage, security and observability."],
+        ["Automation", "Automation", "Repeatable workflows, alerts, report generation, data synchronization and reduced manual work."],
+        ["Games", "Games and simulation", "Interactive mechanics, gamification, simulators, web experiences and immersive learning."],
+        ["Robotics", "Applied robotics", "Sensors, control, telemetry, prototypes, physical-digital systems and operational visualization."]
+      ]
+    },
+    industries: {
+      title: "Industry use cases",
+      text: "We apply software, AI, games, robotics and technology advisory to concrete problems in operations, growth and digital adoption.",
+      cards: [
+        ["Professional services", "Automate support, documents and commercial follow-up", "Copilots to answer clients, classify requests, generate documents, prioritize opportunities and measure productivity.", "Request AI diagnosis"],
+        ["Retail and commerce", "Unify sales, inventory, support and customer data", "Internal portals, dashboards, support agents, interactive campaigns and repeatable process automation.", "Explore software"],
+        ["Education", "Create learning experiences with AI and simulation", "Digital academies, AI tutors, simulators, interactive assessments, gamification and progress tracking.", "Create experience"],
+        ["Health and wellness", "Organize information, follow-up and operational communication", "Document automation, scheduling, internal panels, service flows and assistants for administrative tasks.", "Modernize operations"],
+        ["Logistics and operations", "Connect processes, data, alerts and traceability", "Operational dashboards, approval flows, report automation, task tracking and applied analytics.", "Design roadmap"],
+        ["Industry and manufacturing", "Integrate sensors, software and physical-digital systems", "Robotics prototypes, telemetry, control, maintenance, data capture and critical process visualization.", "Explore robotics"]
+      ]
+    },
+    faq: {
+      title: "Frequently asked questions",
+      text: "Clear answers to begin a commercial conversation with realistic expectations about scope, timing, security and support.",
+      items: [
+        ["How long does a typical project take?", "It depends on scope. A diagnosis can take a few days; a functional prototype usually takes weeks; a complete platform or implementation is defined in phases to reduce risk."],
+        ["How is pricing defined?", "It is estimated based on scope, complexity, integrations, support level, urgency and deliverables. That is why the recommended first step is a diagnosis conversation."],
+        ["Do you work with confidential information?", "Yes. We can work under confidentiality agreements and limit access to sensitive data according to project needs and company policies."],
+        ["What happens with intellectual property?", "Intellectual property is agreed by contract depending on the project type. We can build custom software for the client or reusable components under clear conditions."],
+        ["Does the company need an internal technical team?", "Not necessarily. Tecnotitan can support from diagnosis to deployment. If an internal team exists, we work as a technical partner to accelerate architecture, development and adoption."],
+        ["Do you offer support after deployment?", "Yes. We can include maintenance, evolutionary improvements, monitoring, documentation, training and operational support according to the required service level."],
+        ["How do you handle security and data?", "We design every solution considering permissions, access control, traceability, minimal data exposure, suitable providers and responsible deployment practices."],
+        ["Can we start with something small?", "Yes. We recommend starting with a diagnosis, MVP or measurable pilot. That allows value validation before larger investments."]
+      ]
+    },
+    form: {
+      kicker: "Commercial request",
+      title: "Tell us what your company needs to build",
+      text: "This form is for AI, software, advisory, robotics, video games or technology transformation projects.",
+      successTitle: "Request sent",
+      successText: "Thank you. We received your service request and will reply through info@tecnotitan.com.",
+      labels: ["Name", "Email", "Company", "Country", "Service of interest", "Company size", "Approximate budget", "Urgency", "Message"],
+      serviceOptions: ["Select", "Artificial intelligence", "Enterprise software", "Technology advisory", "Robotics", "Video games and interactive experiences", "Technology transformation"],
+      companySizeOptions: ["Select", "1-10 people", "11-50 people", "51-200 people", "201-1000 people", "More than 1000 people"],
+      budgetOptions: ["Select", "Less than USD 5K", "USD 5K - 15K", "USD 15K - 50K", "USD 50K+", "To be defined"],
+      urgencyOptions: ["Select", "This month", "1-3 months", "3-6 months", "Exploratory"],
+      placeholder: "Tell us the problem, objective or process you want to improve.",
+      newsletter: "I want to subscribe to the official Tecnotitan newsletter.",
+      button: "Request a commercial conversation"
+    }
+  },
+  pt: {
+    serviceIndex: {
+      title: "Serviços especializados",
+      text: "Explore cada linha de serviço por foco, entregáveis e impacto esperado para empresas.",
+      cards: [
+        ["IA", "Inteligência artificial", "Agentes, copilotos, automação documental, analytics e fluxos inteligentes."],
+        ["SW", "Software empresarial", "Plataformas web, CRM interno, dashboards, portais e integrações."],
+        ["AD", "Consultoria tecnológica", "Diagnóstico, arquitetura, roadmap, adoção e acompanhamento executivo."],
+        ["RB", "Robótica", "Software, sensores, dados e sistemas físico-digitais conectados às operações."],
+        ["VG", "Videogames", "Simuladores, experiências interativas, gamificação e treinamento imersivo."],
+        ["TX", "Transformação tecnológica", "Modernização operacional, automação, adoção digital e mudança organizacional."]
+      ]
+    },
+    method: {
+      title: "Como trabalhamos",
+      text: "Um processo claro do diagnóstico ao deploy, com entregáveis visíveis e decisões de avanço em cada fase.",
+      cards: [
+        ["01", "Diagnóstico", "Entendemos processos, dados, ferramentas, usuários, restrições e oportunidades de impacto.", "Entregável: mapa de oportunidade"],
+        ["02", "Desenho", "Definimos arquitetura, escopo, experiência, integrações, riscos e critérios de sucesso.", "Entregável: plano técnico e funcional"],
+        ["03", "Desenvolvimento", "Construímos o sistema, agente, plataforma, protótipo ou automação em ciclos curtos.", "Entregável: versão funcional"],
+        ["04", "Validação", "Testamos com usuários, dados e cenários reais para ajustar experiência, precisão e fluxo.", "Entregável: relatório de validação"],
+        ["05", "Deploy", "Publicamos, integramos, documentamos e deixamos o sistema pronto para uso operacional.", "Entregável: sistema em produção"],
+        ["06", "Suporte", "Medimos adoção, reduzimos fricção, priorizamos melhorias e transferimos capacidades.", "Entregável: plano de evolução"]
+      ]
+    },
+    technology: {
+      title: "Tecnologias e capacidades",
+      text: "Integramos ferramentas modernas com critério operacional: escolhemos tecnologia por impacto, manutenção e capacidade de escala dentro da empresa.",
+      cards: [
+        ["AI", "IA generativa", "Modelos de linguagem, assistência documental, classificação, extração, geração e análise de informação."],
+        ["Agents", "Agentes e copilotos", "Assistentes conectados a processos, dados, ferramentas internas, atendimento, vendas e operações."],
+        ["APIs", "Integrações", "Conexão entre formulários, CRM, bases de dados, email, dashboards, automações e sistemas existentes."],
+        ["Data", "Dashboards e analytics", "Indicadores, relatórios executivos, acompanhamento de processos, visualização e leitura acionável de dados."],
+        ["Cloud", "Web e cloud", "Aplicações web, funções serverless, deploy contínuo, armazenamento, segurança e observabilidade."],
+        ["Automation", "Automação", "Fluxos repetíveis, alertas, geração de relatórios, sincronização de dados e redução de trabalho manual."],
+        ["Games", "Videogames e simulação", "Mecânicas interativas, gamificação, simuladores, experiências web e aprendizagem imersiva."],
+        ["Robotics", "Robótica aplicada", "Sensores, controle, telemetria, protótipos, sistemas físico-digitais e visualização operacional."]
+      ]
+    },
+    industries: {
+      title: "Casos de uso por indústria",
+      text: "Aplicamos software, IA, videogames, robótica e consultoria tecnológica a problemas concretos de operação, crescimento e adoção digital.",
+      cards: [
+        ["Serviços profissionais", "Automatizar atendimento, documentos e acompanhamento comercial", "Copilotos para responder clientes, classificar solicitações, gerar documentos, priorizar oportunidades e medir produtividade.", "Solicitar diagnóstico IA"],
+        ["Retail e comércio", "Unificar vendas, estoque, suporte e dados de clientes", "Portais internos, dashboards, agentes de atendimento, campanhas interativas e automação de processos repetíveis.", "Explorar software"],
+        ["Educação", "Criar experiências de aprendizagem com IA e simulação", "Academias digitais, tutores IA, simuladores, avaliações interativas, gamificação e acompanhamento de progresso.", "Criar experiência"],
+        ["Saúde e bem-estar", "Organizar informação, acompanhamento e comunicação operacional", "Automação documental, agendas, painéis internos, fluxos de atendimento e assistentes para tarefas administrativas.", "Modernizar operação"],
+        ["Logística e operações", "Conectar processos, dados, alertas e rastreabilidade", "Dashboards operacionais, fluxos de aprovação, automação de relatórios, acompanhamento de tarefas e analytics aplicada.", "Desenhar roadmap"],
+        ["Indústria e manufatura", "Integrar sensores, software e sistemas físico-digitais", "Protótipos de robótica, telemetria, controle, manutenção, captura de dados e visualização de processos críticos.", "Explorar robótica"]
+      ]
+    },
+    faq: {
+      title: "Perguntas frequentes",
+      text: "Respostas claras para iniciar uma conversa comercial com expectativas realistas sobre escopo, prazos, segurança e suporte.",
+      items: [
+        ["Quanto tempo leva um projeto típico?", "Depende do escopo. Um diagnóstico pode levar poucos dias; um protótipo funcional costuma exigir semanas; uma plataforma ou implementação completa é definida por fases para reduzir risco."],
+        ["Como o custo é definido?", "É estimado conforme escopo, complexidade, integrações, nível de suporte, urgência e entregáveis. Por isso o primeiro passo recomendado é uma conversa de diagnóstico."],
+        ["Vocês trabalham com informação confidencial?", "Sim. Podemos trabalhar sob acordos de confidencialidade e limitar o acesso a dados sensíveis conforme as necessidades do projeto e as políticas da empresa."],
+        ["O que acontece com a propriedade intelectual?", "A propriedade intelectual é acordada em contrato conforme o tipo de projeto. Podemos construir software sob medida para o cliente ou componentes reutilizáveis sob condições claras."],
+        ["A empresa precisa ter equipe técnica interna?", "Não necessariamente. A Tecnotitan pode acompanhar do diagnóstico ao deploy. Se já existir equipe interna, atuamos como parceiro técnico para acelerar arquitetura, desenvolvimento e adoção."],
+        ["Vocês oferecem suporte após o deploy?", "Sim. Podemos incluir manutenção, melhorias evolutivas, monitoramento, documentação, treinamento e suporte operacional conforme o nível de serviço necessário."],
+        ["Como vocês tratam segurança e dados?", "Desenhamos cada solução considerando permissões, controle de acesso, rastreabilidade, exposição mínima de dados, provedores adequados e práticas responsáveis de deploy."],
+        ["Podemos começar com algo pequeno?", "Sim. Recomendamos iniciar com diagnóstico, MVP ou piloto mensurável. Isso permite validar valor antes de investimentos maiores."]
+      ]
+    },
+    form: {
+      kicker: "Solicitação comercial",
+      title: "Conte-nos o que sua empresa precisa construir",
+      text: "Este formulário é para projetos de IA, software, consultoria, robótica, videogames ou transformação tecnológica.",
+      successTitle: "Solicitação enviada",
+      successText: "Obrigado. Recebemos sua solicitação de serviços e responderemos por info@tecnotitan.com.",
+      labels: ["Nome", "Email", "Empresa", "País", "Serviço de interesse", "Tamanho da empresa", "Orçamento aproximado", "Urgência", "Mensagem"],
+      serviceOptions: ["Selecionar", "Inteligência artificial", "Software empresarial", "Consultoria tecnológica", "Robótica", "Videogames e experiências interativas", "Transformação tecnológica"],
+      companySizeOptions: ["Selecionar", "1-10 pessoas", "11-50 pessoas", "51-200 pessoas", "201-1000 pessoas", "Mais de 1000 pessoas"],
+      budgetOptions: ["Selecionar", "Menos de USD 5K", "USD 5K - 15K", "USD 15K - 50K", "USD 50K+", "A definir"],
+      urgencyOptions: ["Selecionar", "Este mês", "1-3 meses", "3-6 meses", "Exploratório"],
+      placeholder: "Conte-nos o problema, objetivo ou processo que você quer melhorar.",
+      newsletter: "Quero me inscrever no newsletter oficial da Tecnotitan.",
+      button: "Solicitar conversa comercial"
+    }
+  }
+};
+
+servicePageTranslations.zh = {
+  serviceIndex: {
+    title: "专业服务",
+    text: "按服务重点、交付物和预期业务影响了解 Tecnotitan 的服务线。",
+    cards: [
+      ["AI", "人工智能", "智能代理、copilot、文档自动化、分析和智能流程。"],
+      ["SW", "企业软件", "Web 平台、内部 CRM、仪表盘、门户和系统集成。"],
+      ["AD", "技术咨询", "诊断、架构、路线图、落地采用和高管陪伴。"],
+      ["RB", "机器人", "连接运营的软件、传感器、数据和物理数字系统。"],
+      ["VG", "电子游戏", "模拟器、互动体验、游戏化和沉浸式训练。"],
+      ["TX", "技术转型", "运营现代化、自动化、数字化采用和组织变革。"]
+    ]
+  },
+  method: {
+    title: "我们的工作方式",
+    text: "从诊断到部署的清晰流程，每个阶段都有可见交付物和推进决策。",
+    cards: [
+      ["01", "诊断", "理解流程、数据、工具、用户、限制和影响机会。", "交付物：机会地图"],
+      ["02", "设计", "定义架构、范围、体验、集成、风险和成功标准。", "交付物：技术与功能计划"],
+      ["03", "开发", "以短周期构建系统、代理、平台、原型或自动化。", "交付物：可用版本"],
+      ["04", "验证", "用真实用户、数据和场景测试，调整体验、准确性和流程。", "交付物：验证报告"],
+      ["05", "部署", "发布、集成、文档化，并让系统可投入运营使用。", "交付物：生产系统"],
+      ["06", "支持", "衡量采用度、减少摩擦、排序改进并转移能力。", "交付物：演进计划"]
+    ]
+  },
+  technology: {
+    title: "技术与能力",
+    text: "我们以运营判断整合现代工具：按影响、可维护性和企业扩展能力选择技术。",
+    cards: [
+      ["AI", "生成式 AI", "语言模型、文档辅助、分类、抽取、生成和信息分析。"],
+      ["Agents", "代理与 copilots", "连接流程、数据、内部工具、支持、销售和运营的助手。"],
+      ["APIs", "系统集成", "连接表单、CRM、数据库、邮件、仪表盘、自动化和现有系统。"],
+      ["Data", "仪表盘与分析", "指标、管理报告、流程追踪、可视化和可行动的数据阅读。"],
+      ["Cloud", "Web 与云", "Web 应用、serverless 函数、持续部署、存储、安全和可观测性。"],
+      ["Automation", "自动化", "可重复流程、提醒、报告生成、数据同步和减少人工工作。"],
+      ["Games", "游戏与仿真", "互动机制、游戏化、模拟器、Web 体验和沉浸式学习。"],
+      ["Robotics", "应用机器人", "传感器、控制、遥测、原型、物理数字系统和运营可视化。"]
+    ]
+  },
+  industries: {
+    title: "行业用例",
+    text: "我们把软件、AI、游戏、机器人和技术咨询应用到运营、增长和数字化采用的具体问题。",
+    cards: [
+      ["专业服务", "自动化客服、文档和商业跟进", "用于回复客户、分类请求、生成文档、排序机会并衡量生产力的 copilots。", "申请 AI 诊断"],
+      ["零售与商业", "统一销售、库存、支持和客户数据", "内部门户、仪表盘、客服代理、互动活动和可重复流程自动化。", "探索软件"],
+      ["教育", "用 AI 与仿真创建学习体验", "数字学院、AI 导师、模拟器、互动评估、游戏化和进度追踪。", "创建体验"],
+      ["健康与 wellness", "整理信息、跟进和运营沟通", "文档自动化、排期、内部面板、服务流程和行政任务助手。", "现代化运营"],
+      ["物流与运营", "连接流程、数据、提醒和可追溯性", "运营仪表盘、审批流程、报告自动化、任务追踪和应用分析。", "设计路线图"],
+      ["工业与制造", "集成传感器、软件和物理数字系统", "机器人原型、遥测、控制、维护、数据采集和关键流程可视化。", "探索机器人"]
+    ]
+  },
+  faq: {
+    title: "常见问题",
+    text: "以清晰答案开启商业沟通，建立关于范围、时间、安全和支持的现实预期。",
+    items: [
+      ["典型项目需要多久？", "取决于范围。诊断可能只需几天；功能原型通常需要数周；完整平台或实施会按阶段定义以降低风险。"],
+      ["成本如何确定？", "会根据范围、复杂度、集成、支持级别、紧急程度和交付物估算。因此建议第一步先做诊断沟通。"],
+      ["你们处理保密信息吗？", "是的。我们可以在保密协议下工作，并根据项目需求和公司政策限制敏感数据访问。"],
+      ["知识产权如何处理？", "知识产权会按项目类型在合同中约定。我们可以为客户构建定制软件，也可以在清晰条件下构建可复用组件。"],
+      ["公司需要内部技术团队吗？", "不一定。Tecnotitan 可以从诊断支持到部署。如果已有内部团队，我们会作为技术伙伴加速架构、开发和采用。"],
+      ["部署后提供支持吗？", "是的。可包含维护、演进式改进、监控、文档、培训和运营支持，具体取决于所需服务级别。"],
+      ["你们如何处理安全和数据？", "每个方案都会考虑权限、访问控制、可追溯性、最小数据暴露、合适供应商和负责任的部署实践。"],
+      ["可以从小项目开始吗？", "可以。我们建议从诊断、MVP 或可衡量试点开始，在更大投入前验证价值。"]
+    ]
+  },
+  form: {
+    kicker: "商业需求",
+    title: "告诉我们你的公司需要构建什么",
+    text: "此表单适用于 AI、软件、咨询、机器人、电子游戏或技术转型项目。",
+    successTitle: "请求已发送",
+    successText: "谢谢。我们已收到你的服务请求，并将通过 info@tecnotitan.com 回复。",
+    labels: ["姓名", "邮箱", "公司", "国家", "感兴趣的服务", "公司规模", "预算范围", "紧急程度", "消息"],
+    serviceOptions: ["选择", "人工智能", "企业软件", "技术咨询", "机器人", "电子游戏与互动体验", "技术转型"],
+    companySizeOptions: ["选择", "1-10 人", "11-50 人", "51-200 人", "201-1000 人", "1000 人以上"],
+    budgetOptions: ["选择", "低于 USD 5K", "USD 5K - 15K", "USD 15K - 50K", "USD 50K+", "待定"],
+    urgencyOptions: ["选择", "本月", "1-3 个月", "3-6 个月", "探索阶段"],
+    placeholder: "告诉我们你想改进的问题、目标或流程。",
+    newsletter: "我想订阅 Tecnotitan 官方 newsletter。",
+    button: "申请商业沟通"
+  }
+};
+
+servicePageTranslations.ja = {
+  serviceIndex: {
+    title: "専門サービス",
+    text: "各サービスラインの焦点、成果物、企業への期待インパクトを確認できます。",
+    cards: [
+      ["AI", "人工知能", "エージェント、copilot、文書自動化、分析、スマートワークフロー。"],
+      ["SW", "企業ソフトウェア", "Web プラットフォーム、社内 CRM、ダッシュボード、ポータル、連携。"],
+      ["AD", "技術コンサルティング", "診断、アーキテクチャ、ロードマップ、導入、経営層支援。"],
+      ["RB", "ロボティクス", "運用につながるソフトウェア、センサー、データ、フィジカルデジタルシステム。"],
+      ["VG", "ゲーム", "シミュレーター、インタラクティブ体験、ゲーミフィケーション、没入型トレーニング。"],
+      ["TX", "技術変革", "業務近代化、自動化、デジタル導入、組織変革。"]
+    ]
+  },
+  method: {
+    title: "進め方",
+    text: "診断からデプロイまで、各段階で明確な成果物と意思決定を持つプロセスです。",
+    cards: [
+      ["01", "診断", "プロセス、データ、ツール、ユーザー、制約、インパクト機会を理解します。", "成果物：機会マップ"],
+      ["02", "設計", "アーキテクチャ、範囲、体験、連携、リスク、成功基準を定義します。", "成果物：技術・機能計画"],
+      ["03", "開発", "システム、エージェント、プラットフォーム、プロトタイプ、自動化を短いサイクルで構築します。", "成果物：機能版"],
+      ["04", "検証", "実ユーザー、データ、シナリオで体験、精度、フローを調整します。", "成果物：検証レポート"],
+      ["05", "デプロイ", "公開、連携、文書化を行い、運用利用できる状態にします。", "成果物：本番システム"],
+      ["06", "サポート", "導入状況を測定し、摩擦を減らし、改善を優先し、能力移転します。", "成果物：進化計画"]
+    ]
+  },
+  technology: {
+    title: "技術と能力",
+    text: "影響、保守性、企業内での拡張性を基準に、現代的なツールを運用視点で統合します。",
+    cards: [
+      ["AI", "生成 AI", "言語モデル、文書支援、分類、抽出、生成、情報分析。"],
+      ["Agents", "エージェントと copilots", "プロセス、データ、社内ツール、サポート、営業、運用に接続されたアシスタント。"],
+      ["APIs", "連携", "フォーム、CRM、データベース、メール、ダッシュボード、自動化、既存システムの接続。"],
+      ["Data", "ダッシュボードと分析", "指標、経営レポート、プロセス追跡、可視化、実行可能なデータ読解。"],
+      ["Cloud", "Web とクラウド", "Web アプリ、serverless 関数、継続デプロイ、ストレージ、セキュリティ、可観測性。"],
+      ["Automation", "自動化", "反復可能なフロー、アラート、レポート生成、データ同期、手作業削減。"],
+      ["Games", "ゲームとシミュレーション", "インタラクティブな仕組み、ゲーミフィケーション、シミュレーター、Web 体験、没入型学習。"],
+      ["Robotics", "応用ロボティクス", "センサー、制御、テレメトリー、プロトタイプ、フィジカルデジタルシステム、運用可視化。"]
+    ]
+  },
+  industries: {
+    title: "業界別ユースケース",
+    text: "ソフトウェア、AI、ゲーム、ロボティクス、技術コンサルティングを、運用・成長・デジタル導入の具体課題に適用します。",
+    cards: [
+      ["プロフェッショナルサービス", "対応、文書、営業フォローを自動化", "顧客対応、依頼分類、文書生成、機会優先順位付け、生産性測定のための copilots。", "AI 診断を依頼"],
+      ["小売・コマース", "販売、在庫、サポート、顧客データを統合", "社内ポータル、ダッシュボード、対応エージェント、インタラクティブキャンペーン、反復プロセス自動化。", "ソフトウェアを見る"],
+      ["教育", "AI とシミュレーションで学習体験を作る", "デジタルアカデミー、AI チューター、シミュレーター、インタラクティブ評価、ゲーミフィケーション、進捗追跡。", "体験を作る"],
+      ["ヘルスケア・ウェルネス", "情報、フォロー、運用コミュニケーションを整理", "文書自動化、予約、社内パネル、対応フロー、管理業務アシスタント。", "運用を近代化"],
+      ["物流・オペレーション", "プロセス、データ、アラート、トレーサビリティを接続", "運用ダッシュボード、承認フロー、レポート自動化、タスク追跡、応用分析。", "ロードマップ設計"],
+      ["産業・製造", "センサー、ソフトウェア、フィジカルデジタルシステムを統合", "ロボティクス試作、テレメトリー、制御、保守、データ取得、重要プロセス可視化。", "ロボティクスを見る"]
+    ]
+  },
+  faq: {
+    title: "よくある質問",
+    text: "範囲、期間、セキュリティ、サポートについて現実的な期待値で商談を始めるための明確な回答です。",
+    items: [
+      ["一般的なプロジェクト期間は？", "範囲によります。診断は数日、機能プロトタイプは通常数週間、完全なプラットフォームや実装はリスクを下げるため段階的に定義します。"],
+      ["費用はどう決まりますか？", "範囲、複雑性、連携、サポートレベル、緊急度、成果物に基づいて見積もります。そのため最初の診断相談を推奨します。"],
+      ["機密情報を扱えますか？", "はい。秘密保持契約のもとで作業し、プロジェクト要件と企業ポリシーに応じて機密データへのアクセスを制限できます。"],
+      ["知的財産はどうなりますか？", "知的財産はプロジェクト種別に応じて契約で合意します。顧客向けカスタムソフトウェア、または明確な条件の再利用可能コンポーネントを構築できます。"],
+      ["社内技術チームは必要ですか？", "必須ではありません。Tecnotitan は診断からデプロイまで支援できます。社内チームがある場合は技術パートナーとして加速します。"],
+      ["デプロイ後のサポートはありますか？", "はい。必要なサービスレベルに応じて、保守、改善、監視、文書化、トレーニング、運用サポートを含められます。"],
+      ["セキュリティとデータはどう扱いますか？", "権限、アクセス制御、追跡性、最小限のデータ露出、適切なプロバイダー、責任あるデプロイを考慮して設計します。"],
+      ["小さく始められますか？", "はい。診断、MVP、測定可能なパイロットから始めることを推奨します。大きな投資の前に価値を検証できます。"]
+    ]
+  },
+  form: {
+    kicker: "商談リクエスト",
+    title: "貴社が構築したいものを教えてください",
+    text: "AI、ソフトウェア、コンサルティング、ロボティクス、ゲーム、技術変革プロジェクト向けのフォームです。",
+    successTitle: "送信されました",
+    successText: "ありがとうございます。サービス依頼を受け取りました。info@tecnotitan.com から返信します。",
+    labels: ["氏名", "メール", "会社", "国", "関心のあるサービス", "会社規模", "概算予算", "緊急度", "メッセージ"],
+    serviceOptions: ["選択", "人工知能", "企業ソフトウェア", "技術コンサルティング", "ロボティクス", "ゲームとインタラクティブ体験", "技術変革"],
+    companySizeOptions: ["選択", "1-10 人", "11-50 人", "51-200 人", "201-1000 人", "1000 人以上"],
+    budgetOptions: ["選択", "USD 5K 未満", "USD 5K - 15K", "USD 15K - 50K", "USD 50K+", "未定"],
+    urgencyOptions: ["選択", "今月", "1-3 か月", "3-6 か月", "探索中"],
+    placeholder: "改善したい問題、目的、プロセスを教えてください。",
+    newsletter: "Tecnotitan 公式 newsletter を購読したいです。",
+    button: "商談を依頼"
+  }
+};
+
+servicePageTranslations.ko = {
+  serviceIndex: {
+    title: "전문 서비스",
+    text: "각 서비스 라인의 초점, 산출물, 기업에 기대되는 영향을 확인하세요.",
+    cards: [
+      ["AI", "인공지능", "에이전트, copilot, 문서 자동화, 분석, 지능형 워크플로우."],
+      ["SW", "기업 소프트웨어", "웹 플랫폼, 내부 CRM, 대시보드, 포털, 통합."],
+      ["AD", "기술 컨설팅", "진단, 아키텍처, 로드맵, 도입, 경영진 지원."],
+      ["RB", "로보틱스", "운영과 연결되는 소프트웨어, 센서, 데이터, 물리-디지털 시스템."],
+      ["VG", "비디오게임", "시뮬레이터, 인터랙티브 경험, 게이미피케이션, 몰입형 교육."],
+      ["TX", "기술 전환", "운영 현대화, 자동화, 디지털 도입, 조직 변화."]
+    ]
+  },
+  method: {
+    title: "일하는 방식",
+    text: "진단부터 배포까지 각 단계에서 명확한 산출물과 진행 결정을 갖춘 프로세스입니다.",
+    cards: [
+      ["01", "진단", "프로세스, 데이터, 도구, 사용자, 제약, 영향 기회를 이해합니다.", "산출물: 기회 지도"],
+      ["02", "설계", "아키텍처, 범위, 경험, 통합, 위험, 성공 기준을 정의합니다.", "산출물: 기술 및 기능 계획"],
+      ["03", "개발", "시스템, 에이전트, 플랫폼, 프로토타입 또는 자동화를 짧은 주기로 구축합니다.", "산출물: 기능 버전"],
+      ["04", "검증", "사용자, 데이터, 실제 시나리오로 경험, 정확도, 흐름을 조정합니다.", "산출물: 검증 보고서"],
+      ["05", "배포", "게시, 통합, 문서화를 통해 시스템을 운영 사용 가능한 상태로 만듭니다.", "산출물: 프로덕션 시스템"],
+      ["06", "지원", "도입률을 측정하고 마찰을 줄이며 개선 우선순위를 정하고 역량을 이전합니다.", "산출물: 발전 계획"]
+    ]
+  },
+  technology: {
+    title: "기술과 역량",
+    text: "영향, 유지보수성, 기업 내 확장성을 기준으로 현대적 도구를 운영 관점에서 통합합니다.",
+    cards: [
+      ["AI", "생성형 AI", "언어 모델, 문서 지원, 분류, 추출, 생성, 정보 분석."],
+      ["Agents", "에이전트와 copilots", "프로세스, 데이터, 내부 도구, 지원, 영업, 운영에 연결된 어시스턴트."],
+      ["APIs", "통합", "양식, CRM, 데이터베이스, 이메일, 대시보드, 자동화, 기존 시스템 연결."],
+      ["Data", "대시보드와 분석", "지표, 경영 보고서, 프로세스 추적, 시각화, 실행 가능한 데이터 해석."],
+      ["Cloud", "웹과 클라우드", "웹 앱, serverless 함수, 지속 배포, 스토리지, 보안, 관측 가능성."],
+      ["Automation", "자동화", "반복 가능한 흐름, 알림, 보고서 생성, 데이터 동기화, 수작업 감소."],
+      ["Games", "게임과 시뮬레이션", "인터랙티브 메커닉, 게이미피케이션, 시뮬레이터, 웹 경험, 몰입형 학습."],
+      ["Robotics", "응용 로보틱스", "센서, 제어, 텔레메트리, 프로토타입, 물리-디지털 시스템, 운영 시각화."]
+    ]
+  },
+  industries: {
+    title: "산업별 활용 사례",
+    text: "소프트웨어, AI, 게임, 로보틱스, 기술 컨설팅을 운영, 성장, 디지털 도입의 구체적 문제에 적용합니다.",
+    cards: [
+      ["전문 서비스", "고객 응대, 문서, 영업 후속 조치 자동화", "고객 답변, 요청 분류, 문서 생성, 기회 우선순위, 생산성 측정을 위한 copilots.", "AI 진단 요청"],
+      ["리테일과 커머스", "판매, 재고, 지원, 고객 데이터 통합", "내부 포털, 대시보드, 지원 에이전트, 인터랙티브 캠페인, 반복 프로세스 자동화.", "소프트웨어 탐색"],
+      ["교육", "AI와 시뮬레이션으로 학습 경험 구축", "디지털 아카데미, AI 튜터, 시뮬레이터, 인터랙티브 평가, 게이미피케이션, 진도 추적.", "경험 만들기"],
+      ["헬스케어와 웰니스", "정보, 후속 조치, 운영 커뮤니케이션 정리", "문서 자동화, 일정, 내부 패널, 서비스 흐름, 행정 업무 어시스턴트.", "운영 현대화"],
+      ["물류와 운영", "프로세스, 데이터, 알림, 추적성 연결", "운영 대시보드, 승인 흐름, 보고서 자동화, 작업 추적, 응용 분석.", "로드맵 설계"],
+      ["산업과 제조", "센서, 소프트웨어, 물리-디지털 시스템 통합", "로보틱스 프로토타입, 텔레메트리, 제어, 유지보수, 데이터 수집, 중요 프로세스 시각화.", "로보틱스 탐색"]
+    ]
+  },
+  faq: {
+    title: "자주 묻는 질문",
+    text: "범위, 일정, 보안, 지원에 대해 현실적인 기대를 가지고 상업적 대화를 시작하기 위한 명확한 답변입니다.",
+    items: [
+      ["일반적인 프로젝트 기간은?", "범위에 따라 다릅니다. 진단은 며칠이면 가능하고, 기능 프로토타입은 보통 몇 주가 필요하며, 전체 플랫폼이나 구현은 위험을 줄이기 위해 단계별로 정의합니다."],
+      ["비용은 어떻게 정해지나요?", "범위, 복잡도, 통합, 지원 수준, 긴급도, 산출물을 기준으로 산정합니다. 그래서 첫 단계로 진단 대화를 권장합니다."],
+      ["기밀 정보를 다루나요?", "네. 비밀유지계약 아래 작업할 수 있으며 프로젝트 필요와 회사 정책에 따라 민감 데이터 접근을 제한할 수 있습니다."],
+      ["지식재산권은 어떻게 되나요?", "지식재산권은 프로젝트 유형에 따라 계약으로 합의합니다. 고객 맞춤 소프트웨어 또는 명확한 조건의 재사용 가능한 구성요소를 구축할 수 있습니다."],
+      ["내부 기술팀이 필요하나요?", "반드시 필요하지는 않습니다. Tecnotitan은 진단부터 배포까지 지원할 수 있습니다. 내부 팀이 있다면 기술 파트너로서 아키텍처, 개발, 도입을 가속합니다."],
+      ["배포 후 지원을 제공하나요?", "네. 필요한 서비스 수준에 따라 유지보수, 개선, 모니터링, 문서화, 교육, 운영 지원을 포함할 수 있습니다."],
+      ["보안과 데이터는 어떻게 처리하나요?", "권한, 접근 제어, 추적성, 최소 데이터 노출, 적절한 공급자, 책임 있는 배포 관행을 고려해 설계합니다."],
+      ["작게 시작할 수 있나요?", "네. 진단, MVP 또는 측정 가능한 파일럿부터 시작하는 것을 권장합니다. 더 큰 투자 전에 가치를 검증할 수 있습니다."]
+    ]
+  },
+  form: {
+    kicker: "상업 요청",
+    title: "회사가 무엇을 구축해야 하는지 알려주세요",
+    text: "이 양식은 AI, 소프트웨어, 컨설팅, 로보틱스, 비디오게임 또는 기술 전환 프로젝트를 위한 것입니다.",
+    successTitle: "요청이 전송되었습니다",
+    successText: "감사합니다. 서비스 요청을 받았으며 info@tecnotitan.com 으로 답변드리겠습니다.",
+    labels: ["이름", "이메일", "회사", "국가", "관심 서비스", "회사 규모", "예상 예산", "긴급도", "메시지"],
+    serviceOptions: ["선택", "인공지능", "기업 소프트웨어", "기술 컨설팅", "로보틱스", "비디오게임과 인터랙티브 경험", "기술 전환"],
+    companySizeOptions: ["선택", "1-10명", "11-50명", "51-200명", "201-1000명", "1000명 이상"],
+    budgetOptions: ["선택", "USD 5K 미만", "USD 5K - 15K", "USD 15K - 50K", "USD 50K+", "미정"],
+    urgencyOptions: ["선택", "이번 달", "1-3개월", "3-6개월", "탐색 단계"],
+    placeholder: "개선하려는 문제, 목표 또는 프로세스를 알려주세요.",
+    newsletter: "Tecnotitan 공식 newsletter를 구독하고 싶습니다.",
+    button: "상업 대화 요청"
+  }
+};
 
 function carryLanguageAcrossLinks(language) {
   document.querySelectorAll("a[href]").forEach((link) => {
@@ -2457,6 +3038,10 @@ function applyLanguage(language) {
     setCards(".deck-language-grid a", downloadContent.cards);
     updateDeckViewer(language, { trackView: true });
   }
+  if (pageName === "servicios.html") {
+    applyServicePageContent(language, content);
+    return;
+  }
   setCards(
     pageName === "inversionistas.html"
       ? ".investor-path-grid article"
@@ -2595,6 +3180,27 @@ function applyLanguage(language) {
 
 function getCurrentFormContent(form) {
   const page = (languages[activeLanguage] || languages.es).pages[pageName] || languages.es.pages[pageName];
+  if (form?.matches("[data-service-request-form]")) {
+    const serviceForm = (servicePageTranslations[activeLanguage] || servicePageTranslations.es).form;
+    const status = {
+      es: ["Enviando...", "No se pudo enviar", "Intenta nuevamente o escribe directamente a info@tecnotitan.com."],
+      en: ["Sending...", "Could not send", "Please try again or write directly to info@tecnotitan.com."],
+      pt: ["Enviando...", "Não foi possível enviar", "Tente novamente ou escreva diretamente para info@tecnotitan.com."],
+      zh: ["正在发送...", "无法发送", "请重试，或直接写信至 info@tecnotitan.com。"],
+      ja: ["送信中...", "送信できませんでした", "もう一度お試しいただくか、info@tecnotitan.com へ直接ご連絡ください。"],
+      ko: ["전송 중...", "전송할 수 없습니다", "다시 시도하거나 info@tecnotitan.com 으로 직접 연락해 주세요."]
+    }[activeLanguage] || ["Enviando...", "No se pudo enviar", "Intenta nuevamente o escribe directamente a info@tecnotitan.com."];
+
+    return {
+      formButton: serviceForm.button,
+      formSending: status[0],
+      formSuccessTitle: serviceForm.successTitle,
+      formSuccessText: serviceForm.successText,
+      formErrorTitle: status[1],
+      formErrorText: status[2]
+    };
+  }
+
   return {
     formButton: "Enviar a info@tecnotitan.com",
     formSending: "Enviando...",
@@ -2694,6 +3300,33 @@ function enhanceContactForms() {
         }
       }
     });
+  });
+}
+
+function prefillServiceRequestForm() {
+  const serviceSelect = document.querySelector("[data-service-select]");
+
+  if (!serviceSelect) {
+    return;
+  }
+
+  const serviceMap = {
+    ai: 1,
+    software: 2,
+    consultoria: 3,
+    robotica: 4,
+    videojuegos: 5,
+    transformacion: 6
+  };
+  const requestedInterest = new URLSearchParams(window.location.search).get("interest");
+  const selectedIndex = serviceMap[requestedInterest];
+
+  if (!selectedIndex) {
+    return;
+  }
+
+  Array.from(serviceSelect.options).forEach((option) => {
+    option.selected = option.index === selectedIndex;
   });
 }
 
