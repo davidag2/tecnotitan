@@ -19,7 +19,7 @@ const languages = {
       "Aviso legal · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. Todos los derechos reservados."
     ],
-    deckUi: ["Solicitar deck", "Solicitar investor deck", "Descargar decks"],
+    deckUi: ["Solicitar deck", "Ver deck PDF", "Descargar PDF"],
     pages: {
       "index.html": {
         title: "Tecnotitan | Tecnología aplicada para mercados globales",
@@ -316,7 +316,7 @@ const languages = {
       "Legal notice · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. All rights reserved."
     ],
-    deckUi: ["Request deck", "Request investor deck", "Download decks"],
+    deckUi: ["Request deck", "View PDF deck", "Download PDF"],
     pages: {
       "index.html": {
         title: "Tecnotitan | Applied AI, software and robotics for global markets",
@@ -613,7 +613,7 @@ const languages = {
       "Aviso legal · LinkedIn · Facebook · Instagram",
       "© 2026 Tecnotitan. Todos os direitos reservados."
     ],
-    deckUi: ["Solicitar deck", "Solicitar investor deck", "Baixar decks"],
+    deckUi: ["Solicitar deck", "Ver deck PDF", "Baixar PDF"],
     pages: {
       "index.html": {
         title: "Tecnotitan | IA aplicada, software e robótica para Brasil e mercados globais",
@@ -925,7 +925,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
     "法律声明 · LinkedIn · Facebook · Instagram",
     "© 2026 Tecnotitan。保留所有权利。"
   ],
-  deckUi: ["索取 Deck", "索取投资者 Deck", "下载 Deck"],
+  deckUi: ["索取 Deck", "查看 PDF Deck", "下载 PDF"],
   pages: {
     "index.html": {
       title: "Tecnotitan | 面向全球市场的应用技术",
@@ -1201,7 +1201,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
     "法的通知 · LinkedIn · Facebook · Instagram",
     "© 2026 Tecnotitan. All rights reserved."
   ],
-  deckUi: ["Deck を請求", "Investor Deck を請求", "Deck をダウンロード"],
+  deckUi: ["Deck を請求", "PDF Deck を表示", "PDF をダウンロード"],
   pages: {
     "index.html": {
       title: "Tecnotitan | グローバル市場のための応用テクノロジー",
@@ -1477,7 +1477,7 @@ languages.ko = buildLocalizedLanguage(languages.en, {
     "법적 고지 · LinkedIn · Facebook · Instagram",
     "© 2026 Tecnotitan. 모든 권리 보유."
   ],
-  deckUi: ["Deck 요청", "Investor Deck 요청", "Deck 다운로드"],
+  deckUi: ["Deck 요청", "PDF Deck 보기", "PDF 다운로드"],
   pages: {
     "index.html": {
       title: "Tecnotitan | 글로벌 시장을 위한 응용 기술",
@@ -1870,8 +1870,8 @@ const languageLocales = {
 };
 const deckDownloadContent = {
   es: {
-    title: "Descargar Investor Deck en 6 idiomas",
-    text: "Accede a la versión editable del deck para inversionistas de Tecnotitan en español, inglés, portugués, chino, japonés y coreano.",
+    title: "Ver Investor Deck en el navegador",
+    text: "Lee el PDF ligero del deck para inversionistas de Tecnotitan, cambia de idioma sin salir de la página y descarga el archivo si lo necesitas.",
     cards: [
       ["ES", "Español", "Deck para inversionistas en español."],
       ["EN", "English", "Investor deck in English."],
@@ -1882,8 +1882,8 @@ const deckDownloadContent = {
     ]
   },
   en: {
-    title: "Download the Investor Deck in 6 languages",
-    text: "Access Tecnotitan's editable investor deck in Spanish, English, Portuguese, Chinese, Japanese and Korean.",
+    title: "View the Investor Deck in your browser",
+    text: "Read Tecnotitan's lightweight investor deck PDF, switch languages without leaving the page and download the file when needed.",
     cards: [
       ["ES", "Spanish", "Investor deck in Spanish."],
       ["EN", "English", "Investor deck in English."],
@@ -1894,8 +1894,8 @@ const deckDownloadContent = {
     ]
   },
   pt: {
-    title: "Baixe o Investor Deck em 6 idiomas",
-    text: "Acesse a versão editável do deck para investidores da Tecnotitan em espanhol, inglês, português, chinês, japonês e coreano.",
+    title: "Veja o Investor Deck no navegador",
+    text: "Leia o PDF leve do deck para investidores da Tecnotitan, alterne idiomas sem sair da página e baixe o arquivo se precisar.",
     cards: [
       ["ES", "Espanhol", "Deck para investidores em espanhol."],
       ["EN", "Inglês", "Deck para investidores em inglês."],
@@ -1906,8 +1906,8 @@ const deckDownloadContent = {
     ]
   },
   zh: {
-    title: "下载 6 种语言的 Investor Deck",
-    text: "获取 Tecnotitan 面向投资者的可编辑演示文稿，支持西班牙语、英语、葡萄牙语、中文、日语和韩语。",
+    title: "在浏览器中查看 Investor Deck",
+    text: "阅读 Tecnotitan 的轻量级投资者 PDF，在页面内切换语言，并可按需下载文件。",
     cards: [
       ["ES", "西班牙语", "西班牙语投资者演示文稿。"],
       ["EN", "英语", "英语投资者演示文稿。"],
@@ -1918,8 +1918,8 @@ const deckDownloadContent = {
     ]
   },
   ja: {
-    title: "6言語のInvestor Deckをダウンロード",
-    text: "Tecnotitanの編集可能な投資家向けデッキを、スペイン語、英語、ポルトガル語、中国語、日本語、韓国語で利用できます。",
+    title: "ブラウザでInvestor Deckを表示",
+    text: "Tecnotitanの軽量PDFデッキを読み、ページを離れずに言語を切り替え、必要に応じてダウンロードできます。",
     cards: [
       ["ES", "スペイン語", "スペイン語の投資家向けデッキ。"],
       ["EN", "英語", "英語の投資家向けデッキ。"],
@@ -1930,8 +1930,8 @@ const deckDownloadContent = {
     ]
   },
   ko: {
-    title: "6개 언어 Investor Deck 다운로드",
-    text: "Tecnotitan의 편집 가능한 투자자용 데크를 스페인어, 영어, 포르투갈어, 중국어, 일본어, 한국어로 제공합니다.",
+    title: "브라우저에서 Investor Deck 보기",
+    text: "Tecnotitan의 가벼운 투자자용 PDF를 읽고, 페이지 안에서 언어를 바꾸며 필요할 때 파일을 다운로드할 수 있습니다.",
     cards: [
       ["ES", "스페인어", "스페인어 투자자용 데크."],
       ["EN", "영어", "영어 투자자용 데크."],
@@ -1942,6 +1942,35 @@ const deckDownloadContent = {
     ]
   }
 };
+const deckFileLanguages = ["es", "en", "pt", "zh", "ja", "ko"];
+
+function deckFilePath(language, extension) {
+  const safeLanguage = deckFileLanguages.includes(language) ? language : "es";
+  return `./assets/investor-deck/Tecnotitan-Investor-Deck-${safeLanguage.toUpperCase()}.${extension}`;
+}
+
+function updateDeckViewer(language) {
+  const pdfPath = deckFilePath(language, "pdf");
+  const pptxPath = deckFilePath(language, "pptx");
+  const viewer = document.querySelector(".pdf-viewer");
+  if (viewer) {
+    viewer.src = `${pdfPath}#view=FitH`;
+  }
+  document.querySelectorAll(".deck-view-link").forEach((link) => {
+    link.href = pdfPath;
+  });
+  document.querySelectorAll(".deck-download-link").forEach((link) => {
+    link.href = pdfPath;
+  });
+  document.querySelectorAll(".deck-pptx-link").forEach((link) => {
+    link.href = pptxPath;
+  });
+  document.querySelectorAll(".deck-language-grid a").forEach((link) => {
+    const linkLanguage = link.dataset.deckLang;
+    link.href = deckFilePath(linkLanguage, "pdf");
+    link.setAttribute("aria-current", linkLanguage === language ? "true" : "false");
+  });
+}
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
 let activeLanguage = supportedLanguages.includes(queryLanguage)
@@ -2276,6 +2305,7 @@ function applyLanguage(language) {
     setText(".deck-download-copy h2", downloadContent.title);
     setText(".deck-download-copy p:not(.section-kicker)", downloadContent.text);
     setCards(".deck-language-grid a", downloadContent.cards);
+    updateDeckViewer(language);
   }
   setCards(
     pageName === "inversionistas.html"
@@ -2485,6 +2515,17 @@ function enhanceContactForms() {
 buildLanguageSwitcher();
 applyLanguage(activeLanguage);
 enhanceContactForms();
+
+document.querySelector(".deck-language-grid")?.addEventListener("click", (event) => {
+  const link = event.target.closest("a[data-deck-lang]");
+  if (!link) {
+    return;
+  }
+  event.preventDefault();
+  const language = link.dataset.deckLang;
+  updateDeckViewer(language);
+  document.querySelector(".pdf-viewer-shell")?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 
 if (shouldAutoDetectLanguage) {
   detectVisitorLanguage().then((language) => {
