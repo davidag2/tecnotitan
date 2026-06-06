@@ -583,6 +583,59 @@ h3 {
   line-height: 1.65;
 }
 
+.service-conversion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: clamp(44px, 6vw, 76px);
+  border: 1px solid rgba(103, 229, 255, 0.22);
+  background: rgba(103, 229, 255, 0.18);
+}
+
+.service-conversion-grid a {
+  min-height: 230px;
+  padding: 30px clamp(22px, 3vw, 36px);
+  background:
+    linear-gradient(180deg, rgba(103, 229, 255, 0.09), rgba(255, 255, 255, 0)),
+    #06090b;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.service-conversion-grid a:hover {
+  background:
+    linear-gradient(180deg, rgba(103, 229, 255, 0.16), rgba(255, 255, 255, 0.025)),
+    #080d10;
+  transform: translateY(-2px);
+}
+
+.service-conversion-grid span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 22px;
+  padding: 5px 8px;
+  border: 1px solid rgba(103, 229, 255, 0.28);
+  background: rgba(103, 229, 255, 0.08);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-conversion-grid h3 {
+  margin: 0;
+  max-width: 13ch;
+  color: var(--text);
+  font-size: clamp(22px, 2.3vw, 32px);
+  line-height: 1.05;
+}
+
+.service-conversion-grid p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .product-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -611,7 +664,8 @@ h3 {
 .service-outcome-grid,
 .industry-use-grid,
 .work-method-grid,
-.technology-capability-grid {
+.technology-capability-grid,
+.service-conversion-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1391,6 +1445,7 @@ h3 {
   .industry-use-grid,
   .work-method-grid,
   .technology-capability-grid,
+  .service-conversion-grid,
   .service-faq-list,
   .metric-strip {
     grid-template-columns: 1fr 1fr;
@@ -1509,6 +1564,7 @@ h3 {
   .industry-use-grid,
   .work-method-grid,
   .technology-capability-grid,
+  .service-conversion-grid,
   .service-faq-list,
   .metric-strip {
     grid-template-columns: 1fr;
@@ -1519,6 +1575,7 @@ h3 {
   .industry-use-grid article,
   .work-method-grid article,
   .technology-capability-grid article,
+  .service-conversion-grid a,
   .deck-language-grid a,
   .metric-strip article,
   .investor-cta-grid a {

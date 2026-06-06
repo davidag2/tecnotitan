@@ -1996,6 +1996,56 @@ function trackDeckEvent(event, details = {}) {
   }).catch(() => {});
 }
 
+function getServiceVisitorId() {
+  const storageKey = "tecnotitan-service-visitor";
+  let visitorId = localStorage.getItem(storageKey);
+
+  if (!visitorId) {
+    visitorId = crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    localStorage.setItem(storageKey, visitorId);
+  }
+
+  return visitorId;
+}
+
+function trackServiceEvent(event, details = {}) {
+  const payloadData = {
+    event,
+    language: activeLanguage,
+    intent: details.intent || "general",
+    cta: details.cta || "ai-diagnosis",
+    visitorId: getServiceVisitorId(),
+    path: window.location.pathname
+  };
+  const payload = JSON.stringify(payloadData);
+
+  if (typeof window.va === "function") {
+    try {
+      window.va("event", "service_cta_click", {
+        language: payloadData.language,
+        intent: payloadData.intent,
+        cta: payloadData.cta
+      });
+    } catch (error) {
+      // Vercel custom events require supported analytics setup; KV tracking remains the source of record.
+    }
+  }
+
+  if (navigator.sendBeacon) {
+    navigator.sendBeacon("/api/service-track", new Blob([payload], { type: "application/json" }));
+    return;
+  }
+
+  fetch("/api/service-track", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: payload,
+    keepalive: true
+  }).catch(() => {});
+}
+
 function updateDeckViewer(language, options = {}) {
   const safeLanguage = deckFileLanguages.includes(language) ? language : "es";
   activeDeckLanguage = safeLanguage;
@@ -2236,6 +2286,10 @@ function applyServicePageContent(language, content) {
     setText("p", faq[1], item);
   });
 
+  setText(".service-conversion-section .section-copy h2", serviceContent.conversion.title);
+  setText(".service-conversion-section .section-copy p", serviceContent.conversion.text);
+  setCards(".service-conversion-grid a", serviceContent.conversion.cards);
+
   setText(".contact-form-copy span", serviceContent.form.kicker);
   setText("[data-service-form-title]", serviceContent.form.title);
   setText("[data-service-form-text]", serviceContent.form.text);
@@ -2417,6 +2471,18 @@ const servicePageTranslations = {
         ["¿Pueden empezar con algo pequeño?", "Sí. Recomendamos comenzar con un diagnóstico, MVP o piloto medible. Eso permite validar valor antes de comprometer inversiones mayores."]
       ]
     },
+    conversion: {
+      title: "Elige el siguiente paso",
+      text: "Atajos comerciales para llegar al formulario con el servicio correcto preseleccionado.",
+      cards: [
+        ["IA", "Solicitar diagnóstico IA", "Para identificar automatizaciones, agentes, copilotos y casos con retorno operativo."],
+        ["Software", "Cotizar software empresarial", "Para construir plataformas, CRM internos, dashboards, portales e integraciones."],
+        ["Advisory", "Agendar consultoría", "Para definir roadmap tecnológico, arquitectura, adopción y prioridades ejecutivas."],
+        ["Robótica", "Explorar robótica aplicada", "Para conectar sensores, software, telemetría y sistemas físico-digitales."],
+        ["Interactivo", "Crear experiencia interactiva", "Para simuladores, videojuegos, gamificación, entrenamiento y experiencias web."],
+        ["Transformación", "Diseñar transformación tecnológica", "Para modernizar procesos, automatizar operación y acelerar adopción digital."]
+      ]
+    },
     form: {
       kicker: "Solicitud comercial",
       title: "Cuéntanos qué necesita construir tu empresa",
@@ -2498,6 +2564,18 @@ const servicePageTranslations = {
         ["Can we start with something small?", "Yes. We recommend starting with a diagnosis, MVP or measurable pilot. That allows value validation before larger investments."]
       ]
     },
+    conversion: {
+      title: "Choose the next step",
+      text: "Commercial shortcuts that take visitors to the form with the right service preselected.",
+      cards: [
+        ["AI", "Request AI diagnosis", "Identify automations, agents, copilots and use cases with operational return."],
+        ["Software", "Quote enterprise software", "Build platforms, internal CRM, dashboards, portals and integrations."],
+        ["Advisory", "Schedule advisory", "Define technology roadmap, architecture, adoption and executive priorities."],
+        ["Robotics", "Explore applied robotics", "Connect sensors, software, telemetry and physical-digital systems."],
+        ["Interactive", "Create interactive experience", "For simulators, games, gamification, training and web experiences."],
+        ["Transformation", "Design technology transformation", "Modernize processes, automate operations and accelerate digital adoption."]
+      ]
+    },
     form: {
       kicker: "Commercial request",
       title: "Tell us what your company needs to build",
@@ -2577,6 +2655,18 @@ const servicePageTranslations = {
         ["Vocês oferecem suporte após o deploy?", "Sim. Podemos incluir manutenção, melhorias evolutivas, monitoramento, documentação, treinamento e suporte operacional conforme o nível de serviço necessário."],
         ["Como vocês tratam segurança e dados?", "Desenhamos cada solução considerando permissões, controle de acesso, rastreabilidade, exposição mínima de dados, provedores adequados e práticas responsáveis de deploy."],
         ["Podemos começar com algo pequeno?", "Sim. Recomendamos iniciar com diagnóstico, MVP ou piloto mensurável. Isso permite validar valor antes de investimentos maiores."]
+      ]
+    },
+    conversion: {
+      title: "Escolha o próximo passo",
+      text: "Atalhos comerciais para chegar ao formulário com o serviço correto pré-selecionado.",
+      cards: [
+        ["IA", "Solicitar diagnóstico IA", "Para identificar automações, agentes, copilotos e casos com retorno operacional."],
+        ["Software", "Cotar software empresarial", "Para construir plataformas, CRM interno, dashboards, portais e integrações."],
+        ["Advisory", "Agendar consultoria", "Para definir roadmap tecnológico, arquitetura, adoção e prioridades executivas."],
+        ["Robótica", "Explorar robótica aplicada", "Para conectar sensores, software, telemetria e sistemas físico-digitais."],
+        ["Interativo", "Criar experiência interativa", "Para simuladores, videogames, gamificação, treinamento e experiências web."],
+        ["Transformação", "Desenhar transformação tecnológica", "Para modernizar processos, automatizar operação e acelerar adoção digital."]
       ]
     },
     form: {
@@ -2662,6 +2752,18 @@ servicePageTranslations.zh = {
       ["可以从小项目开始吗？", "可以。我们建议从诊断、MVP 或可衡量试点开始，在更大投入前验证价值。"]
     ]
   },
+  conversion: {
+    title: "选择下一步",
+    text: "商业快捷入口会把访客带到已预选正确服务的表单。",
+    cards: [
+      ["AI", "申请 AI 诊断", "识别自动化、智能代理、copilot 和具备运营回报的用例。"],
+      ["Software", "估算企业软件", "构建平台、内部 CRM、仪表盘、门户和系统集成。"],
+      ["Advisory", "预约技术咨询", "定义技术路线图、架构、采用路径和高管优先级。"],
+      ["Robotics", "探索应用机器人", "连接传感器、软件、遥测和物理数字系统。"],
+      ["Interactive", "创建互动体验", "用于模拟器、电子游戏、游戏化、培训和 Web 体验。"],
+      ["Transformation", "设计技术转型", "现代化流程、自动化运营并加速数字化采用。"]
+    ]
+  },
   form: {
     kicker: "商业需求",
     title: "告诉我们你的公司需要构建什么",
@@ -2744,6 +2846,18 @@ servicePageTranslations.ja = {
       ["小さく始められますか？", "はい。診断、MVP、測定可能なパイロットから始めることを推奨します。大きな投資の前に価値を検証できます。"]
     ]
   },
+  conversion: {
+    title: "次のステップを選択",
+    text: "適切なサービスが事前選択されたフォームへ進むための商談ショートカットです。",
+    cards: [
+      ["AI", "AI 診断を依頼", "自動化、エージェント、copilot、運用リターンのあるユースケースを特定します。"],
+      ["Software", "企業ソフトウェアを見積もる", "プラットフォーム、社内 CRM、ダッシュボード、ポータル、連携を構築します。"],
+      ["Advisory", "コンサルティングを予約", "技術ロードマップ、アーキテクチャ、導入、経営優先度を定義します。"],
+      ["Robotics", "応用ロボティクスを検討", "センサー、ソフトウェア、テレメトリー、フィジカルデジタルシステムを接続します。"],
+      ["Interactive", "インタラクティブ体験を作る", "シミュレーター、ゲーム、ゲーミフィケーション、研修、Web 体験向けです。"],
+      ["Transformation", "技術変革を設計", "プロセスを近代化し、運用を自動化し、デジタル導入を加速します。"]
+    ]
+  },
   form: {
     kicker: "商談リクエスト",
     title: "貴社が構築したいものを教えてください",
@@ -2824,6 +2938,18 @@ servicePageTranslations.ko = {
       ["배포 후 지원을 제공하나요?", "네. 필요한 서비스 수준에 따라 유지보수, 개선, 모니터링, 문서화, 교육, 운영 지원을 포함할 수 있습니다."],
       ["보안과 데이터는 어떻게 처리하나요?", "권한, 접근 제어, 추적성, 최소 데이터 노출, 적절한 공급자, 책임 있는 배포 관행을 고려해 설계합니다."],
       ["작게 시작할 수 있나요?", "네. 진단, MVP 또는 측정 가능한 파일럿부터 시작하는 것을 권장합니다. 더 큰 투자 전에 가치를 검증할 수 있습니다."]
+    ]
+  },
+  conversion: {
+    title: "다음 단계를 선택하세요",
+    text: "올바른 서비스가 미리 선택된 양식으로 이동하는 상업용 바로가기입니다.",
+    cards: [
+      ["AI", "AI 진단 요청", "자동화, 에이전트, copilot, 운영 수익이 있는 활용 사례를 식별합니다."],
+      ["Software", "기업 소프트웨어 견적", "플랫폼, 내부 CRM, 대시보드, 포털, 통합을 구축합니다."],
+      ["Advisory", "컨설팅 예약", "기술 로드맵, 아키텍처, 도입, 경영 우선순위를 정의합니다."],
+      ["Robotics", "응용 로보틱스 탐색", "센서, 소프트웨어, 텔레메트리, 물리-디지털 시스템을 연결합니다."],
+      ["Interactive", "인터랙티브 경험 만들기", "시뮬레이터, 게임, 게이미피케이션, 교육, 웹 경험을 위한 것입니다."],
+      ["Transformation", "기술 전환 설계", "프로세스를 현대화하고 운영을 자동화하며 디지털 도입을 가속합니다."]
     ]
   },
   form: {
@@ -3040,6 +3166,7 @@ function applyLanguage(language) {
   }
   if (pageName === "servicios.html") {
     applyServicePageContent(language, content);
+    prefillServiceRequestForm();
     return;
   }
   setCards(
@@ -3212,33 +3339,6 @@ function getCurrentFormContent(form) {
   };
 }
 
-function prefillServiceRequestForm() {
-  const serviceSelect = document.querySelector("[data-service-select]");
-
-  if (!serviceSelect) {
-    return;
-  }
-
-  const serviceMap = {
-    ai: "Inteligencia artificial",
-    software: "Software empresarial",
-    consultoria: "Consultoría tecnológica",
-    robotica: "Robótica",
-    videojuegos: "Videojuegos y experiencias interactivas",
-    transformacion: "Transformación tecnológica"
-  };
-  const requestedInterest = new URLSearchParams(window.location.search).get("interest");
-  const selectedLabel = serviceMap[requestedInterest];
-
-  if (!selectedLabel) {
-    return;
-  }
-
-  Array.from(serviceSelect.options).forEach((option) => {
-    option.selected = option.textContent === selectedLabel;
-  });
-}
-
 function showFormMessage(form, title, text, isError = false) {
   const section = form.closest("section");
   const message = section?.querySelector("[data-form-success]");
@@ -3362,6 +3462,15 @@ document.querySelectorAll(".deck-download-link").forEach((link) => {
 document.querySelectorAll(".deck-pptx-link").forEach((link) => {
   link.addEventListener("click", () => {
     trackDeckEvent("download_pptx", { language: activeDeckLanguage, format: "pptx" });
+  });
+});
+
+document.querySelectorAll("[data-service-cta]").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackServiceEvent("cta_click", {
+      cta: link.dataset.cta,
+      intent: link.dataset.intent
+    });
   });
 });
 
