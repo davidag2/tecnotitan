@@ -26,9 +26,9 @@ const languages = {
         description:
           "Tecnotitan crea software, inteligencia artificial, videojuegos y robótica para empresas e inversionistas globales.",
         content: {
-          heroTitle: ["IA, software y", "robótica para", "empresas que", "escalan"],
+          heroTitle: ["Eficiencia", "infinita", "para empresas", "que escalan"],
           heroText:
-            "Tecnotitan crea tecnología aplicada para empresas: sistemas de IA, software operativo, productos interactivos y robótica con potencial de convertirse en plataformas globales.",
+            "Tecnotitan diseña sistemas de IA, software empresarial y automatización para convertir procesos complejos en operaciones más rápidas, inteligentes y medibles.",
           primaryCta: "Tesis para inversionistas",
           secondaryCta: "Explorar productos",
           nextPreview: "Servicios de alto valor, productos propios e IP escalable",
@@ -323,9 +323,9 @@ const languages = {
         description:
           "Tecnotitan builds enterprise software, AI systems, interactive products and robotics capabilities for global markets.",
         content: {
-          heroTitle: ["AI, software", "and robotics", "for companies", "that scale"],
+          heroTitle: ["Infinite", "efficiency", "for companies", "that scale"],
           heroText:
-            "Tecnotitan builds applied technology for enterprises: AI systems, operating software, interactive products and robotics capabilities with a path toward global platforms.",
+            "Tecnotitan designs AI systems, business software and automation to turn complex processes into faster, smarter and measurable operations.",
           primaryCta: "Investor thesis",
           secondaryCta: "Explore products",
           nextPreview: "High-value services, proprietary products and scalable IP",
@@ -620,9 +620,9 @@ const languages = {
         description:
           "A Tecnotitan cria software empresarial, sistemas de IA, produtos interativos e capacidades de robótica para Brasil, América Latina e mercados globais.",
         content: {
-          heroTitle: ["IA, software", "e robótica para", "empresas que", "escalam"],
+          heroTitle: ["Eficiência", "infinita", "para empresas", "que escalam"],
           heroText:
-            "A Tecnotitan cria tecnologia aplicada para empresas: sistemas de IA, software operacional, produtos interativos e robótica com caminho para plataformas globais.",
+            "A Tecnotitan projeta sistemas de IA, software empresarial e automação para transformar processos complexos em operações mais rápidas, inteligentes e mensuráveis.",
           primaryCta: "Tese para investidores",
           secondaryCta: "Explorar produtos",
           nextPreview: "Serviços de alto valor, produtos próprios e IP escalável",
@@ -931,8 +931,8 @@ languages.zh = buildLocalizedLanguage(languages.en, {
       title: "Tecnotitan | 面向全球市场的应用技术",
       description: "Tecnotitan 为全球企业与投资者打造软件、人工智能、电子游戏和机器人技术。",
       content: {
-        heroTitle: ["人工智能、软件", "与机器人技术", "助力企业", "规模化增长"],
-        heroText: "Tecnotitan 为企业创造应用技术：AI 系统、运营软件、交互式产品和具备全球平台潜力的机器人技术。",
+        heroTitle: ["无限", "效率", "助力企业", "规模化增长"],
+        heroText: "Tecnotitan 设计 AI 系统、商业软件和自动化方案，将复杂流程转化为更快速、更智能、可衡量的运营。",
         primaryCta: "投资者论点",
         secondaryCta: "探索产品",
         nextPreview: "高价值服务、自有产品与可扩展知识产权",
@@ -1207,8 +1207,8 @@ languages.ja = buildLocalizedLanguage(languages.en, {
       title: "Tecnotitan | グローバル市場のための応用テクノロジー",
       description: "Tecnotitan は、世界の企業と投資家向けにソフトウェア、AI、ゲーム、ロボティクスを構築します。",
       content: {
-        heroTitle: ["AI、ソフトウェア", "ロボティクスで", "企業の成長を", "加速する"],
-        heroText: "Tecnotitan は企業向けの応用テクノロジーを構築します。AI システム、業務ソフトウェア、インタラクティブ製品、そしてグローバルなプラットフォームへ発展し得るロボティクスです。",
+        heroTitle: ["無限の", "効率性を", "成長企業へ", "届ける"],
+        heroText: "Tecnotitan は AI システム、業務ソフトウェア、自動化を設計し、複雑なプロセスをより速く、賢く、測定可能なオペレーションへ変えます。",
         primaryCta: "投資家向けテーゼ",
         secondaryCta: "製品を見る",
         nextPreview: "高付加価値サービス、自社製品、拡張可能な IP",
@@ -1483,8 +1483,8 @@ languages.ko = buildLocalizedLanguage(languages.en, {
       title: "Tecnotitan | 글로벌 시장을 위한 응용 기술",
       description: "Tecnotitan은 글로벌 기업과 투자자를 위해 소프트웨어, AI, 비디오게임, 로보틱스를 만듭니다.",
       content: {
-        heroTitle: ["AI, 소프트웨어와", "로보틱스로", "기업의 성장을", "확장합니다"],
-        heroText: "Tecnotitan은 기업을 위한 응용 기술을 만듭니다. AI 시스템, 운영 소프트웨어, 인터랙티브 제품, 글로벌 플랫폼으로 성장할 수 있는 로보틱스가 핵심입니다.",
+        heroTitle: ["무한한", "효율성", "성장하는", "기업을 위해"],
+        heroText: "Tecnotitan은 AI 시스템, 비즈니스 소프트웨어와 자동화를 설계해 복잡한 프로세스를 더 빠르고 지능적이며 측정 가능한 운영으로 바꿉니다.",
         primaryCta: "투자자 논리",
         secondaryCta: "제품 보기",
         nextPreview: "고부가 서비스, 자체 제품, 확장 가능한 IP",
