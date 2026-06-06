@@ -2561,6 +2561,9 @@ const languageCarryPages = new Set([
   "servicio-videojuegos.html",
   "servicio-transformacion-tecnologica.html",
   "ia-para-empresas.html",
+  "software-para-pymes-con-inteligencia-artificial.html",
+  "automatizar-atencion-cliente-con-ia.html",
+  "consultoria-ia-para-empresas-colombia.html",
   "producto-copiloto-pyme.html",
   "producto-tecnotitan-os.html",
   "producto-life-copilot.html",
@@ -2612,6 +2615,18 @@ const staticSeoPages = {
   "ia-para-empresas.html": [
     "IA para empresas: automatización, agentes y copilotos | Tecnotitan",
     "Guía de IA para empresas: automatización, agentes, copilotos, casos de uso y ruta de implementación."
+  ],
+  "software-para-pymes-con-inteligencia-artificial.html": [
+    "Software para pymes con inteligencia artificial | Tecnotitan",
+    "Guía para pymes que buscan software con IA para ventas, soporte, documentos y automatización operativa."
+  ],
+  "automatizar-atencion-cliente-con-ia.html": [
+    "Automatizar atención al cliente con IA | Tecnotitan",
+    "Guía para automatizar atención al cliente con agentes IA, clasificación, seguimiento y métricas."
+  ],
+  "consultoria-ia-para-empresas-colombia.html": [
+    "Consultoría IA para empresas en Colombia | Tecnotitan",
+    "Consultoría IA para empresas en Colombia: diagnóstico, casos de uso, agentes, copilotos y roadmap tecnológico."
   ],
   "producto-copiloto-pyme.html": [
     "Copiloto Pyme | Tecnotitan",
