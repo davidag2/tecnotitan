@@ -34,7 +34,19 @@ Pagina corporativa estatica para Tecnotitan, con una direccion visual premium in
 
 ## Uso local
 
-Abre `index.html` directamente en el navegador. No requiere build ni instalacion de dependencias.
+Abre `index.html` directamente en el navegador para revisar el sitio. Para probar formularios, ejecuta el proyecto en Vercel o usa una emulacion compatible con funciones serverless.
+
+## Backend de correo
+
+Los formularios envian a `/api/contact`, una funcion serverless pensada para Vercel y Resend. Variables requeridas en Vercel:
+
+```text
+RESEND_API_KEY=...
+MAIL_FROM=Tecnotitan <contacto@tecnotitan.com>
+CONTACT_TO_EMAIL=info@tecnotitan.com
+```
+
+`MAIL_FROM` debe usar un dominio verificado en Resend para evitar marcas de terceros y mejorar entregabilidad.
 
 ## Publicacion en GitHub Pages
 

@@ -809,6 +809,15 @@ h3 {
   padding: 18px 20px;
 }
 
+.form-success.is-error {
+  border-color: rgba(255, 103, 103, 0.42);
+  background: rgba(255, 103, 103, 0.08);
+}
+
+.form-success.is-error strong {
+  color: #ff8f8f;
+}
+
 .form-success[hidden] {
   display: none;
 }
@@ -833,6 +842,36 @@ h3 {
   gap: 10px;
 }
 
+.contact-form .form-honeypot {
+  display: none;
+}
+
+.contact-form .newsletter-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.035);
+  padding: 16px;
+}
+
+.contact-form .newsletter-check input {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  accent-color: var(--accent);
+}
+
+.contact-form .newsletter-check span {
+  color: rgba(244, 247, 248, 0.82);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.45;
+  text-transform: none;
+}
+
 .contact-form label > span {
   color: var(--accent);
   font-size: 12px;
@@ -852,6 +891,18 @@ h3 {
   font-size: 15px;
   outline: 0;
   padding: 15px 16px;
+}
+
+.contact-form .newsletter-check input {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
 }
 
 .contact-form textarea {

@@ -211,13 +211,16 @@
           </div>
           <form
             class="contact-form reveal"
-            action="https://formsubmit.co/info@tecnotitan.com"
+            action="/api/contact"
             method="post"
+            data-contact-form
           >
             <input type="hidden" name="_subject" value="Nuevo contacto de inversionista - Tecnotitan" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://www.tecnotitan.com/inversionistas.html?sent=1#contacto-inversionistas" />
+            <input type="hidden" name="formType" value="investor" />
+            <label class="form-honeypot" aria-hidden="true">
+              <span>Website</span>
+              <input name="Website" type="text" tabindex="-1" autocomplete="off" />
+            </label>
             <label>
               <span>Nombre</span>
               <input name="Nombre" type="text" autocomplete="name" required />
@@ -248,6 +251,10 @@
             <label class="form-wide">
               <span>Mensaje</span>
               <textarea name="Mensaje" rows="6" required></textarea>
+            </label>
+            <label class="newsletter-check form-wide">
+              <input name="Newsletter" type="checkbox" value="yes" />
+              <span data-newsletter-label>Quiero suscribirme al newsletter oficial de Tecnotitan.</span>
             </label>
             <button class="button button-primary form-wide" type="submit">Enviar a info@tecnotitan.com</button>
           </form>

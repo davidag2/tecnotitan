@@ -241,6 +241,10 @@ const languages = {
           formLabels: ["Nombre", "Firma / fondo", "País", "Email", "Tipo de interés", "Mensaje"],
           formOptions: ["Seleccionar", "Inversión", "Alianza estratégica", "Investor deck", "Contactar al equipo", "Agendar conversación"],
           formButton: "Enviar a info@tecnotitan.com",
+          formSending: "Enviando...",
+          formErrorTitle: "No se pudo enviar",
+          formErrorText: "Inténtalo de nuevo o escribe directamente a info@tecnotitan.com.",
+          formNewsletter: "Quiero suscribirme al newsletter oficial de Tecnotitan.",
           formSuccessTitle: "Solicitud enviada",
           formSuccessText: "Gracias. El equipo de Tecnotitan revisará tu mensaje de inversión y responderá a info@tecnotitan.com.",
           cards: [
@@ -269,6 +273,10 @@ const languages = {
           formLabels: ["Nombre", "Email", "Empresa", "País", "Tipo de solicitud", "Mensaje"],
           formOptions: ["Seleccionar", "Queja", "Reclamo", "Sugerencia", "Solicitud general"],
           formButton: "Enviar a info@tecnotitan.com",
+          formSending: "Enviando...",
+          formErrorTitle: "No se pudo enviar",
+          formErrorText: "Inténtalo de nuevo o escribe directamente a info@tecnotitan.com.",
+          formNewsletter: "Quiero suscribirme al newsletter oficial de Tecnotitan.",
           formSuccessTitle: "Mensaje enviado",
           formSuccessText: "Gracias. Recibimos tu solicitud general y responderemos a info@tecnotitan.com."
         }
@@ -530,6 +538,10 @@ const languages = {
           formLabels: ["Name", "Firm / fund", "Country", "Email", "Type of interest", "Message"],
           formOptions: ["Select", "Investment", "Strategic partnership", "Investor deck", "Contact the team", "Schedule a call"],
           formButton: "Send to info@tecnotitan.com",
+          formSending: "Sending...",
+          formErrorTitle: "Could not send",
+          formErrorText: "Please try again or write directly to info@tecnotitan.com.",
+          formNewsletter: "I want to subscribe to the official Tecnotitan newsletter.",
           formSuccessTitle: "Request sent",
           formSuccessText: "Thank you. The Tecnotitan team will review your investment message and reply through info@tecnotitan.com.",
           cards: [
@@ -558,6 +570,10 @@ const languages = {
           formLabels: ["Name", "Email", "Company", "Country", "Request type", "Message"],
           formOptions: ["Select", "Complaint", "Claim", "Suggestion", "General request"],
           formButton: "Send to info@tecnotitan.com",
+          formSending: "Sending...",
+          formErrorTitle: "Could not send",
+          formErrorText: "Please try again or write directly to info@tecnotitan.com.",
+          formNewsletter: "I want to subscribe to the official Tecnotitan newsletter.",
           formSuccessTitle: "Message sent",
           formSuccessText: "Thank you. We received your general request and will reply through info@tecnotitan.com."
         }
@@ -819,6 +835,10 @@ const languages = {
           formLabels: ["Nome", "Firma / fundo", "País", "Email", "Tipo de interesse", "Mensagem"],
           formOptions: ["Selecionar", "Investimento", "Parceria estratégica", "Investor deck", "Contatar a equipe", "Agendar conversa"],
           formButton: "Enviar para info@tecnotitan.com",
+          formSending: "Enviando...",
+          formErrorTitle: "Não foi possível enviar",
+          formErrorText: "Tente novamente ou escreva diretamente para info@tecnotitan.com.",
+          formNewsletter: "Quero assinar a newsletter oficial da Tecnotitan.",
           formSuccessTitle: "Solicitação enviada",
           formSuccessText: "Obrigado. A equipe da Tecnotitan analisará sua mensagem de investimento e responderá por info@tecnotitan.com.",
           cards: [
@@ -847,6 +867,10 @@ const languages = {
           formLabels: ["Nome", "Email", "Empresa", "País", "Tipo de solicitação", "Mensagem"],
           formOptions: ["Selecionar", "Queixa", "Reclamação", "Sugestão", "Solicitação geral"],
           formButton: "Enviar para info@tecnotitan.com",
+          formSending: "Enviando...",
+          formErrorTitle: "Não foi possível enviar",
+          formErrorText: "Tente novamente ou escreva diretamente para info@tecnotitan.com.",
+          formNewsletter: "Quero assinar a newsletter oficial da Tecnotitan.",
           formSuccessTitle: "Mensagem enviada",
           formSuccessText: "Obrigado. Recebemos sua solicitação geral e responderemos por info@tecnotitan.com."
         }
@@ -1105,6 +1129,10 @@ languages.zh = buildLocalizedLanguage(languages.en, {
         formLabels: ["姓名", "机构 / 基金", "国家", "电子邮件", "兴趣类型", "留言"],
         formOptions: ["选择", "投资", "战略合作", "Investor deck", "联系团队", "预约沟通"],
         formButton: "发送至 info@tecnotitan.com",
+        formSending: "正在发送...",
+        formErrorTitle: "无法发送",
+        formErrorText: "请重试，或直接写信至 info@tecnotitan.com。",
+        formNewsletter: "我想订阅 Tecnotitan 官方 newsletter。",
         formSuccessTitle: "请求已发送",
         formSuccessText: "谢谢。Tecnotitan 团队将审阅你的投资信息，并通过 info@tecnotitan.com 回复。",
         cards: [
@@ -1131,6 +1159,10 @@ languages.zh = buildLocalizedLanguage(languages.en, {
         formLabels: ["姓名", "电子邮件", "公司", "国家", "请求类型", "留言"],
         formOptions: ["选择", "投诉", "申诉", "建议", "一般请求"],
         formButton: "发送至 info@tecnotitan.com",
+        formSending: "正在发送...",
+        formErrorTitle: "无法发送",
+        formErrorText: "请重试，或直接写信至 info@tecnotitan.com。",
+        formNewsletter: "我想订阅 Tecnotitan 官方 newsletter。",
         formSuccessTitle: "消息已发送",
         formSuccessText: "谢谢。我们已收到你的一般请求，并将通过 info@tecnotitan.com 回复。"
       }
@@ -1373,6 +1405,10 @@ languages.ja = buildLocalizedLanguage(languages.en, {
         formLabels: ["名前", "会社 / ファンド", "国", "メール", "関心タイプ", "メッセージ"],
         formOptions: ["選択", "投資", "戦略提携", "Investor deck", "チームに連絡", "面談を予約"],
         formButton: "info@tecnotitan.com へ送信",
+        formSending: "送信中...",
+        formErrorTitle: "送信できませんでした",
+        formErrorText: "もう一度お試しください。または info@tecnotitan.com へ直接ご連絡ください。",
+        formNewsletter: "Tecnotitan 公式 newsletter を購読します。",
         formSuccessTitle: "リクエストを送信しました",
         formSuccessText: "ありがとうございます。Tecnotitan チームが投資メッセージを確認し、info@tecnotitan.com から返信します。",
         cards: [
@@ -1399,6 +1435,10 @@ languages.ja = buildLocalizedLanguage(languages.en, {
         formLabels: ["名前", "メール", "会社", "国", "依頼タイプ", "メッセージ"],
         formOptions: ["選択", "苦情", "申し立て", "提案", "一般的な依頼"],
         formButton: "info@tecnotitan.com へ送信",
+        formSending: "送信中...",
+        formErrorTitle: "送信できませんでした",
+        formErrorText: "もう一度お試しください。または info@tecnotitan.com へ直接ご連絡ください。",
+        formNewsletter: "Tecnotitan 公式 newsletter を購読します。",
         formSuccessTitle: "メッセージを送信しました",
         formSuccessText: "ありがとうございます。一般リクエストを受け取りました。info@tecnotitan.com から返信します。"
       }
@@ -1641,6 +1681,10 @@ languages.ko = buildLocalizedLanguage(languages.en, {
         formLabels: ["이름", "회사 / 펀드", "국가", "이메일", "관심 유형", "메시지"],
         formOptions: ["선택", "투자", "전략적 파트너십", "Investor deck", "팀에 연락", "미팅 예약"],
         formButton: "info@tecnotitan.com으로 보내기",
+        formSending: "전송 중...",
+        formErrorTitle: "전송할 수 없습니다",
+        formErrorText: "다시 시도하거나 info@tecnotitan.com으로 직접 연락해 주세요.",
+        formNewsletter: "Tecnotitan 공식 newsletter를 구독하겠습니다.",
         formSuccessTitle: "요청이 전송되었습니다",
         formSuccessText: "감사합니다. Tecnotitan 팀이 투자 메시지를 검토하고 info@tecnotitan.com에서 답변합니다.",
         cards: [
@@ -1667,6 +1711,10 @@ languages.ko = buildLocalizedLanguage(languages.en, {
         formLabels: ["이름", "이메일", "회사", "국가", "요청 유형", "메시지"],
         formOptions: ["선택", "불만", "클레임", "제안", "일반 요청"],
         formButton: "info@tecnotitan.com으로 보내기",
+        formSending: "전송 중...",
+        formErrorTitle: "전송할 수 없습니다",
+        formErrorText: "다시 시도하거나 info@tecnotitan.com으로 직접 연락해 주세요.",
+        formNewsletter: "Tecnotitan 공식 newsletter를 구독하겠습니다.",
         formSuccessTitle: "메시지가 전송되었습니다",
         formSuccessText: "감사합니다. 일반 요청을 받았으며 info@tecnotitan.com에서 답변하겠습니다."
       }
@@ -2208,11 +2256,12 @@ function applyLanguage(language) {
   if (content.formTitle) {
     setText(".contact-form-copy h2", content.formTitle);
     setText(".contact-form-copy p", content.formText);
-    document.querySelectorAll(".contact-form label > span").forEach((label, index) => {
+    document.querySelectorAll(".contact-form label:not(.newsletter-check):not(.form-honeypot) > span").forEach((label, index) => {
       if (content.formLabels[index]) {
         label.textContent = content.formLabels[index];
       }
     });
+    setText("[data-newsletter-label]", content.formNewsletter);
     const interestSelect = document.querySelector('.contact-form select[name="Tipo de interes"]');
     if (interestSelect) {
       Array.from(interestSelect.options).forEach((option, index) => {
@@ -2232,15 +2281,6 @@ function applyLanguage(language) {
           option.selected = option.textContent === selectedLabel;
         });
       }
-    }
-    const nextInput = document.querySelector('.contact-form input[name="_next"]');
-    if (nextInput) {
-      const nextUrl = new URL(window.location.href);
-      const formSection = nextInput.closest("section[id]");
-      nextUrl.searchParams.set("sent", "1");
-      nextUrl.searchParams.set("lang", language);
-      nextUrl.hash = formSection ? formSection.id : "";
-      nextInput.value = nextUrl.toString();
     }
     setText(".contact-form button", content.formButton);
     const successMessage = document.querySelector("[data-form-success]");
@@ -2295,8 +2335,78 @@ function applyLanguage(language) {
   }
 }
 
+function getCurrentFormContent(form) {
+  const page = (languages[activeLanguage] || languages.es).pages[pageName] || languages.es.pages[pageName];
+  return page?.content || {};
+}
+
+function showFormMessage(form, title, text, isError = false) {
+  const section = form.closest("section");
+  const message = section?.querySelector("[data-form-success]");
+
+  if (!message) {
+    return;
+  }
+
+  setText("strong", title, message);
+  setText("p", text, message);
+  message.classList.toggle("is-error", isError);
+  message.hidden = false;
+}
+
+function enhanceContactForms() {
+  document.querySelectorAll("[data-contact-form]").forEach((form) => {
+    if (form.dataset.enhanced === "true") {
+      return;
+    }
+
+    form.dataset.enhanced = "true";
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const content = getCurrentFormContent(form);
+      const button = form.querySelector('button[type="submit"]');
+      const originalText = button?.textContent || content.formButton;
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+      payload.language = activeLanguage;
+      payload.newsletter = formData.get("Newsletter") === "yes";
+
+      if (button) {
+        button.disabled = true;
+        button.textContent = content.formSending || originalText;
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error("Contact request failed");
+        }
+
+        form.reset();
+        showFormMessage(form, content.formSuccessTitle, content.formSuccessText, false);
+      } catch (error) {
+        showFormMessage(form, content.formErrorTitle, content.formErrorText, true);
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      }
+    });
+  });
+}
+
 buildLanguageSwitcher();
 applyLanguage(activeLanguage);
+enhanceContactForms();
 
 if (shouldAutoDetectLanguage) {
   detectVisitorLanguage().then((language) => {
