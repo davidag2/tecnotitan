@@ -114,6 +114,8 @@ async function upsertNewsletterContact(data) {
     email: data.email,
     firstName,
     lastName,
+    first_name: firstName,
+    last_name: lastName,
     unsubscribed: false,
     properties: {
       source: "tecnotitan.com",
