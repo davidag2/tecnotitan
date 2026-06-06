@@ -2595,7 +2595,42 @@ function applyLanguage(language) {
 
 function getCurrentFormContent(form) {
   const page = (languages[activeLanguage] || languages.es).pages[pageName] || languages.es.pages[pageName];
-  return page?.content || {};
+  return {
+    formButton: "Enviar a info@tecnotitan.com",
+    formSending: "Enviando...",
+    formSuccessTitle: "Solicitud enviada",
+    formSuccessText: "Gracias. Recibimos tu mensaje y responderemos a info@tecnotitan.com.",
+    formErrorTitle: "No se pudo enviar",
+    formErrorText: "Intenta nuevamente o escribe directamente a info@tecnotitan.com.",
+    ...(page?.content || {})
+  };
+}
+
+function prefillServiceRequestForm() {
+  const serviceSelect = document.querySelector("[data-service-select]");
+
+  if (!serviceSelect) {
+    return;
+  }
+
+  const serviceMap = {
+    ai: "Inteligencia artificial",
+    software: "Software empresarial",
+    consultoria: "Consultoría tecnológica",
+    robotica: "Robótica",
+    videojuegos: "Videojuegos y experiencias interactivas",
+    transformacion: "Transformación tecnológica"
+  };
+  const requestedInterest = new URLSearchParams(window.location.search).get("interest");
+  const selectedLabel = serviceMap[requestedInterest];
+
+  if (!selectedLabel) {
+    return;
+  }
+
+  Array.from(serviceSelect.options).forEach((option) => {
+    option.selected = option.textContent === selectedLabel;
+  });
 }
 
 function showFormMessage(form, title, text, isError = false) {
@@ -2664,6 +2699,7 @@ function enhanceContactForms() {
 
 buildLanguageSwitcher();
 applyLanguage(activeLanguage);
+prefillServiceRequestForm();
 enhanceContactForms();
 
 document.querySelector(".deck-language-grid")?.addEventListener("click", (event) => {

@@ -129,6 +129,97 @@
           </div>
         </div>
       </section>
+
+      <section class="content-band panel-section" id="solicitud-servicios">
+        <div class="section-inner contact-layout">
+          <div class="contact-form-copy reveal">
+            <span>Solicitud comercial</span>
+            <h2 data-service-form-title>Cuéntanos qué necesita construir tu empresa</h2>
+            <p data-service-form-text>Este formulario es para proyectos de IA, software, consultoría, robótica, videojuegos o transformación tecnológica.</p>
+          </div>
+          <div class="form-success" data-form-success hidden>
+            <strong>Solicitud enviada</strong>
+            <p>Gracias. Recibimos tu solicitud de servicios y responderemos a info@tecnotitan.com.</p>
+          </div>
+          <form class="contact-form reveal service-request-form" action="/api/contact" method="post" data-contact-form data-service-request-form>
+            <input type="hidden" name="_subject" value="Nueva solicitud comercial de servicios - Tecnotitan" />
+            <input type="hidden" name="formType" value="services" />
+            <label class="form-honeypot" aria-hidden="true">
+              <span>Website</span>
+              <input name="Website" type="text" tabindex="-1" autocomplete="off" />
+            </label>
+            <label>
+              <span>Nombre</span>
+              <input name="Nombre" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="Email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Empresa</span>
+              <input name="Empresa" type="text" autocomplete="organization" required />
+            </label>
+            <label>
+              <span>País</span>
+              <input name="Pais" type="text" autocomplete="country-name" />
+            </label>
+            <label>
+              <span>Servicio de interés</span>
+              <select name="Servicio" required data-service-select>
+                <option value="">Seleccionar</option>
+                <option>Inteligencia artificial</option>
+                <option>Software empresarial</option>
+                <option>Consultoría tecnológica</option>
+                <option>Robótica</option>
+                <option>Videojuegos y experiencias interactivas</option>
+                <option>Transformación tecnológica</option>
+              </select>
+            </label>
+            <label>
+              <span>Tamaño de empresa</span>
+              <select name="Tamaño de empresa" required>
+                <option value="">Seleccionar</option>
+                <option>1-10 personas</option>
+                <option>11-50 personas</option>
+                <option>51-200 personas</option>
+                <option>201-1000 personas</option>
+                <option>Más de 1000 personas</option>
+              </select>
+            </label>
+            <label>
+              <span>Presupuesto aproximado</span>
+              <select name="Presupuesto" required>
+                <option value="">Seleccionar</option>
+                <option>Menos de USD 5K</option>
+                <option>USD 5K - 15K</option>
+                <option>USD 15K - 50K</option>
+                <option>USD 50K+</option>
+                <option>Por definir</option>
+              </select>
+            </label>
+            <label>
+              <span>Urgencia</span>
+              <select name="Urgencia" required>
+                <option value="">Seleccionar</option>
+                <option>Este mes</option>
+                <option>1-3 meses</option>
+                <option>3-6 meses</option>
+                <option>Exploratorio</option>
+              </select>
+            </label>
+            <label class="form-wide">
+              <span>Mensaje</span>
+              <textarea name="Mensaje" rows="6" required placeholder="Cuéntanos el problema, objetivo o proceso que quieres mejorar."></textarea>
+            </label>
+            <label class="newsletter-check form-wide">
+              <input name="Newsletter" type="checkbox" value="yes" />
+              <span data-newsletter-label>Quiero suscribirme al newsletter oficial de Tecnotitan.</span>
+            </label>
+            <button class="button button-primary form-wide" type="submit">Solicitar conversación comercial</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer institutional-footer">
