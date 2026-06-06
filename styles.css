@@ -129,6 +129,16 @@ a {
   transition: border-color 160ms ease, background 160ms ease;
 }
 
+.header-deck-action {
+  color: var(--accent);
+  border-color: rgba(103, 229, 255, 0.42);
+}
+
+.header-deck-action:hover {
+  border-color: rgba(103, 229, 255, 0.85);
+  background: rgba(103, 229, 255, 0.1);
+}
+
 .language-switcher {
   position: fixed;
   z-index: 26;

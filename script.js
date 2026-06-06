@@ -3176,6 +3176,28 @@ function applyLanguage(language) {
     }
   }
 
+  const deckPageLabels = {
+    es: "Ver Investor Deck",
+    en: "View Investor Deck",
+    pt: "Ver Investor Deck",
+    zh: "查看 Investor Deck",
+    ja: "Investor Deckを見る",
+    ko: "Investor Deck 보기"
+  };
+
+  if (headerAction && pageName !== "investor-deck.html" && !document.querySelector(".header-deck-action")) {
+    const deckHeaderAction = document.createElement("a");
+    deckHeaderAction.className = "header-action header-deck-action";
+    deckHeaderAction.href = "./investor-deck.html";
+    deckHeaderAction.textContent = deckPageLabels[language] || deckPageLabels.es;
+    headerAction.insertAdjacentElement("afterend", deckHeaderAction);
+  }
+
+  const deckHeaderAction = document.querySelector(".header-deck-action");
+  if (deckHeaderAction) {
+    deckHeaderAction.textContent = deckPageLabels[language] || deckPageLabels.es;
+  }
+
   if (menuButton) {
     menuButton.setAttribute("aria-label", header.classList.contains("is-open") ? dictionary.closeNav : dictionary.openNav);
   }
