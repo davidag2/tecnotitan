@@ -92,6 +92,18 @@ async function getTopFromSet(setKey, countPrefix, limit = 8) {
     .slice(0, limit);
 }
 
+function sentKey(date) {
+  return `brief:ceo-traffic:${date}:sent`;
+}
+
+async function wasSentToday(date) {
+  return Boolean(await redis(["GET", sentKey(date)]));
+}
+
+async function markSentToday(date) {
+  await redis(["SET", sentKey(date), "1", "EX", 172800]);
+}
+
 async function getLanguageCounts(prefix, eventName = "") {
   const rows = {};
 
@@ -294,9 +306,27 @@ module.exports = async function handler(request, response) {
   try {
     const report = await buildReport();
     const preview = request.query?.preview === "1";
+    const force = request.query?.force === "1";
+    const markSent = request.query?.markSent === "1";
+
+    if (markSent) {
+      await markSentToday(report.date);
+      return response.status(200).json({ ok: true, markedSent: true, date: report.date });
+    }
+
+    if (!preview && !force && await wasSentToday(report.date)) {
+      return response.status(200).json({
+        ok: true,
+        emailed: false,
+        skipped: "already_sent_today",
+        date: report.date,
+        time: report.time
+      });
+    }
 
     if (!preview) {
       await sendEmail(report);
+      await markSentToday(report.date);
     }
 
     return response.status(200).json({
