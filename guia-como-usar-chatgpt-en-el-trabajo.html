@@ -47,9 +47,16 @@
           <img class="page-bg" src="./assets/bg-process-ai.jpg" alt="" width="1600" height="900" decoding="async" fetchpriority="high" />
           <div class="page-scrim" aria-hidden="true"></div>
           <div class="section-inner guide-hero-inner reveal">
-            <p class="page-label">Guia Tecnotitan / Inteligencia artificial en el trabajo</p>
-            <h1>Como usar ChatGPT en el trabajo: guia practica para empresas</h1>
-            <p>Un manual para usar ChatGPT con productividad, criterio y seguridad en ventas, soporte, documentos, reuniones, analisis y automatizacion.</p>
+            <div data-guide-lang="es">
+              <p class="page-label">Guia Tecnotitan / Inteligencia artificial en el trabajo</p>
+              <h1>Como usar ChatGPT en el trabajo: guia practica para empresas</h1>
+              <p>Un manual para usar ChatGPT con productividad, criterio y seguridad en ventas, soporte, documentos, reuniones, analisis y automatizacion.</p>
+            </div>
+            <div data-guide-lang="en" hidden>
+              <p class="page-label">Tecnotitan Guide / AI at work</p>
+              <h1>How to use ChatGPT at work: a practical guide for companies</h1>
+              <p>A manual for using ChatGPT with productivity, judgment and safety across sales, support, documents, meetings, analysis and automation.</p>
+            </div>
             <div class="guide-meta">
               <span>Actualizado: junio 2026</span>
               <span>Lectura: 18 min</span>
@@ -72,18 +79,32 @@
           <div class="section-inner guide-layout">
             <aside class="guide-sidebar reveal" aria-label="Contenido de la guia">
               <img src="./assets/logo-tecnotitan.svg" alt="Tecnotitan" width="190" height="31" loading="lazy" decoding="async" />
-              <p>En esta guia</p>
-              <nav>
-                <a href="#que-es">Que es ChatGPT en el trabajo</a>
-                <a href="#reglas">Reglas de uso responsable</a>
-                <a href="#prompts">Como escribir buenos prompts</a>
-                <a href="#areas">Casos por area de empresa</a>
-                <a href="#politica">Politica interna sugerida</a>
-                <a href="#checklist">Checklist para empezar</a>
-              </nav>
+              <div data-guide-lang="es">
+                <p>En esta guia</p>
+                <nav>
+                  <a href="#que-es">Que es ChatGPT en el trabajo</a>
+                  <a href="#reglas">Reglas de uso responsable</a>
+                  <a href="#prompts">Como escribir buenos prompts</a>
+                  <a href="#areas">Casos por area de empresa</a>
+                  <a href="#politica">Politica interna sugerida</a>
+                  <a href="#checklist">Checklist para empezar</a>
+                </nav>
+              </div>
+              <div data-guide-lang="en" hidden>
+                <p>In this guide</p>
+                <nav>
+                  <a href="#what-it-is">What ChatGPT means at work</a>
+                  <a href="#rules">Responsible use rules</a>
+                  <a href="#prompts-en">How to write prompts</a>
+                  <a href="#areas-en">Use cases by area</a>
+                  <a href="#policy-en">Suggested internal policy</a>
+                  <a href="#checklist-en">Start this week</a>
+                </nav>
+              </div>
             </aside>
 
             <div class="guide-content reveal">
+              <div data-guide-lang="es">
               <section id="que-es">
                 <h2>Que significa usar ChatGPT en el trabajo</h2>
                 <p>Usar ChatGPT en el trabajo no significa delegar decisiones importantes a una herramienta. Significa usar un asistente de inteligencia artificial para acelerar tareas de lectura, escritura, organizacion, analisis, ideacion y preparacion de materiales. Bien usado, ChatGPT puede ayudar a un equipo a responder mejor, pensar con mas estructura y reducir trabajo repetitivo.</p>
@@ -146,6 +167,62 @@
                   <li>Evalua si el siguiente paso debe ser un copiloto, agente o automatizacion.</li>
                 </ul>
               </section>
+
+              </div>
+
+              <div data-guide-lang="en" hidden>
+                <section id="what-it-is">
+                  <h2>What it means to use ChatGPT at work</h2>
+                  <p>Using ChatGPT at work does not mean delegating important decisions to a tool. It means using an AI assistant to accelerate reading, writing, organization, analysis, ideation and preparation. Used well, ChatGPT helps teams respond better, think with more structure and reduce repetitive work.</p>
+                  <p>The difference between casual use and business use is method. A weak prompt asks for a generic email. A professional prompt gives context, objective, tone, allowed data, format and review criteria. That turns a generic answer into operational support.</p>
+                  <p>For a company, the real question is not whether to use AI. The question is where AI can help without exposing sensitive information, losing human control or lowering work quality.</p>
+                </section>
+
+                <section id="rules">
+                  <h2>Responsible use rules</h2>
+                  <p>Before asking ChatGPT to perform work tasks, a company should define simple rules. The first one is not to enter confidential information unless there is a clear data protection policy. This includes private contracts, customer data, passwords, sensitive legal documents, internal strategy or unpublished financial information.</p>
+                  <p>The second rule is to always review. ChatGPT can make mistakes, invent references, miss nuance or sound confident without enough information. AI should support human work, not replace professional judgment.</p>
+                  <p>The third rule is to separate low-risk and high-risk tasks. It is reasonable to use AI to summarize a meeting, draft an email, organize ideas or prepare questions. It is much more delicate to use it for legal, financial, medical, labor or security decisions without expert review.</p>
+                  <div class="guide-callout"><strong>Tecnotitan rule:</strong><p>Every business use of AI should include context, objective, allowed data, expected output and human review.</p></div>
+                </section>
+
+                <section id="prompts-en">
+                  <h2>How to write better prompts</h2>
+                  <p>A prompt is not a magic phrase. It is a work instruction. The clearer the assignment, the better the response. A good structure includes role, context, task, constraints, format and quality criteria.</p>
+                  <div class="prompt-box"><p><strong>Base template:</strong></p><p>Act as [role]. I need [objective]. Context: [allowed information]. Constraints: [tone, length, facts not to invent]. Deliver the result in [format]. Before answering, tell me if critical information is missing.</p></div>
+                  <p>Sales example: "Act as a B2B sales advisor. I need a follow-up email for a company interested in AI automation. The tone should be professional, clear and brief. Do not promise guaranteed results. Include one question to schedule a diagnostic call and give me three versions."</p>
+                  <p>Operations example: "Act as a process analyst. I will describe a manual workflow. Identify repetitive steps, risks, required data, possible automations and an MVP version to test in two weeks. Answer in a table."</p>
+                </section>
+
+                <section id="areas-en">
+                  <h2>Use cases by business area</h2>
+                  <h3>Sales</h3><p>ChatGPT can help research prospects, prepare arguments, write emails, summarize calls, classify objections and draft proposals. Sales teams should not copy and paste blindly; they should use AI to arrive better prepared.</p>
+                  <h3>Customer service</h3><p>In support, AI can summarize histories, suggest answers, classify tickets, build knowledge base drafts and detect complaint patterns. Connected to internal processes, it can become a customer service agent with human escalation.</p>
+                  <h3>Administration and documents</h3><p>ChatGPT can turn long texts into summaries, create minutes, organize policies, compare document versions, prepare checklists and transform instructions into clear procedures. Sensitive documents require privacy rules and human review.</p>
+                  <h3>Management</h3><p>For leaders, AI helps structure decisions, prepare agendas, turn scattered ideas into plans, analyze scenarios and write internal communication. The biggest value is organizing thought, not replacing executive responsibility.</p>
+                  <h3>Marketing</h3><p>It can support editorial calendars, headlines, scripts, descriptions, landing pages and message variations. The brand must keep its own voice; AI accelerates drafts, but positioning belongs to the company.</p>
+                </section>
+
+                <section id="policy-en">
+                  <h2>Suggested internal policy</h2>
+                  <p>An AI policy does not need to be complicated at the start. It can be one internal page with five rules: which tools are allowed, which data is prohibited, which tasks require review, how sources should be cited and who approves automations connected to company systems.</p>
+                  <p>It is also useful to create a library of approved prompts. This reduces improvisation, improves quality and lets one employee's learning become team capability. Over time, that library can evolve into internal copilots or automations connected to CRM, email, databases and operating systems.</p>
+                  <p>Real adoption happens when AI stops being an individual experiment and becomes an operating practice: short training sessions, examples by area, templates, time-savings measurement and continuous improvement.</p>
+                </section>
+
+                <section id="checklist-en">
+                  <h2>Checklist to start this week</h2>
+                  <ul class="guide-checklist">
+                    <li>Define three repetitive tasks where ChatGPT can save time with low risk.</li>
+                    <li>Write a simple rule about confidential data and share it with the team.</li>
+                    <li>Create five base prompts for sales, support, documents, meetings and analysis.</li>
+                    <li>Test each prompt with real examples, but without sensitive information.</li>
+                    <li>Measure whether AI reduces time, improves clarity or helps teams respond better.</li>
+                    <li>Document the best prompts in an internal library.</li>
+                    <li>Evaluate whether the next step should be a copilot, agent or automation.</li>
+                  </ul>
+                </section>
+              </div>
 
               <section class="guide-final-cta">
                 <h2>Cuando ChatGPT ya no es suficiente</h2>
