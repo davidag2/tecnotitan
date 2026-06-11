@@ -1,0 +1,42 @@
+# Tecnotitan
+
+Tecnotitan is a technology company based in Colombia with global ambition. The company builds software for businesses, artificial intelligence systems, automation, video games, robotics initiatives, and technology transformation services.
+
+## Official Website
+
+- https://www.tecnotitan.com/
+
+## Primary Sections
+
+- Home: https://www.tecnotitan.com/
+- About: https://www.tecnotitan.com/nosotros.html
+- Products: https://www.tecnotitan.com/productos.html
+- Services: https://www.tecnotitan.com/servicios.html
+- Divisions: https://www.tecnotitan.com/divisiones.html
+- Investors: https://www.tecnotitan.com/inversionistas.html
+- Investor Deck: https://www.tecnotitan.com/investor-deck.html
+- Contact: https://www.tecnotitan.com/contacto.html
+
+## Products
+
+- Copiloto Pyme: https://www.tecnotitan.com/producto-copiloto-pyme.html
+- Tecnotitan OS: https://www.tecnotitan.com/producto-tecnotitan-os.html
+- Life Copilot: https://www.tecnotitan.com/producto-life-copilot.html
+- Tecnotitan Engine: https://www.tecnotitan.com/producto-tecnotitan-engine.html
+- Academia Tecnotitan: https://www.tecnotitan.com/producto-academia-tecnotitan.html
+- Call Center AI Tecnotitan: https://www.tecnotitan.com/producto-call-center-ai.html
+
+## Services
+
+- Artificial intelligence consulting and implementation
+- Enterprise software development
+- Technology consulting
+- Robotics and physical-digital systems
+- Video games and interactive experiences
+- Technology transformation for companies
+
+## Contact
+
+- Email: info@tecnotitan.com
+- Website: https://www.tecnotitan.com/contacto.html
+

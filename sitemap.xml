@@ -1,239 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.tecnotitan.com/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/nosotros.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/nosotros.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/nosotros.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/nosotros.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/nosotros.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/nosotros.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/nosotros.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/nosotros.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/productos.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/productos.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/productos.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/productos.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/productos.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/productos.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/productos.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/productos.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicios.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/servicios.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/servicios.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/servicios.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/servicios.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/servicios.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/servicios.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicios.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicio-inteligencia-artificial.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicio-inteligencia-artificial.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/ia-para-empresas.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/ia-para-empresas.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/software-para-pymes-con-inteligencia-artificial.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/software-para-pymes-con-inteligencia-artificial.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/automatizar-atencion-cliente-con-ia.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/automatizar-atencion-cliente-con-ia.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/consultoria-ia-para-empresas-colombia.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/consultoria-ia-para-empresas-colombia.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicio-software-empresarial.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicio-software-empresarial.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicio-consultoria-tecnologica.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicio-consultoria-tecnologica.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicio-robotica.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicio-robotica.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicio-videojuegos.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicio-videojuegos.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/servicio-transformacion-tecnologica.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/servicio-transformacion-tecnologica.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/producto-copiloto-pyme.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/producto-copiloto-pyme.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/producto-tecnotitan-os.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/producto-tecnotitan-os.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/producto-life-copilot.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/producto-life-copilot.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/producto-tecnotitan-engine.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/producto-tecnotitan-engine.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/producto-academia-tecnotitan.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/producto-academia-tecnotitan.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/producto-call-center-ai.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/producto-call-center-ai.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/trabaja-con-nosotros.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/trabaja-con-nosotros.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/divisiones.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/divisiones.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/divisiones.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/divisiones.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/divisiones.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/divisiones.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/divisiones.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/divisiones.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/inversionistas.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/inversionistas.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/inversionistas.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/inversionistas.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/inversionistas.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/inversionistas.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/inversionistas.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/inversionistas.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/investor-deck.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/investor-deck.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/investor-deck.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/investor-deck.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/investor-deck.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/investor-deck.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/investor-deck.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/investor-deck.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/contacto.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/contacto.html" />
   </url>
   <url>
     <loc>https://www.tecnotitan.com/aviso-legal.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tecnotitan.com/es/aviso-legal.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tecnotitan.com/en/aviso-legal.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.tecnotitan.com/pt/aviso-legal.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.tecnotitan.com/zh/aviso-legal.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tecnotitan.com/ja/aviso-legal.html" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tecnotitan.com/ko/aviso-legal.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tecnotitan.com/aviso-legal.html" />
   </url>
 </urlset>
