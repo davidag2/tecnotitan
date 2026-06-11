@@ -25,6 +25,18 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://www.tecnotitan.com/guias.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.tecnotitan.com/guia-como-usar-chatgpt-en-el-trabajo.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://www.tecnotitan.com/servicio-inteligencia-artificial.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>

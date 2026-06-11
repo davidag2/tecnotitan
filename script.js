@@ -4,7 +4,7 @@ const menuButton = document.querySelector("[data-menu-button]");
 const languages = {
   es: {
     label: "ES",
-    nav: ["Inicio", "Nosotros", "Productos", "Servicios", "Divisiones", "Inversionistas", "Contacto"],
+    nav: ["Inicio", "Nosotros", "Productos", "Servicios", "Guias", "Divisiones", "Inversionistas", "Contacto"],
     headerAction: "Agendar conversación",
     writeAction: "Escribir",
     openNav: "Abrir navegación",
@@ -301,7 +301,7 @@ const languages = {
   },
   en: {
     label: "EN",
-    nav: ["Home", "About", "Products", "Services", "Divisions", "Investors", "Contact"],
+    nav: ["Home", "About", "Products", "Services", "Guides", "Divisions", "Investors", "Contact"],
     headerAction: "Schedule a call",
     writeAction: "Email us",
     openNav: "Open navigation",
@@ -598,7 +598,7 @@ const languages = {
   },
   pt: {
     label: "PT",
-    nav: ["Início", "Sobre", "Produtos", "Serviços", "Divisões", "Investidores", "Contato"],
+    nav: ["Início", "Sobre", "Produtos", "Serviços", "Guias", "Divisões", "Investidores", "Contato"],
     headerAction: "Agendar conversa",
     writeAction: "Enviar email",
     openNav: "Abrir navegação",
@@ -910,7 +910,7 @@ function buildLocalizedLanguage(baseLanguage, overrides) {
 
 languages.zh = buildLocalizedLanguage(languages.en, {
   label: "中文",
-  nav: ["首页", "关于我们", "产品", "服务", "事业部", "投资者", "联系"],
+  nav: ["首页", "关于我们", "产品", "服务", "指南", "事业部", "投资者", "联系"],
   headerAction: "预约沟通",
   writeAction: "留言",
   openNav: "打开导航",
@@ -1186,7 +1186,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
 
 languages.ja = buildLocalizedLanguage(languages.en, {
   label: "日",
-  nav: ["ホーム", "会社情報", "製品", "サービス", "部門", "投資家", "お問い合わせ"],
+  nav: ["ホーム", "会社情報", "製品", "サービス", "ガイド", "部門", "投資家", "お問い合わせ"],
   headerAction: "面談を予約",
   writeAction: "送信",
   openNav: "ナビゲーションを開く",
@@ -1462,7 +1462,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
 
 languages.ko = buildLocalizedLanguage(languages.en, {
   label: "한",
-  nav: ["홈", "회사 소개", "제품", "서비스", "부문", "투자자", "문의"],
+  nav: ["홈", "회사 소개", "제품", "서비스", "가이드", "부문", "투자자", "문의"],
   headerAction: "미팅 예약",
   writeAction: "문의하기",
   openNav: "내비게이션 열기",
@@ -3774,6 +3774,7 @@ function applyLanguage(language) {
       "nosotros.html",
       "productos.html",
       "servicios.html",
+      "guias.html",
       "divisiones.html",
       "inversionistas.html",
       "trabaja-con-nosotros.html",
@@ -3783,7 +3784,7 @@ function applyLanguage(language) {
     if (file === "trabaja-con-nosotros.html") {
       link.textContent = talentLabels[language] || "Talento";
     } else if (index >= 0) {
-      const dictionaryIndex = index > 6 ? index - 1 : index;
+      const dictionaryIndex = index > 7 ? index - 1 : index;
       link.textContent = dictionary.nav[dictionaryIndex];
     }
   });
@@ -3853,7 +3854,7 @@ function applyLanguage(language) {
     setCards(".investor-cta-grid a", content.investorCtaCards);
     setText("#gateway-title", content.gatewayTitle);
     setText(".gateway-copy p", content.gatewayText);
-    setCards(".gateway-grid a", content.cards);
+    setCards(".home-gateway .gateway-grid a", content.cards);
     return;
   }
 
@@ -4169,6 +4170,98 @@ function buildPrivacyConsent() {
   document.body.appendChild(banner);
 }
 
+const guidePageMetadata = {
+  es: {
+    "guias.html": {
+      title: "Guias Tecnotitan | IA, software y tecnologia para empresas",
+      description: "Guias practicas de Tecnotitan para usar inteligencia artificial, software, automatizacion y tecnologia aplicada en el trabajo."
+    },
+    "guia-como-usar-chatgpt-en-el-trabajo.html": {
+      title: "Como usar ChatGPT en el trabajo: guia practica para empresas | Tecnotitan",
+      description: "Guia completa para usar ChatGPT en el trabajo: prompts, seguridad, ejemplos por area, politicas internas y casos de uso."
+    }
+  },
+  en: {
+    "guias.html": {
+      title: "Tecnotitan Guides | AI, software and technology for companies",
+      description: "Practical Tecnotitan guides for using artificial intelligence, software, automation and applied technology at work."
+    },
+    "guia-como-usar-chatgpt-en-el-trabajo.html": {
+      title: "How to use ChatGPT at work: practical guide for companies | Tecnotitan",
+      description: "A complete guide to using ChatGPT at work with prompts, safety rules, business examples, internal policies and use cases."
+    }
+  },
+  pt: {
+    "guias.html": {
+      title: "Guias Tecnotitan | IA, software e tecnologia para empresas",
+      description: "Guias praticos da Tecnotitan para usar inteligencia artificial, software, automacao e tecnologia aplicada no trabalho."
+    },
+    "guia-como-usar-chatgpt-en-el-trabajo.html": {
+      title: "Como usar ChatGPT no trabalho: guia pratica para empresas | Tecnotitan",
+      description: "Guia completa para usar ChatGPT no trabalho com prompts, seguranca, exemplos por area, politicas internas e casos de uso."
+    }
+  },
+  zh: {
+    "guias.html": {
+      title: "Tecnotitan 指南 | 企业 AI、软件与技术",
+      description: "Tecnotitan 关于在工作中使用人工智能、软件、自动化和应用技术的实用指南。"
+    },
+    "guia-como-usar-chatgpt-en-el-trabajo.html": {
+      title: "如何在工作中使用 ChatGPT：企业实用指南 | Tecnotitan",
+      description: "关于在工作中安全、有效使用 ChatGPT 的企业指南，包含提示词、案例和内部政策。"
+    }
+  },
+  ja: {
+    "guias.html": {
+      title: "Tecnotitan ガイド | 企業向け AI、ソフトウェア、テクノロジー",
+      description: "仕事で AI、ソフトウェア、自動化、応用テクノロジーを活用するための Tecnotitan 実践ガイド。"
+    },
+    "guia-como-usar-chatgpt-en-el-trabajo.html": {
+      title: "仕事で ChatGPT を使う方法：企業向け実践ガイド | Tecnotitan",
+      description: "プロンプト、安全性、部門別の例、社内ポリシーを含む ChatGPT 活用ガイド。"
+    }
+  },
+  ko: {
+    "guias.html": {
+      title: "Tecnotitan 가이드 | 기업용 AI, 소프트웨어와 기술",
+      description: "업무에서 인공지능, 소프트웨어, 자동화와 응용 기술을 활용하기 위한 Tecnotitan 실무 가이드."
+    },
+    "guia-como-usar-chatgpt-en-el-trabajo.html": {
+      title: "업무에서 ChatGPT를 사용하는 방법: 기업 실무 가이드 | Tecnotitan",
+      description: "프롬프트, 보안, 부서별 사례, 내부 정책을 포함한 기업용 ChatGPT 활용 가이드."
+    }
+  }
+};
+
+Object.entries(guidePageMetadata).forEach(([language, pages]) => {
+  Object.entries(pages).forEach(([file, metadata]) => {
+    languages[language].pages[file] = {
+      ...metadata,
+      content: {}
+    };
+  });
+});
+
+const homeGuideCards = {
+  es: ["04", "Guias", "Articulos practicos, descargables y compartibles para aplicar IA y software en empresas."],
+  en: ["04", "Guides", "Practical, downloadable and shareable articles for applying AI and software in companies."],
+  pt: ["04", "Guias", "Artigos praticos, baixaveis e compartilhaveis para aplicar IA e software em empresas."],
+  zh: ["04", "指南", "可下载、可分享的实用文章，帮助企业应用 AI 和软件。"],
+  ja: ["04", "ガイド", "企業で AI とソフトウェアを活用するための実践的で共有可能な記事。"],
+  ko: ["04", "가이드", "기업에서 AI와 소프트웨어를 적용하기 위한 실용적이고 공유 가능한 글."]
+};
+
+Object.entries(homeGuideCards).forEach(([language, card]) => {
+  const cards = languages[language].pages["index.html"]?.content?.cards;
+  if (!cards || cards.some((item) => item[1] === card[1])) {
+    return;
+  }
+  cards.splice(3, 0, card);
+  cards.forEach((item, index) => {
+    item[0] = String(index + 1).padStart(2, "0");
+  });
+});
+
 buildLanguageSwitcher();
 buildPrivacyConsent();
 applyLanguage(activeLanguage);
@@ -4212,6 +4305,39 @@ document.querySelectorAll("[data-service-cta]").forEach((link) => {
       cta: link.dataset.cta,
       intent: link.dataset.intent
     });
+  });
+});
+
+document.querySelectorAll("[data-print-guide]").forEach((button) => {
+  button.addEventListener("click", () => window.print());
+});
+
+document.querySelectorAll("[data-share-guide]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const shareData = {
+      title: document.title,
+      text: document.querySelector('meta[name="description"]')?.content || "Guia Tecnotitan",
+      url: window.location.href
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        return;
+      } catch {
+        return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      button.textContent = "Enlace copiado";
+      setTimeout(() => {
+        button.textContent = "Compartir guia";
+      }, 1800);
+    } catch {
+      window.prompt("Copia el enlace de la guia", window.location.href);
+    }
   });
 });
 

@@ -12,6 +12,8 @@ Tecnotitan is a technology company based in Colombia with global ambition. The c
 - About: https://www.tecnotitan.com/nosotros.html
 - Products: https://www.tecnotitan.com/productos.html
 - Services: https://www.tecnotitan.com/servicios.html
+- Guides: https://www.tecnotitan.com/guias.html
+- Guide: How to use ChatGPT at work: https://www.tecnotitan.com/guia-como-usar-chatgpt-en-el-trabajo.html
 - Divisions: https://www.tecnotitan.com/divisiones.html
 - Investors: https://www.tecnotitan.com/inversionistas.html
 - Investor Deck: https://www.tecnotitan.com/investor-deck.html
@@ -39,4 +41,3 @@ Tecnotitan is a technology company based in Colombia with global ambition. The c
 
 - Email: info@tecnotitan.com
 - Website: https://www.tecnotitan.com/contacto.html
-
