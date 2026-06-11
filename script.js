@@ -1853,6 +1853,10 @@ languages.ko.pages["aviso-legal.html"] = {
 const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
 const pathLanguage = ["es", "en", "pt", "zh", "ja", "ko"].includes(cleanPathSegments[0]) ? cleanPathSegments[0] : "";
 const pageName = cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
+if (pathLanguage) {
+  const canonicalPath = cleanPathSegments.length > 1 ? `/${cleanPathSegments.slice(1).join("/")}` : "/";
+  window.history.replaceState({}, "", `${canonicalPath}${window.location.search}${window.location.hash}`);
+}
 const supportedLanguages = Object.keys(languages);
 const languageNames = {
   es: "Español",
@@ -2377,18 +2381,11 @@ function getCanonicalUrl() {
 }
 
 function getLocalizedUrl(language) {
-  const localizedPath = pageName === "index.html" ? `/${language}/` : `/${language}/${pageName}`;
-  return new URL(localizedPath, window.location.origin).toString();
+  return getCanonicalUrl();
 }
 
 function syncBrowserLanguagePath(language) {
-  if (!supportedLanguages.includes(language)) {
-    return;
-  }
-
   const current = new URL(window.location.href);
-  const localizedPath = pageName === "index.html" ? `/${language}/` : `/${language}/${pageName}`;
-  current.pathname = localizedPath;
   current.searchParams.delete("lang");
   window.history.replaceState({}, "", `${current.pathname}${current.search}${current.hash}`);
 }
@@ -2396,19 +2393,11 @@ function syncBrowserLanguagePath(language) {
 function updateLanguageSeoLinks(language) {
   const canonical = document.querySelector('link[rel="canonical"]');
   if (canonical) {
-    canonical.href = getLocalizedUrl(language);
+    canonical.href = getCanonicalUrl();
   }
 
   document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
-    const hreflang = link.getAttribute("hreflang");
-    if (hreflang === "x-default") {
-      link.setAttribute("href", getLocalizedUrl("es"));
-      return;
-    }
-
-    if (supportedLanguages.includes(hreflang)) {
-      link.setAttribute("href", getLocalizedUrl(hreflang));
-    }
+    link.remove();
   });
 }
 
@@ -2420,7 +2409,7 @@ function setSeoMetadata(page, language) {
   setMetaDescription(page.description);
   setMetaContent('meta[property="og:title"]', page.title);
   setMetaContent('meta[property="og:description"]', page.description);
-  setMetaContent('meta[property="og:url"]', getLocalizedUrl(language));
+  setMetaContent('meta[property="og:url"]', getCanonicalUrl());
   setMetaContent('meta[property="og:locale"]', languageLocales[language]);
   setMetaContent('meta[name="twitter:title"]', page.title);
   setMetaContent('meta[name="twitter:description"]', page.description);
@@ -3657,8 +3646,8 @@ function carryLanguageAcrossLinks(language) {
       return;
     }
 
-    const localizedPath = file === "index.html" ? `/${language}/` : `/${language}/${file}`;
-    link.setAttribute("href", `${localizedPath}${url.search}${url.hash}`);
+    const cleanPath = file === "index.html" ? "./index.html" : `./${file}`;
+    link.setAttribute("href", `${cleanPath}${url.search}${url.hash}`);
   });
 }
 
