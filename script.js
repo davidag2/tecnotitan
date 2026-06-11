@@ -2553,15 +2553,14 @@ function injectProductStructuredData(currentPageName) {
   const productUrl = `https://www.tecnotitan.com/${currentPageName}`;
   upsertJsonLd("product-detail", {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${productUrl}#product`,
+    "@type": "SoftwareApplication",
+    "@id": `${productUrl}#software-application`,
     "name": product.name,
     "description": product.description,
     "category": product.category,
-    "brand": {
-      "@id": "https://www.tecnotitan.com/#organization"
-    },
-    "manufacturer": {
+    "applicationCategory": product.applicationCategory,
+    "operatingSystem": product.operatingSystem,
+    "publisher": {
       "@id": "https://www.tecnotitan.com/#organization"
     },
     "url": productUrl,
@@ -2569,6 +2568,14 @@ function injectProductStructuredData(currentPageName) {
     "audience": {
       "@type": "BusinessAudience",
       "audienceType": product.audience
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": productUrl,
+      "availability": "https://schema.org/PreOrder",
+      "priceCurrency": "USD",
+      "price": "0",
+      "description": "Pricing is defined after business discovery, scope and implementation requirements."
     }
   });
 }
@@ -3013,6 +3020,8 @@ const productStructuredSeo = {
     name: "Copiloto Pyme",
     description: "Asistente de inteligencia artificial para ventas, soporte, documentos y automatización operativa de pequeñas y medianas empresas.",
     category: "AI business assistant",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
     audience: "Small and medium-sized businesses",
     image: "https://www.tecnotitan.com/assets/bg-process-ai.jpg"
   },
@@ -3020,6 +3029,8 @@ const productStructuredSeo = {
     name: "Tecnotitan OS",
     description: "Plataforma empresarial para centralizar procesos, datos, automatizaciones, agentes IA y flujos internos.",
     category: "Enterprise software platform",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
     audience: "Companies and operations teams",
     image: "https://www.tecnotitan.com/assets/bg-hero-tech.jpg"
   },
@@ -3027,6 +3038,8 @@ const productStructuredSeo = {
     name: "Life Copilot",
     description: "Aplicación móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones.",
     category: "AI productivity app",
+    applicationCategory: "ProductivityApplication",
+    operatingSystem: "iOS, Android, Web",
     audience: "Professionals and consumers",
     image: "https://www.tecnotitan.com/assets/bg-capabilities-tech.jpg"
   },
@@ -3034,6 +3047,8 @@ const productStructuredSeo = {
     name: "Tecnotitan Engine",
     description: "Motor y toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados.",
     category: "Game engine and interactive toolkit",
+    applicationCategory: "GameApplication",
+    operatingSystem: "Web, Windows, macOS",
     audience: "Game studios, brands and enterprise training teams",
     image: "https://www.tecnotitan.com/assets/bg-games-experiences.jpg"
   },
@@ -3041,6 +3056,8 @@ const productStructuredSeo = {
     name: "Academia Tecnotitan",
     description: "Plataforma de aprendizaje para inteligencia artificial, software, videojuegos, robótica y transformación tecnológica.",
     category: "Technology education platform",
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "Web",
     audience: "Students, professionals and companies",
     image: "https://www.tecnotitan.com/assets/bg-capabilities-tech.jpg"
   },
@@ -3048,6 +3065,8 @@ const productStructuredSeo = {
     name: "Call Center AI Tecnotitan",
     description: "Agentes conversacionales para soporte, ventas, seguimiento de clientes y automatización de contact centers.",
     category: "AI customer support platform",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
     audience: "Sales, support and contact center teams",
     image: "https://www.tecnotitan.com/assets/bg-process-ai.jpg"
   }
