@@ -2048,6 +2048,41 @@ function trackServiceEvent(event, details = {}) {
   }).catch(() => {});
 }
 
+function getTrafficVisitorId() {
+  const storageKey = "tecnotitan-traffic-visitor";
+  let visitorId = localStorage.getItem(storageKey);
+
+  if (!visitorId) {
+    visitorId = crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    localStorage.setItem(storageKey, visitorId);
+  }
+
+  return visitorId;
+}
+
+function trackSitePageView() {
+  const payload = JSON.stringify({
+    language: activeLanguage,
+    path: window.location.pathname || "/",
+    referrer: document.referrer || "direct",
+    visitorId: getTrafficVisitorId()
+  });
+
+  if (navigator.sendBeacon) {
+    navigator.sendBeacon("/api/traffic-track", new Blob([payload], { type: "application/json" }));
+    return;
+  }
+
+  fetch("/api/traffic-track", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: payload,
+    keepalive: true
+  }).catch(() => {});
+}
+
 function updateDeckViewer(language, options = {}) {
   const safeLanguage = deckFileLanguages.includes(language) ? language : "es";
   activeDeckLanguage = safeLanguage;
@@ -4137,6 +4172,7 @@ function buildPrivacyConsent() {
 buildLanguageSwitcher();
 buildPrivacyConsent();
 applyLanguage(activeLanguage);
+trackSitePageView();
 prefillServiceRequestForm();
 enhanceContactForms();
 

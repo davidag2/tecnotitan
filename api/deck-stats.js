@@ -5,7 +5,12 @@ const KV_URL = process.env.KV_REST_API_URL || "";
 const KV_TOKEN = process.env.KV_REST_API_TOKEN || "";
 
 function getToday() {
-  return new Date().toISOString().slice(0, 10);
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Bogota",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date());
 }
 
 function memoryStore() {
