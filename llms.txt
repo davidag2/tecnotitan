@@ -14,6 +14,9 @@ Tecnotitan is a technology company based in Colombia with global ambition. The c
 - Services: https://www.tecnotitan.com/servicios.html
 - Guides: https://www.tecnotitan.com/guias.html
 - Guide: How to use ChatGPT at work: https://www.tecnotitan.com/guia-como-usar-chatgpt-en-el-trabajo.html
+- Guide: Automating customer service with AI: https://www.tecnotitan.com/guia-automatizar-atencion-cliente-con-ia.html
+- Guide: Business software for SMBs: https://www.tecnotitan.com/guia-software-empresarial-para-pymes.html
+- Guide: ChatGPT prompts for B2B sales: https://www.tecnotitan.com/guia-prompts-chatgpt-ventas-b2b.html
 - Divisions: https://www.tecnotitan.com/divisiones.html
 - Investors: https://www.tecnotitan.com/inversionistas.html
 - Investor Deck: https://www.tecnotitan.com/investor-deck.html

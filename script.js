@@ -3819,6 +3819,11 @@ function applyLanguage(language) {
     button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
   });
 
+  document.querySelectorAll("[data-guide-lang]").forEach((section) => {
+    const isCurrent = section.dataset.guideLang === language;
+    section.hidden = !isCurrent;
+  });
+
   carryLanguageAcrossLinks(language);
 
   if (pageName === "index.html") {
@@ -4168,6 +4173,18 @@ const guidePageMetadata = {
     "guia-como-usar-chatgpt-en-el-trabajo.html": {
       title: "Como usar ChatGPT en el trabajo: guia practica para empresas | Tecnotitan",
       description: "Guia completa para usar ChatGPT en el trabajo: prompts, seguridad, ejemplos por area, politicas internas y casos de uso."
+    },
+    "guia-automatizar-atencion-cliente-con-ia.html": {
+      title: "Automatizar atencion al cliente con IA: guia para empresas | Tecnotitan",
+      description: "Guia para automatizar atencion al cliente con IA, agentes, escalamiento humano, metricas y flujos de soporte."
+    },
+    "guia-software-empresarial-para-pymes.html": {
+      title: "Software empresarial para pymes: guia de compra e implementacion | Tecnotitan",
+      description: "Guia para elegir software empresarial para pymes: CRM, dashboards, automatizacion, integraciones y seguridad."
+    },
+    "guia-prompts-chatgpt-ventas-b2b.html": {
+      title: "Prompts de ChatGPT para ventas B2B: guia practica | Tecnotitan",
+      description: "Prompts de ChatGPT para prospeccion B2B, investigacion de cuentas, correos, objeciones, reuniones y seguimiento."
     }
   },
   en: {
@@ -4178,6 +4195,18 @@ const guidePageMetadata = {
     "guia-como-usar-chatgpt-en-el-trabajo.html": {
       title: "How to use ChatGPT at work: practical guide for companies | Tecnotitan",
       description: "A complete guide to using ChatGPT at work with prompts, safety rules, business examples, internal policies and use cases."
+    },
+    "guia-automatizar-atencion-cliente-con-ia.html": {
+      title: "How to automate customer service with AI: business guide | Tecnotitan",
+      description: "Guide to AI customer service automation with agents, human escalation, support metrics and operating workflows."
+    },
+    "guia-software-empresarial-para-pymes.html": {
+      title: "Business software for SMBs: buying and implementation guide | Tecnotitan",
+      description: "Guide to choosing SMB software: CRM, dashboards, automation, integrations, security and adoption."
+    },
+    "guia-prompts-chatgpt-ventas-b2b.html": {
+      title: "ChatGPT prompts for B2B sales: practical guide | Tecnotitan",
+      description: "ChatGPT prompts for B2B prospecting, account research, sales emails, objections, meetings and follow-up."
     }
   },
   pt: {
@@ -4188,6 +4217,18 @@ const guidePageMetadata = {
     "guia-como-usar-chatgpt-en-el-trabajo.html": {
       title: "Como usar ChatGPT no trabalho: guia pratica para empresas | Tecnotitan",
       description: "Guia completa para usar ChatGPT no trabalho com prompts, seguranca, exemplos por area, politicas internas e casos de uso."
+    },
+    "guia-automatizar-atencion-cliente-con-ia.html": {
+      title: "Como automatizar atendimento ao cliente com IA: guia empresarial | Tecnotitan",
+      description: "Guia para automatizar atendimento com IA, agentes, escalamento humano, metricas e fluxos de suporte."
+    },
+    "guia-software-empresarial-para-pymes.html": {
+      title: "Software empresarial para pymes: guia de compra e implementacao | Tecnotitan",
+      description: "Guia para escolher software empresarial: CRM, dashboards, automacao, integracoes, seguranca e adocao."
+    },
+    "guia-prompts-chatgpt-ventas-b2b.html": {
+      title: "Prompts de ChatGPT para vendas B2B: guia pratica | Tecnotitan",
+      description: "Prompts para prospeccao B2B, pesquisa de contas, emails, objecoes, reunioes e acompanhamento."
     }
   },
   zh: {
@@ -4198,6 +4239,18 @@ const guidePageMetadata = {
     "guia-como-usar-chatgpt-en-el-trabajo.html": {
       title: "如何在工作中使用 ChatGPT：企业实用指南 | Tecnotitan",
       description: "关于在工作中安全、有效使用 ChatGPT 的企业指南，包含提示词、案例和内部政策。"
+    },
+    "guia-automatizar-atencion-cliente-con-ia.html": {
+      title: "如何用 AI 自动化客户服务：企业指南 | Tecnotitan",
+      description: "关于 AI 客服自动化、智能体、人工升级、支持指标和运营流程的指南。"
+    },
+    "guia-software-empresarial-para-pymes.html": {
+      title: "中小企业业务软件：采购与实施指南 | Tecnotitan",
+      description: "选择中小企业软件的指南：CRM、仪表盘、自动化、集成、安全和采用。"
+    },
+    "guia-prompts-chatgpt-ventas-b2b.html": {
+      title: "B2B 销售 ChatGPT 提示词：实用指南 | Tecnotitan",
+      description: "用于 B2B 开发、客户研究、销售邮件、异议处理、会议和跟进的 ChatGPT 提示词。"
     }
   },
   ja: {
@@ -4208,6 +4261,18 @@ const guidePageMetadata = {
     "guia-como-usar-chatgpt-en-el-trabajo.html": {
       title: "仕事で ChatGPT を使う方法：企業向け実践ガイド | Tecnotitan",
       description: "プロンプト、安全性、部門別の例、社内ポリシーを含む ChatGPT 活用ガイド。"
+    },
+    "guia-automatizar-atencion-cliente-con-ia.html": {
+      title: "AI でカスタマーサービスを自動化する方法 | Tecnotitan",
+      description: "AI エージェント、人への引き継ぎ、サポート指標、運用フローの実践ガイド。"
+    },
+    "guia-software-empresarial-para-pymes.html": {
+      title: "中小企業向け業務ソフトウェア：購入と導入ガイド | Tecnotitan",
+      description: "CRM、ダッシュボード、自動化、連携、セキュリティ、定着を評価するガイド。"
+    },
+    "guia-prompts-chatgpt-ventas-b2b.html": {
+      title: "B2B 営業向け ChatGPT プロンプト実践ガイド | Tecnotitan",
+      description: "アカウント調査、営業メール、反論対応、商談準備、フォローアップのプロンプト。"
     }
   },
   ko: {
@@ -4218,6 +4283,18 @@ const guidePageMetadata = {
     "guia-como-usar-chatgpt-en-el-trabajo.html": {
       title: "업무에서 ChatGPT를 사용하는 방법: 기업 실무 가이드 | Tecnotitan",
       description: "프롬프트, 보안, 부서별 사례, 내부 정책을 포함한 기업용 ChatGPT 활용 가이드."
+    },
+    "guia-automatizar-atencion-cliente-con-ia.html": {
+      title: "AI로 고객 서비스를 자동화하는 방법: 기업 가이드 | Tecnotitan",
+      description: "AI 상담, 사람 에스컬레이션, 지원 지표와 운영 흐름을 다루는 가이드."
+    },
+    "guia-software-empresarial-para-pymes.html": {
+      title: "중소기업용 업무 소프트웨어: 구매와 도입 가이드 | Tecnotitan",
+      description: "CRM, 대시보드, 자동화, 통합, 보안, 도입을 평가하는 가이드."
+    },
+    "guia-prompts-chatgpt-ventas-b2b.html": {
+      title: "B2B 영업을 위한 ChatGPT 프롬프트 실무 가이드 | Tecnotitan",
+      description: "잠재고객 발굴, 계정 조사, 이메일, 반론 처리, 미팅과 후속 조치 프롬프트."
     }
   }
 };
