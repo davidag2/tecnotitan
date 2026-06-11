@@ -3674,6 +3674,127 @@ function buildLanguageSwitcher() {
   document.body.appendChild(switcher);
 }
 
+const guideChromeTranslations = {
+  "guia-como-usar-chatgpt-en-el-trabajo.html": {
+    es: {
+      label: "Guia Tecnotitan / Inteligencia artificial en el trabajo",
+      title: "Como usar ChatGPT en el trabajo: guia practica para empresas",
+      intro: "Un manual para usar ChatGPT con productividad, criterio y seguridad en ventas, soporte, documentos, reuniones, analisis y automatizacion.",
+      meta: ["Actualizado: junio 2026", "Lectura: 18 min", "PDF descargable"],
+      actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia"],
+      sidebarTitle: "En esta guia",
+      sidebar: ["Que es ChatGPT en el trabajo", "Reglas de uso responsable", "Como escribir buenos prompts", "Casos por area de empresa", "Politica interna sugerida", "Checklist para empezar"]
+    },
+    en: {
+      label: "Tecnotitan Guide / AI at work",
+      title: "How to use ChatGPT at work: a practical guide for companies",
+      intro: "A manual for using ChatGPT with productivity, judgment and safety across sales, support, documents, meetings, analysis and automation.",
+      meta: ["Updated: June 2026", "Reading time: 18 min", "Downloadable PDF"],
+      actions: ["Download PDF", "Save as PDF", "Share guide"],
+      sidebarTitle: "In this guide",
+      sidebar: ["What ChatGPT means at work", "Responsible use rules", "How to write prompts", "Use cases by area", "Suggested internal policy", "Start this week"]
+    },
+    pt: {
+      label: "Guia Tecnotitan / IA no trabalho",
+      title: "Como usar ChatGPT no trabalho: guia pratica para empresas",
+      intro: "Um manual para usar ChatGPT com produtividade, criterio e seguranca em vendas, suporte, documentos, reunioes, analise e automacao.",
+      meta: ["Atualizado: junho de 2026", "Leitura: 18 min", "PDF para baixar"],
+      actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia"],
+      sidebarTitle: "Neste guia",
+      sidebar: ["O que e ChatGPT no trabalho", "Regras de uso responsavel", "Como escrever bons prompts", "Casos por area", "Politica interna sugerida", "Checklist para comecar"]
+    },
+    zh: {
+      label: "Tecnotitan 指南 / 工作中的 AI",
+      title: "如何在工作中使用 ChatGPT：企业实用指南",
+      intro: "一本帮助团队在销售、支持、文档、会议、分析和自动化中安全、高效使用 ChatGPT 的指南。",
+      meta: ["更新：2026 年 6 月", "阅读时间：18 分钟", "可下载 PDF"],
+      actions: ["下载 PDF", "保存为 PDF", "分享指南"],
+      sidebarTitle: "本指南内容",
+      sidebar: ["工作中的 ChatGPT 是什么", "负责任使用规则", "如何写好提示词", "各部门用例", "建议的内部政策", "本周开始清单"]
+    },
+    ja: {
+      label: "Tecnotitan ガイド / 仕事で使う AI",
+      title: "仕事で ChatGPT を使う方法：企業向け実践ガイド",
+      intro: "営業、サポート、文書、会議、分析、自動化で ChatGPT を安全かつ生産的に使うためのガイドです。",
+      meta: ["更新：2026年6月", "読了時間：18分", "PDF ダウンロード"],
+      actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有"],
+      sidebarTitle: "このガイド",
+      sidebar: ["仕事での ChatGPT とは", "責任ある利用ルール", "良いプロンプトの書き方", "部門別ユースケース", "推奨社内ポリシー", "今週始めるチェックリスト"]
+    },
+    ko: {
+      label: "Tecnotitan 가이드 / 업무용 AI",
+      title: "업무에서 ChatGPT를 사용하는 방법: 기업 실무 가이드",
+      intro: "영업, 지원, 문서, 회의, 분석, 자동화에서 ChatGPT를 생산적이고 안전하게 쓰기 위한 가이드입니다.",
+      meta: ["업데이트: 2026년 6월", "읽는 시간: 18분", "PDF 다운로드"],
+      actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유"],
+      sidebarTitle: "이 가이드",
+      sidebar: ["업무에서 ChatGPT란", "책임 있는 사용 규칙", "좋은 프롬프트 작성법", "부서별 활용 사례", "권장 내부 정책", "이번 주 시작 체크리스트"]
+    }
+  },
+  "guia-automatizar-atencion-cliente-con-ia.html": {
+    es: { label: "Guia Tecnotitan / IA para soporte", title: "Automatizar atencion al cliente con IA sin perder calidad humana", intro: "Una guia para empresas que quieren responder mas rapido, ordenar solicitudes y escalar casos complejos con agentes inteligentes.", meta: ["Actualizado: junio 2026", "Lectura: 16 min", "6 idiomas"], actions: ["Guardar como PDF", "Compartir guia", "Ver Call Center AI"], sidebarTitle: "En esta guia", sidebar: ["Modelo operativo", "Datos y conocimiento", "Escalamiento humano", "Metricas", "Checklist"] },
+    en: { label: "Tecnotitan Guide / AI support", title: "Automate customer service with AI without losing human quality", intro: "A guide for companies that want faster responses, cleaner request handling and smarter escalation with AI agents.", meta: ["Updated: June 2026", "Reading time: 16 min", "6 languages"], actions: ["Save as PDF", "Share guide", "View Call Center AI"], sidebarTitle: "In this guide", sidebar: ["Operating model", "Data and knowledge", "Human escalation", "Metrics", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / IA para suporte", title: "Automatizar atendimento ao cliente com IA sem perder qualidade humana", intro: "Guia para empresas que querem responder mais rapido, organizar solicitacoes e escalar casos complexos com agentes inteligentes.", meta: ["Atualizado: junho de 2026", "Leitura: 16 min", "6 idiomas"], actions: ["Salvar como PDF", "Compartilhar guia", "Ver Call Center AI"], sidebarTitle: "Neste guia", sidebar: ["Modelo operacional", "Dados e conhecimento", "Escalamento humano", "Metricas", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / AI 客服", title: "用 AI 自动化客户服务，同时保留人工服务质量", intro: "帮助企业更快响应、整理请求并用智能体升级复杂案例的指南。", meta: ["更新：2026 年 6 月", "阅读时间：16 分钟", "6 种语言"], actions: ["保存为 PDF", "分享指南", "查看 Call Center AI"], sidebarTitle: "本指南内容", sidebar: ["运营模型", "数据与知识", "人工升级", "指标", "清单"] },
+    ja: { label: "Tecnotitan ガイド / AI サポート", title: "人の品質を保ちながら AI でカスタマーサービスを自動化する", intro: "AI エージェントで応答を速め、問い合わせを整理し、複雑な案件を引き継ぐためのガイドです。", meta: ["更新：2026年6月", "読了時間：16分", "6言語"], actions: ["PDF として保存", "ガイドを共有", "Call Center AI を見る"], sidebarTitle: "このガイド", sidebar: ["運用モデル", "データと知識", "人への引き継ぎ", "指標", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / AI 지원", title: "고객 서비스 품질을 유지하며 AI로 자동화하기", intro: "AI 에이전트로 더 빠르게 응답하고 요청을 정리하며 복잡한 케이스를 사람에게 넘기는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 16분", "6개 언어"], actions: ["PDF로 저장", "가이드 공유", "Call Center AI 보기"], sidebarTitle: "이 가이드", sidebar: ["운영 모델", "데이터와 지식", "사람 에스컬레이션", "지표", "체크리스트"] }
+  },
+  "guia-software-empresarial-para-pymes.html": {
+    es: { label: "Guia Tecnotitan / Software empresarial", title: "Software empresarial para pymes: como elegir sin comprar problemas", intro: "Una guia para evaluar sistemas, costos, integraciones, datos y adopcion antes de invertir en una plataforma.", meta: ["Actualizado: junio 2026", "Lectura: 15 min", "6 idiomas"], actions: ["Guardar como PDF", "Compartir guia", "Ver Tecnotitan OS"], sidebarTitle: "En esta guia", sidebar: ["Diagnostico", "Compra vs construccion", "Integraciones", "Seguridad", "Checklist"] },
+    en: { label: "Tecnotitan Guide / Business software", title: "Business software for SMBs: how to choose without buying problems", intro: "A guide to evaluate systems, costs, integrations, data and adoption before investing in a platform.", meta: ["Updated: June 2026", "Reading time: 15 min", "6 languages"], actions: ["Save as PDF", "Share guide", "View Tecnotitan OS"], sidebarTitle: "In this guide", sidebar: ["Diagnosis", "Buy vs build", "Integrations", "Security", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / Software empresarial", title: "Software empresarial para pymes: como escolher sem comprar problemas", intro: "Guia para avaliar sistemas, custos, integracoes, dados e adocao antes de investir em uma plataforma.", meta: ["Atualizado: junho de 2026", "Leitura: 15 min", "6 idiomas"], actions: ["Salvar como PDF", "Compartilhar guia", "Ver Tecnotitan OS"], sidebarTitle: "Neste guia", sidebar: ["Diagnostico", "Comprar vs construir", "Integracoes", "Seguranca", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / 企业软件", title: "中小企业业务软件：如何选择而不是购买麻烦", intro: "在投资平台之前评估系统、成本、集成、数据和采用情况的指南。", meta: ["更新：2026 年 6 月", "阅读时间：15 分钟", "6 种语言"], actions: ["保存为 PDF", "分享指南", "查看 Tecnotitan OS"], sidebarTitle: "本指南内容", sidebar: ["诊断", "购买或构建", "集成", "安全", "清单"] },
+    ja: { label: "Tecnotitan ガイド / 業務ソフトウェア", title: "中小企業向け業務ソフトウェア：問題を買わない選び方", intro: "プラットフォーム投資前に、システム、コスト、連携、データ、定着を評価するためのガイドです。", meta: ["更新：2026年6月", "読了時間：15分", "6言語"], actions: ["PDF として保存", "ガイドを共有", "Tecnotitan OS を見る"], sidebarTitle: "このガイド", sidebar: ["診断", "購入 vs 構築", "連携", "セキュリティ", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / 업무 소프트웨어", title: "중소기업용 업무 소프트웨어: 문제를 사지 않는 선택법", intro: "플랫폼 투자 전에 시스템, 비용, 통합, 데이터, 도입을 평가하는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 15분", "6개 언어"], actions: ["PDF로 저장", "가이드 공유", "Tecnotitan OS 보기"], sidebarTitle: "이 가이드", sidebar: ["진단", "구매 vs 구축", "통합", "보안", "체크리스트"] }
+  },
+  "guia-prompts-chatgpt-ventas-b2b.html": {
+    es: { label: "Guia Tecnotitan / Ventas con IA", title: "Prompts de ChatGPT para ventas B2B que no suenan genericos", intro: "Una biblioteca practica para investigar cuentas, preparar reuniones, responder objeciones y escribir seguimiento comercial con mas precision.", meta: ["Actualizado: junio 2026", "Lectura: 14 min", "6 idiomas"], actions: ["Guardar como PDF", "Compartir guia", "Ver Copiloto Pyme"], sidebarTitle: "En esta guia", sidebar: ["Investigacion", "Correos", "Objeciones", "Reuniones", "Seguimiento"] },
+    en: { label: "Tecnotitan Guide / AI sales", title: "ChatGPT prompts for B2B sales that do not sound generic", intro: "A practical library for account research, meeting prep, objection handling and sharper commercial follow-up.", meta: ["Updated: June 2026", "Reading time: 14 min", "6 languages"], actions: ["Save as PDF", "Share guide", "View Copiloto Pyme"], sidebarTitle: "In this guide", sidebar: ["Research", "Emails", "Objections", "Meetings", "Follow-up"] },
+    pt: { label: "Guia Tecnotitan / Vendas com IA", title: "Prompts de ChatGPT para vendas B2B que nao soam genericos", intro: "Biblioteca pratica para pesquisar contas, preparar reunioes, responder objecoes e fazer acompanhamento comercial.", meta: ["Atualizado: junho de 2026", "Leitura: 14 min", "6 idiomas"], actions: ["Salvar como PDF", "Compartilhar guia", "Ver Copiloto Pyme"], sidebarTitle: "Neste guia", sidebar: ["Pesquisa", "Emails", "Objecoes", "Reunioes", "Acompanhamento"] },
+    zh: { label: "Tecnotitan 指南 / AI 销售", title: "不会显得模板化的 B2B 销售 ChatGPT 提示词", intro: "用于客户研究、会议准备、异议处理和更精准商业跟进的实用提示词库。", meta: ["更新：2026 年 6 月", "阅读时间：14 分钟", "6 种语言"], actions: ["保存为 PDF", "分享指南", "查看 Copiloto Pyme"], sidebarTitle: "本指南内容", sidebar: ["研究", "邮件", "异议", "会议", "跟进"] },
+    ja: { label: "Tecnotitan ガイド / AI 営業", title: "汎用的に聞こえない B2B 営業向け ChatGPT プロンプト", intro: "アカウント調査、商談準備、反論対応、フォローアップをより具体的にするプロンプト集です。", meta: ["更新：2026年6月", "読了時間：14分", "6言語"], actions: ["PDF として保存", "ガイドを共有", "Copiloto Pyme を見る"], sidebarTitle: "このガイド", sidebar: ["調査", "メール", "反論", "商談", "フォロー"] },
+    ko: { label: "Tecnotitan 가이드 / AI 영업", title: "뻔하게 들리지 않는 B2B 영업용 ChatGPT 프롬프트", intro: "계정 조사, 미팅 준비, 반론 처리, 더 정확한 영업 후속 조치를 위한 실용 프롬프트 모음입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 14분", "6개 언어"], actions: ["PDF로 저장", "가이드 공유", "Copiloto Pyme 보기"], sidebarTitle: "이 가이드", sidebar: ["조사", "이메일", "반론", "미팅", "후속 조치"] }
+  }
+};
+
+function updateGuideChrome(language) {
+  const guide = guideChromeTranslations[pageName]?.[language] || guideChromeTranslations[pageName]?.es;
+  if (!guide) {
+    return;
+  }
+
+  const heroRoot = document.querySelector(".guide-hero-inner > [data-guide-lang]") || document.querySelector(".guide-hero-inner");
+  document.querySelectorAll(".guide-hero-inner > [data-guide-lang]").forEach((block, index) => {
+    block.hidden = index !== 0;
+  });
+  setText(".page-label", guide.label, heroRoot);
+  setText("h1", guide.title, heroRoot);
+  setText("p:not(.page-label)", guide.intro, heroRoot);
+
+  document.querySelectorAll(".guide-meta span").forEach((item, index) => {
+    if (guide.meta[index]) {
+      item.textContent = guide.meta[index];
+    }
+  });
+
+  document.querySelectorAll(".guide-actions .button").forEach((item, index) => {
+    if (guide.actions[index]) {
+      item.textContent = guide.actions[index];
+    }
+  });
+
+  const sidebarRoot = document.querySelector(".guide-sidebar > [data-guide-lang]") || document.querySelector(".guide-sidebar");
+  document.querySelectorAll(".guide-sidebar > [data-guide-lang]").forEach((block, index) => {
+    block.hidden = index !== 0;
+  });
+  setText("p", guide.sidebarTitle, sidebarRoot);
+  sidebarRoot?.querySelectorAll("nav a").forEach((item, index) => {
+    if (guide.sidebar[index]) {
+      item.textContent = guide.sidebar[index];
+    }
+  });
+}
+
 function applyLanguage(language) {
   const dictionary = languages[language] || languages.es;
   const page = dictionary.pages[pageName] || dictionary.pages["index.html"];
@@ -3819,7 +3940,9 @@ function applyLanguage(language) {
     button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
   });
 
-  document.querySelectorAll("[data-guide-lang]").forEach((section) => {
+  updateGuideChrome(language);
+
+  document.querySelectorAll(".guide-content [data-guide-lang]").forEach((section) => {
     const isCurrent = section.dataset.guideLang === language;
     section.hidden = !isCurrent;
   });
@@ -4397,9 +4520,19 @@ document.querySelectorAll("[data-share-guide]").forEach((button) => {
 
     try {
       await navigator.clipboard.writeText(window.location.href);
-      button.textContent = "Enlace copiado";
+      const copiedLabels = {
+        es: "Enlace copiado",
+        en: "Link copied",
+        pt: "Link copiado",
+        zh: "链接已复制",
+        ja: "リンクをコピーしました",
+        ko: "링크가 복사되었습니다"
+      };
+      button.textContent = copiedLabels[activeLanguage] || copiedLabels.es;
       setTimeout(() => {
-        button.textContent = "Compartir guia";
+        const guide = guideChromeTranslations[pageName]?.[activeLanguage] || guideChromeTranslations[pageName]?.es;
+        const actionIndex = Array.from(button.closest(".guide-actions")?.querySelectorAll(".button") || []).indexOf(button);
+        button.textContent = guide?.actions?.[actionIndex] || guide?.actions?.find((label) => /share|compart|共有|공유/.test(label.toLowerCase())) || "Compartir guia";
       }, 1800);
     } catch {
       window.prompt("Copia el enlace de la guia", window.location.href);
