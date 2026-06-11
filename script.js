@@ -2595,6 +2595,15 @@ const languageCarryPages = new Set([
   "software-para-pymes-con-inteligencia-artificial.html",
   "automatizar-atencion-cliente-con-ia.html",
   "consultoria-ia-para-empresas-colombia.html",
+  "guias.html",
+  "guia-como-usar-chatgpt-en-el-trabajo.html",
+  "guia-automatizar-atencion-cliente-con-ia.html",
+  "guia-software-empresarial-para-pymes.html",
+  "guia-prompts-chatgpt-ventas-b2b.html",
+  "guia-gobernanza-ia-empresas.html",
+  "guia-roi-automatizacion-ia.html",
+  "guia-crm-ia-ventas-soporte.html",
+  "guia-roadmap-transformacion-digital-pymes.html",
   "producto-copiloto-pyme.html",
   "producto-tecnotitan-os.html",
   "producto-life-copilot.html",
@@ -3751,28 +3760,60 @@ const guideChromeTranslations = {
     }
   },
   "guia-automatizar-atencion-cliente-con-ia.html": {
-    es: { label: "Guia Tecnotitan / IA para soporte", title: "Automatizar atencion al cliente con IA sin perder calidad humana", intro: "Una guia para empresas que quieren responder mas rapido, ordenar solicitudes y escalar casos complejos con agentes inteligentes.", meta: ["Actualizado: junio 2026", "Lectura: 16 min", "6 idiomas"], actions: ["Guardar como PDF", "Compartir guia", "Ver Call Center AI"], sidebarTitle: "En esta guia", sidebar: ["Modelo operativo", "Datos y conocimiento", "Escalamiento humano", "Metricas", "Checklist"] },
-    en: { label: "Tecnotitan Guide / AI support", title: "Automate customer service with AI without losing human quality", intro: "A guide for companies that want faster responses, cleaner request handling and smarter escalation with AI agents.", meta: ["Updated: June 2026", "Reading time: 16 min", "6 languages"], actions: ["Save as PDF", "Share guide", "View Call Center AI"], sidebarTitle: "In this guide", sidebar: ["Operating model", "Data and knowledge", "Human escalation", "Metrics", "Checklist"] },
-    pt: { label: "Guia Tecnotitan / IA para suporte", title: "Automatizar atendimento ao cliente com IA sem perder qualidade humana", intro: "Guia para empresas que querem responder mais rapido, organizar solicitacoes e escalar casos complexos com agentes inteligentes.", meta: ["Atualizado: junho de 2026", "Leitura: 16 min", "6 idiomas"], actions: ["Salvar como PDF", "Compartilhar guia", "Ver Call Center AI"], sidebarTitle: "Neste guia", sidebar: ["Modelo operacional", "Dados e conhecimento", "Escalamento humano", "Metricas", "Checklist"] },
-    zh: { label: "Tecnotitan 指南 / AI 客服", title: "用 AI 自动化客户服务，同时保留人工服务质量", intro: "帮助企业更快响应、整理请求并用智能体升级复杂案例的指南。", meta: ["更新：2026 年 6 月", "阅读时间：16 分钟", "6 种语言"], actions: ["保存为 PDF", "分享指南", "查看 Call Center AI"], sidebarTitle: "本指南内容", sidebar: ["运营模型", "数据与知识", "人工升级", "指标", "清单"] },
-    ja: { label: "Tecnotitan ガイド / AI サポート", title: "人の品質を保ちながら AI でカスタマーサービスを自動化する", intro: "AI エージェントで応答を速め、問い合わせを整理し、複雑な案件を引き継ぐためのガイドです。", meta: ["更新：2026年6月", "読了時間：16分", "6言語"], actions: ["PDF として保存", "ガイドを共有", "Call Center AI を見る"], sidebarTitle: "このガイド", sidebar: ["運用モデル", "データと知識", "人への引き継ぎ", "指標", "チェックリスト"] },
-    ko: { label: "Tecnotitan 가이드 / AI 지원", title: "고객 서비스 품질을 유지하며 AI로 자동화하기", intro: "AI 에이전트로 더 빠르게 응답하고 요청을 정리하며 복잡한 케이스를 사람에게 넘기는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 16분", "6개 언어"], actions: ["PDF로 저장", "가이드 공유", "Call Center AI 보기"], sidebarTitle: "이 가이드", sidebar: ["운영 모델", "데이터와 지식", "사람 에스컬레이션", "지표", "체크리스트"] }
+    es: { label: "Guia Tecnotitan / IA para soporte", title: "Automatizar atencion al cliente con IA sin perder calidad humana", intro: "Una guia para empresas que quieren responder mas rapido, ordenar solicitudes y escalar casos complejos con agentes inteligentes.", meta: ["Actualizado: junio 2026", "Lectura: 16 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver Call Center AI"], sidebarTitle: "En esta guia", sidebar: ["Modelo operativo", "Datos y conocimiento", "Escalamiento humano", "Metricas", "Checklist"] },
+    en: { label: "Tecnotitan Guide / AI support", title: "Automate customer service with AI without losing human quality", intro: "A guide for companies that want faster responses, cleaner request handling and smarter escalation with AI agents.", meta: ["Updated: June 2026", "Reading time: 16 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View Call Center AI"], sidebarTitle: "In this guide", sidebar: ["Operating model", "Data and knowledge", "Human escalation", "Metrics", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / IA para suporte", title: "Automatizar atendimento ao cliente com IA sem perder qualidade humana", intro: "Guia para empresas que querem responder mais rapido, organizar solicitacoes e escalar casos complexos com agentes inteligentes.", meta: ["Atualizado: junho de 2026", "Leitura: 16 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver Call Center AI"], sidebarTitle: "Neste guia", sidebar: ["Modelo operacional", "Dados e conhecimento", "Escalamento humano", "Metricas", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / AI 客服", title: "用 AI 自动化客户服务，同时保留人工服务质量", intro: "帮助企业更快响应、整理请求并用智能体升级复杂案例的指南。", meta: ["更新：2026 年 6 月", "阅读时间：16 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看 Call Center AI"], sidebarTitle: "本指南内容", sidebar: ["运营模型", "数据与知识", "人工升级", "指标", "清单"] },
+    ja: { label: "Tecnotitan ガイド / AI サポート", title: "人の品質を保ちながら AI でカスタマーサービスを自動化する", intro: "AI エージェントで応答を速め、問い合わせを整理し、複雑な案件を引き継ぐためのガイドです。", meta: ["更新：2026年6月", "読了時間：16分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "Call Center AI を見る"], sidebarTitle: "このガイド", sidebar: ["運用モデル", "データと知識", "人への引き継ぎ", "指標", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / AI 지원", title: "고객 서비스 품질을 유지하며 AI로 자동화하기", intro: "AI 에이전트로 더 빠르게 응답하고 요청을 정리하며 복잡한 케이스를 사람에게 넘기는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 16분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "Call Center AI 보기"], sidebarTitle: "이 가이드", sidebar: ["운영 모델", "데이터와 지식", "사람 에스컬레이션", "지표", "체크리스트"] }
   },
   "guia-software-empresarial-para-pymes.html": {
-    es: { label: "Guia Tecnotitan / Software empresarial", title: "Software empresarial para pymes: como elegir sin comprar problemas", intro: "Una guia para evaluar sistemas, costos, integraciones, datos y adopcion antes de invertir en una plataforma.", meta: ["Actualizado: junio 2026", "Lectura: 15 min", "6 idiomas"], actions: ["Guardar como PDF", "Compartir guia", "Ver Tecnotitan OS"], sidebarTitle: "En esta guia", sidebar: ["Diagnostico", "Compra vs construccion", "Integraciones", "Seguridad", "Checklist"] },
-    en: { label: "Tecnotitan Guide / Business software", title: "Business software for SMBs: how to choose without buying problems", intro: "A guide to evaluate systems, costs, integrations, data and adoption before investing in a platform.", meta: ["Updated: June 2026", "Reading time: 15 min", "6 languages"], actions: ["Save as PDF", "Share guide", "View Tecnotitan OS"], sidebarTitle: "In this guide", sidebar: ["Diagnosis", "Buy vs build", "Integrations", "Security", "Checklist"] },
-    pt: { label: "Guia Tecnotitan / Software empresarial", title: "Software empresarial para pymes: como escolher sem comprar problemas", intro: "Guia para avaliar sistemas, custos, integracoes, dados e adocao antes de investir em uma plataforma.", meta: ["Atualizado: junho de 2026", "Leitura: 15 min", "6 idiomas"], actions: ["Salvar como PDF", "Compartilhar guia", "Ver Tecnotitan OS"], sidebarTitle: "Neste guia", sidebar: ["Diagnostico", "Comprar vs construir", "Integracoes", "Seguranca", "Checklist"] },
-    zh: { label: "Tecnotitan 指南 / 企业软件", title: "中小企业业务软件：如何选择而不是购买麻烦", intro: "在投资平台之前评估系统、成本、集成、数据和采用情况的指南。", meta: ["更新：2026 年 6 月", "阅读时间：15 分钟", "6 种语言"], actions: ["保存为 PDF", "分享指南", "查看 Tecnotitan OS"], sidebarTitle: "本指南内容", sidebar: ["诊断", "购买或构建", "集成", "安全", "清单"] },
-    ja: { label: "Tecnotitan ガイド / 業務ソフトウェア", title: "中小企業向け業務ソフトウェア：問題を買わない選び方", intro: "プラットフォーム投資前に、システム、コスト、連携、データ、定着を評価するためのガイドです。", meta: ["更新：2026年6月", "読了時間：15分", "6言語"], actions: ["PDF として保存", "ガイドを共有", "Tecnotitan OS を見る"], sidebarTitle: "このガイド", sidebar: ["診断", "購入 vs 構築", "連携", "セキュリティ", "チェックリスト"] },
-    ko: { label: "Tecnotitan 가이드 / 업무 소프트웨어", title: "중소기업용 업무 소프트웨어: 문제를 사지 않는 선택법", intro: "플랫폼 투자 전에 시스템, 비용, 통합, 데이터, 도입을 평가하는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 15분", "6개 언어"], actions: ["PDF로 저장", "가이드 공유", "Tecnotitan OS 보기"], sidebarTitle: "이 가이드", sidebar: ["진단", "구매 vs 구축", "통합", "보안", "체크리스트"] }
+    es: { label: "Guia Tecnotitan / Software empresarial", title: "Software empresarial para pymes: como elegir sin comprar problemas", intro: "Una guia para evaluar sistemas, costos, integraciones, datos y adopcion antes de invertir en una plataforma.", meta: ["Actualizado: junio 2026", "Lectura: 15 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver Tecnotitan OS"], sidebarTitle: "En esta guia", sidebar: ["Diagnostico", "Compra vs construccion", "Integraciones", "Seguridad", "Checklist"] },
+    en: { label: "Tecnotitan Guide / Business software", title: "Business software for SMBs: how to choose without buying problems", intro: "A guide to evaluate systems, costs, integrations, data and adoption before investing in a platform.", meta: ["Updated: June 2026", "Reading time: 15 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View Tecnotitan OS"], sidebarTitle: "In this guide", sidebar: ["Diagnosis", "Buy vs build", "Integrations", "Security", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / Software empresarial", title: "Software empresarial para pymes: como escolher sem comprar problemas", intro: "Guia para avaliar sistemas, custos, integracoes, dados e adocao antes de investir em uma plataforma.", meta: ["Atualizado: junho de 2026", "Leitura: 15 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver Tecnotitan OS"], sidebarTitle: "Neste guia", sidebar: ["Diagnostico", "Comprar vs construir", "Integracoes", "Seguranca", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / 企业软件", title: "中小企业业务软件：如何选择而不是购买麻烦", intro: "在投资平台之前评估系统、成本、集成、数据和采用情况的指南。", meta: ["更新：2026 年 6 月", "阅读时间：15 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看 Tecnotitan OS"], sidebarTitle: "本指南内容", sidebar: ["诊断", "购买或构建", "集成", "安全", "清单"] },
+    ja: { label: "Tecnotitan ガイド / 業務ソフトウェア", title: "中小企業向け業務ソフトウェア：問題を買わない選び方", intro: "プラットフォーム投資前に、システム、コスト、連携、データ、定着を評価するためのガイドです。", meta: ["更新：2026年6月", "読了時間：15分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "Tecnotitan OS を見る"], sidebarTitle: "このガイド", sidebar: ["診断", "購入 vs 構築", "連携", "セキュリティ", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / 업무 소프트웨어", title: "중소기업용 업무 소프트웨어: 문제를 사지 않는 선택법", intro: "플랫폼 투자 전에 시스템, 비용, 통합, 데이터, 도입을 평가하는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 15분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "Tecnotitan OS 보기"], sidebarTitle: "이 가이드", sidebar: ["진단", "구매 vs 구축", "통합", "보안", "체크리스트"] }
   },
   "guia-prompts-chatgpt-ventas-b2b.html": {
-    es: { label: "Guia Tecnotitan / Ventas con IA", title: "Prompts de ChatGPT para ventas B2B que no suenan genericos", intro: "Una biblioteca practica para investigar cuentas, preparar reuniones, responder objeciones y escribir seguimiento comercial con mas precision.", meta: ["Actualizado: junio 2026", "Lectura: 14 min", "6 idiomas"], actions: ["Guardar como PDF", "Compartir guia", "Ver Copiloto Pyme"], sidebarTitle: "En esta guia", sidebar: ["Investigacion", "Correos", "Objeciones", "Reuniones", "Seguimiento"] },
-    en: { label: "Tecnotitan Guide / AI sales", title: "ChatGPT prompts for B2B sales that do not sound generic", intro: "A practical library for account research, meeting prep, objection handling and sharper commercial follow-up.", meta: ["Updated: June 2026", "Reading time: 14 min", "6 languages"], actions: ["Save as PDF", "Share guide", "View Copiloto Pyme"], sidebarTitle: "In this guide", sidebar: ["Research", "Emails", "Objections", "Meetings", "Follow-up"] },
-    pt: { label: "Guia Tecnotitan / Vendas com IA", title: "Prompts de ChatGPT para vendas B2B que nao soam genericos", intro: "Biblioteca pratica para pesquisar contas, preparar reunioes, responder objecoes e fazer acompanhamento comercial.", meta: ["Atualizado: junho de 2026", "Leitura: 14 min", "6 idiomas"], actions: ["Salvar como PDF", "Compartilhar guia", "Ver Copiloto Pyme"], sidebarTitle: "Neste guia", sidebar: ["Pesquisa", "Emails", "Objecoes", "Reunioes", "Acompanhamento"] },
-    zh: { label: "Tecnotitan 指南 / AI 销售", title: "不会显得模板化的 B2B 销售 ChatGPT 提示词", intro: "用于客户研究、会议准备、异议处理和更精准商业跟进的实用提示词库。", meta: ["更新：2026 年 6 月", "阅读时间：14 分钟", "6 种语言"], actions: ["保存为 PDF", "分享指南", "查看 Copiloto Pyme"], sidebarTitle: "本指南内容", sidebar: ["研究", "邮件", "异议", "会议", "跟进"] },
-    ja: { label: "Tecnotitan ガイド / AI 営業", title: "汎用的に聞こえない B2B 営業向け ChatGPT プロンプト", intro: "アカウント調査、商談準備、反論対応、フォローアップをより具体的にするプロンプト集です。", meta: ["更新：2026年6月", "読了時間：14分", "6言語"], actions: ["PDF として保存", "ガイドを共有", "Copiloto Pyme を見る"], sidebarTitle: "このガイド", sidebar: ["調査", "メール", "反論", "商談", "フォロー"] },
-    ko: { label: "Tecnotitan 가이드 / AI 영업", title: "뻔하게 들리지 않는 B2B 영업용 ChatGPT 프롬프트", intro: "계정 조사, 미팅 준비, 반론 처리, 더 정확한 영업 후속 조치를 위한 실용 프롬프트 모음입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 14분", "6개 언어"], actions: ["PDF로 저장", "가이드 공유", "Copiloto Pyme 보기"], sidebarTitle: "이 가이드", sidebar: ["조사", "이메일", "반론", "미팅", "후속 조치"] }
+    es: { label: "Guia Tecnotitan / Ventas con IA", title: "Prompts de ChatGPT para ventas B2B que no suenan genericos", intro: "Una biblioteca practica para investigar cuentas, preparar reuniones, responder objeciones y escribir seguimiento comercial con mas precision.", meta: ["Actualizado: junio 2026", "Lectura: 14 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver Copiloto Pyme"], sidebarTitle: "En esta guia", sidebar: ["Investigacion", "Correos", "Objeciones", "Reuniones", "Seguimiento"] },
+    en: { label: "Tecnotitan Guide / AI sales", title: "ChatGPT prompts for B2B sales that do not sound generic", intro: "A practical library for account research, meeting prep, objection handling and sharper commercial follow-up.", meta: ["Updated: June 2026", "Reading time: 14 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View Copiloto Pyme"], sidebarTitle: "In this guide", sidebar: ["Research", "Emails", "Objections", "Meetings", "Follow-up"] },
+    pt: { label: "Guia Tecnotitan / Vendas com IA", title: "Prompts de ChatGPT para vendas B2B que nao soam genericos", intro: "Biblioteca pratica para pesquisar contas, preparar reunioes, responder objecoes e fazer acompanhamento comercial.", meta: ["Atualizado: junho de 2026", "Leitura: 14 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver Copiloto Pyme"], sidebarTitle: "Neste guia", sidebar: ["Pesquisa", "Emails", "Objecoes", "Reunioes", "Acompanhamento"] },
+    zh: { label: "Tecnotitan 指南 / AI 销售", title: "不会显得模板化的 B2B 销售 ChatGPT 提示词", intro: "用于客户研究、会议准备、异议处理和更精准商业跟进的实用提示词库。", meta: ["更新：2026 年 6 月", "阅读时间：14 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看 Copiloto Pyme"], sidebarTitle: "本指南内容", sidebar: ["研究", "邮件", "异议", "会议", "跟进"] },
+    ja: { label: "Tecnotitan ガイド / AI 営業", title: "汎用的に聞こえない B2B 営業向け ChatGPT プロンプト", intro: "アカウント調査、商談準備、反論対応、フォローアップをより具体的にするプロンプト集です。", meta: ["更新：2026年6月", "読了時間：14分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "Copiloto Pyme を見る"], sidebarTitle: "このガイド", sidebar: ["調査", "メール", "反論", "商談", "フォロー"] },
+    ko: { label: "Tecnotitan 가이드 / AI 영업", title: "뻔하게 들리지 않는 B2B 영업용 ChatGPT 프롬프트", intro: "계정 조사, 미팅 준비, 반론 처리, 더 정확한 영업 후속 조치를 위한 실용 프롬프트 모음입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 14분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "Copiloto Pyme 보기"], sidebarTitle: "이 가이드", sidebar: ["조사", "이메일", "반론", "미팅", "후속 조치"] }
+  },
+  "guia-gobernanza-ia-empresas.html": {
+    es: { label: "Guia Tecnotitan / Gobernanza de IA", title: "Gobernanza de IA para empresas: como innovar con control", intro: "Una guia para crear reglas, responsables, permisos y controles antes de conectar IA a procesos reales.", meta: ["Actualizado: junio 2026", "Lectura: 15 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver servicios IA"], sidebarTitle: "En esta guia", sidebar: ["Politica", "Datos", "Riesgos", "Responsables", "Checklist"] },
+    en: { label: "Tecnotitan Guide / AI governance", title: "AI governance for companies: innovate with control", intro: "A guide for creating rules, owners, permissions and controls before connecting AI to real business processes.", meta: ["Updated: June 2026", "Reading time: 15 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View AI services"], sidebarTitle: "In this guide", sidebar: ["Policy", "Data", "Risks", "Owners", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / Governanca de IA", title: "Governanca de IA para empresas: inovar com controle", intro: "Guia para criar regras, responsaveis, permissoes e controles antes de conectar IA a processos reais.", meta: ["Atualizado: junho de 2026", "Leitura: 15 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver servicos IA"], sidebarTitle: "Neste guia", sidebar: ["Politica", "Dados", "Riscos", "Responsaveis", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / AI 治理", title: "企业 AI 治理：在控制中创新", intro: "在将 AI 连接到真实业务流程之前，建立规则、负责人、权限和控制。", meta: ["更新：2026 年 6 月", "阅读时间：15 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看 AI 服务"], sidebarTitle: "本指南内容", sidebar: ["政策", "数据", "风险", "负责人", "清单"] },
+    ja: { label: "Tecnotitan ガイド / AI ガバナンス", title: "企業向け AI ガバナンス：管理しながら革新する", intro: "AI を業務プロセスに接続する前に、ルール、責任者、権限、管理を作るためのガイドです。", meta: ["更新：2026年6月", "読了時間：15分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "AI サービスを見る"], sidebarTitle: "このガイド", sidebar: ["ポリシー", "データ", "リスク", "責任者", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / AI 거버넌스", title: "기업 AI 거버넌스: 통제 속에서 혁신하기", intro: "AI를 실제 업무 프로세스에 연결하기 전에 규칙, 책임자, 권한, 통제를 만드는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 15분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "AI 서비스 보기"], sidebarTitle: "이 가이드", sidebar: ["정책", "데이터", "위험", "책임자", "체크리스트"] }
+  },
+  "guia-roi-automatizacion-ia.html": {
+    es: { label: "Guia Tecnotitan / ROI de IA", title: "ROI de automatizacion con IA: como medir valor real", intro: "Una guia para priorizar automatizaciones por impacto, costo, riesgo y capacidad de adopcion.", meta: ["Actualizado: junio 2026", "Lectura: 14 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver servicios"], sidebarTitle: "En esta guia", sidebar: ["Formula", "Costos", "Impacto", "Tablero", "Checklist"] },
+    en: { label: "Tecnotitan Guide / AI ROI", title: "AI automation ROI: how to measure real value", intro: "A guide to prioritize automations by impact, cost, risk and adoption capacity.", meta: ["Updated: June 2026", "Reading time: 14 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View services"], sidebarTitle: "In this guide", sidebar: ["Formula", "Costs", "Impact", "Dashboard", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / ROI de IA", title: "ROI de automacao com IA: como medir valor real", intro: "Guia para priorizar automacoes por impacto, custo, risco e capacidade de adocao.", meta: ["Atualizado: junho de 2026", "Leitura: 14 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver servicos"], sidebarTitle: "Neste guia", sidebar: ["Formula", "Custos", "Impacto", "Painel", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / AI ROI", title: "AI 自动化 ROI：如何衡量真实价值", intro: "按影响、成本、风险和采用能力优先排序自动化项目。", meta: ["更新：2026 年 6 月", "阅读时间：14 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看服务"], sidebarTitle: "本指南内容", sidebar: ["公式", "成本", "影响", "看板", "清单"] },
+    ja: { label: "Tecnotitan ガイド / AI ROI", title: "AI 自動化 ROI：本当の価値を測る方法", intro: "影響、コスト、リスク、定着可能性で自動化を優先順位付けするためのガイドです。", meta: ["更新：2026年6月", "読了時間：14分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "サービスを見る"], sidebarTitle: "このガイド", sidebar: ["式", "コスト", "影響", "ダッシュボード", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / AI ROI", title: "AI 자동화 ROI: 실제 가치를 측정하는 법", intro: "영향, 비용, 위험, 도입 가능성으로 자동화를 우선순위화하는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 14분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "서비스 보기"], sidebarTitle: "이 가이드", sidebar: ["공식", "비용", "영향", "대시보드", "체크리스트"] }
+  },
+  "guia-crm-ia-ventas-soporte.html": {
+    es: { label: "Guia Tecnotitan / CRM con IA", title: "CRM con IA para ventas y soporte: menos registros, mas decisiones", intro: "Una guia para conectar seguimiento comercial, atencion, datos y automatizacion inteligente.", meta: ["Actualizado: junio 2026", "Lectura: 13 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver Copiloto Pyme"], sidebarTitle: "En esta guia", sidebar: ["Datos", "Seguimiento", "Agentes", "Reportes", "Checklist"] },
+    en: { label: "Tecnotitan Guide / AI CRM", title: "AI CRM for sales and support: fewer records, better decisions", intro: "A guide to connect commercial follow-up, support, data and intelligent automation.", meta: ["Updated: June 2026", "Reading time: 13 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View Copiloto Pyme"], sidebarTitle: "In this guide", sidebar: ["Data", "Follow-up", "Agents", "Reports", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / CRM com IA", title: "CRM com IA para vendas e suporte: menos registros, mais decisoes", intro: "Guia para conectar acompanhamento comercial, atendimento, dados e automacao inteligente.", meta: ["Atualizado: junho de 2026", "Leitura: 13 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver Copiloto Pyme"], sidebarTitle: "Neste guia", sidebar: ["Dados", "Acompanhamento", "Agentes", "Relatorios", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / AI CRM", title: "销售与支持 AI CRM：少填记录，多做决策", intro: "连接销售跟进、客户支持、数据和智能自动化的指南。", meta: ["更新：2026 年 6 月", "阅读时间：13 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看 Copiloto Pyme"], sidebarTitle: "本指南内容", sidebar: ["数据", "跟进", "智能体", "报告", "清单"] },
+    ja: { label: "Tecnotitan ガイド / AI CRM", title: "営業とサポートのための AI CRM：入力を減らし意思決定を増やす", intro: "営業フォロー、サポート、データ、インテリジェント自動化をつなぐガイドです。", meta: ["更新：2026年6月", "読了時間：13分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "Copiloto Pyme を見る"], sidebarTitle: "このガイド", sidebar: ["データ", "フォロー", "エージェント", "レポート", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / AI CRM", title: "영업과 지원을 위한 AI CRM: 기록은 줄이고 결정은 늘리기", intro: "영업 후속 조치, 지원, 데이터, 지능형 자동화를 연결하는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 13분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "Copiloto Pyme 보기"], sidebarTitle: "이 가이드", sidebar: ["데이터", "후속 조치", "에이전트", "보고서", "체크리스트"] }
+  },
+  "guia-roadmap-transformacion-digital-pymes.html": {
+    es: { label: "Guia Tecnotitan / Transformacion digital", title: "Roadmap de transformacion digital para pymes en 90 dias", intro: "Una guia para ordenar tecnologia, procesos, datos e IA con prioridades ejecutables.", meta: ["Actualizado: junio 2026", "Lectura: 16 min", "PDF descargable"], actions: ["Descargar PDF", "Guardar como PDF", "Compartir guia", "Ver transformacion"], sidebarTitle: "En esta guia", sidebar: ["Diagnostico", "Prioridades", "90 dias", "Adopcion", "Checklist"] },
+    en: { label: "Tecnotitan Guide / Digital transformation", title: "Digital transformation roadmap for SMBs in 90 days", intro: "A guide to organize technology, processes, data and AI into executable priorities.", meta: ["Updated: June 2026", "Reading time: 16 min", "Downloadable PDF"], actions: ["Download PDF", "Save as PDF", "Share guide", "View transformation"], sidebarTitle: "In this guide", sidebar: ["Diagnosis", "Priorities", "90 days", "Adoption", "Checklist"] },
+    pt: { label: "Guia Tecnotitan / Transformacao digital", title: "Roadmap de transformacao digital para pymes em 90 dias", intro: "Guia para organizar tecnologia, processos, dados e IA com prioridades executaveis.", meta: ["Atualizado: junho de 2026", "Leitura: 16 min", "PDF para baixar"], actions: ["Baixar PDF", "Salvar como PDF", "Compartilhar guia", "Ver transformacao"], sidebarTitle: "Neste guia", sidebar: ["Diagnostico", "Prioridades", "90 dias", "Adocao", "Checklist"] },
+    zh: { label: "Tecnotitan 指南 / 数字化转型", title: "中小企业 90 天数字化转型路线图", intro: "将技术、流程、数据和 AI 整理为可执行优先级的指南。", meta: ["更新：2026 年 6 月", "阅读时间：16 分钟", "可下载 PDF"], actions: ["下载 PDF", "保存为 PDF", "分享指南", "查看转型服务"], sidebarTitle: "本指南内容", sidebar: ["诊断", "优先级", "90 天", "采用", "清单"] },
+    ja: { label: "Tecnotitan ガイド / デジタル変革", title: "中小企業向け 90 日デジタル変革ロードマップ", intro: "技術、業務、データ、AI を実行可能な優先順位に整理するガイドです。", meta: ["更新：2026年6月", "読了時間：16分", "PDF ダウンロード"], actions: ["PDF をダウンロード", "PDF として保存", "ガイドを共有", "変革サービスを見る"], sidebarTitle: "このガイド", sidebar: ["診断", "優先順位", "90日", "定着", "チェックリスト"] },
+    ko: { label: "Tecnotitan 가이드 / 디지털 전환", title: "중소기업을 위한 90일 디지털 전환 로드맵", intro: "기술, 프로세스, 데이터, AI를 실행 가능한 우선순위로 정리하는 가이드입니다.", meta: ["업데이트: 2026년 6월", "읽는 시간: 16분", "PDF 다운로드"], actions: ["PDF 다운로드", "PDF로 저장", "가이드 공유", "전환 서비스 보기"], sidebarTitle: "이 가이드", sidebar: ["진단", "우선순위", "90일", "도입", "체크리스트"] }
   }
 };
 
@@ -4442,6 +4483,126 @@ const guidePageMetadata = {
 };
 
 Object.entries(guidePageMetadata).forEach(([language, pages]) => {
+  Object.entries(pages).forEach(([file, metadata]) => {
+    languages[language].pages[file] = {
+      ...metadata,
+      content: {}
+    };
+  });
+});
+
+const extraGuidePageMetadata = {
+  es: {
+    "guia-gobernanza-ia-empresas.html": {
+      title: "Gobernanza de IA para empresas: guia practica | Tecnotitan",
+      description: "Guia de gobernanza de IA para empresas: politicas, datos, riesgos, aprobaciones, seguridad y adopcion responsable."
+    },
+    "guia-roi-automatizacion-ia.html": {
+      title: "ROI de automatizacion con IA: guia para empresas | Tecnotitan",
+      description: "Guia para calcular ROI de automatizacion con IA: costos, ahorro de tiempo, calidad, ingresos, riesgos y medicion."
+    },
+    "guia-crm-ia-ventas-soporte.html": {
+      title: "CRM con IA para ventas y soporte: guia practica | Tecnotitan",
+      description: "Guia para implementar CRM con IA en ventas y soporte: datos, seguimiento, agentes, reportes y adopcion comercial."
+    },
+    "guia-roadmap-transformacion-digital-pymes.html": {
+      title: "Roadmap de transformacion digital para pymes | Tecnotitan",
+      description: "Guia para crear un roadmap de transformacion digital para pymes: diagnostico, prioridades, software, IA y metricas."
+    }
+  },
+  en: {
+    "guia-gobernanza-ia-empresas.html": {
+      title: "AI governance for companies: practical guide | Tecnotitan",
+      description: "Guide to AI governance for companies: policies, data, risks, approvals, security and responsible adoption."
+    },
+    "guia-roi-automatizacion-ia.html": {
+      title: "AI automation ROI: business guide | Tecnotitan",
+      description: "Guide to calculating AI automation ROI: costs, saved time, quality, revenue, risk and measurement."
+    },
+    "guia-crm-ia-ventas-soporte.html": {
+      title: "AI CRM for sales and support: practical guide | Tecnotitan",
+      description: "Guide to implementing AI CRM in sales and support: data, follow-up, agents, reports and adoption."
+    },
+    "guia-roadmap-transformacion-digital-pymes.html": {
+      title: "Digital transformation roadmap for SMBs | Tecnotitan",
+      description: "Guide to creating a digital transformation roadmap for SMBs: diagnosis, priorities, software, AI and metrics."
+    }
+  },
+  pt: {
+    "guia-gobernanza-ia-empresas.html": {
+      title: "Governanca de IA para empresas: guia pratica | Tecnotitan",
+      description: "Guia de governanca de IA para empresas: politicas, dados, riscos, aprovacoes, seguranca e adocao responsavel."
+    },
+    "guia-roi-automatizacion-ia.html": {
+      title: "ROI de automacao com IA: guia para empresas | Tecnotitan",
+      description: "Guia para calcular ROI de automacao com IA: custos, tempo economizado, qualidade, receita, riscos e medicao."
+    },
+    "guia-crm-ia-ventas-soporte.html": {
+      title: "CRM com IA para vendas e suporte: guia pratica | Tecnotitan",
+      description: "Guia para implementar CRM com IA em vendas e suporte: dados, acompanhamento, agentes, relatorios e adocao."
+    },
+    "guia-roadmap-transformacion-digital-pymes.html": {
+      title: "Roadmap de transformacao digital para pymes | Tecnotitan",
+      description: "Guia para criar um roadmap de transformacao digital para pymes: diagnostico, prioridades, software, IA e metricas."
+    }
+  },
+  zh: {
+    "guia-gobernanza-ia-empresas.html": {
+      title: "企业 AI 治理：实用指南 | Tecnotitan",
+      description: "企业 AI 治理指南：政策、数据、风险、审批、安全和负责任采用。"
+    },
+    "guia-roi-automatizacion-ia.html": {
+      title: "AI 自动化 ROI：企业指南 | Tecnotitan",
+      description: "计算 AI 自动化 ROI 的指南：成本、节省时间、质量、收入、风险和衡量。"
+    },
+    "guia-crm-ia-ventas-soporte.html": {
+      title: "销售与支持 AI CRM：实用指南 | Tecnotitan",
+      description: "在销售和客户支持中实施 AI CRM 的指南：数据、跟进、智能体、报告和采用。"
+    },
+    "guia-roadmap-transformacion-digital-pymes.html": {
+      title: "中小企业数字化转型路线图 | Tecnotitan",
+      description: "中小企业数字化转型路线图指南：诊断、优先级、软件、AI 和指标。"
+    }
+  },
+  ja: {
+    "guia-gobernanza-ia-empresas.html": {
+      title: "企業向け AI ガバナンス実践ガイド | Tecnotitan",
+      description: "企業の AI ガバナンス、ポリシー、データ、リスク、承認、セキュリティ、導入のガイド。"
+    },
+    "guia-roi-automatizacion-ia.html": {
+      title: "AI 自動化 ROI：企業向けガイド | Tecnotitan",
+      description: "AI 自動化 ROI を計算するガイド：コスト、削減時間、品質、売上、リスク、測定。"
+    },
+    "guia-crm-ia-ventas-soporte.html": {
+      title: "営業とサポートの AI CRM 実践ガイド | Tecnotitan",
+      description: "営業とサポートに AI CRM を導入するためのデータ、フォロー、エージェント、レポート、定着ガイド。"
+    },
+    "guia-roadmap-transformacion-digital-pymes.html": {
+      title: "中小企業向けデジタル変革ロードマップ | Tecnotitan",
+      description: "中小企業のデジタル変革ロードマップ：診断、優先順位、ソフトウェア、AI、指標。"
+    }
+  },
+  ko: {
+    "guia-gobernanza-ia-empresas.html": {
+      title: "기업 AI 거버넌스 실무 가이드 | Tecnotitan",
+      description: "기업 AI 거버넌스, 정책, 데이터, 위험, 승인, 보안, 책임 있는 도입 가이드."
+    },
+    "guia-roi-automatizacion-ia.html": {
+      title: "AI 자동화 ROI: 기업 가이드 | Tecnotitan",
+      description: "AI 자동화 ROI 계산 가이드: 비용, 절감 시간, 품질, 매출, 위험, 측정."
+    },
+    "guia-crm-ia-ventas-soporte.html": {
+      title: "영업과 지원을 위한 AI CRM 실무 가이드 | Tecnotitan",
+      description: "영업과 고객 지원에 AI CRM을 도입하는 데이터, 후속 조치, 에이전트, 보고, 도입 가이드."
+    },
+    "guia-roadmap-transformacion-digital-pymes.html": {
+      title: "중소기업을 위한 디지털 전환 로드맵 | Tecnotitan",
+      description: "중소기업 디지털 전환 로드맵 가이드: 진단, 우선순위, 소프트웨어, AI, 지표."
+    }
+  }
+};
+
+Object.entries(extraGuidePageMetadata).forEach(([language, pages]) => {
   Object.entries(pages).forEach(([file, metadata]) => {
     languages[language].pages[file] = {
       ...metadata,
