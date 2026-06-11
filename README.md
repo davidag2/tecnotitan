@@ -57,12 +57,13 @@ CRON_SECRET=...
 
 ## Daily CEO Traffic Brief
 
-El reporte diario se envia desde `/api/daily-ceo-traffic-brief` con Vercel Cron todos los dias a las 03:00 UTC, equivalente a las 10:00 pm en Colombia.
+El reporte diario se envia desde `/api/daily-ceo-traffic-brief`, pero este proyecto no declara Vercel Cron porque el plan Hobby solo permite un cron y el cron principal ya esta reservado para Copiloto Pyme.
 
 - `/api/traffic-track` guarda pageviews agregados en Vercel KV / Upstash.
 - `/api/traffic-stats` permite revisar pageviews, visitantes anonimos, idiomas, paises, rutas y referers.
 - `/api/daily-ceo-traffic-brief?preview=1` muestra el reporte sin enviar email.
 - `/api/daily-ceo-traffic-brief` envia el correo a `CEO_BRIEF_TO_EMAIL` o `CONTACT_TO_EMAIL`.
+- Programacion recomendada: invocar `https://www.tecnotitan.com/api/daily-ceo-traffic-brief` desde el cron existente de Copiloto Pyme despues de enviar el reporte SaaS, o usar un scheduler externo.
 
 El reporte usa datos agregados. No guarda IP cruda, nombre, email ni fingerprint para analitica de trafico.
 
