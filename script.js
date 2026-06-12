@@ -1875,6 +1875,30 @@ const isGuideArticleRoute = Boolean(pathLanguage && guideHubDirectories[pathLang
 const pageName = isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName;
 const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
 const guideArticleRoutes = {
+  aiAgents: {
+    es: "guia-agentes-ia-procesos-empresariales",
+    en: "ai-agents-for-business-workflows",
+    pt: "agentes-ia-processos-empresariais",
+    zh: "ai-agents-business-workflows",
+    ja: "ai-agents-business-workflows",
+    ko: "ai-agents-business-workflows"
+  },
+  dataStrategy: {
+    es: "guia-estrategia-datos-ia-empresas",
+    en: "ai-data-strategy-for-companies",
+    pt: "estrategia-dados-ia-empresas",
+    zh: "ai-data-strategy-companies",
+    ja: "ai-data-strategy-companies",
+    ko: "ai-data-strategy-companies"
+  },
+  buildBuyAutomate: {
+    es: "guia-software-medida-saas-automatizacion",
+    en: "custom-software-vs-saas-vs-automation",
+    pt: "software-sob-medida-saas-automacao",
+    zh: "custom-software-saas-automation",
+    ja: "custom-software-saas-automation",
+    ko: "custom-software-saas-automation"
+  },
   chatgptWork: {
     es: "guia-como-usar-chatgpt-en-el-trabajo",
     en: "how-to-use-chatgpt-at-work",
