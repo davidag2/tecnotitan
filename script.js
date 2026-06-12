@@ -2002,6 +2002,38 @@ const guideArticleRoutes = {
     zh: "digital-transformation-roadmap-smbs",
     ja: "digital-transformation-roadmap-smbs",
     ko: "digital-transformation-roadmap-smbs"
+  },
+  aiEmployeeOnboarding: {
+    es: "guia-onboarding-ia-empleados",
+    en: "ai-onboarding-for-employees",
+    pt: "onboarding-ia-colaboradores",
+    zh: "ai-onboarding-employees",
+    ja: "ai-onboarding-employees",
+    ko: "ai-onboarding-employees"
+  },
+  executiveReportsAutomation: {
+    es: "guia-automatizar-reportes-ejecutivos",
+    en: "executive-reporting-automation",
+    pt: "automatizar-relatorios-executivos",
+    zh: "executive-reporting-automation",
+    ja: "executive-reporting-automation",
+    ko: "executive-reporting-automation"
+  },
+  systemsApiIntegration: {
+    es: "guia-integracion-sistemas-api-pymes",
+    en: "system-integration-api-for-smbs",
+    pt: "integracao-sistemas-api-pmes",
+    zh: "system-integration-api-smbs",
+    ja: "system-integration-api-smbs",
+    ko: "system-integration-api-smbs"
+  },
+  aiVendorEvaluation: {
+    es: "guia-evaluar-proveedores-ia-empresas",
+    en: "evaluate-ai-vendors-for-companies",
+    pt: "avaliar-fornecedores-ia-empresas",
+    zh: "evaluate-ai-vendors-companies",
+    ja: "evaluate-ai-vendors-companies",
+    ko: "evaluate-ai-vendors-companies"
   }
 };
 const guideArticleRouteIndex = Object.entries(guideArticleRoutes).reduce((index, [key, routes]) => {

@@ -8,6 +8,14 @@ Tecnotitan is a technology company based in Colombia with global ambition. The c
 
 ## Primary Sections
 
+- Guide: How to evaluate AI vendors for companies: checklist before you buy: https://www.tecnotitan.com/guia-evaluar-proveedores-ia-empresas.html
+
+- Guide: System integration and APIs for SMBs: connect tools without losing control: https://www.tecnotitan.com/guia-integracion-sistemas-api-pymes.html
+
+- Guide: Executive reporting automation: from scattered data to weekly decisions: https://www.tecnotitan.com/guia-automatizar-reportes-ejecutivos.html
+
+- Guide: AI onboarding for employees: train teams without chaos: https://www.tecnotitan.com/guia-onboarding-ia-empleados.html
+
 - Editorial policy for guides: https://www.tecnotitan.com/sobre-guias-tecnotitan.html
 
 - Home: https://www.tecnotitan.com/
