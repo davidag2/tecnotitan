@@ -2422,6 +2422,197 @@ function setCards(selector, cards) {
   });
 }
 
+const homeVisualTranslations = {
+  es: {
+    ops: {
+      kicker: "Capa operativa",
+      title: "Tecnología que conecta decisiones, procesos y productos.",
+      text: "Una vista viva de Tecnotitan como sistema de tecnología aplicada: software, IA, robótica, videojuegos y consultoría trabajando desde la misma inteligencia operativa.",
+      signals: ["Flujos IA", "Software empresarial", "IP reutilizable"],
+      nodes: [["AI", "Agents"], ["OS", "Software"], ["RB", "Robotics"], ["GX", "Games"]],
+      metrics: [["Velocidad", "+42%"], ["Señal", "LIVE"]]
+    },
+    architecture: {
+      kicker: "Arquitectura escalable",
+      title: "Del aprendizaje en servicios a inteligencia de producto.",
+      text: "Cada proyecto puede convertirse en un patrón reutilizable: flujos, componentes, agentes, tableros y conocimiento operativo que se acumula entre divisiones de Tecnotitan.",
+      modules: [["01", "Datos", "Fuentes claras"], ["02", "Agentes", "Tareas guiadas"], ["03", "Productos", "IP reutilizable"], ["04", "Mercados", "Alcance global"]],
+      buttons: ["Explorar productos", "Ver divisiones"]
+    },
+    final: {
+      kicker: "Siguiente movimiento",
+      title: "Construyamos la ventaja operativa antes de que el mercado acelere.",
+      text: "Habla con Tecnotitan sobre inversión, software empresarial, consultoría IA o alianzas estratégicas de tecnología.",
+      buttons: ["Agendar conversación", "Ver investor deck", "Solicitar diagnóstico IA"]
+    }
+  },
+  en: {
+    ops: {
+      kicker: "Operating layer",
+      title: "Technology that connects decisions, processes and products.",
+      text: "A living view of Tecnotitan as an applied technology system: software, AI, robotics, games and advisory working from the same operational intelligence.",
+      signals: ["AI workflows", "Business software", "Reusable IP"],
+      nodes: [["AI", "Agents"], ["OS", "Software"], ["RB", "Robotics"], ["GX", "Games"]],
+      metrics: [["Velocity", "+42%"], ["Signal", "LIVE"]]
+    },
+    architecture: {
+      kicker: "Scalable architecture",
+      title: "From service learning to product intelligence.",
+      text: "Every project can become a reusable pattern: workflows, components, agents, dashboards and operating knowledge that compound across Tecnotitan divisions.",
+      modules: [["01", "Data", "Clean sources"], ["02", "Agents", "Guided tasks"], ["03", "Products", "Reusable IP"], ["04", "Markets", "Global reach"]],
+      buttons: ["Explore products", "View divisions"]
+    },
+    final: {
+      kicker: "Next move",
+      title: "Build the operating advantage before the market gets faster.",
+      text: "Talk to Tecnotitan about investment, enterprise software, AI consulting or strategic technology partnerships.",
+      buttons: ["Schedule conversation", "View investor deck", "Request AI diagnosis"]
+    }
+  },
+  pt: {
+    ops: {
+      kicker: "Camada operacional",
+      title: "Tecnologia que conecta decisões, processos e produtos.",
+      text: "Uma visão viva da Tecnotitan como sistema de tecnologia aplicada: software, IA, robótica, videogames e consultoria trabalhando a partir da mesma inteligência operacional.",
+      signals: ["Fluxos IA", "Software empresarial", "IP reutilizável"],
+      nodes: [["AI", "Agentes"], ["OS", "Software"], ["RB", "Robótica"], ["GX", "Games"]],
+      metrics: [["Velocidade", "+42%"], ["Sinal", "LIVE"]]
+    },
+    architecture: {
+      kicker: "Arquitetura escalável",
+      title: "Do aprendizado em serviços à inteligência de produto.",
+      text: "Cada projeto pode se tornar um padrão reutilizável: fluxos, componentes, agentes, dashboards e conhecimento operacional que se acumulam entre divisões da Tecnotitan.",
+      modules: [["01", "Dados", "Fontes claras"], ["02", "Agentes", "Tarefas guiadas"], ["03", "Produtos", "IP reutilizável"], ["04", "Mercados", "Alcance global"]],
+      buttons: ["Explorar produtos", "Ver divisões"]
+    },
+    final: {
+      kicker: "Próximo movimento",
+      title: "Vamos construir vantagem operacional antes que o mercado acelere.",
+      text: "Fale com a Tecnotitan sobre investimento, software empresarial, consultoria IA ou alianças estratégicas de tecnologia.",
+      buttons: ["Agendar conversa", "Ver investor deck", "Solicitar diagnóstico IA"]
+    }
+  },
+  zh: {
+    ops: {
+      kicker: "运营层",
+      title: "连接决策、流程与产品的技术系统。",
+      text: "Tecnotitan 是一个应用技术系统：软件、人工智能、机器人、游戏和咨询共享同一套运营智能。",
+      signals: ["AI 工作流", "企业软件", "可复用 IP"],
+      nodes: [["AI", "智能代理"], ["OS", "软件"], ["RB", "机器人"], ["GX", "游戏"]],
+      metrics: [["速度", "+42%"], ["信号", "LIVE"]]
+    },
+    architecture: {
+      kicker: "可扩展架构",
+      title: "从服务经验走向产品智能。",
+      text: "每个项目都可以沉淀为可复用模式：流程、组件、智能代理、仪表盘和跨业务部门复利增长的运营知识。",
+      modules: [["01", "数据", "清晰来源"], ["02", "代理", "引导任务"], ["03", "产品", "可复用 IP"], ["04", "市场", "全球触达"]],
+      buttons: ["探索产品", "查看部门"]
+    },
+    final: {
+      kicker: "下一步",
+      title: "在市场加速之前，建立运营优势。",
+      text: "与 Tecnotitan 讨论投资、企业软件、AI 咨询或战略技术合作。",
+      buttons: ["预约沟通", "查看投资人 Deck", "申请 AI 诊断"]
+    }
+  },
+  ja: {
+    ops: {
+      kicker: "オペレーション層",
+      title: "意思決定、プロセス、製品をつなぐテクノロジー。",
+      text: "Tecnotitan は、ソフトウェア、AI、ロボティクス、ゲーム、アドバイザリーを同じ運用インテリジェンスで結ぶ応用技術システムです。",
+      signals: ["AI ワークフロー", "企業ソフトウェア", "再利用可能 IP"],
+      nodes: [["AI", "Agents"], ["OS", "Software"], ["RB", "Robotics"], ["GX", "Games"]],
+      metrics: [["速度", "+42%"], ["シグナル", "LIVE"]]
+    },
+    architecture: {
+      kicker: "拡張可能なアーキテクチャ",
+      title: "サービスでの学習をプロダクト知能へ。",
+      text: "各プロジェクトは、ワークフロー、コンポーネント、エージェント、ダッシュボード、運用知識として再利用できるパターンになります。",
+      modules: [["01", "データ", "明確なソース"], ["02", "エージェント", "誘導されたタスク"], ["03", "製品", "再利用 IP"], ["04", "市場", "グローバル展開"]],
+      buttons: ["製品を見る", "部門を見る"]
+    },
+    final: {
+      kicker: "次の一手",
+      title: "市場が加速する前に、運用優位性を構築しましょう。",
+      text: "投資、企業ソフトウェア、AI コンサルティング、戦略的技術提携について Tecnotitan と話しましょう。",
+      buttons: ["相談を予約", "Investor Deckを見る", "AI診断を依頼"]
+    }
+  },
+  ko: {
+    ops: {
+      kicker: "운영 레이어",
+      title: "의사결정, 프로세스, 제품을 연결하는 기술.",
+      text: "Tecnotitan은 소프트웨어, AI, 로보틱스, 게임, 컨설팅을 하나의 운영 인텔리전스로 연결하는 응용 기술 시스템입니다.",
+      signals: ["AI 워크플로", "기업 소프트웨어", "재사용 IP"],
+      nodes: [["AI", "Agents"], ["OS", "Software"], ["RB", "Robotics"], ["GX", "Games"]],
+      metrics: [["속도", "+42%"], ["신호", "LIVE"]]
+    },
+    architecture: {
+      kicker: "확장 가능한 아키텍처",
+      title: "서비스 학습에서 제품 인텔리전스로.",
+      text: "각 프로젝트는 워크플로, 컴포넌트, 에이전트, 대시보드, 운영 지식으로 재사용 가능한 패턴이 될 수 있습니다.",
+      modules: [["01", "데이터", "명확한 소스"], ["02", "에이전트", "가이드 작업"], ["03", "제품", "재사용 IP"], ["04", "시장", "글로벌 확장"]],
+      buttons: ["제품 보기", "부문 보기"]
+    },
+    final: {
+      kicker: "다음 움직임",
+      title: "시장이 더 빨라지기 전에 운영 우위를 만듭니다.",
+      text: "투자, 기업 소프트웨어, AI 컨설팅 또는 전략적 기술 파트너십에 대해 Tecnotitan과 대화하세요.",
+      buttons: ["상담 예약", "Investor Deck 보기", "AI 진단 요청"]
+    }
+  }
+};
+
+function applyHomeVisualContent(language) {
+  const content = homeVisualTranslations[language] || homeVisualTranslations.es;
+  setText(".home-ops-kicker", content.ops.kicker);
+  setText("#home-ops-title", content.ops.title);
+  setText(".home-ops-copy > p:not(.section-kicker)", content.ops.text);
+  document.querySelectorAll(".home-signal-list span").forEach((item, index) => {
+    if (content.ops.signals[index]) {
+      item.textContent = content.ops.signals[index];
+    }
+  });
+  document.querySelectorAll(".ops-node").forEach((node, index) => {
+    const nodeContent = content.ops.nodes[index];
+    if (nodeContent) {
+      setText("span", nodeContent[0], node);
+      setText("strong", nodeContent[1], node);
+    }
+  });
+  document.querySelectorAll(".ops-metric").forEach((metric, index) => {
+    const metricContent = content.ops.metrics[index];
+    if (metricContent) {
+      setText("span", metricContent[0], metric);
+      setText("strong", metricContent[1], metric);
+    }
+  });
+  setText(".home-architecture-kicker", content.architecture.kicker);
+  setText("#home-architecture-title", content.architecture.title);
+  setText(".architecture-copy > p:not(.section-kicker)", content.architecture.text);
+  document.querySelectorAll(".architecture-module").forEach((module, index) => {
+    const moduleContent = content.architecture.modules[index];
+    if (moduleContent) {
+      setText("span", moduleContent[0], module);
+      setText("strong", moduleContent[1], module);
+      setText("small", moduleContent[2], module);
+    }
+  });
+  document.querySelectorAll(".architecture-copy .actions .button").forEach((button, index) => {
+    if (content.architecture.buttons[index]) {
+      button.textContent = content.architecture.buttons[index];
+    }
+  });
+  setText(".home-final-kicker", content.final.kicker);
+  setText("#home-final-title", content.final.title);
+  setText(".final-cta-inner > p:not(.section-kicker)", content.final.text);
+  document.querySelectorAll(".final-cta-actions .button").forEach((button, index) => {
+    if (content.final.buttons[index]) {
+      button.textContent = content.final.buttons[index];
+    }
+  });
+}
+
 function setDetailedCards(selector, cards) {
   if (!cards) {
     return;
@@ -4269,6 +4460,7 @@ function applyLanguage(language) {
     setText(".investor-cta-copy h2", content.investorCtaTitle);
     setText(".investor-cta-copy p", content.investorCtaText);
     setCards(".investor-cta-grid a", content.investorCtaCards);
+    applyHomeVisualContent(language);
     setText("#gateway-title", content.gatewayTitle);
     setText(".gateway-copy p", content.gatewayText);
     setCards(".home-gateway .gateway-grid a", content.cards);
