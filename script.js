@@ -2386,6 +2386,9 @@ function getCanonicalUrl() {
 
 function getLocalizedUrl(language) {
   const segment = languagePathSegments[language] || languagePathSegments.es;
+  if (language === "en" && pageName === "guias.html") {
+    return new URL("/en/guides/", window.location.origin).toString();
+  }
   const filePath = pageName === "index.html" ? "" : pageName;
   return new URL(`/${segment}/${filePath}`, window.location.origin).toString();
 }
@@ -3701,7 +3704,11 @@ function carryLanguageAcrossLinks(language) {
     }
 
     const segment = languagePathSegments[language] || languagePathSegments.es;
-    const cleanPath = file === "index.html" ? `/${segment}/` : `/${segment}/${file}`;
+    const cleanPath = language === "en" && file === "guias.html"
+      ? "/en/guides/"
+      : file === "index.html"
+        ? `/${segment}/`
+        : `/${segment}/${file}`;
     link.setAttribute("href", `${cleanPath}${url.search}${url.hash}`);
   });
 }
