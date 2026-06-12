@@ -2471,6 +2471,10 @@ const homeVisualTranslations = {
       modules: [["01", "Datos", "Fuentes claras"], ["02", "Agentes", "Tareas guiadas"], ["03", "Productos", "IP reutilizable"], ["04", "Mercados", "Alcance global"]],
       buttons: ["Explorar productos", "Ver divisiones"]
     },
+    posters: [
+      ["Inteligencia operacional", "La empresa como un sistema vivo, medible y automatizado.", "Tecnotitan conecta datos, software, IA y robótica para que cada proceso crítico pueda observarse, mejorarse y escalarse con precisión."],
+      ["Productos globales", "Un portafolio que puede viajar de Colombia al mundo.", "Copilotos, plataformas empresariales, simulación, motores de videojuegos e IA conversacional nacen de una misma arquitectura tecnológica."]
+    ],
     final: {
       kicker: "Siguiente movimiento",
       title: "Construyamos la ventaja operativa antes de que el mercado acelere.",
@@ -2494,6 +2498,10 @@ const homeVisualTranslations = {
       modules: [["01", "Data", "Clean sources"], ["02", "Agents", "Guided tasks"], ["03", "Products", "Reusable IP"], ["04", "Markets", "Global reach"]],
       buttons: ["Explore products", "View divisions"]
     },
+    posters: [
+      ["Operational intelligence", "The company as a living, measurable and automated system.", "Tecnotitan connects data, software, AI and robotics so every critical process can be observed, improved and scaled with precision."],
+      ["Global products", "A portfolio built to travel from Colombia to the world.", "Copilots, enterprise platforms, simulation, game engines and conversational AI grow from one shared technology architecture."]
+    ],
     final: {
       kicker: "Next move",
       title: "Build the operating advantage before the market gets faster.",
@@ -2517,6 +2525,10 @@ const homeVisualTranslations = {
       modules: [["01", "Dados", "Fontes claras"], ["02", "Agentes", "Tarefas guiadas"], ["03", "Produtos", "IP reutilizável"], ["04", "Mercados", "Alcance global"]],
       buttons: ["Explorar produtos", "Ver divisões"]
     },
+    posters: [
+      ["Inteligência operacional", "A empresa como um sistema vivo, mensurável e automatizado.", "A Tecnotitan conecta dados, software, IA e robótica para que cada processo crítico possa ser observado, melhorado e escalado com precisão."],
+      ["Produtos globais", "Um portfólio que pode viajar da Colômbia para o mundo.", "Copilotos, plataformas empresariais, simulação, engines de jogos e IA conversacional nascem de uma mesma arquitetura tecnológica."]
+    ],
     final: {
       kicker: "Próximo movimento",
       title: "Vamos construir vantagem operacional antes que o mercado acelere.",
@@ -2540,6 +2552,10 @@ const homeVisualTranslations = {
       modules: [["01", "数据", "清晰来源"], ["02", "代理", "引导任务"], ["03", "产品", "可复用 IP"], ["04", "市场", "全球触达"]],
       buttons: ["探索产品", "查看部门"]
     },
+    posters: [
+      ["运营智能", "把企业变成可衡量、可自动化的生命系统。", "Tecnotitan 连接数据、软件、AI 与机器人，让关键流程可以被观察、优化并精确扩展。"],
+      ["全球产品", "从哥伦比亚走向世界的产品组合。", "智能助手、企业平台、仿真、游戏引擎和对话式 AI 都来自同一套技术架构。"]
+    ],
     final: {
       kicker: "下一步",
       title: "在市场加速之前，建立运营优势。",
@@ -2563,6 +2579,10 @@ const homeVisualTranslations = {
       modules: [["01", "データ", "明確なソース"], ["02", "エージェント", "誘導されたタスク"], ["03", "製品", "再利用 IP"], ["04", "市場", "グローバル展開"]],
       buttons: ["製品を見る", "部門を見る"]
     },
+    posters: [
+      ["運用インテリジェンス", "企業を測定可能で自動化された生きたシステムへ。", "Tecnotitan はデータ、ソフトウェア、AI、ロボティクスをつなぎ、重要なプロセスを観測、改善、拡張できるようにします。"],
+      ["グローバル製品", "コロンビアから世界へ展開できるポートフォリオ。", "コパイロット、企業プラットフォーム、シミュレーション、ゲームエンジン、会話型 AI は同じ技術アーキテクチャから生まれます。"]
+    ],
     final: {
       kicker: "次の一手",
       title: "市場が加速する前に、運用優位性を構築しましょう。",
@@ -2586,6 +2606,10 @@ const homeVisualTranslations = {
       modules: [["01", "데이터", "명확한 소스"], ["02", "에이전트", "가이드 작업"], ["03", "제품", "재사용 IP"], ["04", "시장", "글로벌 확장"]],
       buttons: ["제품 보기", "부문 보기"]
     },
+    posters: [
+      ["운영 인텔리전스", "기업을 측정 가능하고 자동화된 살아있는 시스템으로.", "Tecnotitan은 데이터, 소프트웨어, AI, 로보틱스를 연결해 핵심 프로세스를 관찰하고 개선하며 정밀하게 확장하도록 돕습니다."],
+      ["글로벌 제품", "콜롬비아에서 세계로 확장되는 포트폴리오.", "코파일럿, 기업 플랫폼, 시뮬레이션, 게임 엔진, 대화형 AI는 하나의 공유 기술 아키텍처에서 성장합니다."]
+    ],
     final: {
       kicker: "다음 움직임",
       title: "시장이 더 빨라지기 전에 운영 우위를 만듭니다.",
@@ -2634,6 +2658,19 @@ function applyHomeVisualContent(language) {
     if (content.architecture.buttons[index]) {
       button.textContent = content.architecture.buttons[index];
     }
+  });
+  const posterSelectors = [
+    [".home-poster-one-kicker", ".home-poster-one-title", ".home-poster-one-text"],
+    [".home-poster-two-kicker", ".home-poster-two-title", ".home-poster-two-text"]
+  ];
+  posterSelectors.forEach((selectors, index) => {
+    const poster = content.posters?.[index];
+    if (!poster) {
+      return;
+    }
+    setText(selectors[0], poster[0]);
+    setText(selectors[1], poster[1]);
+    setText(selectors[2], poster[2]);
   });
   setText(".home-final-kicker", content.final.kicker);
   setText("#home-final-title", content.final.title);

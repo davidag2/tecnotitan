@@ -578,6 +578,72 @@ h3 {
     linear-gradient(180deg, #050607, #091014 52%, #050607);
 }
 
+.home-poster-section {
+  min-height: clamp(520px, 72svh, 760px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #050607;
+  border-top: 1px solid rgba(103, 229, 255, 0.16);
+  border-bottom: 1px solid rgba(103, 229, 255, 0.16);
+}
+
+.home-poster-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.92;
+}
+
+.home-poster-operational .home-poster-image {
+  object-position: 62% center;
+}
+
+.home-poster-products .home-poster-image {
+  object-position: 48% center;
+}
+
+.home-poster-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(5, 6, 7, 0.94) 0%, rgba(5, 6, 7, 0.74) 31%, rgba(5, 6, 7, 0.2) 68%, rgba(5, 6, 7, 0.82) 100%),
+    linear-gradient(180deg, rgba(5, 6, 7, 0.22), rgba(5, 6, 7, 0.72));
+}
+
+.home-poster-scrim-reverse {
+  background:
+    linear-gradient(90deg, rgba(5, 6, 7, 0.78) 0%, rgba(5, 6, 7, 0.24) 42%, rgba(5, 6, 7, 0.74) 72%, rgba(5, 6, 7, 0.94) 100%),
+    linear-gradient(180deg, rgba(5, 6, 7, 0.18), rgba(5, 6, 7, 0.72));
+}
+
+.home-poster-inner {
+  padding: clamp(92px, 12vw, 146px) 0;
+  max-width: 760px;
+}
+
+.home-poster-inner-right {
+  margin-left: auto;
+}
+
+.home-poster-inner h2 {
+  max-width: 760px;
+  margin-top: 18px;
+  font-size: clamp(42px, 6vw, 76px);
+}
+
+.home-poster-inner p:not(.section-kicker) {
+  max-width: 620px;
+  margin-top: 24px;
+  color: rgba(244, 247, 248, 0.8);
+  font-size: clamp(17px, 1.7vw, 22px);
+  line-height: 1.45;
+}
+
 .architecture-layout {
   grid-template-columns: minmax(420px, 1fr) minmax(0, 0.82fr);
 }
@@ -2362,6 +2428,34 @@ h3 {
     background:
       linear-gradient(90deg, rgba(5, 6, 7, 0.98), rgba(5, 6, 7, 0.86)),
       linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0.5) 44%, #050607 100%);
+  }
+
+  .home-poster-section {
+    min-height: 74svh;
+    align-items: end;
+  }
+
+  .home-poster-operational .home-poster-image,
+  .home-poster-products .home-poster-image {
+    object-position: 58% center;
+  }
+
+  .home-poster-scrim,
+  .home-poster-scrim-reverse {
+    background:
+      linear-gradient(90deg, rgba(5, 6, 7, 0.98), rgba(5, 6, 7, 0.78)),
+      linear-gradient(180deg, rgba(5, 6, 7, 0.18) 0%, rgba(5, 6, 7, 0.58) 42%, #050607 100%);
+  }
+
+  .home-poster-inner,
+  .home-poster-inner-right {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 42vh 0 74px;
+  }
+
+  .home-poster-inner h2 {
+    font-size: clamp(34px, 10.5vw, 46px);
   }
 
   .gateway-grid,
