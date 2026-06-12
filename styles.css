@@ -1185,6 +1185,8 @@ h3 {
 .deck-action {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
   margin-top: clamp(28px, 4vw, 44px);
 }
 

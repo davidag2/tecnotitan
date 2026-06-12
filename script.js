@@ -2149,7 +2149,7 @@ let activeDeckLanguage = "es";
 
 function deckFilePath(language, extension) {
   const safeLanguage = deckFileLanguages.includes(language) ? language : "es";
-  return `./assets/investor-deck/Tecnotitan-Investor-Deck-${safeLanguage.toUpperCase()}.${extension}`;
+  return `/assets/investor-deck/Tecnotitan-Investor-Deck-${safeLanguage.toUpperCase()}.${extension}`;
 }
 
 function getDeckVisitorId() {
@@ -4840,7 +4840,7 @@ function applyLanguage(language) {
     setText(".investor-deck-copy p", content.deckText);
     setCards(".investor-deck-grid article", content.deckCards);
     setText(".deck-action .button-primary", content.deckPageButton);
-    setText(".deck-action .button-secondary", content.deckButton);
+    setText(".deck-action .deck-request-link", content.deckButton);
   }
 
   if (content.investorCtaTitle) {
