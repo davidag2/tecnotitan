@@ -4235,6 +4235,189 @@ const guideChromeTranslations = {
   }
 };
 
+const guideEditorialTranslations = {
+  es: {
+    authorLabel: "Autor institucional",
+    authorName: "Tecnotitan Editorial",
+    authorText: "Equipo de software, IA y transformacion tecnologica.",
+    updatedLabel: "Actualizado",
+    updatedText: "Junio de 2026",
+    reviewedLabel: "Revisado por",
+    reviewedText: "Direccion de producto y consultoria IA.",
+    methodLabel: "Metodo editorial",
+    methodLink: "Politica editorial y metodologia",
+    sidebarTitle: "Criterio editorial",
+    sidebarText: "Guias creadas por Tecnotitan con experiencia practica, revision humana y enfoque empresarial.",
+    sectionKicker: "Confianza editorial",
+    sectionTitle: "Como revisamos esta guia",
+    cards: [
+      ["Autor institucional", "La guia es publicada por Tecnotitan Editorial, el equipo que documenta aprendizaje de software, IA, automatizacion y transformacion tecnologica."],
+      ["Revision humana", "El contenido se revisa para mantener claridad, utilidad practica, limites de uso de IA y coherencia con servicios reales de Tecnotitan."],
+      ["Fuentes y metodologia", "Usamos experiencia operativa, criterios de implementacion, documentacion tecnica y mejores practicas publicas cuando aplica."],
+      ["Actualizaciones", "Las guias se actualizan cuando cambian productos, tecnologias, riesgos, procesos o recomendaciones relevantes para empresas."]
+    ],
+    note: "Estas guias no reemplazan asesoria legal, financiera o tecnica especializada. Su objetivo es ayudar a lideres y equipos a tomar mejores decisiones antes de implementar tecnologia.",
+    aboutUrl: "sobre-guias-tecnotitan.html"
+  },
+  en: {
+    authorLabel: "Institutional author",
+    authorName: "Tecnotitan Editorial",
+    authorText: "Software, AI and technology transformation team.",
+    updatedLabel: "Updated",
+    updatedText: "June 2026",
+    reviewedLabel: "Reviewed by",
+    reviewedText: "Product leadership and AI consulting.",
+    methodLabel: "Editorial method",
+    methodLink: "Editorial policy and methodology",
+    sidebarTitle: "Editorial standard",
+    sidebarText: "Guides created by Tecnotitan with practical experience, human review and a business implementation lens.",
+    sectionKicker: "Editorial trust",
+    sectionTitle: "How we review this guide",
+    cards: [
+      ["Institutional author", "The guide is published by Tecnotitan Editorial, the team that documents software, AI, automation and technology transformation learning."],
+      ["Human review", "Content is reviewed for clarity, practical usefulness, responsible AI limits and alignment with real Tecnotitan services."],
+      ["Sources and methodology", "We use operational experience, implementation criteria, technical documentation and public best practices when relevant."],
+      ["Updates", "Guides are updated when products, technologies, risks, processes or business recommendations change."]
+    ],
+    note: "These guides do not replace specialized legal, financial or technical advice. They help leaders and teams make better decisions before implementing technology.",
+    aboutUrl: "guides/about-tecnotitan-guides.html"
+  },
+  pt: {
+    authorLabel: "Autor institucional",
+    authorName: "Tecnotitan Editorial",
+    authorText: "Equipe de software, IA e transformacao tecnologica.",
+    updatedLabel: "Atualizado",
+    updatedText: "Junho de 2026",
+    reviewedLabel: "Revisado por",
+    reviewedText: "Lideranca de produto e consultoria de IA.",
+    methodLabel: "Metodo editorial",
+    methodLink: "Politica editorial e metodologia",
+    sidebarTitle: "Criterio editorial",
+    sidebarText: "Guias criados pela Tecnotitan com experiencia pratica, revisao humana e foco empresarial.",
+    sectionKicker: "Confianca editorial",
+    sectionTitle: "Como revisamos este guia",
+    cards: [
+      ["Autor institucional", "O guia e publicado pela Tecnotitan Editorial, equipe que documenta aprendizados de software, IA, automacao e transformacao tecnologica."],
+      ["Revisao humana", "O conteudo e revisado para manter clareza, utilidade pratica, limites responsaveis de IA e alinhamento com servicos reais."],
+      ["Fontes e metodologia", "Usamos experiencia operacional, criterios de implementacao, documentacao tecnica e boas praticas publicas quando aplicavel."],
+      ["Atualizacoes", "Os guias sao atualizados quando produtos, tecnologias, riscos, processos ou recomendacoes empresariais mudam."]
+    ],
+    note: "Estes guias nao substituem assessoria legal, financeira ou tecnica especializada. Eles ajudam equipes a decidir melhor antes de implementar tecnologia.",
+    aboutUrl: "guias/sobre-guias-tecnotitan.html"
+  },
+  zh: {
+    authorLabel: "机构作者",
+    authorName: "Tecnotitan Editorial",
+    authorText: "软件、人工智能与技术转型团队。",
+    updatedLabel: "更新日期",
+    updatedText: "2026 年 6 月",
+    reviewedLabel: "审核",
+    reviewedText: "产品负责人和 AI 咨询团队。",
+    methodLabel: "编辑方法",
+    methodLink: "编辑政策与方法",
+    sidebarTitle: "编辑标准",
+    sidebarText: "Tecnotitan 基于实践经验、人工审核和企业实施视角创建指南。",
+    sectionKicker: "编辑可信度",
+    sectionTitle: "我们如何审核本指南",
+    cards: [
+      ["机构作者", "本指南由 Tecnotitan Editorial 发布，记录软件、AI、自动化和技术转型经验。"],
+      ["人工审核", "内容经过人工审核，确保清晰、实用、负责任并符合 Tecnotitan 的真实服务。"],
+      ["来源与方法", "我们结合运营经验、实施标准、技术文档和公开最佳实践。"],
+      ["更新机制", "当产品、技术、风险、流程或企业建议发生变化时，我们会更新指南。"]
+    ],
+    note: "这些指南不替代专业法律、财务或技术建议，目的是帮助团队在实施技术前做出更好的决策。",
+    aboutUrl: "guides/about-tecnotitan-guides.html"
+  },
+  ja: {
+    authorLabel: "機関著者",
+    authorName: "Tecnotitan Editorial",
+    authorText: "ソフトウェア、AI、技術変革チーム。",
+    updatedLabel: "更新日",
+    updatedText: "2026年6月",
+    reviewedLabel: "レビュー",
+    reviewedText: "プロダクト責任者とAIコンサルティングチーム。",
+    methodLabel: "編集方法",
+    methodLink: "編集ポリシーと方法論",
+    sidebarTitle: "編集基準",
+    sidebarText: "Tecnotitanのガイドは実務経験、人によるレビュー、企業導入の視点で作成されています。",
+    sectionKicker: "編集上の信頼性",
+    sectionTitle: "このガイドのレビュー方法",
+    cards: [
+      ["機関著者", "このガイドは、ソフトウェア、AI、自動化、技術変革の学びを記録するTecnotitan Editorialが公開しています。"],
+      ["人によるレビュー", "明確さ、実用性、責任あるAI利用、Tecnotitanの実サービスとの整合性を確認します。"],
+      ["情報源と方法", "実務経験、導入基準、技術文書、公開ベストプラクティスを必要に応じて参照します。"],
+      ["更新", "製品、技術、リスク、プロセス、企業向け推奨事項が変わると更新します。"]
+    ],
+    note: "これらのガイドは専門的な法務、財務、技術助言の代替ではありません。技術導入前の意思決定を支援するものです。",
+    aboutUrl: "guides/about-tecnotitan-guides.html"
+  },
+  ko: {
+    authorLabel: "기관 저자",
+    authorName: "Tecnotitan Editorial",
+    authorText: "소프트웨어, AI, 기술 전환 팀.",
+    updatedLabel: "업데이트",
+    updatedText: "2026년 6월",
+    reviewedLabel: "검토",
+    reviewedText: "제품 리더십 및 AI 컨설팅 팀.",
+    methodLabel: "편집 방법",
+    methodLink: "편집 정책 및 방법론",
+    sidebarTitle: "편집 기준",
+    sidebarText: "Tecnotitan 가이드는 실무 경험, 인간 검토, 기업 구현 관점으로 제작됩니다.",
+    sectionKicker: "편집 신뢰",
+    sectionTitle: "이 가이드를 검토하는 방법",
+    cards: [
+      ["기관 저자", "이 가이드는 소프트웨어, AI, 자동화, 기술 전환 학습을 문서화하는 Tecnotitan Editorial이 발행합니다."],
+      ["인간 검토", "명확성, 실용성, 책임 있는 AI 사용, 실제 Tecnotitan 서비스와의 일관성을 검토합니다."],
+      ["출처와 방법론", "운영 경험, 구현 기준, 기술 문서, 공개 모범 사례를 필요에 따라 활용합니다."],
+      ["업데이트", "제품, 기술, 위험, 프로세스 또는 비즈니스 권장 사항이 바뀌면 가이드를 업데이트합니다."]
+    ],
+    note: "이 가이드는 전문 법률, 재무 또는 기술 자문을 대체하지 않습니다. 기술 구현 전 더 나은 결정을 돕기 위한 자료입니다.",
+    aboutUrl: "guides/about-tecnotitan-guides.html"
+  }
+};
+
+function updateGuideEditorial(language) {
+  if (!document.querySelector(".guide-page")) {
+    return;
+  }
+
+  const editorial = guideEditorialTranslations[language] || guideEditorialTranslations.es;
+  const prefix = isGuideArticleRoute ? "../" : pathLanguage ? "./" : "./";
+  const aboutHref = isGuideArticleRoute ? `./${editorial.aboutUrl.split("/").pop()}` : `${prefix}${editorial.aboutUrl}`;
+
+  document.querySelectorAll("[data-editorial-field]").forEach((field) => {
+    const key = field.dataset.editorialField;
+    if (editorial[key]) {
+      field.textContent = editorial[key];
+    }
+  });
+
+  document.querySelectorAll("[data-editorial-method-link]").forEach((link) => {
+    link.textContent = editorial.methodLink;
+    link.setAttribute("href", aboutHref);
+  });
+
+  const sidebar = document.querySelector("[data-guide-editorial-sidebar]");
+  if (sidebar) {
+    setText("strong", editorial.sidebarTitle, sidebar);
+    setText("p", editorial.sidebarText, sidebar);
+  }
+
+  const eeat = document.querySelector("[data-guide-eeat]");
+  if (eeat) {
+    setText(".section-kicker", editorial.sectionKicker, eeat);
+    setText("h2", editorial.sectionTitle, eeat);
+    eeat.querySelectorAll(".guide-eeat-grid article").forEach((card, index) => {
+      const copy = editorial.cards[index];
+      if (copy) {
+        setText("h3", copy[0], card);
+        setText("p", copy[1], card);
+      }
+    });
+    setText(".guide-eeat-note", editorial.note, eeat);
+  }
+}
+
 function updateGuideChrome(language) {
   const guide = guideChromeTranslations[pageName]?.[language] || guideChromeTranslations[pageName]?.es;
   if (!guide) {
@@ -4285,6 +4468,12 @@ function applyLanguage(language) {
       button.classList.toggle("is-active", isCurrent);
       button.setAttribute("aria-pressed", String(isCurrent));
       button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
+    });
+    updateGuideChrome(language);
+    updateGuideEditorial(language);
+    document.querySelectorAll(".guide-content [data-guide-lang]").forEach((section) => {
+      const isCurrent = section.dataset.guideLang === language;
+      section.hidden = !isCurrent;
     });
     carryLanguageAcrossLinks(language);
     return;
@@ -4432,6 +4621,7 @@ function applyLanguage(language) {
   });
 
   updateGuideChrome(language);
+  updateGuideEditorial(language);
 
   document.querySelectorAll(".guide-content [data-guide-lang]").forEach((section) => {
     const isCurrent = section.dataset.guideLang === language;

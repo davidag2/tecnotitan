@@ -1784,6 +1784,60 @@ h3 {
   margin: 24px 0;
 }
 
+.guide-editorial-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  max-width: 1040px;
+  margin: 26px 0 24px;
+  border: 1px solid rgba(103, 229, 255, 0.22);
+  background: rgba(103, 229, 255, 0.12);
+}
+
+.guide-editorial-card > * {
+  min-height: 126px;
+  padding: 18px;
+  background: rgba(5, 6, 7, 0.72);
+}
+
+.guide-editorial-card span,
+.guide-editorial-panel span,
+.guide-eeat-section .section-kicker {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.guide-editorial-card strong,
+.guide-editorial-panel strong {
+  display: block;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.guide-editorial-card p,
+.guide-editorial-panel p,
+.guide-eeat-section p,
+.guide-eeat-section li {
+  margin: 8px 0 0;
+  color: rgba(244, 247, 248, 0.68);
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.guide-editorial-card a {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
 .guide-actions button {
   font-family: inherit;
   cursor: pointer;
@@ -1833,6 +1887,12 @@ h3 {
   display: grid;
   gap: 12px;
   margin-top: 16px;
+}
+
+.guide-editorial-panel {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
 }
 
 .guide-sidebar a {
@@ -1891,6 +1951,42 @@ h3 {
   padding: clamp(28px, 4vw, 42px) !important;
   border: 1px solid rgba(255, 255, 255, 0.11) !important;
   background: rgba(255, 255, 255, 0.035);
+}
+
+.guide-eeat-section {
+  padding: clamp(28px, 4vw, 42px) !important;
+  border: 1px solid rgba(103, 229, 255, 0.28) !important;
+  background:
+    linear-gradient(135deg, rgba(103, 229, 255, 0.1), transparent 42%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.guide-eeat-section h2 {
+  max-width: 760px;
+}
+
+.guide-eeat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.guide-eeat-grid article {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: rgba(9, 13, 16, 0.68);
+}
+
+.guide-eeat-grid h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.guide-eeat-note {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
 }
 
 .guide-related-grid {
@@ -2334,6 +2430,11 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .guide-editorial-card,
+  .guide-eeat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .guide-sidebar {
     position: relative;
     top: auto;
@@ -2355,6 +2456,11 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .guide-editorial-card,
+  .guide-eeat-grid {
+    grid-template-columns: 1fr;
+  }
+
   .guide-card-featured {
     min-height: 360px;
   }

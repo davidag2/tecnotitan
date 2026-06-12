@@ -8,6 +8,8 @@ Tecnotitan is a technology company based in Colombia with global ambition. The c
 
 ## Primary Sections
 
+- Editorial policy for guides: https://www.tecnotitan.com/sobre-guias-tecnotitan.html
+
 - Home: https://www.tecnotitan.com/
 - About: https://www.tecnotitan.com/nosotros.html
 - Products: https://www.tecnotitan.com/productos.html
