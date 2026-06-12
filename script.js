@@ -2069,6 +2069,7 @@ const deckDownloadContent = {
     title: "Ver Investor Deck en el navegador",
     text: "Lee el PDF ligero del deck para inversionistas de Tecnotitan, cambia de idioma sin salir de la página y descarga el archivo si lo necesitas.",
     privacy: "Medimos aperturas y descargas de forma agregada para entender el interés por idioma. No guardamos nombre, email, IP ni huellas digitales.",
+    actions: ["Abrir PDF en navegador", "Descargar PDF", "Descargar PPTX editable"],
     cards: [
       ["ES", "Español", "Deck para inversionistas en español."],
       ["EN", "English", "Investor deck in English."],
@@ -2082,6 +2083,7 @@ const deckDownloadContent = {
     title: "View the Investor Deck in your browser",
     text: "Read Tecnotitan's lightweight investor deck PDF, switch languages without leaving the page and download the file when needed.",
     privacy: "We measure opens and downloads in aggregate to understand interest by language. We do not store name, email, IP address or fingerprints.",
+    actions: ["Open PDF in browser", "Download PDF", "Download editable PPTX"],
     cards: [
       ["ES", "Spanish", "Investor deck in Spanish."],
       ["EN", "English", "Investor deck in English."],
@@ -2095,6 +2097,7 @@ const deckDownloadContent = {
     title: "Veja o Investor Deck no navegador",
     text: "Leia o PDF leve do deck para investidores da Tecnotitan, alterne idiomas sem sair da página e baixe o arquivo se precisar.",
     privacy: "Medimos aberturas e downloads de forma agregada para entender o interesse por idioma. Não guardamos nome, email, IP nem fingerprints.",
+    actions: ["Abrir PDF no navegador", "Baixar PDF", "Baixar PPTX editável"],
     cards: [
       ["ES", "Espanhol", "Deck para investidores em espanhol."],
       ["EN", "Inglês", "Deck para investidores em inglês."],
@@ -2108,6 +2111,7 @@ const deckDownloadContent = {
     title: "在浏览器中查看 Investor Deck",
     text: "阅读 Tecnotitan 的轻量级投资者 PDF，在页面内切换语言，并可按需下载文件。",
     privacy: "我们以汇总方式统计打开和下载，以了解不同语言的兴趣。不保存姓名、邮箱、IP 或指纹。",
+    actions: ["在浏览器中打开 PDF", "下载 PDF", "下载可编辑 PPTX"],
     cards: [
       ["ES", "西班牙语", "西班牙语投资者演示文稿。"],
       ["EN", "英语", "英语投资者演示文稿。"],
@@ -2121,6 +2125,7 @@ const deckDownloadContent = {
     title: "ブラウザでInvestor Deckを表示",
     text: "Tecnotitanの軽量PDFデッキを読み、ページを離れずに言語を切り替え、必要に応じてダウンロードできます。",
     privacy: "言語別の関心を把握するため、表示とダウンロードを集計形式で測定します。名前、メール、IP、フィンガープリントは保存しません。",
+    actions: ["ブラウザでPDFを開く", "PDFをダウンロード", "編集可能なPPTXをダウンロード"],
     cards: [
       ["ES", "スペイン語", "スペイン語の投資家向けデッキ。"],
       ["EN", "英語", "英語の投資家向けデッキ。"],
@@ -2134,6 +2139,7 @@ const deckDownloadContent = {
     title: "브라우저에서 Investor Deck 보기",
     text: "Tecnotitan의 가벼운 투자자용 PDF를 읽고, 페이지 안에서 언어를 바꾸며 필요할 때 파일을 다운로드할 수 있습니다.",
     privacy: "언어별 관심을 이해하기 위해 열람과 다운로드를 집계 형태로 측정합니다. 이름, 이메일, IP, 지문 정보는 저장하지 않습니다.",
+    actions: ["브라우저에서 PDF 열기", "PDF 다운로드", "편집 가능한 PPTX 다운로드"],
     cards: [
       ["ES", "스페인어", "스페인어 투자자용 데크."],
       ["EN", "영어", "영어 투자자용 데크."],
@@ -2301,6 +2307,19 @@ function updateDeckViewer(language, options = {}) {
     trackDeckEvent("view_pdf", { language: safeLanguage, format: "viewer" });
   }
 }
+
+function applyDeckFileActionLabels(language) {
+  const content = deckDownloadContent[language] || deckDownloadContent.es;
+  if (!content.actions) {
+    return;
+  }
+  document.querySelectorAll(".deck-file-actions .button").forEach((button, index) => {
+    if (content.actions[index]) {
+      button.textContent = content.actions[index];
+    }
+  });
+}
+
 const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
 let activeLanguage = supportedLanguages.includes(pathLanguage)
@@ -4744,6 +4763,7 @@ function applyLanguage(language) {
     setText(".deck-download-copy p:not(.section-kicker)", downloadContent.text);
     setText(".deck-privacy-note", downloadContent.privacy);
     setCards(".deck-language-grid a", downloadContent.cards);
+    applyDeckFileActionLabels(language);
     updateDeckViewer(language, { trackView: true });
   }
   if (pageName === "servicios.html") {
@@ -5338,6 +5358,7 @@ document.querySelector(".deck-language-grid")?.addEventListener("click", (event)
   const language = link.dataset.deckLang;
   trackDeckEvent("switch_language", { language, format: "viewer" });
   updateDeckViewer(language, { trackView: true });
+  applyDeckFileActionLabels(language);
   document.querySelector(".pdf-viewer-shell")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
