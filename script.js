@@ -1875,6 +1875,46 @@ const isGuideArticleRoute = Boolean(pathLanguage && guideHubDirectories[pathLang
 const pageName = isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName;
 const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
 const guideArticleRoutes = {
+  aiForSmbs: {
+    es: "guia-ia-para-pymes",
+    en: "ai-for-small-business"
+  },
+  officeAutomation: {
+    es: "guia-automatizacion-administrativa-pymes",
+    en: "office-automation-for-small-business"
+  },
+  crmImplementation: {
+    es: "guia-implementar-crm-pymes",
+    en: "crm-implementation-for-small-business"
+  },
+  cybersecurityBasics: {
+    es: "guia-ciberseguridad-basica-pymes",
+    en: "small-business-cybersecurity-basics"
+  },
+  dashboardsKpis: {
+    es: "guia-dashboard-kpis-pymes",
+    en: "business-dashboard-kpis-for-small-business"
+  },
+  omnichannelSupport: {
+    es: "guia-soporte-omnicanal-pymes",
+    en: "omnichannel-customer-support-for-small-business"
+  },
+  inventoryAutomation: {
+    es: "guia-control-inventario-automatizado",
+    en: "inventory-control-automation-small-business"
+  },
+  billingAutomation: {
+    es: "guia-automatizar-facturacion-cobros",
+    en: "billing-and-collections-automation"
+  },
+  aiProductivity: {
+    es: "guia-productividad-ia-equipos",
+    en: "ai-productivity-for-business-teams"
+  },
+  cloudMigration: {
+    es: "guia-migracion-nube-pymes",
+    en: "cloud-migration-for-small-business"
+  },
   aiAgents: {
     es: "guia-agentes-ia-procesos-empresariales",
     en: "ai-agents-for-business-workflows",
@@ -2514,6 +2554,9 @@ function getGuideArticleUrl(language) {
   const directory = guideHubDirectories[language];
   if (directory && guideRoutes[language]) {
     return new URL(`/${segment}/${directory}/${guideRoutes[language]}.html`, window.location.origin).toString();
+  }
+  if (guideRoutes.en) {
+    return new URL(`/en/guides/${guideRoutes.en}.html`, window.location.origin).toString();
   }
   return new URL(`/${segment}/${guideRoutes.es}.html`, window.location.origin).toString();
 }
