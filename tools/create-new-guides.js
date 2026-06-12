@@ -494,7 +494,11 @@ function footer(rel, base, t, lang) {
 function card(topic, hubLang) {
   const lang = hubLang === "root" ? "es" : hubLang;
   const m = metaObj(topic, lang);
-  const href = hubLang === "root" || hubLang === "es" ? `./${topic.slugs.es}.html` : `./${topic.slugs[lang]}.html`;
+  const href = hubLang === "root"
+    ? `/${topic.slugs.es}.html`
+    : hubLang === "es"
+      ? `/es/${topic.slugs.es}.html`
+      : `/${lang}/${guideDirs[lang]}/${topic.slugs[lang]}.html`;
   return `<article class="guide-card guide-card-muted"><span>${m.tag}</span><h3>${m.title}</h3><p>${m.desc}</p><a href="${href}">${ui[lang].read}</a></article>`;
 }
 
