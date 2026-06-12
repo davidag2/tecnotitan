@@ -1858,10 +1858,95 @@ const languagePathSegments = {
   ja: "ja",
   ko: "ko"
 };
+const guideHubDirectories = {
+  en: "guides",
+  pt: "guias",
+  zh: "guides",
+  ja: "guides",
+  ko: "guides"
+};
 const pathSegmentLanguages = Object.fromEntries(Object.entries(languagePathSegments).map(([language, segment]) => [segment, language]));
 const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
 const pathLanguage = pathSegmentLanguages[cleanPathSegments[0]] || "";
-const pageName = cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
+const rawPageName = cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
+const routeAfterLanguage = pathLanguage ? cleanPathSegments.slice(1) : cleanPathSegments;
+const isGuideHubRoute = Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 1 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
+const isGuideArticleRoute = Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 2 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
+const pageName = isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName;
+const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
+const guideArticleRoutes = {
+  chatgptWork: {
+    es: "guia-como-usar-chatgpt-en-el-trabajo",
+    en: "how-to-use-chatgpt-at-work",
+    pt: "como-usar-chatgpt-no-trabalho",
+    zh: "chatgpt-work-guide",
+    ja: "chatgpt-work-guide",
+    ko: "chatgpt-work-guide"
+  },
+  aiCustomerService: {
+    es: "guia-automatizar-atencion-cliente-con-ia",
+    en: "automate-customer-service-with-ai",
+    pt: "automatizar-atendimento-cliente-com-ia",
+    zh: "ai-customer-service-automation",
+    ja: "ai-customer-service-automation",
+    ko: "ai-customer-service-automation"
+  },
+  businessSoftware: {
+    es: "guia-software-empresarial-para-pymes",
+    en: "business-software-for-smbs",
+    pt: "software-empresarial-para-pmes",
+    zh: "business-software-smbs",
+    ja: "business-software-smbs",
+    ko: "business-software-smbs"
+  },
+  b2bSalesPrompts: {
+    es: "guia-prompts-chatgpt-ventas-b2b",
+    en: "chatgpt-prompts-for-b2b-sales",
+    pt: "prompts-chatgpt-vendas-b2b",
+    zh: "chatgpt-prompts-b2b-sales",
+    ja: "chatgpt-prompts-b2b-sales",
+    ko: "chatgpt-prompts-b2b-sales"
+  },
+  aiGovernance: {
+    es: "guia-gobernanza-ia-empresas",
+    en: "ai-governance-for-companies",
+    pt: "governanca-ia-empresas",
+    zh: "ai-governance-companies",
+    ja: "ai-governance-companies",
+    ko: "ai-governance-companies"
+  },
+  aiAutomationRoi: {
+    es: "guia-roi-automatizacion-ia",
+    en: "ai-automation-roi",
+    pt: "roi-automacao-ia",
+    zh: "ai-automation-roi",
+    ja: "ai-automation-roi",
+    ko: "ai-automation-roi"
+  },
+  aiCrm: {
+    es: "guia-crm-ia-ventas-soporte",
+    en: "ai-crm-for-sales-and-support",
+    pt: "crm-com-ia-vendas-suporte",
+    zh: "ai-crm-sales-support",
+    ja: "ai-crm-sales-support",
+    ko: "ai-crm-sales-support"
+  },
+  digitalRoadmap: {
+    es: "guia-roadmap-transformacion-digital-pymes",
+    en: "digital-transformation-roadmap-for-smbs",
+    pt: "roadmap-transformacao-digital-pmes",
+    zh: "digital-transformation-roadmap-smbs",
+    ja: "digital-transformation-roadmap-smbs",
+    ko: "digital-transformation-roadmap-smbs"
+  }
+};
+const guideArticleRouteIndex = Object.entries(guideArticleRoutes).reduce((index, [key, routes]) => {
+  Object.values(routes).forEach((slug) => {
+    index[slug] = key;
+  });
+  return index;
+}, {});
+const cleanGuideArticleKey = guideArticleRouteIndex[cleanGuideArticleSlug] || "";
 const supportedLanguages = Object.keys(languages);
 const languageNames = {
   es: "Español",
@@ -2384,16 +2469,50 @@ function getCanonicalUrl() {
   return getLocalizedUrl(activeLanguage || pathLanguage || "es");
 }
 
+function getGuideHubUrl(language) {
+  const segment = languagePathSegments[language] || languagePathSegments.es;
+  const directory = guideHubDirectories[language];
+  if (directory) {
+    return new URL(`/${segment}/${directory}/`, window.location.origin).toString();
+  }
+  return new URL(`/${segment}/guias.html`, window.location.origin).toString();
+}
+
+function getGuideArticleUrl(language) {
+  const guideRoutes = guideArticleRoutes[cleanGuideArticleKey];
+  if (!guideRoutes) {
+    return getGuideHubUrl(language);
+  }
+  const segment = languagePathSegments[language] || languagePathSegments.es;
+  if (language === "es") {
+    return new URL(`/${segment}/${guideRoutes.es}.html`, window.location.origin).toString();
+  }
+  const directory = guideHubDirectories[language];
+  if (directory && guideRoutes[language]) {
+    return new URL(`/${segment}/${directory}/${guideRoutes[language]}.html`, window.location.origin).toString();
+  }
+  return new URL(`/${segment}/${guideRoutes.es}.html`, window.location.origin).toString();
+}
+
 function getLocalizedUrl(language) {
   const segment = languagePathSegments[language] || languagePathSegments.es;
-  if (language === "en" && pageName === "guias.html") {
-    return new URL("/en/guides/", window.location.origin).toString();
+  if (isGuideArticleRoute) {
+    return getGuideArticleUrl(language);
+  }
+  if (pageName === "guias.html") {
+    return getGuideHubUrl(language);
   }
   const filePath = pageName === "index.html" ? "" : pageName;
   return new URL(`/${segment}/${filePath}`, window.location.origin).toString();
 }
 
 function getDefaultUrl() {
+  if (isGuideArticleRoute && cleanGuideArticleKey) {
+    return new URL(`/${guideArticleRoutes[cleanGuideArticleKey].es}.html`, window.location.origin).toString();
+  }
+  if (pageName === "guias.html") {
+    return new URL("/guias.html", window.location.origin).toString();
+  }
   const filePath = pageName === "index.html" ? "" : pageName;
   return new URL(`/${filePath}`, window.location.origin).toString();
 }
@@ -3704,8 +3823,8 @@ function carryLanguageAcrossLinks(language) {
     }
 
     const segment = languagePathSegments[language] || languagePathSegments.es;
-    const cleanPath = language === "en" && file === "guias.html"
-      ? "/en/guides/"
+    const cleanPath = file === "guias.html"
+      ? new URL(getGuideHubUrl(language)).pathname
       : file === "index.html"
         ? `/${segment}/`
         : `/${segment}/${file}`;
@@ -3729,7 +3848,14 @@ function buildLanguageSwitcher() {
     button.textContent = languages[language].label;
     button.setAttribute("aria-label", languageNames[language]);
     button.setAttribute("title", languageNames[language]);
-    button.addEventListener("click", () => applyLanguage(language));
+    button.addEventListener("click", () => {
+      if (isGuideHubRoute || isGuideArticleRoute) {
+        localStorage.setItem("tecnotitan-language", language);
+        window.location.href = getLocalizedUrl(language);
+        return;
+      }
+      applyLanguage(language);
+    });
     switcher.appendChild(button);
   });
 
@@ -3890,15 +4016,28 @@ function updateGuideChrome(language) {
 }
 
 function applyLanguage(language) {
+  activeLanguage = language;
+  localStorage.setItem("tecnotitan-language", language);
+
+  document.documentElement.lang = language;
+
+  if (isGuideHubRoute || isGuideArticleRoute) {
+    document.querySelectorAll(".language-switcher button").forEach((button) => {
+      const isCurrent = button.dataset.language === language;
+      button.classList.toggle("is-active", isCurrent);
+      button.setAttribute("aria-pressed", String(isCurrent));
+      button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
+    });
+    carryLanguageAcrossLinks(language);
+    return;
+  }
+
   const dictionary = languages[language] || languages.es;
   const page = dictionary.pages[pageName] || dictionary.pages["index.html"];
   const content = page.content;
 
-  activeLanguage = language;
-  localStorage.setItem("tecnotitan-language", language);
   syncBrowserLanguagePath(language);
 
-  document.documentElement.lang = language;
   setSeoMetadata(page, language);
   injectGlobalStructuredData(language);
   injectBreadcrumbStructuredData(pageName, page.title, language);
