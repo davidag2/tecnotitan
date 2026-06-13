@@ -1,1 +1,8 @@
-{}
+{
+  "crons": [
+    {
+      "path": "/api/daily-ceo-traffic-brief",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}
