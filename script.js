@@ -116,7 +116,7 @@ const languages = {
             "Construimos productos propios y sistemas a medida que pueden evolucionar hacia plataformas repetibles.",
           cards: [
             ["IA para pymes", "Copiloto PyME", "Panel de decisiones con IA para digitalizar pymes en Latinoamérica. Integra ventas, caja, inventario y clientes para operar con más control."],
-            ["Sistema operativo", "Tecnotitan OS", "Plataforma empresarial para centralizar procesos, datos, automatizaciones, agentes IA y flujos internos."],
+            ["OS agéntico", "TitanOS", "Sistema operativo ultraligero basado en Linux para controlar PCs, portátiles, teléfonos y tablets con la voz."],
             ["Móvil + IA", "Life Copilot", "App móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones."],
             ["Videojuegos", "Tecnotitan Engine", "Motor y toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados."],
             ["Educación", "Academia Tecnotitan", "Plataforma de aprendizaje para IA, software, videojuegos, robótica y transformación tecnológica."],
@@ -202,7 +202,7 @@ const languages = {
           indicatorMetrics: [
             ["Mercado objetivo", "Empresas + IA", "Software, automatización, experiencias interactivas y robótica aplicada."],
             ["Áreas de negocio", "5 divisiones", "Software, IA, videojuegos, robótica y consultoría tecnológica."],
-            ["Productos", "6 líneas", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia y Call Center AI."]
+            ["Productos", "6 líneas", "Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia y Call Center AI."]
           ],
           indicatorCards: [
             ["Clientes objetivo", "Empresas medianas y grandes", "Organizaciones con procesos repetibles, datos subutilizados y presión por automatizar."],
@@ -413,7 +413,7 @@ const languages = {
             "We build proprietary products and custom systems with a path toward repeatable software, data and AI platforms.",
           cards: [
             ["SMB AI", "Copiloto PyME", "AI decision panel for Latin American SMBs. It connects sales, cash register, inventory and customer modules so owners can operate with better control."],
-            ["Operating system", "Tecnotitan OS", "Enterprise platform to centralize processes, data, automations, AI agents and internal workflows."],
+            ["Agentic OS", "TitanOS", "Ultra-lightweight Linux-based operating system for controlling PCs, laptops, phones and tablets through voice."],
             ["Mobile + AI", "Life Copilot", "Personal productivity mobile app with an AI copilot for goals, tasks, habits and decisions."],
             ["Video games", "Tecnotitan Engine", "Engine and toolkit for prototyping games, simulators, interactive experiences and gamified worlds."],
             ["Education", "Academia Tecnotitan", "Learning platform for AI, software, video games, robotics and technology transformation."],
@@ -499,7 +499,7 @@ const languages = {
           indicatorMetrics: [
             ["Target market", "Enterprise + AI", "Software, automation, interactive experiences and applied robotics."],
             ["Business areas", "5 divisions", "Software, AI, video games, robotics and technology advisory."],
-            ["Products", "6 lines", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia and Call Center AI."]
+            ["Products", "6 lines", "Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia and Call Center AI."]
           ],
           indicatorCards: [
             ["Target customers", "Mid-market and enterprise", "Organizations with repeatable processes, underused data and pressure to automate."],
@@ -710,7 +710,7 @@ const languages = {
             "Construímos produtos próprios e sistemas sob medida que podem evoluir para plataformas repetíveis de software, dados e IA.",
           cards: [
             ["IA para PMEs", "Copiloto PyME", "Painel de decisões com IA para digitalizar PMEs na América Latina. Conecta vendas, caixa, inventário e clientes para operar com mais controle."],
-            ["Sistema operacional", "Tecnotitan OS", "Plataforma empresarial para centralizar processos, dados, automações, agentes IA e fluxos internos."],
+            ["OS agêntico", "TitanOS", "Sistema operacional ultraleve baseado em Linux para controlar PCs, notebooks, telefones e tablets por voz."],
             ["Mobile + IA", "Life Copilot", "Aplicativo móvel de produtividade pessoal com copiloto IA para metas, tarefas, hábitos e decisões."],
             ["Videogames", "Tecnotitan Engine", "Engine e toolkit para prototipar jogos, simuladores, experiências interativas e mundos gamificados."],
             ["Educação", "Academia Tecnotitan", "Plataforma de aprendizagem para IA, software, videogames, robótica e transformação tecnológica."],
@@ -796,7 +796,7 @@ const languages = {
           indicatorMetrics: [
             ["Mercado-alvo", "Empresas + IA", "Software, automação, experiências interativas e robótica aplicada."],
             ["Áreas de negócio", "5 divisões", "Software, IA, videogames, robótica e consultoria tecnológica."],
-            ["Produtos", "6 linhas", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia e Call Center AI."]
+            ["Produtos", "6 linhas", "Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia e Call Center AI."]
           ],
           indicatorCards: [
             ["Clientes-alvo", "Médias e grandes empresas", "Organizações com processos repetíveis, dados subutilizados e pressão para automatizar."],
@@ -1013,7 +1013,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
         intro: "我们构建自有产品和定制系统，并让它们逐步演进为可复制的平台。",
         cards: [
           ["中小企业 AI", "Copiloto PyME", "面向拉美中小企业的 AI 决策面板，连接销售、收银、库存和客户模块，帮助企业更有控制地运营。"],
-          ["企业操作系统", "Tecnotitan OS", "集中流程、数据、自动化、AI 代理和内部工作流的企业平台。"],
+          ["代理式操作系统", "TitanOS", "基于 Linux 的超轻量语音优先操作系统，用于控制 PC、笔记本、手机和平板。"],
           ["移动 + AI", "Life Copilot", "用于目标、任务、习惯和决策管理的个人生产力 AI 移动应用。"],
           ["电子游戏", "Tecnotitan Engine", "用于原型化游戏、仿真器、互动体验和游戏化世界的引擎与工具包。"],
           ["教育", "Academia Tecnotitan", "面向 AI、软件、电子游戏、机器人和技术转型的学习平台。"],
@@ -1091,7 +1091,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
         indicatorMetrics: [
           ["目标市场", "企业 + AI", "软件、自动化、互动体验和应用机器人。"],
           ["业务领域", "5 个事业部", "软件、AI、电子游戏、机器人和技术咨询。"],
-          ["产品", "6 条产品线", "Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia 和 Call Center AI。"]
+          ["产品", "6 条产品线", "Copiloto Pyme、TitanOS、Life Copilot、Tecnotitan Engine、Academia 和 Call Center AI。"]
         ],
         indicatorCards: [
           ["目标客户", "中大型企业", "拥有重复流程、未充分利用数据和自动化压力的组织。"],
@@ -1289,7 +1289,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
         intro: "自社製品とカスタムシステムを構築し、再現可能なプラットフォームへ進化させます。",
         cards: [
           ["中小企業 AI", "Copiloto PyME", "ラテンアメリカの中小企業向け AI 意思決定パネル。販売、レジ、在庫、顧客モジュールをつなぎ、より管理された運営を支援します。"],
-          ["企業 OS", "Tecnotitan OS", "プロセス、データ、自動化、AI エージェント、社内フローを一元化する企業プラットフォーム。"],
+          ["エージェント OS", "TitanOS", "PC、ノートPC、スマートフォン、タブレットを音声で操作する軽量 Linux ベースの OS。"],
           ["モバイル + AI", "Life Copilot", "目標、タスク、習慣、意思決定を整理する個人向け AI 生産性アプリ。"],
           ["ゲーム", "Tecnotitan Engine", "ゲーム、シミュレーター、インタラクティブ体験、ゲーミフィケーション世界を試作するエンジンとツールキット。"],
           ["教育", "Academia Tecnotitan", "AI、ソフトウェア、ゲーム、ロボティクス、テクノロジー変革の学習プラットフォーム。"],
@@ -1367,7 +1367,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
         indicatorMetrics: [
           ["対象市場", "企業 + AI", "ソフトウェア、自動化、インタラクティブ体験、応用ロボティクス。"],
           ["事業領域", "5 部門", "ソフトウェア、AI、ゲーム、ロボティクス、技術コンサルティング。"],
-          ["製品", "6 ライン", "Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia、Call Center AI。"]
+          ["製品", "6 ライン", "Copiloto Pyme、TitanOS、Life Copilot、Tecnotitan Engine、Academia、Call Center AI。"]
         ],
         indicatorCards: [
           ["対象顧客", "中堅・大企業", "反復プロセス、未活用データ、自動化圧力を持つ組織。"],
@@ -1565,7 +1565,7 @@ languages.ko = buildLocalizedLanguage(languages.en, {
         intro: "우리는 자체 제품과 맞춤형 시스템을 만들고, 이를 반복 가능한 플랫폼으로 발전시킵니다.",
         cards: [
           ["중소기업 AI", "Copiloto PyME", "라틴아메리카 중소기업을 위한 AI 의사결정 패널입니다. 판매, 계산대, 재고, 고객 모듈을 연결해 더 통제된 운영을 돕습니다."],
-          ["기업 운영체제", "Tecnotitan OS", "프로세스, 데이터, 자동화, AI 에이전트, 내부 플로우를 중앙화하는 기업 플랫폼."],
+          ["에이전트 OS", "TitanOS", "PC, 노트북, 휴대폰, 태블릿을 음성으로 제어하는 초경량 Linux 기반 운영체제."],
           ["모바일 + AI", "Life Copilot", "목표, 업무, 습관, 의사결정을 정리하는 개인 생산성 AI 모바일 앱."],
           ["비디오게임", "Tecnotitan Engine", "게임, 시뮬레이터, 인터랙티브 경험, 게이미피케이션 세계를 프로토타이핑하는 엔진과 툴킷."],
           ["교육", "Academia Tecnotitan", "AI, 소프트웨어, 게임, 로보틱스, 기술 전환을 위한 학습 플랫폼."],
@@ -1643,7 +1643,7 @@ languages.ko = buildLocalizedLanguage(languages.en, {
         indicatorMetrics: [
           ["목표 시장", "기업 + AI", "소프트웨어, 자동화, 인터랙티브 경험, 응용 로보틱스."],
           ["사업 영역", "5개 부문", "소프트웨어, AI, 게임, 로보틱스, 기술 컨설팅."],
-          ["제품", "6개 라인", "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia, Call Center AI."]
+          ["제품", "6개 라인", "Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia, Call Center AI."]
         ],
         indicatorCards: [
           ["목표 고객", "중견 및 대기업", "반복 프로세스, 미활용 데이터, 자동화 압력을 가진 조직."],
@@ -3215,8 +3215,8 @@ const staticSeoPages = {
     "Copiloto PyME digitaliza pequeñas y medianas empresas con IA, panel de decisiones y módulos de ventas, caja, inventario y clientes."
   ],
   "producto-tecnotitan-os.html": [
-    "Tecnotitan OS | Tecnotitan",
-    "Plataforma empresarial para procesos, datos, automatizaciones, agentes IA y flujos internos."
+    "TitanOS | Sistema operativo agéntico por voz",
+    "TitanOS es un sistema operativo ultraligero basado en Linux para controlar PCs, portátiles, teléfonos y tablets con la voz."
   ],
   "producto-life-copilot.html": [
     "Life Copilot | Tecnotitan",
@@ -3258,7 +3258,7 @@ const seoMetadataOverrides = {
     ],
     "productos.html": [
       "Productos de IA, software y automatización empresarial | Tecnotitan",
-      "Explora Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan y Call Center AI para empresas."
+      "Explora Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan y Call Center AI para empresas."
     ],
     "servicios.html": [
       "Servicios de IA, software empresarial y automatización | Tecnotitan",
@@ -3305,8 +3305,8 @@ const seoMetadataOverrides = {
       "Digitaliza pymes latinoamericanas con IA, panel de decisiones y módulos de ventas, caja, inventario y clientes."
     ],
     "producto-tecnotitan-os.html": [
-      "Tecnotitan OS | Plataforma empresarial con IA y automatización",
-      "Centraliza procesos, datos, automatizaciones, agentes IA y flujos internos en una plataforma empresarial."
+      "TitanOS | Sistema operativo agéntico por voz",
+      "Sistema operativo ultraligero basado en Linux para controlar PCs, portátiles, teléfonos y tablets con la voz."
     ],
     "producto-life-copilot.html": [
       "Life Copilot | App móvil de productividad con inteligencia artificial",
@@ -3336,7 +3336,7 @@ const seoMetadataOverrides = {
     ],
     "productos.html": [
       "AI, software and business automation products | Tecnotitan",
-      "Explore Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan and Call Center AI for companies."
+      "Explore Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan and Call Center AI for companies."
     ],
     "servicios.html": [
       "AI, business software and automation services | Tecnotitan",
@@ -3390,7 +3390,7 @@ const seoMetadataOverrides = {
     ],
     "productos.html": [
       "Produtos de IA, software e automação empresarial | Tecnotitan",
-      "Explore Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan e Call Center AI para empresas."
+      "Explore Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan e Call Center AI para empresas."
     ],
     "servicios.html": [
       "Serviços de IA, software empresarial e automação | Tecnotitan",
@@ -3420,7 +3420,7 @@ const seoMetadataOverrides = {
     ],
     "productos.html": [
       "AI、软件与企业自动化产品 | Tecnotitan",
-      "探索 Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia Tecnotitan 与 Call Center AI。"
+      "探索 Copiloto Pyme、TitanOS、Life Copilot、Tecnotitan Engine、Academia Tecnotitan 与 Call Center AI。"
     ],
     "servicios.html": [
       "AI、商业软件与自动化服务 | Tecnotitan",
@@ -3450,7 +3450,7 @@ const seoMetadataOverrides = {
     ],
     "productos.html": [
       "AI、ソフトウェア、企業自動化プロダクト | Tecnotitan",
-      "Copiloto Pyme、Tecnotitan OS、Life Copilot、Tecnotitan Engine、Academia Tecnotitan、Call Center AI をご覧ください。"
+      "Copiloto Pyme、TitanOS、Life Copilot、Tecnotitan Engine、Academia Tecnotitan、Call Center AI をご覧ください。"
     ],
     "servicios.html": [
       "AI、業務ソフトウェア、自動化サービス | Tecnotitan",
@@ -3480,7 +3480,7 @@ const seoMetadataOverrides = {
     ],
     "productos.html": [
       "AI, 소프트웨어, 기업 자동화 제품 | Tecnotitan",
-      "Copiloto Pyme, Tecnotitan OS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan, Call Center AI를 살펴보세요."
+      "Copiloto Pyme, TitanOS, Life Copilot, Tecnotitan Engine, Academia Tecnotitan, Call Center AI를 살펴보세요."
     ],
     "servicios.html": [
       "AI, 비즈니스 소프트웨어, 자동화 서비스 | Tecnotitan",
@@ -3577,12 +3577,12 @@ const productStructuredSeo = {
     image: "https://www.tecnotitan.com/assets/bg-process-ai.jpg"
   },
   "producto-tecnotitan-os.html": {
-    name: "Tecnotitan OS",
-    description: "Plataforma empresarial para centralizar procesos, datos, automatizaciones, agentes IA y flujos internos.",
-    category: "Enterprise software platform",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    audience: "Companies and operations teams",
+    name: "TitanOS",
+    description: "Sistema operativo agéntico por voz, ultraligero y basado en Linux para PCs, portátiles, teléfonos y tablets.",
+    category: "Agentic operating system",
+    applicationCategory: "OperatingSystem",
+    operatingSystem: "Linux",
+    audience: "People and organizations seeking voice-first computing",
     image: "https://www.tecnotitan.com/assets/bg-hero-tech.jpg"
   },
   "producto-life-copilot.html": {
