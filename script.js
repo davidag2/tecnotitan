@@ -1877,14 +1877,18 @@ const englishCleanPageRoutes = {
   careers: "trabaja-con-nosotros.html"
 };
 const englishCleanUrlsByPage = Object.fromEntries(
-  Object.entries(englishCleanPageRoutes).map(([slug, file]) => [file, `/${slug}/`])
+  Object.entries(englishCleanPageRoutes).map(([slug, file]) => [file, `/en/${slug}/`])
 );
 const pathSegmentLanguages = Object.fromEntries(Object.entries(languagePathSegments).map(([language, segment]) => [segment, language]));
 const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
 const pathLanguage = pathSegmentLanguages[cleanPathSegments[0]] || "";
-const englishCleanRouteSlug = !pathLanguage ? cleanPathSegments[0] || "" : "";
-const isEnglishCleanGuideHubRoute = !pathLanguage && cleanPathSegments.length === 1 && cleanPathSegments[0] === "guides";
-const isEnglishCleanGuideArticleRoute = !pathLanguage && cleanPathSegments.length === 2 && cleanPathSegments[0] === "guides";
+const englishCleanRouteSlug = pathLanguage === "en" ? cleanPathSegments[1] || "" : !pathLanguage ? cleanPathSegments[0] || "" : "";
+const isEnglishCleanGuideHubRoute =
+  (!pathLanguage && cleanPathSegments.length === 1 && cleanPathSegments[0] === "guides") ||
+  (pathLanguage === "en" && cleanPathSegments.length === 2 && cleanPathSegments[1] === "guides");
+const isEnglishCleanGuideArticleRoute =
+  (!pathLanguage && cleanPathSegments.length === 2 && cleanPathSegments[0] === "guides") ||
+  (pathLanguage === "en" && cleanPathSegments.length === 3 && cleanPathSegments[1] === "guides");
 const englishCleanPageName = englishCleanPageRoutes[englishCleanRouteSlug] || "";
 const inferredPathLanguage = pathLanguage || (englishCleanPageName || isEnglishCleanGuideHubRoute || isEnglishCleanGuideArticleRoute ? "en" : "");
 const rawPageName = englishCleanPageName || cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
@@ -2835,7 +2839,7 @@ function getCanonicalUrl() {
 
 function getGuideHubUrl(language) {
   if (language === "en") {
-    return new URL("/guides/", window.location.origin).toString();
+    return new URL("/en/guides/", window.location.origin).toString();
   }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   const directory = guideHubDirectories[language];
@@ -2851,7 +2855,7 @@ function getGuideArticleUrl(language) {
     return getGuideHubUrl(language);
   }
   if (language === "en" && guideRoutes.en) {
-    return new URL(`/guides/${guideRoutes.en}.html`, window.location.origin).toString();
+    return new URL(`/en/guides/${guideRoutes.en}.html`, window.location.origin).toString();
   }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   if (language === "es") {
@@ -4181,6 +4185,16 @@ function getCarryPageFileFromUrl(url) {
   const routeParts = hasLanguagePrefix ? parts.slice(1) : parts;
 
   if (!hasLanguagePrefix) {
+    if (routeParts.length === 1 && routeParts[0] === "guides") {
+      return "guias.html";
+    }
+
+    if (routeParts.length === 1 && englishCleanPageRoutes[routeParts[0]]) {
+      return englishCleanPageRoutes[routeParts[0]];
+    }
+  }
+
+  if (hasLanguagePrefix && first === "en") {
     if (routeParts.length === 1 && routeParts[0] === "guides") {
       return "guias.html";
     }
