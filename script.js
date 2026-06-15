@@ -1865,13 +1865,32 @@ const guideHubDirectories = {
   ja: "guides",
   ko: "guides"
 };
+const englishCleanPageRoutes = {
+  about: "nosotros.html",
+  products: "productos.html",
+  services: "servicios.html",
+  divisions: "divisiones.html",
+  investors: "inversionistas.html",
+  contact: "contacto.html",
+  "investor-deck": "investor-deck.html",
+  legal: "aviso-legal.html",
+  careers: "trabaja-con-nosotros.html"
+};
+const englishCleanUrlsByPage = Object.fromEntries(
+  Object.entries(englishCleanPageRoutes).map(([slug, file]) => [file, `/${slug}/`])
+);
 const pathSegmentLanguages = Object.fromEntries(Object.entries(languagePathSegments).map(([language, segment]) => [segment, language]));
 const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
 const pathLanguage = pathSegmentLanguages[cleanPathSegments[0]] || "";
-const rawPageName = cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
+const englishCleanRouteSlug = !pathLanguage ? cleanPathSegments[0] || "" : "";
+const isEnglishCleanGuideHubRoute = !pathLanguage && cleanPathSegments.length === 1 && cleanPathSegments[0] === "guides";
+const isEnglishCleanGuideArticleRoute = !pathLanguage && cleanPathSegments.length === 2 && cleanPathSegments[0] === "guides";
+const englishCleanPageName = englishCleanPageRoutes[englishCleanRouteSlug] || "";
+const inferredPathLanguage = pathLanguage || (englishCleanPageName || isEnglishCleanGuideHubRoute || isEnglishCleanGuideArticleRoute ? "en" : "");
+const rawPageName = englishCleanPageName || cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
 const routeAfterLanguage = pathLanguage ? cleanPathSegments.slice(1) : cleanPathSegments;
-const isGuideHubRoute = Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 1 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
-const isGuideArticleRoute = Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 2 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
+const isGuideHubRoute = isEnglishCleanGuideHubRoute || Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 1 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
+const isGuideArticleRoute = isEnglishCleanGuideArticleRoute || Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 2 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
 const pageName = isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName;
 const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
 const guideArticleRoutes = {
@@ -2324,13 +2343,15 @@ const queryLanguage = new URLSearchParams(window.location.search).get("lang");
 const storedLanguage = localStorage.getItem("tecnotitan-language");
 let activeLanguage = supportedLanguages.includes(pathLanguage)
   ? pathLanguage
+  : supportedLanguages.includes(inferredPathLanguage)
+    ? inferredPathLanguage
   : supportedLanguages.includes(queryLanguage)
     ? queryLanguage
     : supportedLanguages.includes(storedLanguage)
       ? storedLanguage
       : "es";
 const shouldAutoDetectLanguage =
-  !supportedLanguages.includes(pathLanguage) &&
+  !supportedLanguages.includes(inferredPathLanguage) &&
   !supportedLanguages.includes(queryLanguage) &&
   !supportedLanguages.includes(storedLanguage);
 
@@ -2813,6 +2834,9 @@ function getCanonicalUrl() {
 }
 
 function getGuideHubUrl(language) {
+  if (language === "en") {
+    return new URL("/guides/", window.location.origin).toString();
+  }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   const directory = guideHubDirectories[language];
   if (directory) {
@@ -2825,6 +2849,9 @@ function getGuideArticleUrl(language) {
   const guideRoutes = guideArticleRoutes[cleanGuideArticleKey];
   if (!guideRoutes) {
     return getGuideHubUrl(language);
+  }
+  if (language === "en" && guideRoutes.en) {
+    return new URL(`/guides/${guideRoutes.en}.html`, window.location.origin).toString();
   }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   if (language === "es") {
@@ -2841,6 +2868,9 @@ function getGuideArticleUrl(language) {
 }
 
 function getLocalizedUrl(language) {
+  if (language === "en" && englishCleanUrlsByPage[pageName]) {
+    return new URL(englishCleanUrlsByPage[pageName], window.location.origin).toString();
+  }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   if (isGuideArticleRoute) {
     return getGuideArticleUrl(language);
@@ -4173,6 +4203,8 @@ function carryLanguageAcrossLinks(language) {
       ? new URL(getGuideHubUrl(language)).pathname
       : file === "index.html"
         ? `/${segment}/`
+        : language === "en" && englishCleanUrlsByPage[file]
+          ? englishCleanUrlsByPage[file]
         : `/${segment}/${file}`;
     link.setAttribute("href", `${cleanPath}${url.search}${url.hash}`);
   });

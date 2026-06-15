@@ -1,4 +1,71 @@
 {
+  "redirects": [
+    {
+      "source": "/en/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/en/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/en/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/en/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/en/trabaja-con-nosotros.html",
+      "destination": "/careers/",
+      "permanent": true
+    },
+    {
+      "source": "/en/guides",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/en/guias.html",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/en/guides/",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/en/guides/:path*",
+      "destination": "/guides/:path*",
+      "permanent": true
+    }
+  ],
   "crons": [
     {
       "path": "/api/daily-ceo-traffic-brief",
