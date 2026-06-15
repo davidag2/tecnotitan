@@ -121,16 +121,6 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/es/productos/copilotopyme",
-      "destination": "/es/producto-copiloto-pyme.html"
-    },
-    {
-      "source": "/es/productos/copilotopyme/",
-      "destination": "/es/producto-copiloto-pyme.html"
-    }
-  ],
   "crons": [
     {
       "path": "/api/daily-ceo-traffic-brief",
