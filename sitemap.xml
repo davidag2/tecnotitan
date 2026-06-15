@@ -151,12 +151,6 @@
     <priority>0.80</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/producto-tecnotitan-os.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-<url>
     <loc>https://www.tecnotitan.com/servicio-consultoria-tecnologica.html</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -361,7 +355,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/es/producto-tecnotitan-os.html</loc>
+    <loc>https://www.tecnotitan.com/es/productos/titanos/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -571,7 +565,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/en/producto-tecnotitan-os.html</loc>
+    <loc>https://www.tecnotitan.com/en/products/titanos/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

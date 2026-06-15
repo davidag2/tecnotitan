@@ -11,6 +11,21 @@
       "permanent": true
     },
     {
+      "source": "/es/producto-tecnotitan-os.html",
+      "destination": "/es/productos/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-tecnotitan-os.html",
+      "destination": "/en/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-tecnotitan-os.html",
+      "destination": "/es/productos/titanos/",
+      "permanent": true
+    },
+    {
       "source": "/en/nosotros.html",
       "destination": "/en/about/",
       "permanent": true

@@ -1898,7 +1898,13 @@ const isGuideArticleRoute = isEnglishCleanGuideArticleRoute || Boolean(pathLangu
 const productDetailRoutes = {
   es: {
     productos: {
-      copilotopyme: "producto-copiloto-pyme.html"
+      copilotopyme: "producto-copiloto-pyme.html",
+      titanos: "producto-tecnotitan-os.html"
+    }
+  },
+  en: {
+    products: {
+      titanos: "producto-tecnotitan-os.html"
     }
   }
 };
@@ -2888,6 +2894,14 @@ function getLocalizedUrl(language) {
   }
   if (language === "es" && pageName === "producto-copiloto-pyme.html") {
     return new URL("/es/productos/copilotopyme/", window.location.origin).toString();
+  }
+  if (pageName === "producto-tecnotitan-os.html") {
+    if (language === "en") {
+      return new URL("/en/products/titanos/", window.location.origin).toString();
+    }
+    if (language === "es") {
+      return new URL("/es/productos/titanos/", window.location.origin).toString();
+    }
   }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   if (isGuideArticleRoute) {
@@ -4276,6 +4290,10 @@ function carryLanguageAcrossLinks(language) {
       ? new URL(getGuideHubUrl(language)).pathname
       : language === "es" && file === "producto-copiloto-pyme.html"
         ? "/es/productos/copilotopyme/"
+      : language === "es" && file === "producto-tecnotitan-os.html"
+        ? "/es/productos/titanos/"
+      : language === "en" && file === "producto-tecnotitan-os.html"
+        ? "/en/products/titanos/"
       : file === "index.html"
         ? `/${segment}/`
         : language === "en" && englishCleanUrlsByPage[file]
