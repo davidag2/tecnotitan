@@ -6,6 +6,11 @@
       "permanent": true
     },
     {
+      "source": "/en/producto-copiloto-pyme.html",
+      "destination": "/en/products/copilotopyme/",
+      "permanent": true
+    },
+    {
       "source": "/producto-copiloto-pyme.html",
       "destination": "/es/productos/copilotopyme/",
       "permanent": true

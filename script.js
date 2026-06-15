@@ -1904,6 +1904,7 @@ const productDetailRoutes = {
   },
   en: {
     products: {
+      copilotopyme: "producto-copiloto-pyme.html",
       titanos: "producto-tecnotitan-os.html"
     }
   }
@@ -2892,8 +2893,13 @@ function getLocalizedUrl(language) {
   if (language === "en" && englishCleanUrlsByPage[pageName]) {
     return new URL(englishCleanUrlsByPage[pageName], window.location.origin).toString();
   }
-  if (language === "es" && pageName === "producto-copiloto-pyme.html") {
-    return new URL("/es/productos/copilotopyme/", window.location.origin).toString();
+  if (pageName === "producto-copiloto-pyme.html") {
+    if (language === "en") {
+      return new URL("/en/products/copilotopyme/", window.location.origin).toString();
+    }
+    if (language === "es") {
+      return new URL("/es/productos/copilotopyme/", window.location.origin).toString();
+    }
   }
   if (pageName === "producto-tecnotitan-os.html") {
     if (language === "en") {
@@ -4290,6 +4296,8 @@ function carryLanguageAcrossLinks(language) {
       ? new URL(getGuideHubUrl(language)).pathname
       : language === "es" && file === "producto-copiloto-pyme.html"
         ? "/es/productos/copilotopyme/"
+      : language === "en" && file === "producto-copiloto-pyme.html"
+        ? "/en/products/copilotopyme/"
       : language === "es" && file === "producto-tecnotitan-os.html"
         ? "/es/productos/titanos/"
       : language === "en" && file === "producto-tecnotitan-os.html"

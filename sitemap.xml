@@ -127,12 +127,6 @@
     <priority>0.80</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/producto-copiloto-pyme.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-<url>
     <loc>https://www.tecnotitan.com/producto-life-copilot.html</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -541,7 +535,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/en/producto-copiloto-pyme.html</loc>
+    <loc>https://www.tecnotitan.com/en/products/copilotopyme/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
