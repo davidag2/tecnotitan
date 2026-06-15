@@ -2884,6 +2884,9 @@ function getLocalizedUrl(language) {
   if (language === "en" && englishCleanUrlsByPage[pageName]) {
     return new URL(englishCleanUrlsByPage[pageName], window.location.origin).toString();
   }
+  if (language === "es" && pageName === "producto-copiloto-pyme.html") {
+    return new URL("/es/productos/copilotopyme/", window.location.origin).toString();
+  }
   const segment = languagePathSegments[language] || languagePathSegments.es;
   if (isGuideArticleRoute) {
     return getGuideArticleUrl(language);
