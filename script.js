@@ -4192,6 +4192,13 @@ function getCarryPageFileFromUrl(url) {
   const first = parts[0];
   const hasLanguagePrefix = Boolean(pathSegmentLanguages[first]);
   const routeParts = hasLanguagePrefix ? parts.slice(1) : parts;
+  const routeLanguage = hasLanguagePrefix ? first : "";
+  const cleanProductFile =
+    productDetailRoutes[routeLanguage]?.[routeParts[0]]?.[routeParts[1]?.replace(/\.html$/, "")] || "";
+
+  if (cleanProductFile) {
+    return cleanProductFile;
+  }
 
   if (!hasLanguagePrefix) {
     if (routeParts.length === 1 && routeParts[0] === "guides") {
@@ -4260,6 +4267,8 @@ function carryLanguageAcrossLinks(language) {
     const segment = languagePathSegments[language] || languagePathSegments.es;
     const cleanPath = file === "guias.html"
       ? new URL(getGuideHubUrl(language)).pathname
+      : language === "es" && file === "producto-copiloto-pyme.html"
+        ? "/es/productos/copilotopyme/"
       : file === "index.html"
         ? `/${segment}/`
         : language === "en" && englishCleanUrlsByPage[file]
