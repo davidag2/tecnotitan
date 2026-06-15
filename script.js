@@ -4227,11 +4227,17 @@ function buildLanguageSwitcher() {
     button.setAttribute("aria-label", languageNames[language]);
     button.setAttribute("title", languageNames[language]);
     button.addEventListener("click", () => {
-      if (isGuideHubRoute || isGuideArticleRoute) {
-        localStorage.setItem("tecnotitan-language", language);
-        window.location.href = getLocalizedUrl(language);
+      localStorage.setItem("tecnotitan-language", language);
+      const target = new URL(getLocalizedUrl(language));
+      const current = new URL(window.location.href);
+      const targetPath = target.pathname.replace(/\/$/, "");
+      const currentPath = current.pathname.replace(/\/$/, "");
+
+      if (targetPath !== currentPath) {
+        window.location.assign(`${target.pathname}${target.search}${current.hash}`);
         return;
       }
+
       applyLanguage(language);
     });
     switcher.appendChild(button);
