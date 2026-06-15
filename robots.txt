@@ -5,4 +5,3 @@ Allow: /outputs/
 Disallow: /api/
 
 Sitemap: https://www.tecnotitan.com/sitemap.xml
-LLMS: https://www.tecnotitan.com/llms.txt
