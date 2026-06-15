@@ -115,7 +115,7 @@ const languages = {
           intro:
             "Construimos productos propios y sistemas a medida que pueden evolucionar hacia plataformas repetibles.",
           cards: [
-            ["IA para pymes", "Copiloto Pyme", "Asistente de IA para ventas, soporte, documentos y automatización operativa de pequeñas y medianas empresas."],
+            ["IA para pymes", "Copiloto PyME", "Panel de decisiones con IA para digitalizar pymes en Latinoamérica. Integra ventas, caja, inventario y clientes para operar con más control."],
             ["Sistema operativo", "Tecnotitan OS", "Plataforma empresarial para centralizar procesos, datos, automatizaciones, agentes IA y flujos internos."],
             ["Móvil + IA", "Life Copilot", "App móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones."],
             ["Videojuegos", "Tecnotitan Engine", "Motor y toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados."],
@@ -412,7 +412,7 @@ const languages = {
           intro:
             "We build proprietary products and custom systems with a path toward repeatable software, data and AI platforms.",
           cards: [
-            ["SMB AI", "Copiloto Pyme", "AI assistant for sales, support, documents and operational automation for small and medium businesses."],
+            ["SMB AI", "Copiloto PyME", "AI decision panel for Latin American SMBs. It connects sales, cash register, inventory and customer modules so owners can operate with better control."],
             ["Operating system", "Tecnotitan OS", "Enterprise platform to centralize processes, data, automations, AI agents and internal workflows."],
             ["Mobile + AI", "Life Copilot", "Personal productivity mobile app with an AI copilot for goals, tasks, habits and decisions."],
             ["Video games", "Tecnotitan Engine", "Engine and toolkit for prototyping games, simulators, interactive experiences and gamified worlds."],
@@ -709,7 +709,7 @@ const languages = {
           intro:
             "Construímos produtos próprios e sistemas sob medida que podem evoluir para plataformas repetíveis de software, dados e IA.",
           cards: [
-            ["IA para PMEs", "Copiloto Pyme", "Assistente de IA para vendas, suporte, documentos e automação operacional de pequenas e médias empresas."],
+            ["IA para PMEs", "Copiloto PyME", "Painel de decisões com IA para digitalizar PMEs na América Latina. Conecta vendas, caixa, inventário e clientes para operar com mais controle."],
             ["Sistema operacional", "Tecnotitan OS", "Plataforma empresarial para centralizar processos, dados, automações, agentes IA e fluxos internos."],
             ["Mobile + IA", "Life Copilot", "Aplicativo móvel de produtividade pessoal com copiloto IA para metas, tarefas, hábitos e decisões."],
             ["Videogames", "Tecnotitan Engine", "Engine e toolkit para prototipar jogos, simuladores, experiências interativas e mundos gamificados."],
@@ -1012,7 +1012,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
         titleLines: ["能够沉淀为", "平台的产品"],
         intro: "我们构建自有产品和定制系统，并让它们逐步演进为可复制的平台。",
         cards: [
-          ["中小企业 AI", "Copiloto Pyme", "面向销售、支持、文档和运营自动化的中小企业 AI 助手。"],
+          ["中小企业 AI", "Copiloto PyME", "面向拉美中小企业的 AI 决策面板，连接销售、收银、库存和客户模块，帮助企业更有控制地运营。"],
           ["企业操作系统", "Tecnotitan OS", "集中流程、数据、自动化、AI 代理和内部工作流的企业平台。"],
           ["移动 + AI", "Life Copilot", "用于目标、任务、习惯和决策管理的个人生产力 AI 移动应用。"],
           ["电子游戏", "Tecnotitan Engine", "用于原型化游戏、仿真器、互动体验和游戏化世界的引擎与工具包。"],
@@ -1288,7 +1288,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
         titleLines: ["プラットフォームへ", "発展し得る製品"],
         intro: "自社製品とカスタムシステムを構築し、再現可能なプラットフォームへ進化させます。",
         cards: [
-          ["中小企業 AI", "Copiloto Pyme", "営業、サポート、文書、業務自動化のための中小企業向け AI アシスタント。"],
+          ["中小企業 AI", "Copiloto PyME", "ラテンアメリカの中小企業向け AI 意思決定パネル。販売、レジ、在庫、顧客モジュールをつなぎ、より管理された運営を支援します。"],
           ["企業 OS", "Tecnotitan OS", "プロセス、データ、自動化、AI エージェント、社内フローを一元化する企業プラットフォーム。"],
           ["モバイル + AI", "Life Copilot", "目標、タスク、習慣、意思決定を整理する個人向け AI 生産性アプリ。"],
           ["ゲーム", "Tecnotitan Engine", "ゲーム、シミュレーター、インタラクティブ体験、ゲーミフィケーション世界を試作するエンジンとツールキット。"],
@@ -1564,7 +1564,7 @@ languages.ko = buildLocalizedLanguage(languages.en, {
         titleLines: ["플랫폼으로 축적될", "수 있는 제품"],
         intro: "우리는 자체 제품과 맞춤형 시스템을 만들고, 이를 반복 가능한 플랫폼으로 발전시킵니다.",
         cards: [
-          ["중소기업 AI", "Copiloto Pyme", "영업, 지원, 문서, 운영 자동화를 위한 중소기업용 AI 어시스턴트."],
+          ["중소기업 AI", "Copiloto PyME", "라틴아메리카 중소기업을 위한 AI 의사결정 패널입니다. 판매, 계산대, 재고, 고객 모듈을 연결해 더 통제된 운영을 돕습니다."],
           ["기업 운영체제", "Tecnotitan OS", "프로세스, 데이터, 자동화, AI 에이전트, 내부 플로우를 중앙화하는 기업 플랫폼."],
           ["모바일 + AI", "Life Copilot", "목표, 업무, 습관, 의사결정을 정리하는 개인 생산성 AI 모바일 앱."],
           ["비디오게임", "Tecnotitan Engine", "게임, 시뮬레이터, 인터랙티브 경험, 게이미피케이션 세계를 프로토타이핑하는 엔진과 툴킷."],
@@ -3197,8 +3197,8 @@ const staticSeoPages = {
     "Consultoría IA para empresas en Colombia: diagnóstico, casos de uso, agentes, copilotos y roadmap tecnológico."
   ],
   "producto-copiloto-pyme.html": [
-    "Copiloto Pyme | Tecnotitan",
-    "Asistente de IA para ventas, soporte, documentos y automatización operativa de pymes."
+    "Copiloto PyME | Panel IA para pymes latinoamericanas",
+    "Copiloto PyME digitaliza pequeñas y medianas empresas con IA, panel de decisiones y módulos de ventas, caja, inventario y clientes."
   ],
   "producto-tecnotitan-os.html": [
     "Tecnotitan OS | Tecnotitan",
@@ -3287,8 +3287,8 @@ const seoMetadataOverrides = {
       "Modernización operativa, automatización, adopción digital, datos y mejora continua para empresas."
     ],
     "producto-copiloto-pyme.html": [
-      "Copiloto Pyme | Asistente IA para pequeñas y medianas empresas",
-      "Asistente de IA para ventas, soporte, documentos y automatización operativa de pymes."
+      "Copiloto PyME | Panel IA para pequeñas y medianas empresas",
+      "Digitaliza pymes latinoamericanas con IA, panel de decisiones y módulos de ventas, caja, inventario y clientes."
     ],
     "producto-tecnotitan-os.html": [
       "Tecnotitan OS | Plataforma empresarial con IA y automatización",
@@ -3554,9 +3554,9 @@ const serviceStructuredSeo = {
 
 const productStructuredSeo = {
   "producto-copiloto-pyme.html": {
-    name: "Copiloto Pyme",
-    description: "Asistente de inteligencia artificial para ventas, soporte, documentos y automatización operativa de pequeñas y medianas empresas.",
-    category: "AI business assistant",
+    name: "Copiloto PyME",
+    description: "Panel de decisiones con inteligencia artificial para digitalizar pequeñas y medianas empresas en Latinoamérica con módulos de ventas, caja, inventario y clientes.",
+    category: "AI business decision platform",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     audience: "Small and medium-sized businesses",
