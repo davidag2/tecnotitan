@@ -117,7 +117,7 @@ const languages = {
           cards: [
             ["IA para pymes", "Copiloto PyME", "Panel de decisiones con IA para digitalizar pymes en Latinoamérica. Integra ventas, caja, inventario y clientes para operar con más control."],
             ["OS agéntico", "TitanOS", "Sistema operativo ultraligero basado en Linux para controlar PCs, portátiles, teléfonos y tablets con la voz."],
-            ["Móvil + IA", "Life Copilot", "App móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones."],
+            ["Móvil + IA", "Life Copilot", "App móvil con IA para organizar rutinas, aprender gustos y recomendar planes, restaurantes, viajes y actividades en la ciudad."],
             ["Videojuegos", "Tecnotitan Engine", "Motor y toolkit para prototipar videojuegos, simuladores, experiencias interactivas y mundos gamificados."],
             ["Educación", "Academia Tecnotitan", "Plataforma de aprendizaje para IA, software, videojuegos, robótica y transformación tecnológica."],
             ["Atención IA", "Call Center AI Tecnotitan", "Agentes conversacionales para soporte, ventas, seguimiento de clientes y automatización de contact centers."]
@@ -414,7 +414,7 @@ const languages = {
           cards: [
             ["SMB AI", "Copiloto PyME", "AI decision panel for Latin American SMBs. It connects sales, cash register, inventory and customer modules so owners can operate with better control."],
             ["Agentic OS", "TitanOS", "Ultra-lightweight Linux-based operating system for controlling PCs, laptops, phones and tablets through voice."],
-            ["Mobile + AI", "Life Copilot", "Personal productivity mobile app with an AI copilot for goals, tasks, habits and decisions."],
+            ["Mobile + AI", "Life Copilot", "AI mobile app for organizing routines, learning personal taste and recommending city plans, restaurants, trips and activities."],
             ["Video games", "Tecnotitan Engine", "Engine and toolkit for prototyping games, simulators, interactive experiences and gamified worlds."],
             ["Education", "Academia Tecnotitan", "Learning platform for AI, software, video games, robotics and technology transformation."],
             ["AI support", "Call Center AI Tecnotitan", "Conversational agents for support, sales, customer follow-up and contact center automation."]
@@ -711,7 +711,7 @@ const languages = {
           cards: [
             ["IA para PMEs", "Copiloto PyME", "Painel de decisões com IA para digitalizar PMEs na América Latina. Conecta vendas, caixa, inventário e clientes para operar com mais controle."],
             ["OS agêntico", "TitanOS", "Sistema operacional ultraleve baseado em Linux para controlar PCs, notebooks, telefones e tablets por voz."],
-            ["Mobile + IA", "Life Copilot", "Aplicativo móvel de produtividade pessoal com copiloto IA para metas, tarefas, hábitos e decisões."],
+            ["Mobile + IA", "Life Copilot", "Aplicativo móvel com IA para organizar rotinas, aprender preferências e recomendar planos, restaurantes, viagens e atividades na cidade."],
             ["Videogames", "Tecnotitan Engine", "Engine e toolkit para prototipar jogos, simuladores, experiências interativas e mundos gamificados."],
             ["Educação", "Academia Tecnotitan", "Plataforma de aprendizagem para IA, software, videogames, robótica e transformação tecnológica."],
             ["Atendimento IA", "Call Center AI Tecnotitan", "Agentes conversacionais para suporte, vendas, acompanhamento de clientes e automação de contact centers."]
@@ -1014,7 +1014,7 @@ languages.zh = buildLocalizedLanguage(languages.en, {
         cards: [
           ["中小企业 AI", "Copiloto PyME", "面向拉美中小企业的 AI 决策面板，连接销售、收银、库存和客户模块，帮助企业更有控制地运营。"],
           ["代理式操作系统", "TitanOS", "基于 Linux 的超轻量语音优先操作系统，用于控制 PC、笔记本、手机和平板。"],
-          ["移动 + AI", "Life Copilot", "用于目标、任务、习惯和决策管理的个人生产力 AI 移动应用。"],
+          ["移动 + AI", "Life Copilot", "用于安排日常、学习个人偏好，并推荐城市活动、餐厅、旅行与体验的 AI 移动应用。"],
           ["电子游戏", "Tecnotitan Engine", "用于原型化游戏、仿真器、互动体验和游戏化世界的引擎与工具包。"],
           ["教育", "Academia Tecnotitan", "面向 AI、软件、电子游戏、机器人和技术转型的学习平台。"],
           ["AI 客服", "Call Center AI Tecnotitan", "用于支持、销售、客户跟进和联络中心自动化的对话式代理。"]
@@ -1290,7 +1290,7 @@ languages.ja = buildLocalizedLanguage(languages.en, {
         cards: [
           ["中小企業 AI", "Copiloto PyME", "ラテンアメリカの中小企業向け AI 意思決定パネル。販売、レジ、在庫、顧客モジュールをつなぎ、より管理された運営を支援します。"],
           ["エージェント OS", "TitanOS", "PC、ノートPC、スマートフォン、タブレットを音声で操作する軽量 Linux ベースの OS。"],
-          ["モバイル + AI", "Life Copilot", "目標、タスク、習慣、意思決定を整理する個人向け AI 生産性アプリ。"],
+          ["モバイル + AI", "Life Copilot", "日々の習慣を整理し、好みを学び、街の予定、レストラン、旅行、体験を提案する AI モバイルアプリ。"],
           ["ゲーム", "Tecnotitan Engine", "ゲーム、シミュレーター、インタラクティブ体験、ゲーミフィケーション世界を試作するエンジンとツールキット。"],
           ["教育", "Academia Tecnotitan", "AI、ソフトウェア、ゲーム、ロボティクス、テクノロジー変革の学習プラットフォーム。"],
           ["AI コールセンター", "Call Center AI Tecnotitan", "サポート、営業、顧客フォロー、コンタクトセンター自動化のための会話型エージェント。"]
@@ -1566,7 +1566,7 @@ languages.ko = buildLocalizedLanguage(languages.en, {
         cards: [
           ["중소기업 AI", "Copiloto PyME", "라틴아메리카 중소기업을 위한 AI 의사결정 패널입니다. 판매, 계산대, 재고, 고객 모듈을 연결해 더 통제된 운영을 돕습니다."],
           ["에이전트 OS", "TitanOS", "PC, 노트북, 휴대폰, 태블릿을 음성으로 제어하는 초경량 Linux 기반 운영체제."],
-          ["모바일 + AI", "Life Copilot", "목표, 업무, 습관, 의사결정을 정리하는 개인 생산성 AI 모바일 앱."],
+          ["모바일 + AI", "Life Copilot", "루틴을 정리하고 취향을 학습해 도시의 일정, 레스토랑, 여행, 활동을 추천하는 AI 모바일 앱."],
           ["비디오게임", "Tecnotitan Engine", "게임, 시뮬레이터, 인터랙티브 경험, 게이미피케이션 세계를 프로토타이핑하는 엔진과 툴킷."],
           ["교육", "Academia Tecnotitan", "AI, 소프트웨어, 게임, 로보틱스, 기술 전환을 위한 학습 플랫폼."],
           ["AI 콜센터", "Call Center AI Tecnotitan", "지원, 영업, 고객 후속관리, 컨택센터 자동화를 위한 대화형 에이전트."]
@@ -3239,8 +3239,8 @@ const staticSeoPages = {
     "TitanOS es un sistema operativo ultraligero basado en Linux para controlar PCs, portátiles, teléfonos y tablets con la voz."
   ],
   "producto-life-copilot.html": [
-    "Life Copilot | Tecnotitan",
-    "App móvil de productividad personal con copiloto IA para metas, tareas, hábitos y decisiones."
+    "Life Copilot | App IA para organizar tu vida urbana",
+    "Life Copilot es una app móvil con IA para organizar rutinas, descubrir planes en la ciudad, aprender tus gustos y recomendar actividades, restaurantes, viajes y experiencias."
   ],
   "producto-tecnotitan-engine.html": [
     "Tecnotitan Engine | Tecnotitan",
@@ -3329,8 +3329,8 @@ const seoMetadataOverrides = {
       "Sistema operativo ultraligero basado en Linux para controlar PCs, portátiles, teléfonos y tablets con la voz."
     ],
     "producto-life-copilot.html": [
-      "Life Copilot | App móvil de productividad con inteligencia artificial",
-      "Aplicación móvil de productividad personal con copiloto IA para metas, tareas, hábitos y decisiones."
+      "Life Copilot | App IA para organizar tu vida urbana",
+      "App móvil con IA para organizar rutinas, aprender tus gustos y recomendar planes, restaurantes, viajes y actividades en tu ciudad."
     ],
     "producto-tecnotitan-engine.html": [
       "Tecnotitan Engine | Motor para videojuegos, simuladores y experiencias interactivas",
@@ -3607,11 +3607,11 @@ const productStructuredSeo = {
   },
   "producto-life-copilot.html": {
     name: "Life Copilot",
-    description: "Aplicación móvil de productividad personal con copiloto IA para organizar metas, tareas, hábitos y decisiones.",
-    category: "AI productivity app",
-    applicationCategory: "ProductivityApplication",
+    description: "App móvil con IA para organizar rutinas, descubrir planes en la ciudad, aprender gustos personales y recomendar restaurantes, viajes, actividades y experiencias contextuales.",
+    category: "AI lifestyle companion app",
+    applicationCategory: "LifestyleApplication",
     operatingSystem: "iOS, Android, Web",
-    audience: "Professionals and consumers",
+    audience: "Urban consumers",
     image: "https://www.tecnotitan.com/assets/bg-capabilities-tech.jpg"
   },
   "producto-tecnotitan-engine.html": {
