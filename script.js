@@ -4169,6 +4169,42 @@ servicePageTranslations.ko = {
   }
 };
 
+function getCarryPageFileFromUrl(url) {
+  const parts = url.pathname.split("/").filter(Boolean);
+
+  if (parts.length === 0) {
+    return "index.html";
+  }
+
+  const first = parts[0];
+  const hasLanguagePrefix = Boolean(pathSegmentLanguages[first]);
+  const routeParts = hasLanguagePrefix ? parts.slice(1) : parts;
+
+  if (!hasLanguagePrefix) {
+    if (routeParts.length === 1 && routeParts[0] === "guides") {
+      return "guias.html";
+    }
+
+    if (routeParts.length === 1 && englishCleanPageRoutes[routeParts[0]]) {
+      return englishCleanPageRoutes[routeParts[0]];
+    }
+  }
+
+  if (routeParts.length === 0) {
+    return "index.html";
+  }
+
+  if (routeParts.length === 1 && guideHubDirectories[first] && routeParts[0] === guideHubDirectories[first]) {
+    return "guias.html";
+  }
+
+  if (url.pathname.endsWith("/")) {
+    return "index.html";
+  }
+
+  return routeParts[routeParts.length - 1];
+}
+
 function carryLanguageAcrossLinks(language) {
   document.querySelectorAll("a[href]").forEach((link) => {
     const rawHref = link.getAttribute("href") || "";
@@ -4192,7 +4228,7 @@ function carryLanguageAcrossLinks(language) {
       return;
     }
 
-    const file = url.pathname.endsWith("/") ? "index.html" : url.pathname.split("/").pop();
+    const file = getCarryPageFileFromUrl(url);
 
     if (!languageCarryPages.has(file)) {
       return;
