@@ -1895,7 +1895,16 @@ const rawPageName = englishCleanPageName || cleanPathSegments.at(pathLanguage ? 
 const routeAfterLanguage = pathLanguage ? cleanPathSegments.slice(1) : cleanPathSegments;
 const isGuideHubRoute = isEnglishCleanGuideHubRoute || Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 1 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
 const isGuideArticleRoute = isEnglishCleanGuideArticleRoute || Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 2 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
-const pageName = isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName;
+const productDetailRoutes = {
+  es: {
+    productos: {
+      copilotopyme: "producto-copiloto-pyme.html"
+    }
+  }
+};
+const cleanProductPageName =
+  productDetailRoutes[pathLanguage]?.[routeAfterLanguage[0]]?.[routeAfterLanguage[1]?.replace(/\.html$/, "")] || "";
+const pageName = cleanProductPageName || (isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName);
 const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
 const guideArticleRoutes = {
   aiForSmbs: {
