@@ -36,7 +36,7 @@ Tecnotitan is a technology company based in Colombia with global ambition. The c
 
 - Copiloto Pyme: https://www.tecnotitan.com/producto-copiloto-pyme.html
 - Tecnotitan OS: https://www.tecnotitan.com/producto-tecnotitan-os.html
-- Life Copilot: https://www.tecnotitan.com/producto-life-copilot.html
+- Life Copilot: https://www.tecnotitan.com/es/productos/lifecopilot/
 - Tecnotitan Engine: https://www.tecnotitan.com/producto-tecnotitan-engine.html
 - Academia Tecnotitan: https://www.tecnotitan.com/producto-academia-tecnotitan.html
 - Call Center AI Tecnotitan: https://www.tecnotitan.com/producto-call-center-ai.html

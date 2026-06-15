@@ -16,6 +16,21 @@
       "permanent": true
     },
     {
+      "source": "/es/producto-life-copilot.html",
+      "destination": "/es/productos/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-life-copilot.html",
+      "destination": "/en/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-life-copilot.html",
+      "destination": "/es/productos/lifecopilot/",
+      "permanent": true
+    },
+    {
       "source": "/es/producto-tecnotitan-os.html",
       "destination": "/es/productos/titanos/",
       "permanent": true
