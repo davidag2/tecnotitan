@@ -1903,7 +1903,9 @@ const productDetailRoutes = {
   }
 };
 const cleanProductPageName =
-  productDetailRoutes[pathLanguage]?.[routeAfterLanguage[0]]?.[routeAfterLanguage[1]?.replace(/\.html$/, "")] || "";
+  routeAfterLanguage.length === 2
+    ? productDetailRoutes[pathLanguage]?.[routeAfterLanguage[0]]?.[routeAfterLanguage[1]?.replace(/\.html$/, "")] || ""
+    : "";
 const pageName = cleanProductPageName || (isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName);
 const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
 const guideArticleRoutes = {
@@ -4197,7 +4199,9 @@ function getCarryPageFileFromUrl(url) {
   const routeParts = hasLanguagePrefix ? parts.slice(1) : parts;
   const routeLanguage = hasLanguagePrefix ? first : "";
   const cleanProductFile =
-    productDetailRoutes[routeLanguage]?.[routeParts[0]]?.[routeParts[1]?.replace(/\.html$/, "")] || "";
+    routeParts.length === 2
+      ? productDetailRoutes[routeLanguage]?.[routeParts[0]]?.[routeParts[1]?.replace(/\.html$/, "")] || ""
+      : "";
 
   if (cleanProductFile) {
     return cleanProductFile;
