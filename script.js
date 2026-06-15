@@ -4790,16 +4790,47 @@ function applyLanguage(language) {
   };
 
   const footerNavigation = document.querySelector(".footer nav");
-  if (footerNavigation && !footerNavigation.querySelector('a[href="./trabaja-con-nosotros.html"]')) {
+  function getFooterNavFile(rawHref = "") {
+    const cleanHref = rawHref.split("#")[0].split("?")[0];
+    const cleanRouteMap = {
+      "/en/": "index.html",
+      "/en/about/": "nosotros.html",
+      "/en/products/": "productos.html",
+      "/en/services/": "servicios.html",
+      "/en/guides/": "guias.html",
+      "/en/divisions/": "divisiones.html",
+      "/en/investors/": "inversionistas.html",
+      "/en/careers/": "trabaja-con-nosotros.html",
+      "/en/contact/": "contacto.html",
+      "/es/": "index.html",
+      "/es/nosotros.html": "nosotros.html",
+      "/es/productos.html": "productos.html",
+      "/es/servicios.html": "servicios.html",
+      "/es/guias.html": "guias.html",
+      "/es/divisiones.html": "divisiones.html",
+      "/es/inversionistas.html": "inversionistas.html",
+      "/es/trabaja-con-nosotros.html": "trabaja-con-nosotros.html",
+      "/es/contacto.html": "contacto.html"
+    };
+    if (cleanRouteMap[cleanHref]) {
+      return cleanRouteMap[cleanHref];
+    }
+    return cleanHref.replace(/^\.\//, "").replace(/^\/(es|en)\//, "");
+  }
+
+  if (
+    footerNavigation &&
+    !Array.from(footerNavigation.querySelectorAll("a")).some((link) => getFooterNavFile(link.getAttribute("href") || "") === "trabaja-con-nosotros.html")
+  ) {
     const talentLink = document.createElement("a");
-    talentLink.href = "./trabaja-con-nosotros.html";
+    talentLink.href = language === "en" ? "/en/careers/" : "./trabaja-con-nosotros.html";
     talentLink.textContent = talentLabels[language] || "Talento";
-    const contactLink = footerNavigation.querySelector('a[href="./contacto.html"]');
+    const contactLink = Array.from(footerNavigation.querySelectorAll("a")).find((link) => getFooterNavFile(link.getAttribute("href") || "") === "contacto.html");
     footerNavigation.insertBefore(talentLink, contactLink || null);
   }
 
   document.querySelectorAll(".footer nav a").forEach((link) => {
-    const file = link.getAttribute("href")?.replace("./", "");
+    const file = getFooterNavFile(link.getAttribute("href") || "");
     const navFiles = [
       "index.html",
       "nosotros.html",
