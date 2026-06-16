@@ -12,4 +12,8 @@ outputs/
 # Logs
 *.log
 
+# Local environment secrets
+.env*
+!.env.example
+
 .vercel
