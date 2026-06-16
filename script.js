@@ -4703,6 +4703,7 @@ function applyLanguage(language) {
 
   document.documentElement.lang = language;
   window.syncTecnotitanChatbotLanguage?.(language);
+  syncUsaCallWidget(language);
 
   if (isGuideHubRoute || isGuideArticleRoute) {
     document.querySelectorAll(".language-switcher button").forEach((button) => {
@@ -5620,6 +5621,79 @@ const chatbotTranslations = {
   }
 };
 
+const callCenterTranslations = {
+  es: {
+    eyebrow: "Call Center USA",
+    title: "Llámanos para más información",
+    note: "Línea en inglés para inversionistas y aliados.",
+    aria: "Llamar a Tecnotitan USA"
+  },
+  en: {
+    eyebrow: "USA Call Center",
+    title: "Call us for more info",
+    note: "English line for investors and partners.",
+    aria: "Call Tecnotitan USA"
+  },
+  pt: {
+    eyebrow: "Call Center USA",
+    title: "Ligue para mais informações",
+    note: "Linha em inglês para investidores e parceiros.",
+    aria: "Ligar para Tecnotitan USA"
+  },
+  zh: {
+    eyebrow: "USA Call Center",
+    title: "\u81f4\u7535\u83b7\u53d6\u66f4\u591a\u4fe1\u606f",
+    note: "\u9762\u5411\u6295\u8d44\u8005\u548c\u5408\u4f5c\u4f19\u4f34\u7684\u82f1\u8bed\u70ed\u7ebf\u3002",
+    aria: "\u81f4\u7535 Tecnotitan USA"
+  },
+  ja: {
+    eyebrow: "USA Call Center",
+    title: "\u8a73\u7d30\u306f\u304a\u96fb\u8a71\u304f\u3060\u3055\u3044",
+    note: "\u6295\u8cc7\u5bb6\u3068\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051\u306e\u82f1\u8a9e\u30e9\u30a4\u30f3\u3067\u3059\u3002",
+    aria: "Tecnotitan USA \u306b\u96fb\u8a71"
+  },
+  ko: {
+    eyebrow: "USA Call Center",
+    title: "\uc790\uc138\ud55c \uc815\ubcf4\ub294 \uc804\ud654\ub85c \ubb38\uc758\ud558\uc138\uc694",
+    note: "\ud22c\uc790\uc790\uc640 \ud30c\ud2b8\ub108\ub97c \uc704\ud55c \uc601\uc5b4 \uc804\ud654 \ub77c\uc778\uc785\ub2c8\ub2e4.",
+    aria: "Tecnotitan USA\uc5d0 \uc804\ud654"
+  }
+};
+
+function initUsaCallWidget() {
+  if (document.querySelector("[data-usa-call-widget]")) {
+    return;
+  }
+
+  const link = document.createElement("a");
+  link.className = "usa-call-widget";
+  link.href = "tel:+19147320344";
+  link.setAttribute("data-usa-call-widget", "");
+  link.innerHTML = `
+    <span class="usa-call-pulse" aria-hidden="true"></span>
+    <span class="usa-call-copy">
+      <span class="usa-call-eyebrow"></span>
+      <strong></strong>
+      <span class="usa-call-phone">+1 (914) 732-0344</span>
+      <span class="usa-call-note"></span>
+    </span>
+  `;
+  document.body.appendChild(link);
+}
+
+function syncUsaCallWidget(language = activeLanguage) {
+  const widget = document.querySelector("[data-usa-call-widget]");
+  if (!widget) {
+    return;
+  }
+
+  const copy = callCenterTranslations[language] || callCenterTranslations.en;
+  widget.setAttribute("aria-label", `${copy.aria}: +1 914 732 0344`);
+  setText(".usa-call-eyebrow", copy.eyebrow, widget);
+  setText(".usa-call-copy strong", copy.title, widget);
+  setText(".usa-call-note", copy.note, widget);
+}
+
 function initTecnotitanChatbot() {
   if (document.querySelector("[data-tecnotitan-chatbot]")) {
     return;
@@ -5785,6 +5859,7 @@ function initTecnotitanChatbot() {
 
 buildLanguageSwitcher();
 buildPrivacyConsent();
+initUsaCallWidget();
 initTecnotitanChatbot();
 applyLanguage(activeLanguage);
 trackSitePageView();
