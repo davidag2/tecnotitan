@@ -3056,9 +3056,16 @@ h3 {
   .usa-call-widget {
     right: 14px;
     bottom: 82px;
-    width: 224px;
+    width: 56px;
     min-height: 56px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
     padding: 0 14px;
+  }
+
+  .usa-call-copy {
+    display: none;
   }
 
   .tecnotitan-chatbot {
