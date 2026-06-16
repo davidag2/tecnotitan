@@ -2748,15 +2748,16 @@ h3 {
 
 .usa-call-widget {
   position: fixed;
-  right: 206px;
+  right: 272px;
   bottom: 24px;
   z-index: 79;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 14px;
-  width: min(340px, calc(100vw - 48px));
-  padding: 14px 16px;
+  gap: 10px;
+  width: 224px;
+  min-height: 56px;
+  padding: 0 14px;
   color: var(--text);
   text-decoration: none;
   border: 1px solid rgba(104, 241, 255, 0.26);
@@ -2772,8 +2773,8 @@ h3 {
 
 .usa-call-pulse {
   position: relative;
-  width: 36px;
-  height: 36px;
+  width: 22px;
+  height: 22px;
   border: 1px solid var(--accent);
   border-radius: 50%;
   box-shadow: 0 0 18px rgba(50, 225, 255, 0.62);
@@ -2789,7 +2790,7 @@ h3 {
 }
 
 .usa-call-pulse::after {
-  inset: 15px;
+  inset: 9px;
   background: var(--accent);
   box-shadow: 0 0 16px rgba(50, 225, 255, 0.8);
 }
@@ -2803,7 +2804,7 @@ h3 {
 .usa-call-eyebrow,
 .usa-call-note {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.35;
 }
 
@@ -2816,16 +2817,20 @@ h3 {
 
 .usa-call-copy strong {
   color: var(--text);
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0;
 }
 
 .usa-call-phone {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.04em;
+}
+
+.usa-call-note {
+  display: none;
 }
 
 .tecnotitan-chatbot {
@@ -3051,12 +3056,9 @@ h3 {
   .usa-call-widget {
     right: 14px;
     bottom: 82px;
-    width: min(318px, calc(100vw - 28px));
-    padding: 12px 14px;
-  }
-
-  .usa-call-note {
-    display: none;
+    width: 224px;
+    min-height: 56px;
+    padding: 0 14px;
   }
 
   .tecnotitan-chatbot {
