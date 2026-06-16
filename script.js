@@ -4702,6 +4702,7 @@ function applyLanguage(language) {
   localStorage.setItem("tecnotitan-language", language);
 
   document.documentElement.lang = language;
+  window.syncTecnotitanChatbotLanguage?.(language);
 
   if (isGuideHubRoute || isGuideArticleRoute) {
     document.querySelectorAll(".language-switcher button").forEach((button) => {
@@ -5526,8 +5527,265 @@ Object.entries(homeGuideCards).forEach(([language, card]) => {
   });
 });
 
+const chatbotTranslations = {
+  es: {
+    title: "Tecnotitan AI",
+    eyebrow: "Asistente oficial",
+    button: "Abrir chat",
+    close: "Cerrar chat",
+    clear: "Limpiar",
+    placeholder: "Pregunta sobre Tecnotitan, productos, servicios o inversionistas...",
+    send: "Enviar",
+    welcome: "Hola. Soy el asistente oficial de Tecnotitan. Puedo responder sobre productos, servicios, guias, investor deck y contacto.",
+    thinking: "Pensando...",
+    error: "No pude responder ahora. Intenta de nuevo o escribe a info@tecnotitan.com.",
+    limit: "Llegaste al limite temporal del chat. Para una conversacion directa escribe a info@tecnotitan.com.",
+    quick: ["Investor deck", "Servicios de IA", "Productos", "Contacto"],
+    footer: "Respuestas generadas con IA. No compartas datos sensibles."
+  },
+  en: {
+    title: "Tecnotitan AI",
+    eyebrow: "Official assistant",
+    button: "Open chat",
+    close: "Close chat",
+    clear: "Clear",
+    placeholder: "Ask about Tecnotitan, products, services or investors...",
+    send: "Send",
+    welcome: "Hello. I am Tecnotitan's official assistant. I can answer questions about products, services, guides, investor deck and contact.",
+    thinking: "Thinking...",
+    error: "I could not reply right now. Try again or email info@tecnotitan.com.",
+    limit: "You reached the temporary chat limit. For a direct conversation, email info@tecnotitan.com.",
+    quick: ["Investor deck", "AI services", "Products", "Contact"],
+    footer: "AI-generated answers. Do not share sensitive data."
+  },
+  pt: {
+    title: "Tecnotitan AI",
+    eyebrow: "Assistente oficial",
+    button: "Abrir chat",
+    close: "Fechar chat",
+    clear: "Limpar",
+    placeholder: "Pergunte sobre Tecnotitan, produtos, servicos ou investidores...",
+    send: "Enviar",
+    welcome: "Ola. Sou o assistente oficial da Tecnotitan. Posso responder sobre produtos, servicos, guias, investor deck e contato.",
+    thinking: "Pensando...",
+    error: "Nao consegui responder agora. Tente novamente ou escreva para info@tecnotitan.com.",
+    limit: "Voce chegou ao limite temporario do chat. Para uma conversa direta, escreva para info@tecnotitan.com.",
+    quick: ["Investor deck", "Servicos de IA", "Produtos", "Contato"],
+    footer: "Respostas geradas com IA. Nao compartilhe dados sensiveis."
+  },
+  zh: {
+    title: "Tecnotitan AI",
+    eyebrow: "\u5b98\u65b9\u52a9\u624b",
+    button: "\u6253\u5f00\u804a\u5929",
+    close: "\u5173\u95ed\u804a\u5929",
+    clear: "\u6e05\u9664",
+    placeholder: "\u8be2\u95ee Tecnotitan\u3001\u4ea7\u54c1\u3001\u670d\u52a1\u6216\u6295\u8d44\u4eba\u4fe1\u606f...",
+    send: "\u53d1\u9001",
+    welcome: "\u4f60\u597d\u3002\u6211\u662f Tecnotitan \u5b98\u65b9\u52a9\u624b\uff0c\u53ef\u4ee5\u56de\u7b54\u4ea7\u54c1\u3001\u670d\u52a1\u3001\u6307\u5357\u3001Investor Deck \u548c\u8054\u7cfb\u65b9\u5f0f\u3002",
+    thinking: "\u6b63\u5728\u601d\u8003...",
+    error: "\u73b0\u5728\u65e0\u6cd5\u56de\u590d\u3002\u8bf7\u91cd\u8bd5\u6216\u53d1\u9001\u90ae\u4ef6\u5230 info@tecnotitan.com\u3002",
+    limit: "\u4f60\u5df2\u8fbe\u5230\u4e34\u65f6\u804a\u5929\u9650\u5236\u3002\u5982\u9700\u76f4\u63a5\u6c9f\u901a\uff0c\u8bf7\u53d1\u9001\u90ae\u4ef6\u5230 info@tecnotitan.com\u3002",
+    quick: ["Investor Deck", "\u4eba\u5de5\u667a\u80fd\u670d\u52a1", "\u4ea7\u54c1", "\u8054\u7cfb"],
+    footer: "AI \u751f\u6210\u56de\u7b54\u3002\u8bf7\u52ff\u5206\u4eab\u654f\u611f\u6570\u636e\u3002"
+  },
+  ja: {
+    title: "Tecnotitan AI",
+    eyebrow: "\u516c\u5f0f\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8",
+    button: "\u30c1\u30e3\u30c3\u30c8\u3092\u958b\u304f",
+    close: "\u30c1\u30e3\u30c3\u30c8\u3092\u9589\u3058\u308b",
+    clear: "\u30af\u30ea\u30a2",
+    placeholder: "Tecnotitan\u3001\u88fd\u54c1\u3001\u30b5\u30fc\u30d3\u30b9\u3001\u6295\u8cc7\u5bb6\u60c5\u5831\u306b\u3064\u3044\u3066\u8cea\u554f...",
+    send: "\u9001\u4fe1",
+    welcome: "\u3053\u3093\u306b\u3061\u306f\u3002Tecnotitan \u516c\u5f0f\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8\u3067\u3059\u3002\u88fd\u54c1\u3001\u30b5\u30fc\u30d3\u30b9\u3001\u30ac\u30a4\u30c9\u3001Investor Deck\u3001\u9023\u7d61\u65b9\u6cd5\u306b\u3064\u3044\u3066\u56de\u7b54\u3067\u304d\u307e\u3059\u3002",
+    thinking: "\u8003\u3048\u3066\u3044\u307e\u3059...",
+    error: "\u73fe\u5728\u56de\u7b54\u3067\u304d\u307e\u305b\u3093\u3002\u3082\u3046\u4e00\u5ea6\u8a66\u3059\u304b info@tecnotitan.com \u3078\u3054\u9023\u7d61\u304f\u3060\u3055\u3044\u3002",
+    limit: "\u4e00\u6642\u7684\u306a\u30c1\u30e3\u30c3\u30c8\u4e0a\u9650\u306b\u9054\u3057\u307e\u3057\u305f\u3002\u76f4\u63a5\u306e\u9023\u7d61\u306f info@tecnotitan.com \u3078\u304a\u9858\u3044\u3057\u307e\u3059\u3002",
+    quick: ["Investor Deck", "AI \u30b5\u30fc\u30d3\u30b9", "\u88fd\u54c1", "\u9023\u7d61"],
+    footer: "AI \u751f\u6210\u56de\u7b54\u3067\u3059\u3002\u6a5f\u5bc6\u60c5\u5831\u306f\u5171\u6709\u3057\u306a\u3044\u3067\u304f\u3060\u3055\u3044."
+  },
+  ko: {
+    title: "Tecnotitan AI",
+    eyebrow: "\uacf5\uc2dd \uc5b4\uc2dc\uc2a4\ud134\ud2b8",
+    button: "\ucc44\ud305 \uc5f4\uae30",
+    close: "\ucc44\ud305 \ub2eb\uae30",
+    clear: "\uc9c0\uc6b0\uae30",
+    placeholder: "Tecnotitan, \uc81c\ud488, \uc11c\ube44\uc2a4, \ud22c\uc790\uc790 \uc815\ubcf4\ub97c \ubb3c\uc5b4\ubcf4\uc138\uc694...",
+    send: "\ubcf4\ub0b4\uae30",
+    welcome: "\uc548\ub155\ud558\uc138\uc694. Tecnotitan \uacf5\uc2dd \uc5b4\uc2dc\uc2a4\ud134\ud2b8\uc785\ub2c8\ub2e4. \uc81c\ud488, \uc11c\ube44\uc2a4, \uac00\uc774\ub4dc, Investor Deck, \uc5f0\ub77d \ubc29\ubc95\uc5d0 \ub300\ud574 \ub2f5\ubcc0\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+    thinking: "\uc0dd\uac01 \uc911...",
+    error: "\uc9c0\uae08\uc740 \ub2f5\ubcc0\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uac70\ub098 info@tecnotitan.com\uc73c\ub85c \uba54\uc77c\uc744 \ubcf4\ub0b4\uc8fc\uc138\uc694.",
+    limit: "\uc784\uc2dc \ucc44\ud305 \uc81c\ud55c\uc5d0 \ub3c4\ub2ec\ud588\uc2b5\ub2c8\ub2e4. \uc9c1\uc811 \ub300\ud654\ub294 info@tecnotitan.com\uc73c\ub85c \uba54\uc77c\uc744 \ubcf4\ub0b4\uc8fc\uc138\uc694.",
+    quick: ["Investor Deck", "AI \uc11c\ube44\uc2a4", "\uc81c\ud488", "\uc5f0\ub77d"],
+    footer: "AI\uac00 \uc0dd\uc131\ud55c \ub2f5\ubcc0\uc785\ub2c8\ub2e4. \ubbfc\uac10\ud55c \uc815\ubcf4\ub294 \uacf5\uc720\ud558\uc9c0 \ub9c8\uc138\uc694."
+  }
+};
+
+function initTecnotitanChatbot() {
+  if (document.querySelector("[data-tecnotitan-chatbot]")) {
+    return;
+  }
+
+  const state = {
+    isOpen: false,
+    isBusy: false,
+    messages: []
+  };
+
+  const root = document.createElement("section");
+  root.className = "tecnotitan-chatbot";
+  root.setAttribute("data-tecnotitan-chatbot", "");
+  root.innerHTML = `
+    <button class="chatbot-launcher" type="button" aria-expanded="false">
+      <span class="chatbot-launcher-icon" aria-hidden="true"></span>
+      <span class="chatbot-launcher-label"></span>
+    </button>
+    <div class="chatbot-panel" hidden>
+      <div class="chatbot-head">
+        <div>
+          <p class="chatbot-eyebrow"></p>
+          <h2></h2>
+        </div>
+        <div class="chatbot-head-actions">
+          <button class="chatbot-clear" type="button"></button>
+          <button class="chatbot-close" type="button" aria-label=""></button>
+        </div>
+      </div>
+      <div class="chatbot-messages" role="log" aria-live="polite"></div>
+      <div class="chatbot-quick"></div>
+      <form class="chatbot-form">
+        <textarea rows="2" maxlength="1200"></textarea>
+        <button type="submit"></button>
+      </form>
+      <p class="chatbot-footnote"></p>
+    </div>
+  `;
+  document.body.appendChild(root);
+
+  const launcher = root.querySelector(".chatbot-launcher");
+  const panel = root.querySelector(".chatbot-panel");
+  const messagesEl = root.querySelector(".chatbot-messages");
+  const quickEl = root.querySelector(".chatbot-quick");
+  const form = root.querySelector(".chatbot-form");
+  const textarea = root.querySelector("textarea");
+  const submitButton = root.querySelector('.chatbot-form button[type="submit"]');
+
+  function currentCopy() {
+    return chatbotTranslations[activeLanguage] || chatbotTranslations.en;
+  }
+
+  function addMessage(role, content) {
+    state.messages.push({ role, content });
+    state.messages = state.messages.slice(-8);
+    renderMessages();
+  }
+
+  function renderMessages() {
+    messagesEl.innerHTML = "";
+    state.messages.forEach((message) => {
+      const bubble = document.createElement("article");
+      bubble.className = `chatbot-message is-${message.role}`;
+      bubble.textContent = message.content;
+      messagesEl.appendChild(bubble);
+    });
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function setBusy(isBusy) {
+    state.isBusy = isBusy;
+    textarea.disabled = isBusy;
+    submitButton.disabled = isBusy;
+    submitButton.textContent = isBusy ? currentCopy().thinking : currentCopy().send;
+  }
+
+  function syncLanguage() {
+    const copy = currentCopy();
+    root.querySelector(".chatbot-launcher-label").textContent = copy.title;
+    launcher.setAttribute("aria-label", state.isOpen ? copy.close : copy.button);
+    root.querySelector(".chatbot-eyebrow").textContent = copy.eyebrow;
+    root.querySelector(".chatbot-head h2").textContent = copy.title;
+    root.querySelector(".chatbot-clear").textContent = copy.clear;
+    root.querySelector(".chatbot-close").textContent = "x";
+    root.querySelector(".chatbot-close").setAttribute("aria-label", copy.close);
+    textarea.placeholder = copy.placeholder;
+    submitButton.textContent = state.isBusy ? copy.thinking : copy.send;
+    root.querySelector(".chatbot-footnote").textContent = copy.footer;
+    quickEl.innerHTML = "";
+    copy.quick.forEach((label) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = label;
+      button.addEventListener("click", () => {
+        textarea.value = label;
+        textarea.focus();
+      });
+      quickEl.appendChild(button);
+    });
+    if (!state.messages.length) {
+      addMessage("assistant", copy.welcome);
+    }
+  }
+
+  async function sendMessage(content) {
+    addMessage("user", content);
+    setBusy(true);
+
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          language: activeLanguage,
+          path: window.location.pathname,
+          messages: state.messages
+        })
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        addMessage("assistant", data.reply || (response.status === 429 ? currentCopy().limit : currentCopy().error));
+        return;
+      }
+      addMessage("assistant", data.reply || currentCopy().error);
+    } catch {
+      addMessage("assistant", currentCopy().error);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  function setOpen(isOpen) {
+    state.isOpen = isOpen;
+    panel.hidden = !isOpen;
+    root.classList.toggle("is-open", isOpen);
+    launcher.setAttribute("aria-expanded", String(isOpen));
+    launcher.setAttribute("aria-label", isOpen ? currentCopy().close : currentCopy().button);
+    if (isOpen) {
+      setTimeout(() => textarea.focus(), 80);
+    }
+  }
+
+  launcher.addEventListener("click", () => setOpen(!state.isOpen));
+  root.querySelector(".chatbot-close").addEventListener("click", () => setOpen(false));
+  root.querySelector(".chatbot-clear").addEventListener("click", () => {
+    state.messages = [];
+    addMessage("assistant", currentCopy().welcome);
+  });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const content = textarea.value.trim();
+    if (!content || state.isBusy) {
+      return;
+    }
+    textarea.value = "";
+    sendMessage(content);
+  });
+
+  window.syncTecnotitanChatbotLanguage = syncLanguage;
+  syncLanguage();
+}
+
 buildLanguageSwitcher();
 buildPrivacyConsent();
+initTecnotitanChatbot();
 applyLanguage(activeLanguage);
 trackSitePageView();
 prefillServiceRequestForm();
