@@ -2748,7 +2748,7 @@ h3 {
 
 .usa-call-widget {
   position: fixed;
-  left: 24px;
+  right: 206px;
   bottom: 24px;
   z-index: 79;
   display: grid;
@@ -3049,7 +3049,7 @@ h3 {
 
 @media (max-width: 720px) {
   .usa-call-widget {
-    left: 14px;
+    right: 14px;
     bottom: 82px;
     width: min(318px, calc(100vw - 28px));
     padding: 12px 14px;
