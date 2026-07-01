@@ -126,6 +126,81 @@
       "permanent": true
     },
     {
+      "source": "/pt/nosotros.html",
+      "destination": "/pt/sobre-nos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/nosotros",
+      "destination": "/pt/sobre-nos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/productos.html",
+      "destination": "/pt/produtos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/productos",
+      "destination": "/pt/produtos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicios.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicios",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisiones.html",
+      "destination": "/pt/divisoes/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisiones",
+      "destination": "/pt/divisoes/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/inversionistas.html",
+      "destination": "/pt/investidores/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/inversionistas",
+      "destination": "/pt/investidores/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contacto.html",
+      "destination": "/pt/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contacto",
+      "destination": "/pt/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guias.html",
+      "destination": "/pt/guias/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investor-deck.html",
+      "destination": "/pt/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/aviso-legal.html",
+      "destination": "/pt/aviso-legal/",
+      "permanent": true
+    },
+    {
       "source": "/products/",
       "destination": "/en/products/",
       "permanent": true
