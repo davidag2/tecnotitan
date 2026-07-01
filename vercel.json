@@ -1,6 +1,26 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/guias.html",
+      "destination": "/en/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/guias",
+      "destination": "/en/guides/",
+      "permanent": true
+    },
+    {
       "source": "/es/producto-copiloto-pyme.html",
       "destination": "/es/productos/copilotopyme/",
       "permanent": true
