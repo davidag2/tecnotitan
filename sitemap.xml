@@ -823,7 +823,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/aviso-legal.html</loc>
+    <loc>https://www.tecnotitan.com/zh/legal/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.25</priority>
@@ -835,13 +835,13 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/contacto.html</loc>
+    <loc>https://www.tecnotitan.com/zh/contact/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/divisiones.html</loc>
+    <loc>https://www.tecnotitan.com/zh/divisions/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -889,7 +889,7 @@
     <priority>0.86</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/guias.html</loc>
+    <loc>https://www.tecnotitan.com/zh/guides/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
@@ -907,19 +907,19 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/inversionistas.html</loc>
+    <loc>https://www.tecnotitan.com/zh/investors/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/investor-deck.html</loc>
+    <loc>https://www.tecnotitan.com/zh/investor-deck/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/nosotros.html</loc>
+    <loc>https://www.tecnotitan.com/zh/about/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -949,7 +949,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/productos.html</loc>
+    <loc>https://www.tecnotitan.com/zh/products/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
@@ -985,7 +985,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/zh/servicios.html</loc>
+    <loc>https://www.tecnotitan.com/zh/services/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
@@ -1532,12 +1532,6 @@
   </url>
 <url>
     <loc>https://www.tecnotitan.com/pt/guias/roadmap-transformacao-digital-pmes.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-<url>
-    <loc>https://www.tecnotitan.com/zh/guides/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
