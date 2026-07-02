@@ -1915,7 +1915,12 @@ const localizedCleanUrlsByPage = {
 const localizedCleanFilesByPath = Object.fromEntries(
   Object.entries(localizedCleanUrlsByPage).map(([language, pages]) => [
     language,
-    Object.fromEntries(Object.entries(pages).map(([file, cleanPath]) => [cleanPath, file]))
+    Object.fromEntries(
+      Object.entries(pages).flatMap(([file, cleanPath]) => [
+        [cleanPath, file],
+        [cleanPath.replace(/\/$/, ""), file]
+      ])
+    )
   ])
 );
 const pathSegmentLanguages = Object.fromEntries(Object.entries(languagePathSegments).map(([language, segment]) => [segment, language]));
@@ -1929,8 +1934,10 @@ const isEnglishCleanGuideArticleRoute =
   (!pathLanguage && cleanPathSegments.length === 2 && cleanPathSegments[0] === "guides") ||
   (pathLanguage === "en" && cleanPathSegments.length === 3 && cleanPathSegments[1] === "guides");
 const englishCleanPageName = englishCleanPageRoutes[englishCleanRouteSlug] || "";
+const currentCleanPath = window.location.pathname;
+const localizedCleanPageName = pathLanguage ? localizedCleanFilesByPath[pathLanguage]?.[currentCleanPath] || localizedCleanFilesByPath[pathLanguage]?.[currentCleanPath.replace(/\/$/, "")] || "" : "";
 const inferredPathLanguage = pathLanguage || (englishCleanPageName || isEnglishCleanGuideHubRoute || isEnglishCleanGuideArticleRoute ? "en" : "");
-const rawPageName = englishCleanPageName || cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
+const rawPageName = englishCleanPageName || localizedCleanPageName || cleanPathSegments.at(pathLanguage ? 1 : 0) || "index.html";
 const routeAfterLanguage = pathLanguage ? cleanPathSegments.slice(1) : cleanPathSegments;
 const isGuideHubRoute = isEnglishCleanGuideHubRoute || Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 1 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
 const isGuideArticleRoute = isEnglishCleanGuideArticleRoute || Boolean(pathLanguage && guideHubDirectories[pathLanguage] && routeAfterLanguage.length === 2 && routeAfterLanguage[0] === guideHubDirectories[pathLanguage]);
