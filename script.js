@@ -1910,6 +1910,16 @@ const localizedCleanUrlsByPage = {
     "contacto.html": "/ja/contact/",
     "investor-deck.html": "/ja/investor-deck/",
     "aviso-legal.html": "/ja/legal/"
+  },
+  ko: {
+    "nosotros.html": "/ko/about/",
+    "productos.html": "/ko/products/",
+    "servicios.html": "/ko/services/",
+    "divisiones.html": "/ko/divisions/",
+    "inversionistas.html": "/ko/investors/",
+    "contacto.html": "/ko/contact/",
+    "investor-deck.html": "/ko/investor-deck/",
+    "aviso-legal.html": "/ko/legal/"
   }
 };
 const localizedCleanFilesByPath = Object.fromEntries(
