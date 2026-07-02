@@ -1879,6 +1879,45 @@ const englishCleanPageRoutes = {
 const englishCleanUrlsByPage = Object.fromEntries(
   Object.entries(englishCleanPageRoutes).map(([slug, file]) => [file, `/en/${slug}/`])
 );
+const localizedCleanUrlsByPage = {
+  en: englishCleanUrlsByPage,
+  pt: {
+    "nosotros.html": "/pt/sobre-nos/",
+    "productos.html": "/pt/produtos/",
+    "servicios.html": "/pt/servicos/",
+    "divisiones.html": "/pt/divisoes/",
+    "inversionistas.html": "/pt/investidores/",
+    "contacto.html": "/pt/contato/",
+    "investor-deck.html": "/pt/investor-deck/",
+    "aviso-legal.html": "/pt/aviso-legal/"
+  },
+  zh: {
+    "nosotros.html": "/zh/about/",
+    "productos.html": "/zh/products/",
+    "servicios.html": "/zh/services/",
+    "divisiones.html": "/zh/divisions/",
+    "inversionistas.html": "/zh/investors/",
+    "contacto.html": "/zh/contact/",
+    "investor-deck.html": "/zh/investor-deck/",
+    "aviso-legal.html": "/zh/legal/"
+  },
+  ja: {
+    "nosotros.html": "/ja/about/",
+    "productos.html": "/ja/products/",
+    "servicios.html": "/ja/services/",
+    "divisiones.html": "/ja/divisions/",
+    "inversionistas.html": "/ja/investors/",
+    "contacto.html": "/ja/contact/",
+    "investor-deck.html": "/ja/investor-deck/",
+    "aviso-legal.html": "/ja/legal/"
+  }
+};
+const localizedCleanFilesByPath = Object.fromEntries(
+  Object.entries(localizedCleanUrlsByPage).map(([language, pages]) => [
+    language,
+    Object.fromEntries(Object.entries(pages).map(([file, cleanPath]) => [cleanPath, file]))
+  ])
+);
 const pathSegmentLanguages = Object.fromEntries(Object.entries(languagePathSegments).map(([language, segment]) => [segment, language]));
 const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
 const pathLanguage = pathSegmentLanguages[cleanPathSegments[0]] || "";
@@ -2892,8 +2931,9 @@ function getGuideArticleUrl(language) {
 }
 
 function getLocalizedUrl(language) {
-  if (language === "en" && englishCleanUrlsByPage[pageName]) {
-    return new URL(englishCleanUrlsByPage[pageName], window.location.origin).toString();
+  const localizedCleanUrl = localizedCleanUrlsByPage[language]?.[pageName];
+  if (localizedCleanUrl) {
+    return new URL(localizedCleanUrl, window.location.origin).toString();
   }
   if (pageName === "producto-copiloto-pyme.html") {
     if (language === "en") {
@@ -4257,6 +4297,14 @@ function getCarryPageFileFromUrl(url) {
     }
   }
 
+  if (hasLanguagePrefix) {
+    const normalizedCleanPath = `/${first}/${routeParts.join("/")}${url.pathname.endsWith("/") ? "/" : ""}`;
+    const cleanFile = localizedCleanFilesByPath[first]?.[normalizedCleanPath];
+    if (cleanFile) {
+      return cleanFile;
+    }
+  }
+
   if (routeParts.length === 0) {
     return "index.html";
   }
@@ -4302,8 +4350,11 @@ function carryLanguageAcrossLinks(language) {
     }
 
     const segment = languagePathSegments[language] || languagePathSegments.es;
+    const localizedCleanPath = localizedCleanUrlsByPage[language]?.[file];
     const cleanPath = file === "guias.html"
       ? new URL(getGuideHubUrl(language)).pathname
+      : localizedCleanPath
+        ? localizedCleanPath
       : language === "es" && file === "producto-copiloto-pyme.html"
         ? "/es/productos/copilotopyme/"
       : language === "en" && file === "producto-copiloto-pyme.html"
@@ -4318,8 +4369,6 @@ function carryLanguageAcrossLinks(language) {
         ? "/en/products/titanos/"
       : file === "index.html"
         ? `/${segment}/`
-        : language === "en" && englishCleanUrlsByPage[file]
-          ? englishCleanUrlsByPage[file]
         : `/${segment}/${file}`;
     link.setAttribute("href", `${cleanPath}${url.search}${url.hash}`);
   });
@@ -4794,6 +4843,11 @@ function applyLanguage(language) {
   const footerNavigation = document.querySelector(".footer nav");
   function getFooterNavFile(rawHref = "") {
     const cleanHref = rawHref.split("#")[0].split("?")[0];
+    for (const routes of Object.values(localizedCleanFilesByPath)) {
+      if (routes[cleanHref]) {
+        return routes[cleanHref];
+      }
+    }
     const cleanRouteMap = {
       "/en/": "index.html",
       "/en/about/": "nosotros.html",
@@ -4817,7 +4871,7 @@ function applyLanguage(language) {
     if (cleanRouteMap[cleanHref]) {
       return cleanRouteMap[cleanHref];
     }
-    return cleanHref.replace(/^\.\//, "").replace(/^\/(es|en)\//, "");
+    return cleanHref.replace(/^\.\//, "").replace(/^\/(es|en|pt|zh|ja|ko)\//, "");
   }
 
   if (
