@@ -1,5 +1,5 @@
 const EVENTS = ["cta_click"];
-const LANGUAGES = ["es", "en", "pt", "zh", "ja", "ko"];
+const LANGUAGES = ["es", "en", "pt", "zh", "ja", "ko", "ar"];
 const INTENTS = ["ai", "software", "advisory", "robotics", "games", "transformation", "general"];
 const CTAS = ["ai-diagnosis", "software-quote", "advisory-call", "robotics-discovery", "games-experience", "transformation-roadmap"];
 const KV_URL = process.env.KV_REST_API_URL || "";

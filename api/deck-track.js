@@ -1,5 +1,5 @@
 const EVENTS = new Set(["view_pdf", "open_pdf", "download_pdf", "download_pptx", "switch_language"]);
-const LANGUAGES = new Set(["es", "en", "pt", "zh", "ja", "ko"]);
+const LANGUAGES = new Set(["es", "en", "pt", "zh", "ja", "ko", "ar"]);
 const FORMATS = new Set(["pdf", "pptx", "viewer"]);
 const KV_URL = process.env.KV_REST_API_URL || "";
 const KV_TOKEN = process.env.KV_REST_API_TOKEN || "";

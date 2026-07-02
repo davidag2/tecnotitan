@@ -11,7 +11,7 @@ const MAX_INPUT_CHARS = Number(process.env.CHAT_MAX_INPUT_CHARS || 1200);
 const MAX_OUTPUT_TOKENS = Number(process.env.CHAT_MAX_OUTPUT_TOKENS || 420);
 const REQUEST_TIMEOUT_MS = Number(process.env.CHAT_REQUEST_TIMEOUT_MS || 12000);
 
-const ALLOWED_LANGUAGES = new Set(["es", "en", "pt", "zh", "ja", "ko"]);
+const ALLOWED_LANGUAGES = new Set(["es", "en", "pt", "zh", "ja", "ko", "ar"]);
 
 const cannedLimits = {
   es: "Puedo ayudarte con Tecnotitan, sus productos, servicios, investor deck y contacto. Para cuidar la seguridad y los costos, no puedo atender esa solicitud.",
@@ -19,7 +19,8 @@ const cannedLimits = {
   pt: "Posso ajudar com a Tecnotitan, seus produtos, servicos, investor deck e contato. Para proteger a seguranca e os custos, nao posso atender essa solicitacao.",
   zh: "\u6211\u53ef\u4ee5\u5e2e\u52a9\u4f60\u4e86\u89e3 Tecnotitan\u3001\u4ea7\u54c1\u3001\u670d\u52a1\u3001\u6295\u8d44\u4eba\u6750\u6599\u548c\u8054\u7cfb\u65b9\u5f0f\u3002\u4e3a\u4e86\u5b89\u5168\u548c\u6210\u672c\u63a7\u5236\uff0c\u6211\u65e0\u6cd5\u5904\u7406\u8be5\u8bf7\u6c42\u3002",
   ja: "Tecnotitan\u3001\u88fd\u54c1\u3001\u30b5\u30fc\u30d3\u30b9\u3001Investor Deck\u3001\u9023\u7d61\u65b9\u6cd5\u306b\u3064\u3044\u3066\u304a\u624b\u4f1d\u3044\u3067\u304d\u307e\u3059\u3002\u5b89\u5168\u3068\u30b3\u30b9\u30c8\u7ba1\u7406\u306e\u305f\u3081\u3001\u305d\u306e\u4f9d\u983c\u306b\u306f\u5bfe\u5fdc\u3067\u304d\u307e\u305b\u3093\u3002",
-  ko: "Tecnotitan, \uc81c\ud488, \uc11c\ube44\uc2a4, Investor Deck, \uc5f0\ub77d \ubc29\ubc95\uc5d0 \ub300\ud574 \ub3c4\uc640\ub4dc\ub9b4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ubcf4\uc548\uacfc \ube44\uc6a9 \uad00\ub9ac\ub97c \uc704\ud574 \ud574\ub2f9 \uc694\uccad\uc740 \ucc98\ub9ac\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."
+  ko: "Tecnotitan, \uc81c\ud488, \uc11c\ube44\uc2a4, Investor Deck, \uc5f0\ub77d \ubc29\ubc95\uc5d0 \ub300\ud574 \ub3c4\uc640\ub4dc\ub9b4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ubcf4\uc548\uacfc \ube44\uc6a9 \uad00\ub9ac\ub97c \uc704\ud574 \ud574\ub2f9 \uc694\uccad\uc740 \ucc98\ub9ac\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.",
+  ar: "يمكنني مساعدتك في معرفة Tecnotitan ومنتجاتها وخدماتها وInvestor Deck وخيارات التواصل. لحماية الأمان والتحكم في التكاليف، لا يمكنني معالجة هذا الطلب."
 };
 
 function getBody(body) {
@@ -153,7 +154,8 @@ function looksAbusive(text) {
 function buildInstructions(language) {
   return [
     "You are Tecnotitan AI, the official website assistant for Tecnotitan.",
-    "Reply in the same language used by the visitor. Supported languages: Spanish, English, Portuguese, Chinese, Japanese and Korean.",
+    "Reply in the same language used by the visitor. Supported languages: Spanish, English, Portuguese, Chinese, Japanese, Korean and Arabic.",
+    "When replying in Arabic, use natural Modern Standard Arabic, keep the response right-to-left friendly, and avoid mixing unnecessary English except for brand names such as Tecnotitan, Copiloto PyME, TitanOS, Life Copilot and Investor Deck.",
     "If the visitor asks in mixed languages, prefer the last user message language.",
     "Be concise, useful and professional. Default to 2-5 short paragraphs or bullets.",
     "Help with: Tecnotitan corporate overview, investor information, products, services, divisions, guides, contact, and next steps.",

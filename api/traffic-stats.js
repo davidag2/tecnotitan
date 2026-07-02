@@ -1,4 +1,4 @@
-const LANGUAGES = ["es", "en", "pt", "zh", "ja", "ko"];
+const LANGUAGES = ["es", "en", "pt", "zh", "ja", "ko", "ar"];
 const KV_URL = process.env.KV_REST_API_URL || "";
 const KV_TOKEN = process.env.KV_REST_API_TOKEN || "";
 

@@ -5,7 +5,7 @@ const KV_URL = process.env.KV_REST_API_URL || "";
 const KV_TOKEN = process.env.KV_REST_API_TOKEN || "";
 const CRON_SECRET = process.env.CRON_SECRET || "";
 
-const LANGUAGES = ["es", "en", "pt", "zh", "ja", "ko"];
+const LANGUAGES = ["es", "en", "pt", "zh", "ja", "ko", "ar"];
 const DECK_EVENTS = ["view_pdf", "open_pdf", "download_pdf", "download_pptx", "switch_language"];
 const SERVICE_EVENTS = ["cta_click"];
 const SERVICE_INTENTS = ["ai", "software", "advisory", "robotics", "games", "transformation", "general"];
