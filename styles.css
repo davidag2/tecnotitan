@@ -3102,3 +3102,86 @@ h3 {
     transition-duration: 0.001ms !important;
   }
 }
+
+
+/* RTL language support */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .nav,
+html[dir="rtl"] .footer nav,
+html[dir="rtl"] .actions,
+html[dir="rtl"] .chatbot-head,
+html[dir="rtl"] .chatbot-head-actions,
+html[dir="rtl"] .chatbot-quick {
+  direction: rtl;
+}
+
+html[dir="rtl"] .language-switcher {
+  inset-inline-start: auto;
+  inset-inline-end: clamp(12px, 2vw, 24px);
+}
+
+html[dir="rtl"] .language-switcher button.is-active {
+  box-shadow: inset -2px 0 0 var(--accent), 0 0 24px rgba(103, 229, 255, 0.1);
+}
+
+html[dir="rtl"] .header-action {
+  justify-self: start;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: start;
+}
+
+html[dir="rtl"] .chatbot-form {
+  grid-template-columns: auto 1fr;
+}
+
+html[dir="rtl"] .chatbot-form button {
+  order: -1;
+}
+
+html[dir="rtl"] .chatbot-message.is-user {
+  align-self: flex-start;
+}
+
+html[dir="rtl"] .chatbot-message.is-assistant {
+  align-self: flex-end;
+}
+
+html[dir="rtl"] .tecnotitan-chatbot {
+  inset-inline-start: auto;
+  inset-inline-end: 24px;
+}
+
+html[dir="rtl"] .chatbot-panel {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+html[dir="rtl"] .usa-call-widget {
+  inset-inline-start: auto;
+  inset-inline-end: 272px;
+}
+
+@media (max-width: 720px) {
+  html[dir="rtl"] .language-switcher {
+    inset-inline-start: auto;
+    inset-inline-end: 10px;
+  }
+
+  html[dir="rtl"] .usa-call-widget {
+    inset-inline-start: auto;
+    inset-inline-end: 14px;
+  }
+
+  html[dir="rtl"] .tecnotitan-chatbot {
+    inset-inline-start: auto;
+    inset-inline-end: 14px;
+  }
+}

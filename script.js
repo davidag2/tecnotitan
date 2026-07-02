@@ -1850,20 +1850,227 @@ languages.ko.pages["aviso-legal.html"] = {
   }
 };
 
+languages.ar = buildLocalizedLanguage(languages.en, {
+  label: "AR",
+  nav: ["الرئيسية", "من نحن", "المنتجات", "الخدمات", "الأدلة", "الأقسام", "المستثمرون", "التواصل"],
+  headerAction: "حجز محادثة",
+  writeAction: "اكتب لنا",
+  openNav: "فتح التنقل",
+  closeNav: "إغلاق التنقل",
+  footerTitle: "TECNOTITAN CORPORATE",
+  footerText: "برمجيات، ذكاء اصطناعي، ألعاب فيديو، روبوتات وتحول تقني.",
+  footerMeta: [
+    "info@tecnotitan.com",
+    "كولومبيا | اهتمام عالمي بالمستثمرين والشركات.",
+    "إشعار قانوني · LinkedIn · Facebook · Instagram",
+    "© 2026 Tecnotitan. جميع الحقوق محفوظة."
+  ],
+  deckUi: ["فتح PDF في المتصفح", "تنزيل PDF", "تنزيل PPTX قابل للتحرير"],
+  pages: {
+    "index.html": {
+      title: "Tecnotitan | تقنية تطبيقية للشركات العالمية",
+      description: "تبني Tecnotitan أنظمة ذكاء اصطناعي وبرمجيات أعمال وأتمتة وروبوتات للشركات والمستثمرين في الأسواق العالمية.",
+      content: {
+        label: "الرئيسية",
+        heroTitle: ["كفاءة", "بلا حدود", "لشركات", "تتوسع عالميا"],
+        heroText: "تصمم Tecnotitan أنظمة ذكاء اصطناعي وبرمجيات أعمال وأتمتة لتحويل العمليات المعقدة إلى تشغيل أسرع وأكثر ذكاء وقابل للقياس.",
+        primaryCta: "حجز محادثة",
+        secondaryCta: "عرض Investor Deck",
+        nextPreview: "استكشف المنتجات والخدمات",
+        visionLabel: "الرؤية",
+        visionTitle: "شركة تقنية مبنية على منتجات وخدمات قابلة للتوسع.",
+        visionParagraphs: [
+          "نربط البرمجيات والذكاء الاصطناعي والألعاب والروبوتات والاستشارات داخل بنية واحدة تخدم الشركات والمستثمرين.",
+          "هدفنا تحويل القدرات التقنية إلى منصات عملية يمكنها النمو عبر الأسواق."
+        ],
+        visionCards: [
+          ["01", "برمجيات أعمال", "أنظمة مخصصة ومنتجات تشغيلية للشركات."],
+          ["02", "ذكاء اصطناعي", "وكلاء، مساعدين ولوحات قرار لرفع الإنتاجية."],
+          ["03", "روبوتات وألعاب", "خبرات تفاعلية وأنظمة مادية مدعومة بالبرمجيات."]
+        ],
+        marketTitle: "أسواق تحتاج أنظمة أكثر ذكاء.",
+        marketText: "نركز على الشركات الصغيرة والمتوسطة، المؤسسات التي تحتاج أتمتة، والمستثمرين الباحثين عن IP قابل للتوسع.",
+        marketCards: [
+          ["LATAM", "منتجات للشركات في أمريكا اللاتينية."],
+          ["GLOBAL", "موقع ومحتوى متعدد اللغات للمستثمرين."],
+          ["MENA", "نسخة عربية RTL لجذب رأس المال الدولي."]
+        ],
+        investorCtaTitle: "Tecnotitan جاهزة للحوار مع المستثمرين.",
+        investorCtaText: "اطلع على الرؤية، المنتجات، الأقسام وخارطة الطريق في Investor Deck.",
+        investorCtaCards: [
+          ["01", "منتجات", "Copiloto PyME، TitanOS، Life Copilot ومنصات أخرى."],
+          ["02", "خدمات", "استشارات ذكاء اصطناعي وتحول تقني."],
+          ["03", "نمو", "بنية متعددة الأقسام قابلة للتوسع."]
+        ],
+        gatewayTitle: "من الفكرة إلى النظام التشغيلي.",
+        gatewayText: "نساعد الشركات على الانتقال من العمليات اليدوية إلى منصات ذكية قابلة للقياس.",
+        cards: [
+          ["01", "من نحن", "رؤية Tecnotitan والفريق المؤسس وطريقة بناء التقنية التطبيقية."],
+          ["02", "المنتجات", "Copiloto PyME وTitanOS وLife Copilot ومنتجات قابلة للتوسع."],
+          ["03", "الخدمات", "استشارات ذكاء اصطناعي وبرمجيات أعمال وأتمتة وتحول تقني."],
+          ["04", "الأقسام", "Software وAI وGames وRobotics وAdvisory وVentures."],
+          ["05", "المستثمرون", "الأطروحة والسوق وخارطة الطريق وفرصة النمو."]
+        ]
+      }
+    },
+    "nosotros.html": {
+      title: "من نحن | Tecnotitan",
+      description: "تعرف على Tecnotitan، شركة تقنية تبني برمجيات وذكاء اصطناعي وروبوتات ومنتجات رقمية للأسواق العالمية.",
+      content: {
+        label: "من نحن",
+        titleLines: ["نبني تقنية", "بطموح عالمي"],
+        intro: "تولد Tecnotitan لتحويل قدرات البرمجيات والذكاء الاصطناعي والألعاب والروبوتات إلى منتجات وخدمات ترفع تنافسية الشركات.",
+        cards: [
+          ["01", "القيادة", "David Arias Giraldo، CEO، يقود رؤية المنتج والنمو."],
+          ["02", "الفريق", "فريق صغير يضم استشارات بدوام كامل ومبرمجين يبنون بسرعة وانضباط."],
+          ["03", "النهج", "نبدأ من مشكلة أعمال واضحة ونحولها إلى نظام قابل للاستخدام والقياس."],
+          ["04", "الرؤية", "بناء شركة تقنية من كولومبيا ذات حضور عالمي."]
+        ]
+      }
+    },
+    "productos.html": {
+      title: "منتجات الذكاء الاصطناعي والبرمجيات | Tecnotitan",
+      description: "محفظة منتجات Tecnotitan: Copiloto PyME وTitanOS وLife Copilot وTecnotitan Engine وأكاديمية Tecnotitan وCall Center AI.",
+      content: {
+        label: "المنتجات",
+        titleLines: ["منتجات تتحول", "إلى منصات"],
+        intro: "نبني منتجات مملوكة وأنظمة مخصصة بمسار واضح نحو برمجيات وبيانات ومنصات ذكاء اصطناعي قابلة للتكرار.",
+        cards: [
+          ["AI للشركات الصغيرة", "Copiloto PyME", "لوحة قرارات بالذكاء الاصطناعي للشركات الصغيرة والمتوسطة في أمريكا اللاتينية، مع وحدات المبيعات والصندوق والمخزون والعملاء."],
+          ["نظام تشغيل وكيل", "TitanOS", "نظام تشغيل خفيف مبني على Linux للتحكم في الحواسيب والهواتف والأجهزة اللوحية عبر الصوت."],
+          ["Mobile + AI", "Life Copilot", "تطبيق مساعد شخصي لتنظيم الروتين وفهم الأذواق والتوصية بالخطط والرحلات والأنشطة في المدينة."],
+          ["ألعاب", "Tecnotitan Engine", "محرك وأدوات لتجربة ألعاب ومحاكاة وتجارب تفاعلية."],
+          ["تعليم", "أكاديمية Tecnotitan", "منصة تعليمية للذكاء الاصطناعي والبرمجيات والألعاب والروبوتات والتحول التقني."],
+          ["دعم AI", "Call Center AI Tecnotitan", "وكلاء محادثة للدعم والمبيعات والمتابعة وأتمتة مراكز الاتصال."]
+        ]
+      }
+    },
+    "servicios.html": {
+      title: "خدمات الذكاء الاصطناعي والبرمجيات | Tecnotitan",
+      description: "استشارات ذكاء اصطناعي، برمجيات أعمال، أتمتة، بيانات، روبوتات وتحول تقني للشركات.",
+      content: {
+        label: "الخدمات",
+        titleLines: ["خدمات تقنية", "للشركات التي تتحرك بسرعة"],
+        intro: "نساعد الشركات على تحديد الفرص، بناء الأنظمة وتنفيذ الذكاء الاصطناعي بطريقة عملية وآمنة وقابلة للقياس.",
+        cards: [
+          ["01", "استشارات الذكاء الاصطناعي", "تشخيص فرص الذكاء الاصطناعي، تصميم حالات الاستخدام وخارطة التنفيذ."],
+          ["02", "برمجيات أعمال", "تطوير أنظمة مخصصة ولوحات وإدارات تشغيلية مرتبطة بالعمل الحقيقي."],
+          ["03", "الأتمتة", "تحويل العمليات اليدوية إلى تدفقات رقمية تقلل الوقت والأخطاء."],
+          ["04", "تحول تقني", "خارطة طريق لاختيار الأدوات والبيانات والبنية المناسبة."],
+          ["05", "وكلاء AI", "مساعدون ووكلاء للتواصل، المبيعات، الدعم والتحليل الداخلي."],
+          ["06", "تكامل الأنظمة", "ربط CRMs وERPs وAPIs وقواعد البيانات لتوحيد العمليات."]
+        ]
+      }
+    },
+    "divisiones.html": {
+      title: "أقسام Tecnotitan | Software وAI وRobotics",
+      description: "أقسام Tecnotitan تجمع البرمجيات والذكاء الاصطناعي والألعاب والروبوتات والاستشارات داخل بنية واحدة.",
+      content: {
+        label: "الأقسام",
+        titleLines: ["أقسام متعددة", "تشترك في IP وبيانات وموهبة"],
+        intro: "Software وAI وGames وRobotics وAdvisory تعمل كمنظومة واحدة لا كأعمال معزولة.",
+        cards: [
+          ["Software", "برمجيات الأعمال والمنتجات الرقمية."],
+          ["AI", "وكلاء ونماذج ولوحات قرار."],
+          ["Games", "محركات وتجارب تفاعلية."],
+          ["Robotics", "تكامل البرمجيات مع الأنظمة المادية."],
+          ["Advisory", "استشارات تحول تقني للشركات."]
+        ]
+      }
+    },
+    "inversionistas.html": {
+      title: "Tecnotitan للمستثمرين | AI وبرمجيات وIP قابل للتوسع",
+      description: "معلومات للمستثمرين حول Tecnotitan، محفظة المنتجات، السوق، الفريق وخارطة الطريق.",
+      content: {
+        label: "المستثمرون",
+        titleLines: ["شركة تقنية", "من LATAM إلى الأسواق العالمية"],
+        intro: "Tecnotitan تبني محفظة منتجات وخدمات تقنية مع فرصة للتوسع في البرمجيات والذكاء الاصطناعي والروبوتات.",
+        cards: [
+          ["01", "الأطروحة", "الشركات تحتاج ذكاء اصطناعي عملي لا تجارب معزولة."],
+          ["02", "المنتجات", "محفظة تجمع منتجات جاهزة وخدمات تولد معرفة سوقية."],
+          ["03", "الفريق", "فريق مركز بقيادة David Arias Giraldo."],
+          ["04", "الفرصة", "بناء IP قابل للتكرار عبر أسواق متعددة."]
+        ]
+      }
+    },
+    "contacto.html": {
+      title: "تواصل مع Tecnotitan",
+      description: "تواصل مع Tecnotitan للاستثمار، الخدمات، الشراكات، الشكاوى، المطالبات والاقتراحات.",
+      content: {
+        label: "التواصل",
+        titleLines: ["لنتحدث", "عن التقنية والنمو"],
+        intro: "اكتب لنا إذا كنت مستثمرا أو شركة تحتاج ذكاء اصطناعي وبرمجيات وتحول تقني.",
+        cards: [
+          ["المستثمرون", "info@tecnotitan.com", "محادثات حول الاستثمار، الشراكات وInvestor Deck."],
+          ["الشركات", "WhatsApp +57 310 822 9935", "طلبات الخدمات والاستشارات والتحول التقني."],
+          ["USA Call Center", "+1 (914) 732-0344", "خط باللغة الإنجليزية للمستثمرين والشركاء."]
+        ]
+      }
+    },
+    "guias.html": {
+      title: "أدلة Tecnotitan | AI وبرمجيات للشركات",
+      description: "أدلة عملية من Tecnotitan حول الذكاء الاصطناعي والأتمتة وبرمجيات الأعمال والتحول التقني.",
+      content: {
+        label: "الأدلة",
+        titleLines: ["أدلة للشركات", "التي تريد تطبيق التقنية"],
+        intro: "محتوى تحريري لمساعدة القادة على فهم الذكاء الاصطناعي والأتمتة والبرمجيات قبل بدء المشروع.",
+        cards: [
+          ["Hub SEO", "AI للشركات", "دليل عملي حول الأتمتة والوكلاء وحالات استخدام الذكاء الاصطناعي."],
+          ["دليل B2B", "برمجيات للشركات الصغيرة", "كيفية اختيار وبناء برمجيات أعمال قابلة للقياس."],
+          ["دليل B2B", "أتمتة خدمة العملاء", "وكلاء AI للدعم والمبيعات والمتابعة."]
+        ]
+      }
+    },
+    "investor-deck.html": {
+      title: "Investor Deck | Tecnotitan",
+      description: "افتح أو نزل Investor Deck الخاص بـ Tecnotitan للمستثمرين العالميين.",
+      content: {
+        label: "Investor Deck",
+        titleLines: ["Investor Deck", "Tecnotitan"],
+        intro: "راجع deck الشركة في المتصفح أو نزله كملف PDF أو PPTX قابل للتحرير.",
+        cards: [
+          ["PDF", "فتح في المتصفح", "عرض خفيف للقراءة السريعة."],
+          ["Download", "تنزيل PDF", "ملف جاهز للمشاركة."],
+          ["Editable", "تنزيل PPTX", "نسخة قابلة للتحرير للعروض."]
+        ]
+      }
+    },
+    "aviso-legal.html": {
+      title: "الإشعار القانوني والخصوصية | Tecnotitan",
+      description: "معلومات قانونية وخصوصية حول Tecnotitan، النماذج، اللغة حسب البلد، الملكية الفكرية وقنوات التواصل الرسمية.",
+      content: {
+        label: "الإشعار القانوني",
+        titleLines: ["الإشعار القانوني", "والخصوصية"],
+        intro: "معلومات مؤسسية حول استخدام الموقع والنماذج والبيانات التقنية والملكية الفكرية وقنوات التواصل الرسمية.",
+        cards: [
+          ["01", "معلومات الموقع", "يعرض هذا الموقع معلومات Tecnotitan المؤسسية والمنتجات والخدمات والأقسام ومحتوى المستثمرين."],
+          ["02", "اللغة حسب البلد", "نستخدم بيانات تقريبية من Vercel لاختيار اللغة الأولية. لا نعرض أو نبيع عنوان IP للزائر."],
+          ["03", "النماذج", "تستخدم البيانات المرسلة عبر النماذج للرد على الطلبات والرسائل العامة والشكاوى والمطالبات والاقتراحات ومحادثات المستثمرين."],
+          ["04", "الملكية الفكرية", "العلامات والنصوص والصور والتصاميم والمنتجات والمفاهيم والمواد في الموقع تعود إلى Tecnotitan أو تستخدم بترخيص."],
+          ["05", "معلومات المستثمرين", "محتوى المستثمرين لأغراض معلوماتية ولا يشكل عرض أوراق مالية أو نصيحة مالية أو وعدا بالعائد."],
+          ["06", "التواصل الرسمي", "للمسائل القانونية أو الخصوصية أو التصحيحات أو التواصل المؤسسي اكتب إلى info@tecnotitan.com."]
+        ]
+      }
+    }
+  }
+});
+
 const languagePathSegments = {
   es: "es",
   en: "en",
   pt: "pt",
   zh: "zh",
   ja: "ja",
-  ko: "ko"
+  ko: "ko",
+  ar: "ar"
 };
 const guideHubDirectories = {
   en: "guides",
   pt: "guias",
   zh: "guides",
   ja: "guides",
-  ko: "guides"
+  ko: "guides",
+  ar: "guides"
 };
 const englishCleanPageRoutes = {
   about: "nosotros.html",
@@ -1920,6 +2127,16 @@ const localizedCleanUrlsByPage = {
     "contacto.html": "/ko/contact/",
     "investor-deck.html": "/ko/investor-deck/",
     "aviso-legal.html": "/ko/legal/"
+  },
+  ar: {
+    "nosotros.html": "/ar/about/",
+    "productos.html": "/ar/products/",
+    "servicios.html": "/ar/services/",
+    "divisiones.html": "/ar/divisions/",
+    "inversionistas.html": "/ar/investors/",
+    "contacto.html": "/ar/contact/",
+    "investor-deck.html": "/ar/investor-deck/",
+    "aviso-legal.html": "/ar/legal/"
   }
 };
 const localizedCleanFilesByPath = Object.fromEntries(
@@ -2159,6 +2376,8 @@ const languageLocales = {
   ja: "ja_JP",
   ko: "ko_KR"
 };
+languageNames.ar = "العربية";
+languageLocales.ar = "ar_AR";
 const contactWhatsApp = {
   href: "https://wa.me/573108229935",
   label: "WhatsApp +57 310 822 9935"
@@ -2248,6 +2467,20 @@ const deckDownloadContent = {
       ["KO", "한국어", "한국어 투자자용 데크."]
     ]
   }
+};
+deckDownloadContent.ar = {
+  title: "عرض Investor Deck في المتصفح",
+  text: "اقرأ ملف PDF الخفيف الخاص بمستثمري Tecnotitan، بدّل اللغة داخل الصفحة ونزّل الملف عند الحاجة.",
+  privacy: "نقيس الفتح والتنزيل بشكل إجمالي لفهم الاهتمام حسب اللغة. لا نخزن الاسم أو البريد أو عنوان IP أو البصمات.",
+  actions: ["فتح PDF في المتصفح", "تنزيل PDF", "تنزيل PPTX قابل للتحرير"],
+  cards: [
+    ["ES", "الإسبانية", "Investor Deck باللغة الإسبانية."],
+    ["EN", "الإنجليزية", "Investor Deck باللغة الإنجليزية."],
+    ["PT", "البرتغالية", "Investor Deck باللغة البرتغالية."],
+    ["ZH", "الصينية", "Investor Deck باللغة الصينية."],
+    ["JA", "اليابانية", "Investor Deck باللغة اليابانية."],
+    ["KO", "الكورية", "Investor Deck باللغة الكورية."]
+  ]
 };
 const deckFileLanguages = ["es", "en", "pt", "zh", "ja", "ko"];
 let activeDeckLanguage = "es";
@@ -2469,6 +2702,7 @@ const englishCountries = new Set(["AU", "CA", "GB", "IE", "IN", "NZ", "PH", "SG"
 const chineseCountries = new Set(["CN", "HK", "MO", "TW"]);
 const japaneseCountries = new Set(["JP"]);
 const koreanCountries = new Set(["KR", "KP"]);
+const arabicCountries = new Set(["AE", "SA", "QA", "KW", "OM", "BH", "EG", "JO", "LB", "MA", "DZ", "TN", "IQ", "LY", "YE", "SY", "PS", "SD", "MR"]);
 
 function languageFromCountry(country) {
   const countryCode = String(country || "").toUpperCase();
@@ -3079,7 +3313,7 @@ function injectGlobalStructuredData(language) {
             "contactType": "customer support",
             "email": "info@tecnotitan.com",
             "telephone": "+573108229935",
-            "availableLanguage": ["Spanish", "English", "Portuguese"]
+            "availableLanguage": ["Spanish", "English", "Portuguese", "Arabic"]
           },
           {
             "@type": "ContactPoint",
@@ -4765,6 +4999,9 @@ function updateGuideChrome(language) {
 
 function applyLanguage(language) {
   activeLanguage = language;
+  const isRtlLanguage = language === "ar";
+  document.documentElement.dir = isRtlLanguage ? "rtl" : "ltr";
+  document.body?.classList.toggle("is-rtl", isRtlLanguage);
   localStorage.setItem("tecnotitan-language", language);
 
   document.documentElement.lang = language;
@@ -4857,6 +5094,8 @@ function applyLanguage(language) {
     ko: "인재"
   };
 
+  talentLabels.ar = "المواهب";
+
   const footerNavigation = document.querySelector(".footer nav");
   function getFooterNavFile(rawHref = "") {
     const cleanHref = rawHref.split("#")[0].split("?")[0];
@@ -4888,7 +5127,7 @@ function applyLanguage(language) {
     if (cleanRouteMap[cleanHref]) {
       return cleanRouteMap[cleanHref];
     }
-    return cleanHref.replace(/^\.\//, "").replace(/^\/(es|en|pt|zh|ja|ko)\//, "");
+    return cleanHref.replace(/^\.\//, "").replace(/^\/(es|en|pt|zh|ja|ko|ar)\//, "");
   }
 
   if (
@@ -4940,6 +5179,8 @@ function applyLanguage(language) {
     ja: "Investor Deckを見る",
     ko: "Investor Deck 보기"
   };
+
+  deckPageLabels.ar = "عرض Investor Deck";
 
   if (headerAction && pageName !== "investor-deck.html" && !document.querySelector(".header-deck-action")) {
     const deckHeaderAction = document.createElement("a");
@@ -5692,6 +5933,22 @@ const chatbotTranslations = {
   }
 };
 
+chatbotTranslations.ar = {
+  title: "Tecnotitan AI",
+  eyebrow: "المساعد الرسمي",
+  button: "فتح المحادثة",
+  close: "إغلاق المحادثة",
+  clear: "مسح",
+  placeholder: "اكتب سؤالك عن Tecnotitan...",
+  send: "إرسال",
+  thinking: "يفكر...",
+  welcome: "مرحباً. أنا مساعد Tecnotitan AI. أستطيع شرح الشركة والمنتجات والخدمات ومواد المستثمرين.",
+  error: "تعذر الرد الآن. يمكنك الكتابة مباشرة إلى info@tecnotitan.com.",
+  limit: "تم الوصول إلى حد المحادثة مؤقتاً. للتواصل المباشر اكتب إلى info@tecnotitan.com.",
+  quick: ["Investor Deck", "خدمات AI", "المنتجات", "التواصل"],
+  footer: "إجابات مولدة بالذكاء الاصطناعي. لا تشارك بيانات حساسة."
+};
+
 const callCenterTranslations = {
   es: {
     eyebrow: "Call Center USA",
@@ -5728,6 +5985,12 @@ const callCenterTranslations = {
     title: "\uc790\uc138\ud55c \uc815\ubcf4\ub294 \uc804\ud654\ub85c \ubb38\uc758\ud558\uc138\uc694",
     note: "\ud22c\uc790\uc790\uc640 \ud30c\ud2b8\ub108\ub97c \uc704\ud55c \uc601\uc5b4 \uc804\ud654 \ub77c\uc778\uc785\ub2c8\ub2e4.",
     aria: "Tecnotitan USA\uc5d0 \uc804\ud654"
+  },
+  ar: {
+    eyebrow: "USA Call Center",
+    title: "اتصل بنا لمزيد من المعلومات",
+    note: "خط باللغة الإنجليزية للمستثمرين والشركاء.",
+    aria: "الاتصال بـ Tecnotitan USA"
   }
 };
 
@@ -6008,6 +6271,7 @@ document.querySelectorAll("[data-share-guide]").forEach((button) => {
         ja: "リンクをコピーしました",
         ko: "링크가 복사되었습니다"
       };
+      copiedLabels.ar = "تم نسخ الرابط";
       button.textContent = copiedLabels[activeLanguage] || copiedLabels.es;
       setTimeout(() => {
         const guide = guideChromeTranslations[pageName]?.[activeLanguage] || guideChromeTranslations[pageName]?.es;
