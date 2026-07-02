@@ -1033,7 +1033,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/aviso-legal.html</loc>
+    <loc>https://www.tecnotitan.com/ja/legal/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.25</priority>
@@ -1045,13 +1045,13 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/contacto.html</loc>
+    <loc>https://www.tecnotitan.com/ja/contact/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/divisiones.html</loc>
+    <loc>https://www.tecnotitan.com/ja/divisions/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1099,12 +1099,6 @@
     <priority>0.86</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/guias.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.86</priority>
-  </url>
-<url>
     <loc>https://www.tecnotitan.com/ja/guia-software-empresarial-para-pymes.html</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -1117,19 +1111,19 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/inversionistas.html</loc>
+    <loc>https://www.tecnotitan.com/ja/investors/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/investor-deck.html</loc>
+    <loc>https://www.tecnotitan.com/ja/investor-deck/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/nosotros.html</loc>
+    <loc>https://www.tecnotitan.com/ja/about/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1159,7 +1153,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/productos.html</loc>
+    <loc>https://www.tecnotitan.com/ja/products/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
@@ -1195,7 +1189,7 @@
     <priority>0.75</priority>
   </url>
 <url>
-    <loc>https://www.tecnotitan.com/ja/servicios.html</loc>
+    <loc>https://www.tecnotitan.com/ja/services/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
