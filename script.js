@@ -5541,7 +5541,7 @@ function buildPrivacyConsent() {
   banner.className = "privacy-consent";
   banner.setAttribute("aria-label", "Consentimiento de privacidad");
   banner.innerHTML = `
-    <p><strong>Privacidad</strong>Usamos métricas agregadas, geolocalización aproximada por país y formularios para mejorar Tecnotitan. No vendemos datos personales ni almacenamos IPs crudas.</p>
+    <p><strong>Privacidad</strong>Usamos m&eacute;tricas agregadas y pa&iacute;s aproximado para mejorar Tecnotitan. No vendemos datos ni guardamos IPs crudas.</p>
     <div class="privacy-consent-actions">
       <a href="./aviso-legal.html">Aviso legal</a>
       <button type="button">Aceptar</button>

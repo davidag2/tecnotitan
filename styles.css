@@ -1193,21 +1193,20 @@ h3 {
 .privacy-consent {
   position: fixed;
   left: clamp(16px, 3vw, 32px);
-  right: clamp(16px, 3vw, 32px);
+  right: auto;
   bottom: 18px;
   z-index: 80;
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 12px;
   align-items: center;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 18px 20px;
+  width: min(420px, calc(100vw - 120px));
+  padding: 14px 16px;
   border: 1px solid rgba(103, 229, 255, 0.24);
   background:
     linear-gradient(180deg, rgba(103, 229, 255, 0.09), rgba(255, 255, 255, 0.02)),
     rgba(5, 7, 9, 0.96);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.42);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.38);
   backdrop-filter: blur(18px);
 }
 
@@ -1218,22 +1217,23 @@ h3 {
 .privacy-consent p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.42;
 }
 
 .privacy-consent strong {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   color: var(--text);
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .privacy-consent-actions {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  justify-content: flex-end;
 }
 
 .privacy-consent button,
@@ -1242,10 +1242,10 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 14px;
+  padding: 0 12px;
   border: 1px solid rgba(103, 229, 255, 0.32);
   color: var(--text);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2408,16 +2408,25 @@ h3 {
 
   .privacy-consent {
     grid-template-columns: 1fr;
-    padding: 16px;
+    left: 12px;
+    right: 84px;
+    bottom: 14px;
+    width: auto;
+    padding: 10px 12px;
+    gap: 8px;
   }
 
   .privacy-consent-actions {
     width: 100%;
+    gap: 6px;
   }
 
   .privacy-consent button,
   .privacy-consent a {
     flex: 1;
+    min-height: 34px;
+    padding: 0 8px;
+    font-size: 10px;
   }
 
   .next-preview {
