@@ -5005,6 +5005,7 @@ function applyLanguage(language) {
   localStorage.setItem("tecnotitan-language", language);
 
   document.documentElement.lang = language;
+  syncPrivacyConsent(language);
   window.syncTecnotitanChatbotLanguage?.(language);
   syncUsaCallWidget(language);
 
@@ -5530,6 +5531,76 @@ function prefillServiceRequestForm() {
   });
 }
 
+const privacyConsentContent = {
+  es: {
+    ariaLabel: "Consentimiento de privacidad",
+    title: "Privacidad",
+    message: "Usamos métricas agregadas y el país aproximado para mejorar Tecnotitan. No vendemos datos ni guardamos direcciones IP sin procesar.",
+    legal: "Aviso legal",
+    accept: "Aceptar"
+  },
+  en: {
+    ariaLabel: "Privacy consent",
+    title: "Privacy",
+    message: "We use aggregate metrics and approximate country data to improve Tecnotitan. We do not sell data or store raw IP addresses.",
+    legal: "Legal notice",
+    accept: "Accept"
+  },
+  pt: {
+    ariaLabel: "Consentimento de privacidade",
+    title: "Privacidade",
+    message: "Usamos métricas agregadas e o país aproximado para melhorar a Tecnotitan. Não vendemos dados nem armazenamos endereços IP brutos.",
+    legal: "Aviso legal",
+    accept: "Aceitar"
+  },
+  zh: {
+    ariaLabel: "隐私同意",
+    title: "隐私",
+    message: "我们使用汇总指标和大致国家信息来改进 Tecnotitan。我们不会出售数据，也不会存储原始 IP 地址。",
+    legal: "法律声明",
+    accept: "接受"
+  },
+  ja: {
+    ariaLabel: "プライバシー同意",
+    title: "プライバシー",
+    message: "Tecnotitan の改善のため、集計指標とおおよその国情報を使用します。データを販売したり、生の IP アドレスを保存したりすることはありません。",
+    legal: "法的通知",
+    accept: "同意する"
+  },
+  ko: {
+    ariaLabel: "개인정보 보호 동의",
+    title: "개인정보 보호",
+    message: "Tecnotitan을 개선하기 위해 집계 지표와 대략적인 국가 정보를 사용합니다. 데이터를 판매하거나 원본 IP 주소를 저장하지 않습니다.",
+    legal: "법적 고지",
+    accept: "동의"
+  },
+  ar: {
+    ariaLabel: "الموافقة على الخصوصية",
+    title: "الخصوصية",
+    message: "نستخدم مقاييس مجمعة ومعلومات تقريبية عن البلد لتحسين Tecnotitan. لا نبيع البيانات ولا نخزن عناوين IP الخام.",
+    legal: "الإشعار القانوني",
+    accept: "موافق"
+  }
+};
+
+function syncPrivacyConsent(language = activeLanguage) {
+  const banner = document.querySelector(".privacy-consent");
+  if (!banner) {
+    return;
+  }
+
+  const content = privacyConsentContent[language] || privacyConsentContent.en;
+  const legalUrl = localizedCleanUrlsByPage[language]?.["aviso-legal.html"] || "/en/legal/";
+
+  banner.setAttribute("aria-label", content.ariaLabel);
+  banner.setAttribute("dir", language === "ar" ? "rtl" : "ltr");
+  setText("[data-privacy-title]", content.title, banner);
+  setText("[data-privacy-message]", content.message, banner);
+  setText("[data-privacy-legal]", content.legal, banner);
+  setText("[data-privacy-accept]", content.accept, banner);
+  banner.querySelector("[data-privacy-legal]")?.setAttribute("href", legalUrl);
+}
+
 function buildPrivacyConsent() {
   const storageKey = "tecnotitan-privacy-consent";
 
@@ -5539,12 +5610,11 @@ function buildPrivacyConsent() {
 
   const banner = document.createElement("aside");
   banner.className = "privacy-consent";
-  banner.setAttribute("aria-label", "Consentimiento de privacidad");
   banner.innerHTML = `
-    <p><strong>Privacidad</strong>Usamos m&eacute;tricas agregadas y pa&iacute;s aproximado para mejorar Tecnotitan. No vendemos datos ni guardamos IPs crudas.</p>
+    <p><strong data-privacy-title></strong><span data-privacy-message></span></p>
     <div class="privacy-consent-actions">
-      <a href="./aviso-legal.html">Aviso legal</a>
-      <button type="button">Aceptar</button>
+      <a href="/en/legal/" data-privacy-legal></a>
+      <button type="button" data-privacy-accept></button>
     </div>
   `;
 
@@ -5554,6 +5624,7 @@ function buildPrivacyConsent() {
   });
 
   document.body.appendChild(banner);
+  syncPrivacyConsent(activeLanguage);
 }
 
 const guidePageMetadata = {
