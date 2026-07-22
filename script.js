@@ -2087,7 +2087,23 @@ const englishCleanUrlsByPage = Object.fromEntries(
   Object.entries(englishCleanPageRoutes).map(([slug, file]) => [file, `/en/${slug}/`])
 );
 const localizedCleanUrlsByPage = {
-  en: englishCleanUrlsByPage,
+  es: {
+    "producto-copiloto-pyme.html": "/es/productos/copilotopyme/",
+    "producto-life-copilot.html": "/es/productos/lifecopilot/",
+    "producto-tecnotitan-os.html": "/es/productos/titanos/",
+    "producto-tecnotitan-engine.html": "/es/productos/tecnotitan-engine/",
+    "producto-academia-tecnotitan.html": "/es/productos/academia-tecnotitan/",
+    "producto-call-center-ai.html": "/es/productos/call-center-ai/"
+  },
+  en: {
+    ...englishCleanUrlsByPage,
+    "producto-copiloto-pyme.html": "/en/products/copilotopyme/",
+    "producto-life-copilot.html": "/en/products/lifecopilot/",
+    "producto-tecnotitan-os.html": "/en/products/titanos/",
+    "producto-tecnotitan-engine.html": "/en/products/tecnotitan-engine/",
+    "producto-academia-tecnotitan.html": "/en/products/academia-tecnotitan/",
+    "producto-call-center-ai.html": "/en/products/call-center-ai/"
+  },
   pt: {
     "nosotros.html": "/pt/sobre-nos/",
     "productos.html": "/pt/produtos/",
@@ -2096,7 +2112,13 @@ const localizedCleanUrlsByPage = {
     "inversionistas.html": "/pt/investidores/",
     "contacto.html": "/pt/contato/",
     "investor-deck.html": "/pt/investor-deck/",
-    "aviso-legal.html": "/pt/aviso-legal/"
+    "aviso-legal.html": "/pt/aviso-legal/",
+    "producto-copiloto-pyme.html": "/pt/produtos/copilotopyme/",
+    "producto-life-copilot.html": "/pt/produtos/lifecopilot/",
+    "producto-tecnotitan-os.html": "/pt/produtos/titanos/",
+    "producto-tecnotitan-engine.html": "/pt/produtos/tecnotitan-engine/",
+    "producto-academia-tecnotitan.html": "/pt/produtos/academia-tecnotitan/",
+    "producto-call-center-ai.html": "/pt/produtos/call-center-ai/"
   },
   zh: {
     "nosotros.html": "/zh/about/",
@@ -2106,7 +2128,13 @@ const localizedCleanUrlsByPage = {
     "inversionistas.html": "/zh/investors/",
     "contacto.html": "/zh/contact/",
     "investor-deck.html": "/zh/investor-deck/",
-    "aviso-legal.html": "/zh/legal/"
+    "aviso-legal.html": "/zh/legal/",
+    "producto-copiloto-pyme.html": "/zh/products/copilotopyme/",
+    "producto-life-copilot.html": "/zh/products/lifecopilot/",
+    "producto-tecnotitan-os.html": "/zh/products/titanos/",
+    "producto-tecnotitan-engine.html": "/zh/products/tecnotitan-engine/",
+    "producto-academia-tecnotitan.html": "/zh/products/academia-tecnotitan/",
+    "producto-call-center-ai.html": "/zh/products/call-center-ai/"
   },
   ja: {
     "nosotros.html": "/ja/about/",
@@ -2116,7 +2144,13 @@ const localizedCleanUrlsByPage = {
     "inversionistas.html": "/ja/investors/",
     "contacto.html": "/ja/contact/",
     "investor-deck.html": "/ja/investor-deck/",
-    "aviso-legal.html": "/ja/legal/"
+    "aviso-legal.html": "/ja/legal/",
+    "producto-copiloto-pyme.html": "/ja/products/copilotopyme/",
+    "producto-life-copilot.html": "/ja/products/lifecopilot/",
+    "producto-tecnotitan-os.html": "/ja/products/titanos/",
+    "producto-tecnotitan-engine.html": "/ja/products/tecnotitan-engine/",
+    "producto-academia-tecnotitan.html": "/ja/products/academia-tecnotitan/",
+    "producto-call-center-ai.html": "/ja/products/call-center-ai/"
   },
   ko: {
     "nosotros.html": "/ko/about/",
@@ -2126,7 +2160,13 @@ const localizedCleanUrlsByPage = {
     "inversionistas.html": "/ko/investors/",
     "contacto.html": "/ko/contact/",
     "investor-deck.html": "/ko/investor-deck/",
-    "aviso-legal.html": "/ko/legal/"
+    "aviso-legal.html": "/ko/legal/",
+    "producto-copiloto-pyme.html": "/ko/products/copilotopyme/",
+    "producto-life-copilot.html": "/ko/products/lifecopilot/",
+    "producto-tecnotitan-os.html": "/ko/products/titanos/",
+    "producto-tecnotitan-engine.html": "/ko/products/tecnotitan-engine/",
+    "producto-academia-tecnotitan.html": "/ko/products/academia-tecnotitan/",
+    "producto-call-center-ai.html": "/ko/products/call-center-ai/"
   },
   ar: {
     "nosotros.html": "/ar/about/",
