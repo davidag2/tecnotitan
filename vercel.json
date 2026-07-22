@@ -549,6 +549,111 @@
       "source": "/guides/:path*",
       "destination": "/en/guides/:path*",
       "permanent": true
+    },
+    {
+      "source": "/es/producto-tecnotitan-engine.html",
+      "destination": "/es/productos/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-academia-tecnotitan.html",
+      "destination": "/es/productos/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-call-center-ai.html",
+      "destination": "/es/productos/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-tecnotitan-engine.html",
+      "destination": "/en/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-academia-tecnotitan.html",
+      "destination": "/en/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-call-center-ai.html",
+      "destination": "/en/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-tecnotitan-engine.html",
+      "destination": "/pt/produtos/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-academia-tecnotitan.html",
+      "destination": "/pt/produtos/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-call-center-ai.html",
+      "destination": "/pt/produtos/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-tecnotitan-engine.html",
+      "destination": "/zh/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-academia-tecnotitan.html",
+      "destination": "/zh/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-call-center-ai.html",
+      "destination": "/zh/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-tecnotitan-engine.html",
+      "destination": "/ja/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-academia-tecnotitan.html",
+      "destination": "/ja/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-call-center-ai.html",
+      "destination": "/ja/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-tecnotitan-engine.html",
+      "destination": "/ko/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-academia-tecnotitan.html",
+      "destination": "/ko/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-call-center-ai.html",
+      "destination": "/ko/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-tecnotitan-engine.html",
+      "destination": "/en/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-academia-tecnotitan.html",
+      "destination": "/en/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-call-center-ai.html",
+      "destination": "/en/products/call-center-ai/",
+      "permanent": true
     }
   ],
   "crons": [
