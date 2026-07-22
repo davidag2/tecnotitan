@@ -2193,7 +2193,11 @@ const localizedCleanFilesByPath = Object.fromEntries(
 const pathSegmentLanguages = Object.fromEntries(Object.entries(languagePathSegments).map(([language, segment]) => [segment, language]));
 const cleanPathSegments = window.location.pathname.split("/").filter(Boolean);
 const pathLanguage = pathSegmentLanguages[cleanPathSegments[0]] || "";
-const englishCleanRouteSlug = pathLanguage === "en" ? cleanPathSegments[1] || "" : !pathLanguage ? cleanPathSegments[0] || "" : "";
+const englishCleanRouteSlug = pathLanguage === "en" && cleanPathSegments.length === 2
+  ? cleanPathSegments[1] || ""
+  : !pathLanguage && cleanPathSegments.length === 1
+    ? cleanPathSegments[0] || ""
+    : "";
 const isEnglishCleanGuideHubRoute =
   (!pathLanguage && cleanPathSegments.length === 1 && cleanPathSegments[0] === "guides") ||
   (pathLanguage === "en" && cleanPathSegments.length === 2 && cleanPathSegments[1] === "guides");
