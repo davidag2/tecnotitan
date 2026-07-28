@@ -6178,43 +6178,74 @@ function syncUsaCallWidget(language = activeLanguage) {
 
 function initMadreGuidePositioning() {
   let resizeFrame = 0;
+  let observer;
+
+  const ensurePositioningStyles = (shadowRoot) => {
+    if (shadowRoot.querySelector("style[data-tecnotitan-positioning]")) {
+      return;
+    }
+
+    const style = document.createElement("style");
+    style.setAttribute("data-tecnotitan-positioning", "");
+    style.textContent = `
+      @media (min-width: 761px) {
+        .wrap[data-tecnotitan-positioned] {
+          --madre-guide-left: var(--tecnotitan-guide-left) !important;
+          --madre-guide-right: auto !important;
+          --madre-guide-bottom: var(--tecnotitan-guide-bottom) !important;
+        }
+
+        .wrap[data-tecnotitan-anchor="right"] .panel {
+          margin-left: auto;
+          margin-right: 0;
+        }
+
+        .wrap[data-tecnotitan-anchor="left"] .panel {
+          margin-left: 0;
+          margin-right: auto;
+        }
+      }
+    `;
+    shadowRoot.appendChild(style);
+  };
 
   const positionWidget = () => {
     const host = document.querySelector("#madre-web-guide-widget");
-    const wrap = host?.shadowRoot?.querySelector(".wrap");
+    const shadowRoot = host?.shadowRoot;
+    const wrap = shadowRoot?.querySelector(".wrap");
     if (!wrap) {
       return false;
     }
 
+    ensurePositioningStyles(shadowRoot);
+
     if (window.innerWidth <= 760) {
-      wrap.style.removeProperty("--madre-guide-left");
-      wrap.style.removeProperty("--madre-guide-right");
-      wrap.style.removeProperty("--madre-guide-bottom");
+      wrap.removeAttribute("data-tecnotitan-positioned");
+      wrap.removeAttribute("data-tecnotitan-anchor");
+      wrap.style.removeProperty("--tecnotitan-guide-left");
+      wrap.style.removeProperty("--tecnotitan-guide-bottom");
       return true;
     }
 
     const anchor = document.querySelector("[data-usa-call-widget]");
-    const panel = wrap.querySelector(".panel");
-    if (!anchor || !panel) {
+    if (!anchor) {
       return false;
     }
 
     const anchorRect = anchor.getBoundingClientRect();
     const wrapRect = wrap.getBoundingClientRect();
-    const panelRect = panel.getBoundingClientRect();
-    const panelOffset = panelRect.left - wrapRect.left;
     const anchorIsOnRight = anchorRect.left >= window.innerWidth / 2;
-    const desiredPanelLeft = anchorIsOnRight
-      ? anchorRect.left - panelRect.width - 48
+    const desiredLeft = anchorIsOnRight
+      ? anchorRect.left - wrapRect.width - 48
       : anchorRect.right + 48;
-    const minimumLeft = 16 - panelOffset;
-    const maximumLeft = window.innerWidth - 16 - panelRect.width - panelOffset;
-    const left = Math.round(Math.min(maximumLeft, Math.max(minimumLeft, desiredPanelLeft - panelOffset)));
+    const maximumLeft = window.innerWidth - 16 - wrapRect.width;
+    const left = Math.round(Math.min(maximumLeft, Math.max(16, desiredLeft)));
     const bottom = Math.max(24, Math.round(window.innerHeight - anchorRect.bottom + 10));
 
-    wrap.style.setProperty("--madre-guide-left", `${left}px`);
-    wrap.style.setProperty("--madre-guide-right", "auto");
-    wrap.style.setProperty("--madre-guide-bottom", `${bottom}px`);
+    wrap.setAttribute("data-tecnotitan-positioned", "");
+    wrap.setAttribute("data-tecnotitan-anchor", anchorIsOnRight ? "right" : "left");
+    wrap.style.setProperty("--tecnotitan-guide-left", `${left}px`);
+    wrap.style.setProperty("--tecnotitan-guide-bottom", `${bottom}px`);
     return true;
   };
 
@@ -6223,15 +6254,18 @@ function initMadreGuidePositioning() {
     resizeFrame = window.requestAnimationFrame(positionWidget);
   };
 
-  const observer = new MutationObserver(schedulePosition);
+  observer = new MutationObserver(() => {
+    if (positionWidget()) {
+      observer.disconnect();
+    }
+  });
   observer.observe(document.body, { childList: true, subtree: true });
   window.addEventListener("resize", schedulePosition, { passive: true });
 
   let attempts = 0;
   const readinessTimer = window.setInterval(() => {
     attempts += 1;
-    positionWidget();
-    if (attempts >= 40) {
+    if (positionWidget() || attempts >= 40) {
       window.clearInterval(readinessTimer);
       observer.disconnect();
     }
