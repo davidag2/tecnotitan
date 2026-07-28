@@ -107,7 +107,7 @@
     },
     {
       "source": "/en/trabaja-con-nosotros.html",
-      "destination": "/en/careers/",
+      "destination": "/en/contact/",
       "permanent": true
     },
     {
@@ -537,7 +537,7 @@
     },
     {
       "source": "/careers/",
-      "destination": "/en/careers/",
+      "destination": "/en/contact/",
       "permanent": true
     },
     {
@@ -653,6 +653,611 @@
     {
       "source": "/producto-call-center-ai.html",
       "destination": "/en/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/zh/guides/ai-customer-service-automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/zh/guides/ai-customer-service-automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/zh/guides/chatgpt-work-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-crm-ia-ventas-soporte.html",
+      "destination": "/zh/guides/ai-crm-sales-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-gobernanza-ia-empresas.html",
+      "destination": "/zh/guides/ai-governance-companies.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/zh/guides/chatgpt-prompts-b2b-sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/zh/guides/digital-transformation-roadmap-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-roi-automatizacion-ia.html",
+      "destination": "/zh/guides/ai-automation-roi.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/guia-software-empresarial-para-pymes.html",
+      "destination": "/zh/guides/business-software-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/ja/guides/ai-customer-service-automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/ja/guides/ai-customer-service-automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/ja/guides/chatgpt-work-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-crm-ia-ventas-soporte.html",
+      "destination": "/ja/guides/ai-crm-sales-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-gobernanza-ia-empresas.html",
+      "destination": "/ja/guides/ai-governance-companies.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/ja/guides/chatgpt-prompts-b2b-sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/ja/guides/digital-transformation-roadmap-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-roi-automatizacion-ia.html",
+      "destination": "/ja/guides/ai-automation-roi.html",
+      "permanent": true
+    },
+    {
+      "source": "/ja/guia-software-empresarial-para-pymes.html",
+      "destination": "/ja/guides/business-software-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/ko/guides/ai-customer-service-automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/ko/guides/ai-customer-service-automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/ko/guides/chatgpt-work-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-crm-ia-ventas-soporte.html",
+      "destination": "/ko/guides/ai-crm-sales-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-gobernanza-ia-empresas.html",
+      "destination": "/ko/guides/ai-governance-companies.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/ko/guides/chatgpt-prompts-b2b-sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/ko/guides/digital-transformation-roadmap-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-roi-automatizacion-ia.html",
+      "destination": "/ko/guides/ai-automation-roi.html",
+      "permanent": true
+    },
+    {
+      "source": "/ko/guia-software-empresarial-para-pymes.html",
+      "destination": "/ko/guides/business-software-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/zh/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/ia-para-empresas.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/trabaja-con-nosotros.html",
+      "destination": "/zh/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/ia-para-empresas.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/trabaja-con-nosotros.html",
+      "destination": "/ja/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/ia-para-empresas.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/trabaja-con-nosotros.html",
+      "destination": "/ko/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-copiloto-pyme.html",
+      "destination": "/zh/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-life-copilot.html",
+      "destination": "/zh/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-consultoria-tecnologica.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-inteligencia-artificial.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-robotica.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-software-empresarial.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-transformacion-tecnologica.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-videojuegos.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/zh/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-copiloto-pyme.html",
+      "destination": "/ja/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-life-copilot.html",
+      "destination": "/ja/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-consultoria-tecnologica.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-inteligencia-artificial.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-robotica.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-software-empresarial.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-transformacion-tecnologica.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-videojuegos.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/ja/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-copiloto-pyme.html",
+      "destination": "/ko/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-life-copilot.html",
+      "destination": "/ko/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-consultoria-tecnologica.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-inteligencia-artificial.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-robotica.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-software-empresarial.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-transformacion-tecnologica.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-videojuegos.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/ko/services/",
+      "permanent": true
+    },
+    {
+      "source": "/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/es/automatizar-atencion-cliente-con-ia.html",
+      "permanent": true
+    },
+    {
+      "source": "/aviso-legal.html",
+      "destination": "/es/aviso-legal.html",
+      "permanent": true
+    },
+    {
+      "source": "/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/es/consultoria-ia-para-empresas-colombia.html",
+      "permanent": true
+    },
+    {
+      "source": "/contacto.html",
+      "destination": "/es/contacto.html",
+      "permanent": true
+    },
+    {
+      "source": "/divisiones.html",
+      "destination": "/es/divisiones.html",
+      "permanent": true
+    },
+    {
+      "source": "/ia-para-empresas.html",
+      "destination": "/es/ia-para-empresas.html",
+      "permanent": true
+    },
+    {
+      "source": "/inversionistas.html",
+      "destination": "/es/inversionistas.html",
+      "permanent": true
+    },
+    {
+      "source": "/investor-deck.html",
+      "destination": "/es/investor-deck.html",
+      "permanent": true
+    },
+    {
+      "source": "/nosotros.html",
+      "destination": "/es/nosotros.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-consultoria-tecnologica.html",
+      "destination": "/es/servicio-consultoria-tecnologica.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-inteligencia-artificial.html",
+      "destination": "/es/servicio-inteligencia-artificial.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-robotica.html",
+      "destination": "/es/servicio-robotica.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicios.html",
+      "destination": "/es/servicios.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-software-empresarial.html",
+      "destination": "/es/servicio-software-empresarial.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-transformacion-tecnologica.html",
+      "destination": "/es/servicio-transformacion-tecnologica.html",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-videojuegos.html",
+      "destination": "/es/servicio-videojuegos.html",
+      "permanent": true
+    },
+    {
+      "source": "/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/es/software-para-pymes-con-inteligencia-artificial.html",
+      "permanent": true
+    },
+    {
+      "source": "/trabaja-con-nosotros.html",
+      "destination": "/es/trabaja-con-nosotros.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/en/guides/automate-customer-service-with-ai.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/en/guides/automate-customer-service-with-ai.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/en/guides/how-to-use-chatgpt-at-work.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-crm-ia-ventas-soporte.html",
+      "destination": "/en/guides/ai-crm-for-sales-and-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-gobernanza-ia-empresas.html",
+      "destination": "/en/guides/ai-governance-for-companies.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/en/guides/chatgpt-prompts-for-b2b-sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/en/guides/digital-transformation-roadmap-for-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-roi-automatizacion-ia.html",
+      "destination": "/en/guides/ai-automation-roi.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/guia-software-empresarial-para-pymes.html",
+      "destination": "/en/guides/business-software-for-smbs.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/pt/guias/automatizar-atendimento-cliente-com-ia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/pt/guias/automatizar-atendimento-cliente-com-ia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/pt/guias/como-usar-chatgpt-no-trabalho.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-crm-ia-ventas-soporte.html",
+      "destination": "/pt/guias/crm-com-ia-vendas-suporte.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-gobernanza-ia-empresas.html",
+      "destination": "/pt/guias/governanca-ia-empresas.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/pt/guias/prompts-chatgpt-vendas-b2b.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/pt/guias/roadmap-transformacao-digital-pmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-roi-automatizacion-ia.html",
+      "destination": "/pt/guias/roi-automacao-ia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/guia-software-empresarial-para-pymes.html",
+      "destination": "/pt/guias/software-empresarial-para-pmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/ia-para-empresas.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/ia-para-empresas.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-consultoria-tecnologica.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-consultoria-tecnologica.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-inteligencia-artificial.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-inteligencia-artificial.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-robotica.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-robotica.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-software-empresarial.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-software-empresarial.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-transformacion-tecnologica.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-transformacion-tecnologica.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-videojuegos.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-videojuegos.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/pt/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-copiloto-pyme.html",
+      "destination": "/pt/produtos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-life-copilot.html",
+      "destination": "/pt/produtos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/trabaja-con-nosotros.html",
+      "destination": "/pt/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/en/careers/",
+      "destination": "/en/contact/",
       "permanent": true
     }
   ],
