@@ -5077,6 +5077,15 @@ function updateGuideChrome(language) {
   });
 }
 
+function syncLanguageSwitcherState(language) {
+  document.querySelectorAll(".language-switcher button").forEach((button) => {
+    const isCurrent = button.dataset.language === language;
+    button.classList.toggle("is-active", isCurrent);
+    button.setAttribute("aria-pressed", String(isCurrent));
+    button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
+  });
+}
+
 function applyLanguage(language) {
   activeLanguage = language;
   const isRtlLanguage = language === "ar";
@@ -5085,17 +5094,12 @@ function applyLanguage(language) {
   localStorage.setItem("tecnotitan-language", language);
 
   document.documentElement.lang = language;
+  syncLanguageSwitcherState(language);
   syncPrivacyConsent(language);
   window.syncTecnotitanChatbotLanguage?.(language);
   syncUsaCallWidget(language);
 
   if (isGuideHubRoute || isGuideArticleRoute) {
-    document.querySelectorAll(".language-switcher button").forEach((button) => {
-      const isCurrent = button.dataset.language === language;
-      button.classList.toggle("is-active", isCurrent);
-      button.setAttribute("aria-pressed", String(isCurrent));
-      button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
-    });
     updateGuideChrome(language);
     updateGuideEditorial(language);
     document.querySelectorAll(".guide-content [data-guide-lang]").forEach((section) => {
@@ -5279,13 +5283,6 @@ function applyLanguage(language) {
   if (menuButton) {
     menuButton.setAttribute("aria-label", header.classList.contains("is-open") ? dictionary.closeNav : dictionary.openNav);
   }
-
-  document.querySelectorAll(".language-switcher button").forEach((button) => {
-    const isCurrent = button.dataset.language === language;
-    button.classList.toggle("is-active", isCurrent);
-    button.setAttribute("aria-pressed", String(isCurrent));
-    button.setAttribute("aria-label", `${languageNames[button.dataset.language]}${isCurrent ? " activo" : ""}`);
-  });
 
   updateGuideChrome(language);
   updateGuideEditorial(language);
