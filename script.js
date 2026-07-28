@@ -6179,6 +6179,70 @@ function syncUsaCallWidget(language = activeLanguage) {
   setText(".usa-call-note", copy.note, widget);
 }
 
+function initMadreGuidePositioning() {
+  let resizeFrame = 0;
+
+  const positionWidget = () => {
+    const host = document.querySelector("#madre-web-guide-widget");
+    const wrap = host?.shadowRoot?.querySelector(".wrap");
+    if (!wrap) {
+      return false;
+    }
+
+    if (window.innerWidth <= 760) {
+      wrap.style.removeProperty("--madre-guide-left");
+      wrap.style.removeProperty("--madre-guide-right");
+      wrap.style.removeProperty("--madre-guide-bottom");
+      return true;
+    }
+
+    const anchor = document.querySelector("[data-usa-call-widget]");
+    const panel = wrap.querySelector(".panel");
+    if (!anchor || !panel) {
+      return false;
+    }
+
+    const anchorRect = anchor.getBoundingClientRect();
+    const wrapRect = wrap.getBoundingClientRect();
+    const panelRect = panel.getBoundingClientRect();
+    const panelOffset = panelRect.left - wrapRect.left;
+    const anchorIsOnRight = anchorRect.left >= window.innerWidth / 2;
+    const desiredPanelLeft = anchorIsOnRight
+      ? anchorRect.left - panelRect.width - 48
+      : anchorRect.right + 48;
+    const minimumLeft = 16 - panelOffset;
+    const maximumLeft = window.innerWidth - 16 - panelRect.width - panelOffset;
+    const left = Math.round(Math.min(maximumLeft, Math.max(minimumLeft, desiredPanelLeft - panelOffset)));
+    const bottom = Math.max(24, Math.round(window.innerHeight - anchorRect.bottom + 10));
+
+    wrap.style.setProperty("--madre-guide-left", `${left}px`);
+    wrap.style.setProperty("--madre-guide-right", "auto");
+    wrap.style.setProperty("--madre-guide-bottom", `${bottom}px`);
+    return true;
+  };
+
+  const schedulePosition = () => {
+    window.cancelAnimationFrame(resizeFrame);
+    resizeFrame = window.requestAnimationFrame(positionWidget);
+  };
+
+  const observer = new MutationObserver(schedulePosition);
+  observer.observe(document.body, { childList: true, subtree: true });
+  window.addEventListener("resize", schedulePosition, { passive: true });
+
+  let attempts = 0;
+  const readinessTimer = window.setInterval(() => {
+    attempts += 1;
+    positionWidget();
+    if (attempts >= 40) {
+      window.clearInterval(readinessTimer);
+      observer.disconnect();
+    }
+  }, 250);
+
+  schedulePosition();
+}
+
 function initTecnotitanChatbot() {
   if (document.querySelector("[data-tecnotitan-chatbot]")) {
     return;
@@ -6346,6 +6410,7 @@ buildLanguageSwitcher();
 buildPrivacyConsent();
 initUsaCallWidget();
 initTecnotitanChatbot();
+initMadreGuidePositioning();
 applyLanguage(activeLanguage);
 trackSitePageView();
 prefillServiceRequestForm();
