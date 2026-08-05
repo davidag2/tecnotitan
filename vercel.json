@@ -21,6 +21,16 @@
       "permanent": true
     },
     {
+      "source": "/guia-:slug.html",
+      "destination": "/es/guia-:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-guias-tecnotitan.html",
+      "destination": "/es/sobre-guias-tecnotitan.html",
+      "permanent": true
+    },
+    {
       "source": "/es/producto-copiloto-pyme.html",
       "destination": "/es/productos/copilotopyme/",
       "permanent": true
