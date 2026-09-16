@@ -2233,6 +2233,9 @@ const cleanProductPageName =
     ? productDetailRoutes[pathLanguage]?.[routeAfterLanguage[0]]?.[routeAfterLanguage[1]?.replace(/\.html$/, "")] || ""
     : "";
 const pageName = cleanProductPageName || (isGuideHubRoute || isGuideArticleRoute ? "guias.html" : rawPageName);
+// Static metadata identifies the actual article, including routes outside the legacy dictionary.
+const initialSeoAlternates = Array.from(document.querySelectorAll('link[rel="alternate"][hreflang]'))
+  .map((link) => ({ language: link.hreflang, href: link.href }));
 const cleanGuideArticleSlug = isGuideArticleRoute ? routeAfterLanguage[1].replace(/\.html$/, "") : "";
 const guideArticleRoutes = {
   aiForSmbs: {
@@ -3226,6 +3229,8 @@ function getGuideArticleUrl(language) {
 }
 
 function getLocalizedUrl(language) {
+  const declaredAlternate = initialSeoAlternates.find((link) => link.language === language);
+  if (declaredAlternate) return declaredAlternate.href;
   const localizedCleanUrl = localizedCleanUrlsByPage[language]?.[pageName];
   if (localizedCleanUrl) {
     return new URL(localizedCleanUrl, window.location.origin).toString();
@@ -3266,14 +3271,9 @@ function getLocalizedUrl(language) {
 }
 
 function getDefaultUrl() {
-  if (isGuideArticleRoute && cleanGuideArticleKey) {
-    return new URL(`/${guideArticleRoutes[cleanGuideArticleKey].es}.html`, window.location.origin).toString();
-  }
-  if (pageName === "guias.html") {
-    return new URL("/guias.html", window.location.origin).toString();
-  }
-  const filePath = pageName === "index.html" ? "" : pageName;
-  return new URL(`/${filePath}`, window.location.origin).toString();
+  return initialSeoAlternates.find((link) => link.language === "en")?.href
+    || initialSeoAlternates.find((link) => link.language === "x-default")?.href
+    || getLocalizedUrl("en");
 }
 
 function syncBrowserLanguagePath(language) {
@@ -3293,7 +3293,7 @@ function updateLanguageSeoLinks(language) {
     link.remove();
   });
 
-  supportedLanguages.forEach((supportedLanguage) => {
+  initialSeoAlternates.filter((link) => link.language !== "x-default").forEach(({ language: supportedLanguage }) => {
     const alternate = document.createElement("link");
     alternate.rel = "alternate";
     alternate.hreflang = supportedLanguage;
@@ -5111,7 +5111,11 @@ function applyLanguage(language) {
   }
 
   const dictionary = languages[language] || languages.es;
-  const page = dictionary.pages[pageName] || dictionary.pages["index.html"];
+  const page = dictionary.pages[pageName];
+  if (!page) {
+    carryLanguageAcrossLinks(language);
+    return;
+  }
   const content = page.content;
 
   syncBrowserLanguagePath(language);

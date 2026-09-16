@@ -1,6 +1,41 @@
 {
   "redirects": [
     {
+      "source": "/zh/index.html",
+      "destination": "/zh/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/index.html",
+      "destination": "/pt/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/index.html",
+      "destination": "/ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/index.html",
+      "destination": "/ja/",
+      "permanent": true
+    },
+    {
+      "source": "/es/index.html",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/index.html",
+      "destination": "/ar/",
+      "permanent": true
+    },
+    {
       "source": "/",
       "destination": "/en/",
       "permanent": true
