@@ -1,56 +1,21 @@
 # Tecnotitan
 
-Tecnotitan is a technology company based in Colombia with global ambition. The company builds software for businesses, artificial intelligence systems, automation, video games, robotics initiatives, and technology transformation services.
+AI, enterprise software and automation for companies.
 
-## Official Website
+- [Home](https://www.tecnotitan.com/)
+- [about/](https://www.tecnotitan.com/about/)
+- [products/](https://www.tecnotitan.com/products/)
+- [services/](https://www.tecnotitan.com/services/)
+- [divisions/](https://www.tecnotitan.com/divisions/)
+- [investors/](https://www.tecnotitan.com/investors/)
+- [investor-deck/](https://www.tecnotitan.com/investor-deck/)
+- [contact/](https://www.tecnotitan.com/contact/)
+- [legal/](https://www.tecnotitan.com/legal/)
+- [products/copilotopyme/](https://www.tecnotitan.com/products/copilotopyme/)
+- [products/titanos/](https://www.tecnotitan.com/products/titanos/)
+- [products/lifecopilot/](https://www.tecnotitan.com/products/lifecopilot/)
+- [products/tecnotitan-engine/](https://www.tecnotitan.com/products/tecnotitan-engine/)
+- [products/academia-tecnotitan/](https://www.tecnotitan.com/products/academia-tecnotitan/)
+- [products/call-center-ai/](https://www.tecnotitan.com/products/call-center-ai/)
 
-- https://www.tecnotitan.com/
-
-## Primary Sections
-
-- Guide: How to evaluate AI vendors for companies: checklist before you buy: https://www.tecnotitan.com/guia-evaluar-proveedores-ia-empresas.html
-
-- Guide: System integration and APIs for SMBs: connect tools without losing control: https://www.tecnotitan.com/guia-integracion-sistemas-api-pymes.html
-
-- Guide: Executive reporting automation: from scattered data to weekly decisions: https://www.tecnotitan.com/guia-automatizar-reportes-ejecutivos.html
-
-- Guide: AI onboarding for employees: train teams without chaos: https://www.tecnotitan.com/guia-onboarding-ia-empleados.html
-
-- Editorial policy for guides: https://www.tecnotitan.com/sobre-guias-tecnotitan.html
-
-- Home: https://www.tecnotitan.com/
-- About: https://www.tecnotitan.com/nosotros.html
-- Products: https://www.tecnotitan.com/productos.html
-- Services: https://www.tecnotitan.com/servicios.html
-- Guides: https://www.tecnotitan.com/guias.html
-- Guide: How to use ChatGPT at work: https://www.tecnotitan.com/guia-como-usar-chatgpt-en-el-trabajo.html
-- Guide: Automating customer service with AI: https://www.tecnotitan.com/guia-automatizar-atencion-cliente-con-ia.html
-- Guide: Business software for SMBs: https://www.tecnotitan.com/guia-software-empresarial-para-pymes.html
-- Guide: ChatGPT prompts for B2B sales: https://www.tecnotitan.com/guia-prompts-chatgpt-ventas-b2b.html
-- Divisions: https://www.tecnotitan.com/divisiones.html
-- Investors: https://www.tecnotitan.com/inversionistas.html
-- Investor Deck: https://www.tecnotitan.com/investor-deck.html
-- Contact: https://www.tecnotitan.com/contacto.html
-
-## Products
-
-- Copiloto Pyme: https://www.tecnotitan.com/producto-copiloto-pyme.html
-- Tecnotitan OS: https://www.tecnotitan.com/producto-tecnotitan-os.html
-- Life Copilot: https://www.tecnotitan.com/es/productos/lifecopilot/
-- Tecnotitan Engine: https://www.tecnotitan.com/producto-tecnotitan-engine.html
-- Academia Tecnotitan: https://www.tecnotitan.com/producto-academia-tecnotitan.html
-- Call Center AI Tecnotitan: https://www.tecnotitan.com/producto-call-center-ai.html
-
-## Services
-
-- Artificial intelligence consulting and implementation
-- Enterprise software development
-- Technology consulting
-- Robotics and physical-digital systems
-- Video games and interactive experiences
-- Technology transformation for companies
-
-## Contact
-
-- Email: info@tecnotitan.com
-- Website: https://www.tecnotitan.com/contacto.html
+Contact: info@tecnotitan.com

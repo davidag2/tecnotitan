@@ -1,7 +1,7 @@
 {
   "name": "Tecnotitan",
   "short_name": "Tecnotitan",
-  "description": "Tecnología aplicada para empresas e inversionistas globales.",
+  "description": "AI, enterprise software and automation for companies.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050607",
@@ -13,5 +13,7 @@
       "type": "image/svg+xml",
       "purpose": "any"
     }
-  ]
+  ],
+  "lang": "en",
+  "dir": "ltr"
 }

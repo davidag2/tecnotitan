@@ -1,1308 +1,2648 @@
 {
   "redirects": [
     {
-      "source": "/zh/index.html",
-      "destination": "/zh/",
+      "source": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
-      "source": "/pt/index.html",
-      "destination": "/pt/",
+      "source": "/en/about/",
+      "destination": "/about/",
       "permanent": true
     },
     {
-      "source": "/ko/index.html",
-      "destination": "/ko/",
+      "source": "/en/products/",
+      "destination": "/products/",
       "permanent": true
     },
     {
-      "source": "/ja/index.html",
-      "destination": "/ja/",
+      "source": "/en/services/",
+      "destination": "/services/",
       "permanent": true
     },
     {
-      "source": "/es/index.html",
-      "destination": "/es/",
+      "source": "/en/divisions/",
+      "destination": "/divisions/",
       "permanent": true
     },
     {
-      "source": "/en/index.html",
-      "destination": "/en/",
+      "source": "/en/investors/",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investor-deck/",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/legal/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/call-center-ai/",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/about/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/about/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/about/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/contact/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/contact/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/divisions/",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/divisions/index.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/ar/index.html",
-      "destination": "/ar/",
+      "destination": "/",
       "permanent": true
     },
     {
-      "source": "/",
-      "destination": "/en/",
+      "source": "/ar/investor-deck/",
+      "destination": "/investor-deck/",
       "permanent": true
     },
     {
-      "source": "/index.html",
-      "destination": "/en/",
+      "source": "/ar/investor-deck/index.html",
+      "destination": "/investor-deck/",
       "permanent": true
     },
     {
-      "source": "/guias.html",
-      "destination": "/en/guides/",
+      "source": "/ar/investors/",
+      "destination": "/investors/",
       "permanent": true
     },
     {
-      "source": "/guias",
-      "destination": "/en/guides/",
+      "source": "/ar/investors/index.html",
+      "destination": "/investors/",
       "permanent": true
     },
     {
-      "source": "/guia-:slug.html",
-      "destination": "/es/guia-:slug.html",
+      "source": "/ar/legal/",
+      "destination": "/legal/",
       "permanent": true
     },
     {
-      "source": "/sobre-guias-tecnotitan.html",
-      "destination": "/es/sobre-guias-tecnotitan.html",
+      "source": "/ar/legal/index.html",
+      "destination": "/legal/",
       "permanent": true
     },
     {
-      "source": "/es/producto-copiloto-pyme.html",
-      "destination": "/es/productos/copilotopyme/",
+      "source": "/ar/products/",
+      "destination": "/products/",
       "permanent": true
     },
     {
-      "source": "/en/producto-copiloto-pyme.html",
-      "destination": "/en/products/copilotopyme/",
+      "source": "/ar/products/index.html",
+      "destination": "/products/",
       "permanent": true
     },
     {
-      "source": "/producto-copiloto-pyme.html",
-      "destination": "/es/productos/copilotopyme/",
+      "source": "/ar/services/",
+      "destination": "/services/",
       "permanent": true
     },
     {
-      "source": "/es/producto-life-copilot.html",
-      "destination": "/es/productos/lifecopilot/",
-      "permanent": true
-    },
-    {
-      "source": "/en/producto-life-copilot.html",
-      "destination": "/en/products/lifecopilot/",
-      "permanent": true
-    },
-    {
-      "source": "/producto-life-copilot.html",
-      "destination": "/es/productos/lifecopilot/",
-      "permanent": true
-    },
-    {
-      "source": "/es/producto-tecnotitan-os.html",
-      "destination": "/es/productos/titanos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/producto-tecnotitan-os.html",
-      "destination": "/en/products/titanos/",
-      "permanent": true
-    },
-    {
-      "source": "/producto-tecnotitan-os.html",
-      "destination": "/es/productos/titanos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/nosotros.html",
-      "destination": "/en/about/",
-      "permanent": true
-    },
-    {
-      "source": "/en/productos.html",
-      "destination": "/en/products/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicios.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/en/divisiones.html",
-      "destination": "/en/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/en/inversionistas.html",
-      "destination": "/en/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/en/contacto.html",
-      "destination": "/en/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/en/investor-deck.html",
-      "destination": "/en/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/en/aviso-legal.html",
-      "destination": "/en/legal/",
-      "permanent": true
-    },
-    {
-      "source": "/en/trabaja-con-nosotros.html",
-      "destination": "/en/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/en/guides",
-      "destination": "/en/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/en/guias.html",
-      "destination": "/en/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/about/",
-      "destination": "/en/about/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/nosotros.html",
-      "destination": "/pt/sobre-nos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/nosotros",
-      "destination": "/pt/sobre-nos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/productos.html",
-      "destination": "/pt/produtos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/productos",
-      "destination": "/pt/produtos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicios.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicios",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/divisiones.html",
-      "destination": "/pt/divisoes/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/divisiones",
-      "destination": "/pt/divisoes/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/inversionistas.html",
-      "destination": "/pt/investidores/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/inversionistas",
-      "destination": "/pt/investidores/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/contacto.html",
-      "destination": "/pt/contato/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/contacto",
-      "destination": "/pt/contato/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guias.html",
-      "destination": "/pt/guias/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/investor-deck.html",
-      "destination": "/pt/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/aviso-legal.html",
-      "destination": "/pt/aviso-legal/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/nosotros.html",
-      "destination": "/zh/about/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/nosotros",
-      "destination": "/zh/about/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/productos.html",
-      "destination": "/zh/products/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/productos",
-      "destination": "/zh/products/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicios.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicios",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/divisiones.html",
-      "destination": "/zh/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/divisiones",
-      "destination": "/zh/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/inversionistas.html",
-      "destination": "/zh/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/inversionistas",
-      "destination": "/zh/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/contacto.html",
-      "destination": "/zh/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/contacto",
-      "destination": "/zh/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guias.html",
-      "destination": "/zh/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/investor-deck.html",
-      "destination": "/zh/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/aviso-legal.html",
-      "destination": "/zh/legal/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/nosotros.html",
-      "destination": "/ja/about/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/nosotros",
-      "destination": "/ja/about/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/productos.html",
-      "destination": "/ja/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/productos",
-      "destination": "/ja/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicios.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicios",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/divisiones.html",
-      "destination": "/ja/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/divisiones",
-      "destination": "/ja/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/inversionistas.html",
-      "destination": "/ja/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/inversionistas",
-      "destination": "/ja/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/contacto.html",
-      "destination": "/ja/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/contacto",
-      "destination": "/ja/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guias.html",
-      "destination": "/ja/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/investor-deck.html",
-      "destination": "/ja/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/aviso-legal.html",
-      "destination": "/ja/legal/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/nosotros.html",
-      "destination": "/ko/about/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/nosotros",
-      "destination": "/ko/about/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/productos.html",
-      "destination": "/ko/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/productos",
-      "destination": "/ko/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicios.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicios",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/divisiones.html",
-      "destination": "/ko/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/divisiones",
-      "destination": "/ko/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/inversionistas.html",
-      "destination": "/ko/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/inversionistas",
-      "destination": "/ko/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/contacto.html",
-      "destination": "/ko/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/contacto",
-      "destination": "/ko/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guias.html",
-      "destination": "/ko/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/investor-deck.html",
-      "destination": "/ko/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/aviso-legal.html",
-      "destination": "/ko/legal/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/nosotros.html",
-      "destination": "/ar/about/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/nosotros",
-      "destination": "/ar/about/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/productos.html",
-      "destination": "/ar/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/productos",
-      "destination": "/ar/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/servicios.html",
-      "destination": "/ar/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/servicios",
-      "destination": "/ar/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/divisiones.html",
-      "destination": "/ar/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/divisiones",
-      "destination": "/ar/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/inversionistas.html",
-      "destination": "/ar/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/inversionistas",
-      "destination": "/ar/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/contacto.html",
-      "destination": "/ar/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/contacto",
-      "destination": "/ar/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/guias.html",
-      "destination": "/ar/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/investor-deck.html",
-      "destination": "/ar/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/aviso-legal.html",
-      "destination": "/ar/legal/",
-      "permanent": true
-    },
-    {
-      "source": "/products/",
-      "destination": "/en/products/",
-      "permanent": true
-    },
-    {
-      "source": "/services/",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/divisions/",
-      "destination": "/en/divisions/",
-      "permanent": true
-    },
-    {
-      "source": "/investors/",
-      "destination": "/en/investors/",
-      "permanent": true
-    },
-    {
-      "source": "/contact/",
-      "destination": "/en/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/investor-deck/",
-      "destination": "/en/investor-deck/",
-      "permanent": true
-    },
-    {
-      "source": "/legal/",
-      "destination": "/en/legal/",
-      "permanent": true
-    },
-    {
-      "source": "/careers/",
-      "destination": "/en/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/",
-      "destination": "/en/guides/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/:path*",
-      "destination": "/en/guides/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/es/producto-tecnotitan-engine.html",
-      "destination": "/es/productos/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/es/producto-academia-tecnotitan.html",
-      "destination": "/es/productos/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/es/producto-call-center-ai.html",
-      "destination": "/es/productos/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/en/producto-tecnotitan-engine.html",
-      "destination": "/en/products/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/en/producto-academia-tecnotitan.html",
-      "destination": "/en/products/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/en/producto-call-center-ai.html",
-      "destination": "/en/products/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/producto-tecnotitan-engine.html",
-      "destination": "/pt/produtos/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/producto-academia-tecnotitan.html",
-      "destination": "/pt/produtos/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/producto-call-center-ai.html",
-      "destination": "/pt/produtos/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/producto-tecnotitan-engine.html",
-      "destination": "/zh/products/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/producto-academia-tecnotitan.html",
-      "destination": "/zh/products/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/producto-call-center-ai.html",
-      "destination": "/zh/products/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/producto-tecnotitan-engine.html",
-      "destination": "/ja/products/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/producto-academia-tecnotitan.html",
-      "destination": "/ja/products/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/producto-call-center-ai.html",
-      "destination": "/ja/products/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/producto-tecnotitan-engine.html",
-      "destination": "/ko/products/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/producto-academia-tecnotitan.html",
-      "destination": "/ko/products/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/producto-call-center-ai.html",
-      "destination": "/ko/products/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/producto-tecnotitan-engine.html",
-      "destination": "/en/products/tecnotitan-engine/",
-      "permanent": true
-    },
-    {
-      "source": "/producto-academia-tecnotitan.html",
-      "destination": "/en/products/academia-tecnotitan/",
-      "permanent": true
-    },
-    {
-      "source": "/producto-call-center-ai.html",
-      "destination": "/en/products/call-center-ai/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/automatizar-atencion-cliente-con-ia.html",
-      "destination": "/zh/guides/ai-customer-service-automation.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-automatizar-atencion-cliente-con-ia.html",
-      "destination": "/zh/guides/ai-customer-service-automation.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-como-usar-chatgpt-en-el-trabajo.html",
-      "destination": "/zh/guides/chatgpt-work-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-crm-ia-ventas-soporte.html",
-      "destination": "/zh/guides/ai-crm-sales-support.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-gobernanza-ia-empresas.html",
-      "destination": "/zh/guides/ai-governance-companies.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-prompts-chatgpt-ventas-b2b.html",
-      "destination": "/zh/guides/chatgpt-prompts-b2b-sales.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-roadmap-transformacion-digital-pymes.html",
-      "destination": "/zh/guides/digital-transformation-roadmap-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-roi-automatizacion-ia.html",
-      "destination": "/zh/guides/ai-automation-roi.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/guia-software-empresarial-para-pymes.html",
-      "destination": "/zh/guides/business-software-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/automatizar-atencion-cliente-con-ia.html",
-      "destination": "/ja/guides/ai-customer-service-automation.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-automatizar-atencion-cliente-con-ia.html",
-      "destination": "/ja/guides/ai-customer-service-automation.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-como-usar-chatgpt-en-el-trabajo.html",
-      "destination": "/ja/guides/chatgpt-work-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-crm-ia-ventas-soporte.html",
-      "destination": "/ja/guides/ai-crm-sales-support.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-gobernanza-ia-empresas.html",
-      "destination": "/ja/guides/ai-governance-companies.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-prompts-chatgpt-ventas-b2b.html",
-      "destination": "/ja/guides/chatgpt-prompts-b2b-sales.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-roadmap-transformacion-digital-pymes.html",
-      "destination": "/ja/guides/digital-transformation-roadmap-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-roi-automatizacion-ia.html",
-      "destination": "/ja/guides/ai-automation-roi.html",
-      "permanent": true
-    },
-    {
-      "source": "/ja/guia-software-empresarial-para-pymes.html",
-      "destination": "/ja/guides/business-software-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/automatizar-atencion-cliente-con-ia.html",
-      "destination": "/ko/guides/ai-customer-service-automation.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-automatizar-atencion-cliente-con-ia.html",
-      "destination": "/ko/guides/ai-customer-service-automation.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-como-usar-chatgpt-en-el-trabajo.html",
-      "destination": "/ko/guides/chatgpt-work-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-crm-ia-ventas-soporte.html",
-      "destination": "/ko/guides/ai-crm-sales-support.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-gobernanza-ia-empresas.html",
-      "destination": "/ko/guides/ai-governance-companies.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-prompts-chatgpt-ventas-b2b.html",
-      "destination": "/ko/guides/chatgpt-prompts-b2b-sales.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-roadmap-transformacion-digital-pymes.html",
-      "destination": "/ko/guides/digital-transformation-roadmap-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-roi-automatizacion-ia.html",
-      "destination": "/ko/guides/ai-automation-roi.html",
-      "permanent": true
-    },
-    {
-      "source": "/ko/guia-software-empresarial-para-pymes.html",
-      "destination": "/ko/guides/business-software-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/zh/consultoria-ia-para-empresas-colombia.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/ia-para-empresas.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/trabaja-con-nosotros.html",
-      "destination": "/zh/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/consultoria-ia-para-empresas-colombia.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/ia-para-empresas.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/trabaja-con-nosotros.html",
-      "destination": "/ja/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/consultoria-ia-para-empresas-colombia.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/ia-para-empresas.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/trabaja-con-nosotros.html",
-      "destination": "/ko/contact/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/producto-copiloto-pyme.html",
-      "destination": "/zh/products/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/producto-life-copilot.html",
-      "destination": "/zh/products/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicio-consultoria-tecnologica.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicio-inteligencia-artificial.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicio-robotica.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicio-software-empresarial.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicio-transformacion-tecnologica.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/servicio-videojuegos.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/zh/software-para-pymes-con-inteligencia-artificial.html",
-      "destination": "/zh/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/producto-copiloto-pyme.html",
-      "destination": "/ja/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/producto-life-copilot.html",
-      "destination": "/ja/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicio-consultoria-tecnologica.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicio-inteligencia-artificial.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicio-robotica.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicio-software-empresarial.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicio-transformacion-tecnologica.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/servicio-videojuegos.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ja/software-para-pymes-con-inteligencia-artificial.html",
-      "destination": "/ja/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/producto-copiloto-pyme.html",
-      "destination": "/ko/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/producto-life-copilot.html",
-      "destination": "/ko/products/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicio-consultoria-tecnologica.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicio-inteligencia-artificial.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicio-robotica.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicio-software-empresarial.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicio-transformacion-tecnologica.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/servicio-videojuegos.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/ko/software-para-pymes-con-inteligencia-artificial.html",
-      "destination": "/ko/services/",
-      "permanent": true
-    },
-    {
-      "source": "/automatizar-atencion-cliente-con-ia.html",
-      "destination": "/es/automatizar-atencion-cliente-con-ia.html",
+      "source": "/ar/services/index.html",
+      "destination": "/services/",
       "permanent": true
     },
     {
       "source": "/aviso-legal.html",
-      "destination": "/es/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/index.html",
+      "destination": "/contact/",
       "permanent": true
     },
     {
       "source": "/consultoria-ia-para-empresas-colombia.html",
-      "destination": "/es/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/index.html",
+      "destination": "/contact/",
       "permanent": true
     },
     {
       "source": "/contacto.html",
-      "destination": "/es/contacto.html",
+      "destination": "/contact/",
       "permanent": true
     },
     {
       "source": "/divisiones.html",
-      "destination": "/es/divisiones.html",
+      "destination": "/divisions/",
       "permanent": true
     },
     {
-      "source": "/ia-para-empresas.html",
-      "destination": "/es/ia-para-empresas.html",
+      "source": "/divisions/index.html",
+      "destination": "/divisions/",
       "permanent": true
     },
     {
-      "source": "/inversionistas.html",
-      "destination": "/es/inversionistas.html",
+      "source": "/en/about/index.html",
+      "destination": "/about/",
       "permanent": true
     },
     {
-      "source": "/investor-deck.html",
-      "destination": "/es/investor-deck.html",
-      "permanent": true
-    },
-    {
-      "source": "/nosotros.html",
-      "destination": "/es/nosotros.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicio-consultoria-tecnologica.html",
-      "destination": "/es/servicio-consultoria-tecnologica.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicio-inteligencia-artificial.html",
-      "destination": "/es/servicio-inteligencia-artificial.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicio-robotica.html",
-      "destination": "/es/servicio-robotica.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicios.html",
-      "destination": "/es/servicios.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicio-software-empresarial.html",
-      "destination": "/es/servicio-software-empresarial.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicio-transformacion-tecnologica.html",
-      "destination": "/es/servicio-transformacion-tecnologica.html",
-      "permanent": true
-    },
-    {
-      "source": "/servicio-videojuegos.html",
-      "destination": "/es/servicio-videojuegos.html",
-      "permanent": true
-    },
-    {
-      "source": "/software-para-pymes-con-inteligencia-artificial.html",
-      "destination": "/es/software-para-pymes-con-inteligencia-artificial.html",
-      "permanent": true
-    },
-    {
-      "source": "/trabaja-con-nosotros.html",
-      "destination": "/es/trabaja-con-nosotros.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/automatizar-atencion-cliente-con-ia.html",
-      "destination": "/en/guides/automate-customer-service-with-ai.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-automatizar-atencion-cliente-con-ia.html",
-      "destination": "/en/guides/automate-customer-service-with-ai.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-como-usar-chatgpt-en-el-trabajo.html",
-      "destination": "/en/guides/how-to-use-chatgpt-at-work.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-crm-ia-ventas-soporte.html",
-      "destination": "/en/guides/ai-crm-for-sales-and-support.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-gobernanza-ia-empresas.html",
-      "destination": "/en/guides/ai-governance-for-companies.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-prompts-chatgpt-ventas-b2b.html",
-      "destination": "/en/guides/chatgpt-prompts-for-b2b-sales.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-roadmap-transformacion-digital-pymes.html",
-      "destination": "/en/guides/digital-transformation-roadmap-for-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-roi-automatizacion-ia.html",
-      "destination": "/en/guides/ai-automation-roi.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/guia-software-empresarial-para-pymes.html",
-      "destination": "/en/guides/business-software-for-smbs.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/automatizar-atencion-cliente-con-ia.html",
-      "destination": "/pt/guias/automatizar-atendimento-cliente-com-ia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-automatizar-atencion-cliente-con-ia.html",
-      "destination": "/pt/guias/automatizar-atendimento-cliente-com-ia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-como-usar-chatgpt-en-el-trabajo.html",
-      "destination": "/pt/guias/como-usar-chatgpt-no-trabalho.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-crm-ia-ventas-soporte.html",
-      "destination": "/pt/guias/crm-com-ia-vendas-suporte.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-gobernanza-ia-empresas.html",
-      "destination": "/pt/guias/governanca-ia-empresas.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-prompts-chatgpt-ventas-b2b.html",
-      "destination": "/pt/guias/prompts-chatgpt-vendas-b2b.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-roadmap-transformacion-digital-pymes.html",
-      "destination": "/pt/guias/roadmap-transformacao-digital-pmes.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-roi-automatizacion-ia.html",
-      "destination": "/pt/guias/roi-automacao-ia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt/guia-software-empresarial-para-pymes.html",
-      "destination": "/pt/guias/software-empresarial-para-pmes.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/consultoria-ia-para-empresas-colombia.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/consultoria-ia-para-empresas-colombia.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/ia-para-empresas.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/ia-para-empresas.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicio-consultoria-tecnologica.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicio-consultoria-tecnologica.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicio-inteligencia-artificial.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicio-inteligencia-artificial.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicio-robotica.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicio-robotica.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicio-software-empresarial.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicio-software-empresarial.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicio-transformacion-tecnologica.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicio-transformacion-tecnologica.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/servicio-videojuegos.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/servicio-videojuegos.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/en/software-para-pymes-con-inteligencia-artificial.html",
-      "destination": "/en/services/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/software-para-pymes-con-inteligencia-artificial.html",
-      "destination": "/pt/servicos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/producto-copiloto-pyme.html",
-      "destination": "/pt/produtos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/producto-life-copilot.html",
-      "destination": "/pt/produtos/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/trabaja-con-nosotros.html",
-      "destination": "/pt/contato/",
+      "source": "/en/aviso-legal.html",
+      "destination": "/legal/",
       "permanent": true
     },
     {
       "source": "/en/careers/",
-      "destination": "/en/contact/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/careers/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/en/divisions/index.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/en/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investor-deck/index.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investors/index.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/en/legal/index.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/en/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-copiloto-pyme.html",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-life-copilot.html",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/en/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/copilotopyme/index.html",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/index.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/lifecopilot/index.html",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/titanos/index.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/index.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/es/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/es/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/es/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/es/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/es/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/es/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/es/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-copiloto-pyme.html",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-life-copilot.html",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/es/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/call-center-ai/",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/copilotopyme/index.html",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/lifecopilot/index.html",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/titanos/index.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/investor-deck/index.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/investors/index.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/about/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/about/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/contact/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/contact/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/divisions/",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/divisions/index.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investor-deck/",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investor-deck/index.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investors/",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investors/index.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/legal/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/legal/index.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-copiloto-pyme.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-life-copilot.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/call-center-ai/",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/index.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/services/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/services/index.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/about/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/about/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/contact/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/contact/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/divisions/",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/divisions/index.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investor-deck/",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investor-deck/index.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investors/",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investors/index.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/legal/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/legal/index.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-copiloto-pyme.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-life-copilot.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/call-center-ai/",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/index.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/services/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/services/index.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/legal/index.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-copiloto-pyme.html",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-life-copilot.html",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/products/index.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/aviso-legal/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/aviso-legal/index.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contato/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contato/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisoes/",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisoes/index.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investidores/",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investidores/index.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investor-deck/",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investor-deck/index.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-copiloto-pyme.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-life-copilot.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/call-center-ai/",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/index.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicos/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicos/index.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/sobre-nos/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/sobre-nos/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/services/index.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/about/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/about/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/consultoria-ia-para-empresas-colombia.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/contact/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/contact/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/divisions/",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/divisions/index.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/ia-para-empresas.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investor-deck/",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investor-deck/index.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investors/",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investors/index.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/legal/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/legal/index.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-academia-tecnotitan.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-call-center-ai.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-copiloto-pyme.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-life-copilot.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-tecnotitan-engine.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/producto-tecnotitan-os.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/call-center-ai/",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/index.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/index.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-consultoria-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-robotica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-software-empresarial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-transformacion-tecnologica.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicio-videojuegos.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/software-para-pymes-con-inteligencia-artificial.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/trabaja-con-nosotros.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/products/copilotopyme/index.html",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/products/titanos/index.html",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/products/lifecopilot/index.html",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/products/tecnotitan-engine/index.html",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/products/academia-tecnotitan/index.html",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/products/call-center-ai/index.html",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/nosotros",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/productos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicios",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisiones",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/inversionistas",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contacto",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/nosotros",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/productos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/servicios",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/divisiones",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/inversionistas",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/contacto",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/nosotros",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/productos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/servicios",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/divisiones",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/inversionistas",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/contacto",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/nosotros",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/productos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/servicios",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/divisiones",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/inversionistas",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/contacto",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/nosotros.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/nosotros",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/productos.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/productos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/servicios.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/servicios",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/divisiones.html",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/divisiones",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/inversionistas.html",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/inversionistas",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/contacto.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/contacto",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/investor-deck.html",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/aviso-legal.html",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/es",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pt",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zh",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ja",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ko",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ar",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/products",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/divisions",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/investors",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/products/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/products/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/products/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/products/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/products/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/products/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/en/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/divisions",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investors",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/en/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nosotros",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nosotros/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicios",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicios/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/divisiones",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/es/divisiones/",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/es/inversionistas",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/es/inversionistas/",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contacto",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contacto/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/es/aviso-legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/es/aviso-legal/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/es/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/es/investor-deck/",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/sobre",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/sobre/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/servicos",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/divisoes",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investidores",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contato",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/aviso-legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/produtos/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/divisions",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investors",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/products/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/divisions",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investors",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/products/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/divisions",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investors",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/products/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/divisions",
+      "destination": "/divisions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/investors",
+      "destination": "/investors/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/legal",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/investor-deck",
+      "destination": "/investor-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/copilotopyme",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/copilotopyme/",
+      "destination": "/products/copilotopyme/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/titanos",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/titanos/",
+      "destination": "/products/titanos/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/lifecopilot",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/lifecopilot/",
+      "destination": "/products/lifecopilot/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/tecnotitan-engine",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/tecnotitan-engine/",
+      "destination": "/products/tecnotitan-engine/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/academia-tecnotitan",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/academia-tecnotitan/",
+      "destination": "/products/academia-tecnotitan/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/call-center-ai",
+      "destination": "/products/call-center-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/products/call-center-ai/",
+      "destination": "/products/call-center-ai/",
       "permanent": true
     }
   ],
@@ -1310,6 +2650,988 @@
     {
       "path": "/api/daily-ceo-traffic-brief",
       "schedule": "0 3 * * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/ar/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ar/guides",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ar/guides/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ar/guides/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/about-tecnotitan-guides.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-agents-for-business-workflows.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-automation-roi.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-crm-for-sales-and-support.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-data-strategy-for-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-governance-for-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-onboarding-for-employees.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/ai-productivity-for-business-teams.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/automate-customer-service-with-ai.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/billing-and-collections-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/business-dashboard-kpis-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/business-software-for-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/chatgpt-prompts-for-b2b-sales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/cloud-migration-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/crm-implementation-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/custom-software-vs-saas-vs-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/digital-transformation-roadmap-for-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/evaluate-ai-vendors-for-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/executive-reporting-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/how-to-use-chatgpt-at-work.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/inventory-control-automation-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/office-automation-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/omnichannel-customer-support-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/small-business-cybersecurity-basics.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/en/guides/system-integration-api-for-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-agentes-ia-procesos-empresariales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-automatizacion-administrativa-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-automatizar-facturacion-cobros.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-automatizar-reportes-ejecutivos.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-ciberseguridad-basica-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-control-inventario-automatizado.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-dashboard-kpis-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-estrategia-datos-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-evaluar-proveedores-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-ia-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-implementar-crm-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-integracion-sistemas-api-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-migracion-nube-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-onboarding-ia-empleados.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-productividad-ia-equipos.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-software-medida-saas-automatizacion.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guia-soporte-omnicanal-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/es/sobre-guias-tecnotitan.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-agentes-ia-procesos-empresariales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-automatizacion-administrativa-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-automatizar-facturacion-cobros.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-automatizar-reportes-ejecutivos.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-ciberseguridad-basica-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-control-inventario-automatizado.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-dashboard-kpis-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-estrategia-datos-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-evaluar-proveedores-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-ia-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-implementar-crm-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-integracion-sistemas-api-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-migracion-nube-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-onboarding-ia-empleados.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-productividad-ia-equipos.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-software-medida-saas-automatizacion.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guia-soporte-omnicanal-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guias",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/about-tecnotitan-guides.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-agents-for-business-workflows.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-automation-roi.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-crm-for-sales-and-support.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-data-strategy-for-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-governance-for-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-onboarding-for-employees.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/ai-productivity-for-business-teams.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/automate-customer-service-with-ai.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/billing-and-collections-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/business-dashboard-kpis-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/business-software-for-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/chatgpt-prompts-for-b2b-sales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/cloud-migration-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/crm-implementation-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/custom-software-vs-saas-vs-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/digital-transformation-roadmap-for-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/evaluate-ai-vendors-for-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/executive-reporting-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/how-to-use-chatgpt-at-work.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/inventory-control-automation-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/office-automation-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/omnichannel-customer-support-for-small-business.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/small-business-cybersecurity-basics.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/guides/system-integration-api-for-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/about-tecnotitan-guides.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-agents-business-workflows.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-automation-roi.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-crm-sales-support.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-customer-service-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-data-strategy-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-governance-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/ai-onboarding-employees.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/business-software-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/chatgpt-prompts-b2b-sales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/chatgpt-work-guide.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/custom-software-saas-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/digital-transformation-roadmap-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/evaluate-ai-vendors-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/executive-reporting-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ja/guides/system-integration-api-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/about-tecnotitan-guides.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-agents-business-workflows.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-automation-roi.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-crm-sales-support.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-customer-service-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-data-strategy-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-governance-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/ai-onboarding-employees.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/business-software-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/chatgpt-prompts-b2b-sales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/chatgpt-work-guide.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/custom-software-saas-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/digital-transformation-roadmap-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/evaluate-ai-vendors-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/executive-reporting-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/ko/guides/system-integration-api-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/agentes-ia-processos-empresariais.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/automatizar-atendimento-cliente-com-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/automatizar-relatorios-executivos.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/avaliar-fornecedores-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/como-usar-chatgpt-no-trabalho.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/crm-com-ia-vendas-suporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/estrategia-dados-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/governanca-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/integracao-sistemas-api-pmes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/onboarding-ia-colaboradores.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/prompts-chatgpt-vendas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/roadmap-transformacao-digital-pmes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/roi-automacao-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/sobre-guias-tecnotitan.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/software-empresarial-para-pmes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/pt/guias/software-sob-medida-saas-automacao.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/sobre-guias-tecnotitan.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-automatizar-atencion-cliente-con-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-como-usar-chatgpt-en-el-trabajo.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-crm-ia-ventas-soporte.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-gobernanza-ia-empresas.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-prompts-chatgpt-ventas-b2b.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-roadmap-transformacion-digital-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-roi-automatizacion-ia.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guia-software-empresarial-para-pymes.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guias.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/about-tecnotitan-guides.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-agents-business-workflows.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-automation-roi.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-crm-sales-support.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-customer-service-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-data-strategy-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-governance-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/ai-onboarding-employees.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/business-software-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/chatgpt-prompts-b2b-sales.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/chatgpt-work-guide.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/custom-software-saas-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/digital-transformation-roadmap-smbs.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/evaluate-ai-vendors-companies.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/executive-reporting-automation.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/index.html",
+      "destination": "/api/retired-page"
+    },
+    {
+      "source": "/zh/guides/system-integration-api-smbs.html",
+      "destination": "/api/retired-page"
     }
   ]
 }
