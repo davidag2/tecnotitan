@@ -11,6 +11,7 @@ urls = [el.text for el in ET.parse(ROOT / 'sitemap.xml').findall('{*}url/{*}loc'
 errors = []
 assert len(urls) == len(set(urls)) == 15
 assert urls[0] == ORIGIN + '/'
+descriptions = []
 config = json.loads((ROOT / 'vercel.json').read_text(encoding='utf-8'))
 redirects = {r['source']: r['destination'] for r in config['redirects']}
 assert '/' not in redirects
@@ -30,6 +31,12 @@ for url in urls:
     assert document.xpath('//link[@rel="canonical"]/@href') == [url]
     assert not document.xpath('//link[@hreflang]')
     assert document.xpath('//meta[@property="og:url"]/@content') == [url]
+    meta_description = document.xpath('//meta[@name="description"]/@content')
+    og_description = document.xpath('//meta[@property="og:description"]/@content')
+    twitter_description = document.xpath('//meta[@name="twitter:description"]/@content')
+    assert len(meta_description) == len(og_description) == len(twitter_description) == 1
+    assert meta_description[0] == og_description[0] == twitter_description[0]
+    descriptions.append(meta_description[0])
     assert len(document.xpath('//h1')) == 1, url
     for node in document.xpath('//*[@href or @src or @action]'):
         for attr in ('href', 'src', 'action'):
@@ -55,5 +62,6 @@ for url in urls:
                     errors.append(f'Missing fragment: {url} -> {value}')
     for node in document.xpath('//script[@type="application/ld+json"]'):
         json.loads(node.text)
-print(json.dumps({'pages': len(urls), 'redirects': len(redirects), 'errors': sorted(set(errors))}, indent=2))
+assert len(descriptions) == len(set(descriptions)) == 15
+print(json.dumps({'pages': len(urls), 'descriptions': len(descriptions), 'unique_descriptions': len(set(descriptions)), 'redirects': len(redirects), 'errors': sorted(set(errors))}, indent=2))
 raise SystemExit(bool(errors))
